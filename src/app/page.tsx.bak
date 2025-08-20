@@ -1,0 +1,694 @@
+import Hero from '@/components/Hero';
+import StorySection from '@/components/StorySection';
+import CoachingOfferings from '@/components/CoachingOfferings';
+import AppShowcase from '@/components/AppShowcase';
+import Testimonials from '@/components/Testimonials';
+import CallToAction from '@/components/CallToAction';
+import { Leaf, Heart, Sparkles } from 'lucide-react';
+import Link from 'next/link';
+
+export default function Home() {
+  return (
+    <div className="bg-white">
+      <Hero />
+      
+      {/* Embodiment Section */}
+      <section className="relative py-16 bg-gradient-to-b from-white to-pink-50 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full opacity-20"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full opacity-20"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-pink-900 mb-4">
+              Embodiment als Schlüssel auf deiner Heilungsreise
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-6"></div>
+            <p className="text-xl text-pink-800/90 italic max-w-3xl mx-auto mb-8">
+              "YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER."
+            </p>
+            <p className="text-xl font-medium text-pink-700">
+              Vertraue der Weisheit deines Körpers.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <p className="text-gray-700 leading-relaxed">
+                Embodiment ist für mich der Schlüssel für Heilung und Transformation, denn dein Körper speichert all deinen Schmerz und deine Verletzungen (auch die, die du nicht sehen kannst) und ist damit ein wertvoller Impulsgeber für die Anteile in dir, die noch heilen dürfen.
+              </p>
+              
+              <div className="bg-white/80 p-6 rounded-xl shadow-sm border border-pink-100">
+                <p className="font-medium text-pink-800 mb-3">Wenn eine Verletzung oder Wunde nicht geheilt ist, dann wird sie dir weiter weh tun und sich immer wieder bemerkbar machen:</p>
+                <ul className="space-y-3">
+                  {[
+                    'Du lebst in Mustern, Überlebens- und Abwehrstrategien',
+                    'Im permanenten Kampf mit deinem Körper',
+                    'In Unzufriedenheit und Selbstsabotage',
+                    'Hinter einer Maske, getrennt von deinem wahren Selbst'
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="flex-shrink-0 h-5 w-5 rounded-full bg-pink-100 flex items-center justify-center mr-3 mt-0.5">
+                        <div className="h-1.5 w-1.5 rounded-full bg-pink-600"></div>
+                      </div>
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <p className="text-gray-700 leading-relaxed">
+                Oft läuft das unbewusst ab, es ist dein "Normal", aber tief in dir spürst du: Du bist getrennt von dem, wonach du dich wirklich sehnst. Wonach wir uns alle sehnen - nach tiefer Verbindung. Und die beginnt immer bei dir selbst.
+              </p>
+            </div>
+            
+            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-pink-100">
+              <h3 className="text-2xl font-bold text-pink-800 mb-4">OWN IT. FEEL IT. HEAL IT.</h3>
+              <p className="text-gray-700 mb-6">
+                Es ist das mutige Zulassen und Spüren von allem, was ist, um das abzulegen, was du nicht bist und dorthin zurückzukehren, was du schon immer warst. In deine Vollständigkeit, in deine Essenz.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-50 flex items-center justify-center text-pink-600 font-bold mr-4">1</div>
+                  <div>
+                    <h4 className="font-medium text-gray-800">Sei sichtbar</h4>
+                    <p className="text-gray-600 text-sm">Erlaube dir, gesehen zu werden, auch in deiner Verletzlichkeit.</p>
+                  </div>
+                </div>
+                
+                <div className="flex">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-50 flex items-center justify-center text-pink-600 font-bold mr-4">2</div>
+                  <div>
+                    <h4 className="font-medium text-gray-800">Nimm an, was ist</h4>
+                    <p className="text-gray-600 text-sm">Begegne deinen Gefühlen mit Mitgefühl statt Perfektionismus.</p>
+                  </div>
+                </div>
+                
+                <div className="flex">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-50 flex items-center justify-center text-pink-600 font-bold mr-4">3</div>
+                  <div>
+                    <h4 className="font-medium text-gray-800">Bleibe offen</h4>
+                    <p className="text-gray-600 text-sm">Auch wenn es schwerfällt - gerade dann ist Heilung möglich.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-6 border-t border-pink-100">
+                <p className="text-center text-pink-800 font-medium mb-4">Überall dort ist eine tiefe Heilung möglich und ein nach Hause kommen zurück zu dir.</p>
+                <Link 
+                  href="/contact" 
+                  className="block w-full text-center px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white font-medium rounded-full hover:from-pink-700 hover:to-purple-700 transition-colors shadow-md hover:shadow-lg"
+                >
+                  Kostenloses Erstgespräch vereinbaren
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Spiritual Life Coaching - Minimal & Dynamic */}
+      <section className="relative py-12 overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-20 -right-20 w-64 h-64 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
+          <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float animation-delay-2000"></div>
+        </div>
+        
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Floating Title */}
+          <div className="text-center mb-12 relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-pink-400 to-purple-500 rounded-lg opacity-0 group-hover:opacity-10 blur transition duration-500 -z-10"></div>
+            <span className="inline-block text-pink-600 text-sm font-medium tracking-wider mb-3">SPIRITUAL LIFE COACHING</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+              Dein Weg zu mehr <span className="relative">
+                <span className="relative z-10">Selbstliebe</span>
+                <span className="absolute -bottom-1 left-0 w-full h-2 bg-pink-200/60 -z-0 rounded-full"></span>
+              </span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto relative">
+              Transformiere dein Leben durch bewusste Körperwahrnehmung und tiefe Heilung
+              <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-pink-300 to-purple-300 rounded-full"></span>
+            </p>
+          </div>
+          
+          {/* Interactive Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {[
+              {
+                icon: (
+                  <div className="relative group">
+                    <div className="absolute -inset-0.5 bg-pink-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <div className="relative h-12 w-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                ),
+                title: "Energiearbeit",
+                desc: "Löse Blockaden und bringe deine Lebensenergie wieder ins Fließen."
+              },
+              {
+                icon: (
+                  <div className="relative group">
+                    <div className="absolute -inset-0.5 bg-pink-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <div className="relative h-12 w-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                  </div>
+                ),
+                title: "Heilung",
+                desc: "Heile alte Wunden und Verletzungen auf körperlicher und seelischer Ebene."
+              },
+              {
+                icon: (
+                  <div className="relative group">
+                    <div className="absolute -inset-0.5 bg-pink-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <div className="relative h-12 w-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                ),
+                title: "Selbstliebe",
+                desc: "Lerne dich selbst anzunehmen und zu lieben, genau so wie du bist."
+              }
+            ].map((item, index) => (
+              <div key={index} className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-pink-50 hover:shadow-md transition-all duration-300 group">
+                <div className="mb-4">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          
+          {/* Two Column Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6 relative">
+              <h3 className="text-2xl font-bold text-gray-800">Mein Ansatz</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Als zertifizierte Coachin begleite ich dich auf deinem persönlichen Weg der Heilung und Transformation. Mit einer Mischung aus energetischer Arbeit, Körperwahrnehmung und transformativen Gesprächen helfe ich dir, dein volles Potenzial zu entfalten.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Individuelle Begleitung auf Augenhöhe",
+                  "Ganzheitlicher Ansatz für Körper, Geist & Seele",
+                  "Praktische Übungen für den Alltag",
+                  "Sichere & wertschätzende Atmosphäre"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <svg className="h-5 w-5 text-pink-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              {/* Floating elements */}
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-pink-100/30 rounded-full -z-10 animate-float animation-delay-1000"></div>
+              <div className="absolute -bottom-8 -right-8 w-16 h-16 bg-purple-100/30 rounded-full -z-10 animate-float animation-delay-1500"></div>
+            </div>
+            
+            <div className="relative">
+              <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">Bereit für den ersten Schritt?</h3>
+                  <p className="text-gray-600 mb-6">
+                    Buche jetzt dein kostenloses Erstgespräch und lass uns gemeinsam deinen Weg zu mehr Selbstliebe und Heilung gestalten.
+                  </p>
+                  <div className="space-y-4">
+                    <a 
+                      href="/kontakt" 
+                      className="block w-full text-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-sm hover:shadow-md"
+                    >
+                      Jetzt Termin buchen
+                    </a>
+                    <a 
+                      href="/angebot" 
+                      className="block w-full text-center px-6 py-3 border-2 border-pink-500 text-pink-600 font-medium rounded-full hover:bg-pink-50 transition-all duration-300"
+                    >
+                      Mehr erfahren
+                    </a>
+                  </div>
+                </div>
+                
+                {/* Floating elements */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/20 rounded-full -mr-16 -mt-16 animate-float"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-500/20 rounded-full -ml-12 -mb-12 animate-float animation-delay-2000"></div>
+              </div>
+              
+              {/* Quote Card */}
+              <div className="mt-8 bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-sm border border-pink-100 transform transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+                <div className="flex items-start">
+                  <div className="text-pink-400 mr-4 mt-1">
+                    <svg className="h-6 w-6 opacity-70" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-gray-700 italic mb-3">"Die Reise zu dir selbst ist die lohnenswerteste aller Reisen."</p>
+                    <p className="text-sm text-gray-500">- Carina, deine Coachin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Final CTA */}
+          <div className="text-center mt-16">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Bereit für deine Transformation?</h3>
+            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+              Ich begleite dich einfühlsam und professionell auf deinem Weg zu mehr Selbstliebe und Heilung.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a 
+                href="/angebot" 
+                className="px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-medium rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center"
+              >
+                <span>Kostenloses Erstgespräch</span>
+                <svg className="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+              <a 
+                href="/ueber-mich" 
+                className="px-8 py-3 border-2 border-pink-500 text-pink-600 font-medium rounded-full hover:bg-pink-50 transition-all duration-300 flex items-center justify-center"
+              >
+                <span>Mehr über mich</span>
+                <svg className="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+              {
+                icon: (
+                  <div className="relative group">
+                    <div className="absolute -inset-0.5 bg-purple-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <div className="relative h-12 w-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                      </svg>
+                    </div>
+                  </div>
+                ),
+                title: "Dein Potenzial",
+                text: "Entdecke die Kraft in deinen größten Herausforderungen"
+              },
+              {
+                icon: (
+                  <div className="relative group">
+                    <div className="absolute -inset-0.5 bg-amber-500/30 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                    <div className="relative h-12 w-12 bg-gradient-to-br from-amber-400 to-pink-500 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                  </div>
+                ),
+                title: "Deine Freiheit",
+                text: "Lebe in tiefer Verbindung mit dir und deiner Wahrheit"
+              }
+            ].map((item, index) => (
+              <div key={index} className="group relative">
+                <div className="h-full bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-white/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                  <div className="mb-4">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Two Column Content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left Column - Approach */}
+            <div className="relative">
+              <div className="relative z-10 bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20">
+                <div className="flex items-center mb-6">
+                  <div className="h-1 w-8 bg-pink-500 rounded-full mr-3"></div>
+                  <h3 className="text-2xl font-bold text-gray-800">Mein Ansatz</h3>
+                </div>
+                
+                <p className="text-gray-700 mb-8 leading-relaxed relative pl-6 border-l-2 border-pink-100">
+                  Wir arbeiten mit aktivem Hinfühlen und bewusster Körperwahrnehmung, um tiefe Heilung zu ermöglichen und dein volles Potenzial zu entfalten.
+                </p>
+                
+                <div className="space-y-6">
+                  {[
+                    {
+                      icon: (
+                        <div className="h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 flex-shrink-0">
+                          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          </svg>
+                        </div>
+                      ),
+                      title: "Körperwahrnehmung",
+                      desc: "Lerne, die Weisheit deines Körpers zu verstehen und zu nutzen"
+                    },
+                    {
+                      icon: (
+                        <div className="h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0">
+                          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </div>
+                      ),
+                      title: "Emotionale Heilung",
+                      desc: "Löse Blockaden und finde Frieden mit deiner Vergangenheit"
+                    },
+                    {
+                      icon: (
+                        <div className="h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 flex-shrink-0">
+                          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                          </svg>
+                        </div>
+                      ),
+                      title: "Selbstermächtigung",
+                      desc: "Entdecke deine innere Kraft und treffe Entscheidungen aus deiner Wahrheit heraus"
+                    }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start group">
+                      <div className="mr-4 transform group-hover:scale-110 transition-transform">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-800 group-hover:text-pink-600 transition-colors">{item.title}</h4>
+                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              {/* Floating elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/20 rounded-full -mr-16 -mt-16 animate-float"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-500/20 rounded-full -ml-12 -mb-12 animate-float animation-delay-2000"></div>
+            </div>
+              
+              {/* Quote Card */}
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div className="flex items-start">
+                  <div className="text-pink-400 mr-4 mt-1">
+                    <svg className="h-8 w-8 opacity-70" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-gray-700 italic mb-2">
+                      "Veränderung passiert nicht nur im Kopf. Veränderung passiert vor allem im Körper. Im Herzen. Im Energiesystem. In der Stille."
+                    </p>
+                    <div className="h-1 w-12 bg-pink-200 rounded-full my-3"></div>
+                    <p className="text-sm text-gray-500">Carina, deine Coachin</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating phone mockup */}
+              <div className="relative mt-8 hidden lg:block">
+                <div className="absolute -right-8 -top-8 w-64 h-96 bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl shadow-2xl border-8 border-white transform rotate-3">
+                  <div className="absolute inset-0 rounded-2xl m-1 overflow-hidden">
+                    <div className="h-full bg-gradient-to-br from-pink-50 to-purple-50 p-4">
+                      <div className="h-3 w-16 bg-white rounded-full mx-auto mb-4"></div>
+                      <div className="space-y-3">
+                        <div className="h-4 bg-white/50 rounded-full w-3/4"></div>
+                        <div className="h-4 bg-white/50 rounded-full"></div>
+                        <div className="h-4 bg-white/50 rounded-full w-5/6"></div>
+                      </div>
+                      <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                        <div className="h-2 w-2 bg-pink-400 rounded-full mx-1"></div>
+                        <div className="h-2 w-8 bg-pink-600 rounded-full mx-1"></div>
+                        <div className="h-2 w-2 bg-pink-400 rounded-full mx-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right Column - CTA & Quote */}
+            <div className="space-y-6">
+              {/* CTA Card */}
+              <div className="relative bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
+                <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 blur transition duration-200 -z-10"></div>
+                <div className="text-center">
+                  <div className="inline-flex items-center text-sm font-medium text-pink-600 bg-pink-50 px-3 py-1 rounded-full mb-4">
+                    <span className="relative flex h-2 w-2 mr-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+                    </span>
+                    Jetzt starten
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Bereit für deine Reise zu dir selbst?</h3>
+                  <p className="text-gray-600 mb-6">
+                    Buche jetzt dein kostenloses Erstgespräch und entdecke, wie du dein Leben nach deinen Wünschen gestalten kannst.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link 
+                      href="/contact" 
+                      className="relative group inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 shadow-sm hover:shadow-pink-200/50 transition-all duration-300 overflow-hidden"
+                    >
+                      <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <span className="relative">Kostenloses Gespräch buchen</span>
+                      <svg className="ml-2 -mr-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </Link>
+                    <Link 
+                      href="/about" 
+                      className="group inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium rounded-full text-pink-600 hover:bg-pink-50 transition-colors duration-300"
+                    >
+                      Mehr erfahren
+                      <svg className="ml-2 -mr-1 w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+                
+                {/* Decorative elements */}
+                <div className="absolute top-4 right-4 w-16 h-16 bg-pink-100/30 rounded-full -z-10"></div>
+                <div className="absolute bottom-4 left-4 w-12 h-12 bg-purple-100/30 rounded-full -z-10"></div>
+              </div>
+              
+              {/* Quote Card */}
+              <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/20 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div className="flex items-start">
+                  <div className="text-pink-400 mr-4 mt-1">
+                    <svg className="h-8 w-8 opacity-70" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-gray-700 italic mb-2">
+                      "Veränderung passiert nicht nur im Kopf. Veränderung passiert vor allem im Körper. Im Herzen. Im Energiesystem. In der Stille."
+                    </p>
+                    <div className="h-1 w-12 bg-pink-200 rounded-full my-3"></div>
+                    <p className="text-sm text-gray-500">Carina, deine Coachin</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating phone mockup */}
+              <div className="relative mt-8 hidden lg:block">
+                <div className="absolute -right-8 -top-8 w-64 h-96 bg-gradient-to-br from-pink-100 to-purple-100 rounded-3xl shadow-2xl border-8 border-white transform rotate-3">
+                  <div className="absolute inset-0 rounded-2xl m-1 overflow-hidden">
+                    <div className="h-full bg-gradient-to-br from-pink-50 to-purple-50 p-4">
+                      <div className="h-3 w-16 bg-white rounded-full mx-auto mb-4"></div>
+                      <div className="space-y-3">
+                        <div className="h-4 bg-white/50 rounded-full w-3/4"></div>
+                        <div className="h-4 bg-white/50 rounded-full"></div>
+                        <div className="h-4 bg-white/50 rounded-full w-5/6"></div>
+                      </div>
+                      <div className="absolute bottom-4 left-0 right-0 flex justify-center">
+                        <div className="h-2 w-2 bg-pink-400 rounded-full mx-1"></div>
+                        <div className="h-2 w-8 bg-pink-600 rounded-full mx-1"></div>
+                        <div className="h-2 w-2 bg-pink-400 rounded-full mx-1"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <StorySection />
+      
+      {/* Benefits Section */}
+      <section className="py-16 bg-pink-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-pink-900 mb-4">Dein Weg zu mehr Wohlbefinden</h2>
+            <p className="text-xl text-pink-800/90 max-w-3xl mx-auto">Entdecke, wie ganzheitliches Coaching dein Leben verändern kann</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-16 h-16 bg-pink-50 group-hover:bg-pink-100 rounded-full flex items-center justify-center mb-6 mx-auto transition-colors">
+                <Leaf className="h-8 w-8 text-pink-600 group-hover:text-pink-700 transition-colors" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3 text-pink-800">Natürliche Heilung</h3>
+              <p className="text-pink-600/90 text-center">Erfahre, wie du die heilende Kraft der Natur für dein Wohlbefinden nutzen kannst.</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-16 h-16 bg-pink-50 group-hover:bg-pink-100 rounded-full flex items-center justify-center mb-6 mx-auto transition-colors">
+                <Heart className="h-8 w-8 text-pink-600 group-hover:text-pink-700 transition-colors" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3 text-pink-800">Ganzheitlicher Ansatz</h3>
+              <p className="text-pink-600/90 text-center">Körper, Geist und Seele in Einklang bringen für nachhaltige Veränderung.</p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-16 h-16 bg-pink-50 group-hover:bg-pink-100 rounded-full flex items-center justify-center mb-6 mx-auto transition-colors">
+                <Sparkles className="h-8 w-8 text-pink-600 group-hover:text-pink-700 transition-colors" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3 text-pink-800">Persönliche Entwicklung</h3>
+              <p className="text-pink-600/90 text-center">Werde die beste Version deiner selbst und entdecke dein volles Potenzial.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <CoachingOfferings />
+      <AppShowcase />
+      
+      {/* How It Works Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">So funktioniert's</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Dein einfacher Weg zu mehr Wohlbefinden in 4 Schritten</p>
+          </div>
+          
+          <div className="relative">
+            {/* Timeline */}
+            <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-pink-200"></div>
+            
+            {/* Steps */}
+            <div className="space-y-16">
+              {[
+                { number: '01', title: 'Kontakt aufnehmen', description: 'Im ersten Schritt buchst du ein kostenloses Erstgespräch, bei dem wir uns kennenlernen können.' },
+                { number: '02', title: 'Bedürfnisse klären', description: 'Im zweiten Schritt finden wir gemeinsam heraus, wo du stehst und was du erreichen möchtest.' },
+                { number: '03', title: 'Maßgeschneidertes Programm', description: 'Im dritten Schritt erstelle ich einen individuellen Plan, der perfekt zu dir passt.' },
+                { number: '04', title: 'Umsetzung & Begleitung', description: 'Im vierten Schritt begleite ich dich auf deinem Weg zu mehr Wohlbefinden und stehe dir zur Seite.' }
+              ].map((step, index) => (
+                <div key={index} className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+                    <div className="group relative bg-white p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1 overflow-hidden">
+                      {/* Gradient overlay on hover */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-pink-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      
+                      {/* Content */}
+                      <div className="relative z-10">
+                        <span className="inline-block bg-gradient-to-r from-pink-100 to-purple-100 text-pink-800 text-sm font-semibold px-3 py-1 rounded-full mb-2 group-hover:from-pink-200 group-hover:to-purple-200 transition-colors duration-300">
+                          {step.number}
+                        </span>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                          {step.title}
+                        </h3>
+                        <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                          {step.description}
+                        </p>
+                      </div>
+                      
+                      {/* Decorative corner */}
+                      <div className="absolute bottom-0 right-0 w-16 h-16 bg-pink-200 rounded-tl-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                  </div>
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-pink-300 z-10"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <Testimonials />
+      
+      {/* FAQ Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-pink-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block bg-pink-100 text-pink-800 text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              FAQ
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Häufig gestellte Fragen</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Alles, was du über das Coaching wissen möchtest</p>
+          </div>
+          
+          <div className="space-y-4">
+            {[
+              { 
+                question: 'Wie läuft eine Coaching-Sitzung ab?', 
+                answer: 'Jede Sitzung ist individuell auf deine Bedürfnisse zugeschnitten. Wir beginnen mit einer kurzen Reflexion, arbeiten dann an deinen Themen und schließen mit konkreten Handlungsempfehlungen ab.'
+              },
+              { 
+                question: 'Wie lange dauert es, bis ich Ergebnisse sehe?', 
+                answer: 'Das ist individuell verschieden. Manche Klienten spüren schon nach der ersten Sitzung eine Verbesserung, während andere mehrere Sitzungen benötigen, um nachhaltige Veränderungen zu erleben.'
+              },
+              { 
+                question: 'Kann ich das Coaching auch online machen?', 
+                answer: 'Ja, ich biete sowohl persönliche als auch Online-Coachings an. Die Online-Sessions finden über eine sichere Videoplattform statt und sind genauso effektiv wie persönliche Treffen.'
+              },
+              { 
+                question: 'Was ist, wenn ich einen Termin absagen muss?', 
+                answer: 'Termine können bis zu 24 Stunden vorher kostenlos storniert werden. Bei späteren Absagen wird die volle Sitzungsgebühr fällig.'
+              }
+            ].map((faq, index) => (
+              <details key={index} className="group bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden border border-gray-100">
+                <summary className="flex items-center justify-between p-6 cursor-pointer focus:outline-none">
+                  <h3 className="text-lg font-semibold text-gray-900 group-hover:text-pink-600 transition-colors">
+                    {faq.question}
+                  </h3>
+                  <span className="ml-4 flex-shrink-0 text-pink-600 group-open:rotate-180 transition-transform">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </summary>
+                <div className="px-6 pb-6 pt-2 text-gray-600">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+          
+          <div className="mt-16 text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-sm border border-pink-100">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-3">Noch Fragen offen?</h3>
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">Ich stehe dir gerne für alle weiteren Fragen zur Verfügung. Schreib mir einfach eine Nachricht.</p>
+            <a 
+              href="/kontakt" 
+              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 transition-all duration-300 shadow-sm hover:shadow-md"
+            >
+              Kontakt aufnehmen
+              <svg className="ml-2 -mr-1 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <CallToAction />
+    </div>
+  );
+}
