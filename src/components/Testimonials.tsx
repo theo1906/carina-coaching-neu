@@ -29,25 +29,29 @@ Carina hat mich darin bestärkt, mich auch verletzlich zu zeigen – in einem Ra
     coachingType: "Spiritual Life Coaching"
   },
   {
-    quote: "Ich bin zu Carina gegangen, weil ich seit Langem mit einem Thema fast täglich konfrontiert war. Ich hatte das Gefühl, dass mir dieses Thema im Alltag immer wieder begegnet.",
-    fullText: `Je mehr ich versuchte, es loszulassen, desto mehr wiederholte es sich. Das hat mich sehr angestrengt, und ich fühlte mich dadurch oft eingeschränkt und fremdgesteuert. Ich wollte mich endlich von dieser Hürde befreien.
+    quote: "Mit Carina fühlte ich mich sofort wohl und sicher. Sie schafft einen Raum, in dem ich mich vollkommen frei gefühlt habe.",
+    fullText: `Ich hatte ein Thema mit meiner Mama, eine der wichtigsten und stärksten Frauen in meinem Leben, aber gleichzeitig eine der Menschen, die mich am meisten verletzt hat, enttäuscht hat, benachteiligt hat, nicht adäquat behandelt und verstanden hat. Zumindest in meiner Wahrnehmung. Es ist hart, das so niederzuschreiben, aber aus der Wut, die ich anfänglich nur hatte, haben sich viele einzelne Gefühle und Situationen differenziert, durch die Anwesenheit, Anleitung und Unterstützung von Carina. Ich wollte eine Erklärung, warum meine Mutter meine Schwestern mir vorzieht und eine Legitimation, wütend zu sein. Bekommen habe ich hingegen einen differenzierten Blumenstrauß an Gefühlen, Sichtweisen und Impulsen. Keine einfache Lösung für eine Symptomatik, aber eine komplexe und der Situation angemessene Methode, mit diesem Thema umzugehen und weiter zu arbeiten. 
 
-Ich bin mit gemischten Gefühlen zum Coaching gegangen: einerseits wollte ich mir helfen lassen, andererseits wusste ich wirklich nicht, wo ich anfangen sollte. Carina hat mir von Anfang an einen Weg gezeigt. Meine Unklarheit hat sie genutzt, um mich Schritt für Schritt aus der Verwirrung und Frustration herauszuholen. Keine 30 Minuten nach Beginn der Session saß ich plötzlich vor einer klaren Zusammenfassung meiner inneren Überzeugungen. Das Formulieren des konkreten Anliegens hat mir geholfen, mein Ziel direkt vor Augen zu behalten und mich energetisch damit zu verbinden.
+Carina hat es mit ihrer Art und Art zu arbeiten geschafft, dass ich mich komplett entspannen und frei machen konnte von allen Alltagsgedanken. Dass ich im Moment sein konnte, mich getraut habe, alle Emotionen zu äußern, wie sie gerade aus meinem Körper purzelten, egal ob mit Lachen, mit Tränen, mit Worten oder in imaginären Bildern. 
 
-Und dann ging es richtig los. Durch eine klare Struktur – und vor allem durch Carinas liebevolle Begleitung und ihre diskrete Unterstützung – stand ich da, in einer ehrlichen und mutigen Auseinandersetzung mit meinen Gefühlen. Es war wunderschön, die Verbindung zu meinem Körper zu spüren, meine inneren Hindernisse wahrzunehmen, mit meinem Atem in Einklang zu sein – ganz mit mir verbunden zu sein.
+Das Coaching bei Carina war unglaublich und unglaublich intensiv, aber gleichzeitig befreiend und entlastend. Das Gefühl der Glücklichkeit hat sich nach ein paar Tagen und Wochen eingestellt, immer wieder und schleichend, aber stetig immer mehr werdend. Die Nachhaltigkeit und der Nachhall beeindrucken mich bis heute. 
 
-Jeden Anteil in mir, der in diesen wiederkehrenden Situationen entsteht, in die Augen zu schauen, hat sich angefühlt, als hätte ich den Ariadnefaden gefunden, um meinen Weg durch das innere Labyrinth zu finden.
+So ein Coaching ist nichts, was man in der Mittagspause zwischen zwei Terminen macht. Ein Coaching bei Carina ist eine intensive Investition in das eigene Seelenheil, der Start einer Reise die man alleine nie beginnen würde bzw. beginnen kann, denn ohne Reiseführerin sieht man immer nur die offensichtlichen Attraktionen, aber nie die geheimen Ecken, die es lohnt zu betrachten. 
 
-Ich habe diese Step-by-Step-Reise sehr genossen. Auch wenn der Weg sehr intensiv war, weil ich meine inneren Widerstände deutlich im Körper spüren konnte und es für mich auch neu und ungewohnt war, mich so verletzlich zeigen zu können, war Carinas wertvolle Anleitung jedes Mal wie ein Anker, der mich zurück zu mir selbst geführt hat.
-
-Ich bin aus dem Coaching gegangen mit dem Gefühl, in Frieden mit all meinen inneren Anteilen Hand in Hand weiterzugehen. Frieden zu schließen – vor allem mit dem Bewusstsein, wer ich wirklich bin und was ich nicht mehr brauche.
-
-Danke, liebe Carina, für diese wertvolle, tiefe Erfahrung, die mein Leben verändern kann.`,
+Alles in allem kann ich dir, Carina, nur DANKE sagen, für diese Erfahrung, für dein Feingefühl, deinen Raum, deine zarte, aber stützende und starke Anwesenheit und deine Empathie. Danke für den Beginn einer guten Reise zurück zu mir selbst!`,
     author: "Christina, 43"
   },
   {
-    quote: "Kurz vor einem Burnout habe ich den Weg zu Carina gefunden und mich für ein Online Coaching Packet angemeldet.",
-    fullText: "Carina hat für mich einen sicheren Raum gehalten, wo ich mir erlaubt habe mich komplett zu zeigen mit allem was ist. Durch ihre Feinfühligkeit und gezielten Fragen hat sie mir geholfen meine wiederkehrenden Muster im Leben sehr deutlich zu erkennen.",
+    quote: "Ich hatte ein Thema mit meiner Mama, eine der wichtigsten und stärksten Frauen in meinem Leben...",
+    fullText: `aber gleichzeitig eine der Menschen, die mich am meisten verletzt hat, enttäuscht hat, benachteiligt hat, nicht adäquat behandelt und verstanden hat. Zumindest in meiner Wahrnehmung. Es ist hart, das so niederzuschreiben, aber aus der Wut, die ich anfänglich nur hatte, haben sich viele einzelne Gefühle und Situationen differenziert, durch die Anwesenheit, Anleitung und Unterstützung von Carina. Ich wollte eine Erklärung, warum meine Mutter meine Schwestern mir vorzieht und eine Legitimation, wütend zu sein. Bekommen habe ich hingegen einen differenzierten Blumenstrauß an Gefühlen, Sichtweisen und Impulsen. Keine einfache Lösung für eine Symptomatik, aber eine komplexe und der Situation angemessene Methode, mit diesem Thema umzugehen und weiter zu arbeiten. 
+
+Carina hat es mit ihrer Art und Art zu arbeiten geschafft, dass ich mich komplett entspannen und frei machen konnte von allen Alltagsgedanken. Dass ich im Moment sein konnte, mich getraut habe, alle Emotionen zu äußern, wie sie gerade aus meinem Körper purzelten, egal ob mit Lachen, mit Tränen, mit Worten oder in imaginären Bildern. 
+
+Das Coaching bei Carina war unglaublich und unglaublich intensiv, aber gleichzeitig befreiend und entlastend. Das Gefühl der Glücklichkeit hat sich nach ein paar Tagen und Wochen eingestellt, immer wieder und schleichend, aber stetig immer mehr werdend. Die Nachhaltigkeit und der Nachhall beeindrucken mich bis heute. 
+
+So ein Coaching ist nichts, was man in der Mittagspause zwischen zwei Terminen macht. Ein Coaching bei Carina ist eine intensive Investition in das eigene Seelenheil, der Start einer Reise die man alleine nie beginnen würde bzw. beginnen kann, denn ohne Reiseführerin sieht man immer nur die offensichtlichen Attraktionen, aber nie die geheimen Ecken, die es lohnt zu betrachten. 
+
+Alles in allem kann ich dir, Carina, nur DANKE sagen, für diese Erfahrung, für dein Feingefühl, deinen Raum, deine zarte, aber stützende und starke Anwesenheit und deine Empathie. Danke für den Beginn einer guten Reise zurück zu mir selbst!`,
     author: "Andrea, 34",
     role: "Online Coaching-Klientin",
     coachingType: "Spiritual Life Coaching"

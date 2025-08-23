@@ -5,6 +5,7 @@ import './globals.css';
 import { metadata } from './metadata';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import CookieConsentBanner from '@/components/CookieConsentBanner';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ 
@@ -29,14 +30,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
-      <body className="min-h-screen flex flex-col bg-gray-50">
+    <html lang="de" className="scroll-smooth">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWHES3E515"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HWHES3E515');
+            `,
+          }}
+        />
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} font-sans text-gray-900 antialiased`}>
         <ClientProvider>
           <Header />
           <main className="flex-grow">
             {children}
           </main>
           <Footer />
+          <CookieConsentBanner />
         </ClientProvider>
       </body>
     </html>

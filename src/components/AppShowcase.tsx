@@ -129,20 +129,14 @@ export default function AppShowcase() {
   }, [isRunning, timeLeft]);
 
   const startTimer = () => {
-    // This ensures audio can play in Safari by being triggered by user interaction
+    // Play gong sound at the start
     if (audioRef.current) {
-      try {
-        const playPromise = audioRef.current.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(error => {
-            console.log('Audio play failed, will retry when timer ends:', error);
-          });
-        }
-        // Immediately pause after starting to make it ready for later
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      } catch (error) {
-        console.error('Error initializing audio:', error);
+      audioRef.current.currentTime = 0;
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.log('Audio play at start failed:', error);
+        });
       }
     }
     

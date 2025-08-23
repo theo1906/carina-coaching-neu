@@ -1,8 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { Fragment } from 'react';
 
 const navigation = {
@@ -13,10 +11,9 @@ const navigation = {
     { name: 'Kontakt', href: '/kontakt' },
   ],
   legal: [
-    { name: 'Impressum', href: '/legal' },
-    { name: 'Datenschutz', href: '/privacy' },
-    { name: 'AGB', href: '/terms' },
-    { name: 'Widerrufsrecht', href: '/cancellation' },
+    { name: 'Impressum', href: '/impressum' },
+    { name: 'Datenschutz', href: '/datenschutz' },
+    { name: 'Cookie-Einstellungen', href: '/cookie-einstellungen' },
   ],
   social: [
     {
@@ -62,22 +59,11 @@ const navigation = {
 };
 
 export default function Footer() {
-  const [expandedMenu, setExpandedMenu] = useState<string | null>(null);
-
-  const toggleMenu = (menuName: string) => {
-    setExpandedMenu((prev: string | null) => prev === menuName ? null : menuName);
-  };
-
-  // Initialize state only on client side
-  useEffect(() => {
-    // No-op - just ensuring this is a client component
-  }, []);
-
   return (
     <Fragment>
       <footer className="bg-gradient-to-b from-white to-neutral-50 border-t border-neutral-100">
-        <div className="container mx-auto px-6 py-16 md:py-20 lg:py-24">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="container mx-auto px-6 py-12 md:py-16">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {/* Brand info */}
             <div className="space-y-6">
               <div>
@@ -100,117 +86,31 @@ export default function Footer() {
               <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
                 Hauptmenü
               </h3>
-              <div className="space-y-4">
+              <ul className="space-y-4">
                 {navigation.main.map((item) => (
-                  <div key={item.name} className="group">
-                    <button
-                      type="button"
-                      onClick={() => toggleMenu(item.name)}
-                      className="flex items-center justify-between w-full text-neutral-500 hover:text-primary-600 transition-colors duration-300"
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-base text-neutral-600 hover:text-primary-600 transition-colors duration-200"
                     >
                       {item.name}
-                      {item.name === 'Dienstleistungen' || item.name === 'Über mich' ? (
-                        <svg
-                          className={`ml-2 w-4 h-4 transition-transform duration-300 ${expandedMenu === item.name ? 'rotate-180' : ''}`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      ) : null}
-                    </button>
-                    {(item.name === 'Dienstleistungen' || item.name === 'Über mich') && (
-                      <div className={`mt-2 pl-4 space-y-2 ${expandedMenu === item.name ? 'block' : 'hidden'}`}>
-                        {item.name === 'Dienstleistungen' ? (
-                          <>
-                            <Link
-                              href="/dienstleistungen/essstorung"
-                              className="text-neutral-500 hover:text-primary-600 transition-colors duration-300"
-                            >
-                              Essstörung Coaching
-                            </Link>
-                            <Link
-                              href="/dienstleistungen/spiritual"
-                              className="text-neutral-500 hover:text-primary-600 transition-colors duration-300"
-                            >
-                              Spiritual Life Coaching
-                            </Link>
-                            <Link
-                              href="/dienstleistungen/embodiment-und-heilung"
-                              className="text-neutral-500 hover:text-primary-600 transition-colors duration-300"
-                            >
-                              Körperzentriertes Coaching
-                            </Link>
-                          </>
-                        ) : (
-                          <>
-                            <Link
-                              href="/ueber-mich/mein-weg"
-                              className="text-neutral-500 hover:text-primary-600 transition-colors duration-300"
-                            >
-                              Mein Weg
-                            </Link>
-                            <Link
-                              href="/ueber-mich/meine-vision"
-                              className="text-neutral-500 hover:text-primary-600 transition-colors duration-300"
-                            >
-                              Meine Vision
-                            </Link>
-                          </>
-                        )}
-                      </div>
-                    )}
-                  </div>
+                    </Link>
+                  </li>
                 ))}
-              </div>
-            </div>
-
-            {/* Contact */}
-            <div className="space-y-6">
-              <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
-                Kontakt
-              </h3>
-              <address className="not-italic space-y-4">
-                <div className="flex">
-                  <EnvelopeIcon className="h-5 w-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="block text-sm text-neutral-500">E-Mail</span>
-                    <a 
-                      href="mailto:info@carinagoeb.de" 
-                      className="text-neutral-700 hover:text-primary-600 transition-colors duration-300"
-                    >
-                      info@carinagoeb.de
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex">
-                  <MapPinIcon className="h-5 w-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" />
-                  <div>
-                    <span className="block text-sm text-neutral-500">Adresse</span>
-                    <span className="text-neutral-700">
-                      Rosenstraße 17
-                      <br />
-                      80331 München
-
-                    </span>
-                  </div>
-                </div>
-              </address>
+              </ul>
             </div>
 
             {/* Legal */}
             <div className="space-y-6">
               <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
-                Legal
+                Rechtliches
               </h3>
               <ul className="space-y-4">
                 {navigation.legal.map((item) => (
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-neutral-500 hover:text-primary-600 transition-colors duration-300"
+                      className="text-base text-neutral-600 hover:text-primary-600 transition-colors duration-200"
                     >
                       {item.name}
                     </Link>

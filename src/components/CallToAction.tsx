@@ -9,7 +9,12 @@ export default function CallToAction() {
           Bereit für deine Transformation?
         </h2>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Entdecke deine innere Weisheit und lebe authentisch. Die Heilung beginnt jetzt. Lass uns gemeinsam deinen Weg zur Heilung finden.
+          Heilung ist möglich — in jedem Moment. Du trägst bereits alles in dir, was du
+          dazu brauchst. Ich bin hier, um dich daran zu erinnern. Dich auf deinem Weg
+          zu unterstützen. Und dir zu helfen, deine ganze Herzensweisheit zu
+          verkörpern und die Kraft in dir zu entfalten, die tiefe Heilung möglich macht.
+          <br /><br />
+          Du möchtest mehr über Embodiment Coaching erfahren?
         </p>
         <Link 
           href="/contact" 

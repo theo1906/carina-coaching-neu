@@ -40,33 +40,43 @@ export default function Home() {
                 <div className="space-y-8">
                   <div className="bg-white/80 p-6 rounded-xl shadow-sm border border-pink-100">
                     <p className="font-medium text-pink-800 mb-3">Meine spirituelle Reise</p>
-                    <ul className="space-y-3">
+                    <div className="space-y-3">
                       {[
+                        'Transformation durch Ehrlichkeit und Selbstannahme',
                         'Tiefe Verbindung zur Weisheit des Körpers',
                         'Integration spiritueller Praktiken in den Alltag',
                         'Begleitung anderer auf ihrem Weg der Persönlichkeitsentwicklung'
-                      ].map((item: string, index: number) => (
-                        <li key={index} className="flex items-start">
-                          <div className="flex-shrink-0 h-5 w-5 rounded-full bg-pink-100 flex items-center justify-center mr-3 mt-0.5">
+                      ].map((item, index) => (
+                        <div key={index} className="flex items-center">
+                          <div className="flex-shrink-0 h-4 w-4 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 flex items-center justify-center mr-3">
                             <div className="h-1.5 w-1.5 rounded-full bg-pink-600"></div>
                           </div>
                           <span className="text-gray-700">{item}</span>
-                        </li>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
 
                   <div className="bg-white/90 p-8 rounded-2xl shadow-lg border border-pink-100">
                     <p className="text-gray-700 leading-relaxed">
-                      Aus meiner fast 30-jährigen Reise durch Krankheit, Heilung und Transformation weiß ich, wie viel Mut es braucht, sich auf den Weg der Heilung zu machen. Ich verstehe dich, weil ich es selbst erlebt habe, und begleite dich gern auf deinem Weg. Meine spirituelle Reise hat mir gezeigt, wie tiefgreifend es ist, sich mit radikaler Ehrlichkeit zu begegnen, die innere Weisheit zu entdecken und die Verbindung von Körper, Seele und Geist zu erkennen.
+                      Jeder Mensch ist unendlich kraftvoll, weise und schöpferisch und wir alle tragen
+                      das Potenzial der Selbstheilung in uns. Der Schlüssel dazu ist das Bewusstsein
+                      darüber, wie wir unser Potenzial verwirklichen können. Meine eigene Geschichte und spirituelle Heilungserfahrung aus 20 Jahren Krankheit ist Inspiration und Wegweiser. Und mein größter Motivator für die Begleitung von Frauen in die Verkörperung ihrer Essenz und Wahrhaftigkeit in ihrem Leben.
                     </p>
-                    <div className="flex items-center space-x-4 mt-6">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 p-2">
-                        <HeartIcon className="h-8 w-8 text-pink-600" />
+                    <div className="mt-8 mb-2">
+                      <div className="flex items-start space-x-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 p-2 flex items-center justify-center">
+                          <HeartIcon className="h-8 w-8 text-pink-600" />
+                        </div>
+                        <div className="relative flex-1">
+                          <div className="flex items-center h-12">
+                            <p className="text-sm text-gray-600 italic m-0 flex items-start">
+                              <span>"BE REALISTIC: PLAN FOR A MIRACLE"</span>
+                              <span className="text-xs text-gray-500 ml-2 mt-1">Osho</span>
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <p className="text-sm text-gray-600 italic">
-                        "In der Stille meines Herzens habe ich gelernt, dass wahre Kraft in der Präsenz liegt."
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -105,7 +115,7 @@ export default function Home() {
 
                       <div className="mt-6">
                         <p className="text-gray-600 text-sm">
-                          "Die Kraft der Präsens und die Berindung mit deiner Wahrhaftigkeit ist der Schlüssel zu tiefer Heilung und persönlicher Transformation"
+                          "Die Kraft der Präsens und die Verbindung mit deiner Wahrhaftigkeit ist der Schlüssel zu tiefer Heilung, persönlicher Transformation und deinen Wundern."
                         </p>
                       </div>
                     </div>
@@ -139,7 +149,7 @@ export default function Home() {
                 </h2>
                 <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
                 <p className="text-2xl text-pink-800/90 italic max-w-3xl mx-auto mb-8">
-                  "SPIRITUELLER WEG UND KÖRPERLICHE TRANSFORMATION"
+                  "Spiritueller Weg und KörperBewusstSEIN"
                 </p>
               </div>
 

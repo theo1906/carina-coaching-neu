@@ -170,7 +170,7 @@ export default function CoachingOfferings() {
               <div className="h-12 w-1.5 bg-gradient-to-b from-pink-500 to-purple-500 rounded-full mr-4"></div>
               <h3 className="text-2xl font-medium text-gray-900">Spirituelles Life Coaching</h3>
             </div>
-            <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen dabei:</p>
+            <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen bei:</p>
             <CollapsibleBulletList 
               items={[
                 "Sich selbst besser kennenzulernen und Selbstzweifel zu transformieren",
@@ -191,7 +191,7 @@ export default function CoachingOfferings() {
           <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
             <div className="flex items-center mb-6">
               <div className="h-12 w-1.5 bg-gradient-to-b from-pink-500 to-purple-500 rounded-full mr-4"></div>
-              <h3 className="text-2xl font-medium text-gray-900">Coaching für Essstörungen und ED-Recovery</h3>
+              <h3 className="text-2xl font-medium text-gray-900">Systemisches Coaching für Essstörungen & ED Recovery</h3>
             </div>
             <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen mit Essstörungen dabei:</p>
             <CollapsibleBulletList 

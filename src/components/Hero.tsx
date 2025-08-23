@@ -20,8 +20,8 @@ export default function Hero() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/images/Hero-Section.JPG)',
-            backgroundPosition: 'center 30%'
+            backgroundImage: `url(/images/home%20new%20hero%20section.png?t=${new Date().getTime()})`,
+            backgroundPosition: 'center 50%'
           }}
         ></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
@@ -34,7 +34,7 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="text-lg md:text-xl text-black leading-relaxed max-w-3xl mx-auto mb-8">
-                Ich unterstütze so viele Frauen wie möglich dabei, ihre eigene Heilkraft und Herzensweisheit wiederzuentdecken und mutig zu verkörpern durch spirituelles Coaching und Systemisches-Coaching für Essstörungen und ED Recovery.
+                Als spiritueller Life Coach und Systemischer Coach für Essstörungen und ED Recovery unterstütze ich Frauen dabei, ihre eigene Heilkraft und Herzensweisheit wiederzuentdecken und mutig zu verkörpern.
               </p>
               <DropdownQuestions />
             </div>

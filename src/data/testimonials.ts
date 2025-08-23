@@ -18,8 +18,8 @@ export const testimonials = [
     role: "Coaching-Klientin"
   },
   {
-    quote: "Kurz vor einem Burnout habe ich den Weg zu Carina gefunden und mich für ein Online Coaching Packet angemeldet.",
-    fullText: "Carina hat für mich einen sicheren Raum gehalten, wo ich mir erlaubt habe mich komplett zu zeigen mit allem was ist. Durch ihre Feinfühligkeit und gezielten Fragen hat sie mir geholfen meine wiederkehrenden Muster im Leben sehr deutlich zu erkennen.",
+    quote: "Mit Carina fühlte ich mich sofort wohl und sicher. Sie schafft einen Raum, in dem ich mich vollkommen frei gefühlt habe und in dem ich fühlen konnte, ohne Impuls von Außen - einfach das, was aus meinem Inneren kam.",
+    fullText: "Mit Carina fühlte ich mich sofort wohl und sicher. Sie schafft einen Raum, in dem ich mich vollkommen frei gefühlt habe und in dem ich fühlen konnte, ohne Impuls von Außen - einfach das, was aus meinem Inneren kam.",
     author: "Andrea, 34",
     role: "Online Coaching-Klientin"
   },

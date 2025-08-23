@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef, useCallback, memo } from 'react';
+import { usePathname } from 'next/navigation';
 import { Bars3Icon, XMarkIcon, CalendarIcon, ChevronDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 interface NavigationItem {
@@ -169,6 +170,8 @@ const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
 NavItem.displayName = 'NavItem';
 
 const Header = () => {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
@@ -232,7 +235,10 @@ const Header = () => {
               <div className="relative h-16 w-64 sm:h-20 sm:w-80">
                 <div className="relative w-full h-full flex items-center">
                   <Image
-                    src="/images/New%20Logo.jpeg"
+                    src={isHomePage ? 
+                      `/images/logo-home.png?t=${new Date().getTime()}` : 
+                      `/images/logo-other.png?t=${new Date().getTime()}`
+                    }
                     alt="Carina Göb Life & Mindset Coaching"
                     fill
                     priority

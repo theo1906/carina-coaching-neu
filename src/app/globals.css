@@ -41,13 +41,13 @@
   animation: pulse-medium 8s ease-in-out infinite;
 }
 
-/* Drop cap style for first paragraph */
+/* Drop cap style for first paragraph - disabled */
 .prose-lg p:first-of-type:first-letter {
-  float: left;
-  font-size: 5em;
-  line-height: 0.8;
-  font-weight: 700;
-  margin: 0.1em 0.15em 0 0;
+  float: none;
+  font-size: 1em;
+  line-height: normal;
+  font-weight: normal;
+  margin: 0;
   color: inherit; /* Match parent text color */
   font-family: 'Playfair Display', Georgia, serif;
 }
@@ -58,7 +58,10 @@
   }
   
   body {
-    @apply bg-neutral-50 text-neutral-700 font-sans leading-relaxed antialiased;
+    @apply bg-neutral-50 text-neutral-700 font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.625;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -88,7 +91,10 @@
   }
   
   p {
-    @apply mb-6 text-neutral-600 leading-relaxed;
+    @apply mb-6 text-neutral-600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.625;
   }
   
   a {
