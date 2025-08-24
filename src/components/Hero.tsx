@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="relative w-full h-screen max-h-[800px]" style={{ marginBottom: '6rem' }}>
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
-            src={`/images/home-hero-section.jpg?t=${new Date().getTime()}`}
+            src={`/images/home-hero-section.jpg?updated=${Date.now()}`}
             alt="Carina - Life Coach"
             fill
             priority
