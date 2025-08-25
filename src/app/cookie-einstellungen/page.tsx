@@ -82,8 +82,8 @@ export default function CookieSettings() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-28 pb-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-28 pb-16 px-4 sm:px-6 lg:px-8">
+      <main className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-light text-gray-900 mb-4 font-playfair">Cookie-Einstellungen</h1>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto rounded-full"></div>
@@ -279,7 +279,7 @@ export default function CookieSettings() {
             </Link>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }
