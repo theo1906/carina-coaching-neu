@@ -31,15 +31,14 @@ export default function BookingCalendar() {
     firstName: '',
     lastName: '',
     email: '',
-    concern: '',
-    message: '',
-    marketingOptIn: false,
+    coachingInterest: '',
+    message: ''
   });
   const [formErrors, setFormErrors] = useState({
     firstName: '',
     lastName: '',
     email: '',
-    concern: '',
+    coachingInterest: '',
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -92,7 +91,7 @@ export default function BookingCalendar() {
       lastName: !formData.lastName ? 'Bitte geben Sie Ihren Nachnamen ein' : '',
       email: !formData.email ? 'Bitte geben Sie Ihre E-Mail ein' : 
         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) ? 'Bitte geben Sie eine gültige E-Mail ein' : '',
-      concern: !formData.concern ? 'Bitte beschreiben Sie Ihr Anliegen' : '',
+      coachingInterest: !formData.coachingInterest ? 'Bitte wählen Sie eine Option' : '',
       message: !formData.message ? 'Bitte geben Sie eine Nachricht ein' : '',
     };
     setFormErrors(errors);
@@ -107,6 +106,15 @@ export default function BookingCalendar() {
     setIsSubmitting(true);
     try {
       // In a real application, you would send this data to your backend
+      const submissionData = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        date: selectedDate ? format(selectedDate, 'yyyy-MM-dd') : '',
+        time: selectedTime || '',
+        coachingInterest: formData.coachingInterest,
+        message: formData.message
+      };
       // For now, we'll just show a success message
       setSubmissionSuccess(true);
       // Reset form after successful submission
@@ -114,9 +122,8 @@ export default function BookingCalendar() {
         firstName: '',
         lastName: '',
         email: '',
-        concern: '',
+        coachingInterest: '',
         message: '',
-        marketingOptIn: false,
       });
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -125,13 +132,21 @@ export default function BookingCalendar() {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const target = e.target as HTMLInputElement;
-    const { name, value, type, checked } = target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value,
-    }));
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target as HTMLInputElement;
+    const checked = (e.target as HTMLInputElement).checked;
+    
+    if (name === 'coachingInterest') {
+      setFormData(prev => ({
+        ...prev,
+        coachingInterest: value
+      }));
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [name]: type === 'checkbox' ? checked : value
+      }));
+    }
   };
 
   const handleBooking = () => {
@@ -163,6 +178,7 @@ export default function BookingCalendar() {
               <div className="flex justify-between items-center mb-8">
                 <div>
                   <h2 className="text-2xl font-bold text-gray-900">Termin bestätigen</h2>
+                  <p className="text-gray-600 mt-2">Du erhältst eine E-Mail mit dem Zoom-Link für dein Erstgespräch</p>
                   <div className="w-12 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 rounded-full mt-3"></div>
                 </div>
                 <button
@@ -269,24 +285,37 @@ export default function BookingCalendar() {
                     )}
                   </div>
 
-                  {/* Concern */}
+                  {/* Coaching Interests */}
                   <div>
-                    <label htmlFor="concern" className="block text-sm font-medium text-gray-700">
-                      Ihr Anliegen
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Woran bist du interessiert?
                     </label>
-                    <input
-                      type="text"
-                      id="concern"
-                      name="concern"
-                      value={formData.concern}
-                      onChange={handleChange}
-                      className={`mt-0.5 block w-full rounded-md border-gray-300 shadow-sm focus:border-rose-500 focus:ring-rose-500 sm:text-sm ${
-                        formErrors.concern ? 'border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:ring-red-500' : ''
-                      }`}
-                      placeholder="Beschreiben Sie Ihr Anliegen"
-                    />
-                    {formErrors.concern && (
-                      <p className="mt-1 text-sm text-red-600">{formErrors.concern}</p>
+                    <div className="space-y-2">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="coachingInterest"
+                          value="Coaching für Essstörungen"
+                          checked={formData.coachingInterest === 'Coaching für Essstörungen'}
+                          onChange={handleChange}
+                          className="h-4 w-4 text-rose-600 focus:ring-rose-500 border-gray-300"
+                        />
+                        <span className="ml-2 text-gray-700">Coaching für Essstörungen</span>
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="coachingInterest"
+                          value="Spirituelles Life Coaching"
+                          checked={formData.coachingInterest === 'Spirituelles Life Coaching'}
+                          onChange={handleChange}
+                          className="h-4 w-4 text-rose-600 focus:ring-rose-500 border-gray-300"
+                        />
+                        <span className="ml-2 text-gray-700">Spirituelles Life Coaching</span>
+                      </label>
+                    </div>
+                    {formErrors.coachingInterest && (
+                      <p className="mt-1 text-sm text-red-600">{formErrors.coachingInterest}</p>
                     )}
                   </div>
 
@@ -309,21 +338,6 @@ export default function BookingCalendar() {
                     {formErrors.message && (
                       <p className="mt-1 text-sm text-red-600">{formErrors.message}</p>
                     )}
-                  </div>
-
-                  {/* Marketing Opt-In */}
-                  <div className="flex items-center">
-                    <input
-                      id="marketingOptIn"
-                      name="marketingOptIn"
-                      type="checkbox"
-                      checked={formData.marketingOptIn}
-                      onChange={handleChange}
-                      className="h-4 w-4 text-rose-600 focus:ring-rose-500 border-gray-300 rounded"
-                    />
-                    <label htmlFor="marketingOptIn" className="ml-2 block text-sm text-gray-700">
-                      Ich stimme zu, dass meine Daten für Marketingzwecke verwendet werden dürfen.
-                    </label>
                   </div>
 
                   <div className="mt-8">

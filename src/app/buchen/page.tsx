@@ -16,10 +16,10 @@ export default function BookingPage() {
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">Termin buchen</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">Termin vereinbaren</h1>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
-              Buchen Sie ein kostenloses Erstgespräch, um sich besser kennenzulernen
+              Buche dir ein kostenloses Erstgespräch, um mich besser kennenzulernen
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function BookingPage() {
               Kein passender Termin? Dann schreib mir!
             </p>
             <a 
-              href="mailto:info@carinagoeb.de" 
+              href="mailto:connect@carina-coaching.com?subject=Anfrage%20%C3%BCber%20Carina%20Coaching&body=Sehr%20geehrte%20Frau%20Goeb%2C%0D%0A%0D%0A" 
               className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-full shadow-sm text-gray-700 bg-white hover:bg-gray-50 md:py-3 md:text-lg md:px-10 transition-colors duration-200"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,7 +86,7 @@ export default function BookingPage() {
                           <Check className="h-5 w-5 text-primary-600" />
                         </div>
                         <h3 className="text-lg font-medium text-gray-900 mb-1">Termin bestätigen</h3>
-                        <p className="text-gray-600 mt-1">Bestätige deinen Termin und du erhältst eine Bestätigung per E-Mail</p>
+                        <p className="text-gray-600 mt-1">Bestätige deinen Termin und du erhältst eine E-Mail inkl Zoom Link für dein Erstgespräch</p>
                       </div>
                     )}
                   </div>

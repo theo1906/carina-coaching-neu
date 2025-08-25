@@ -82,76 +82,82 @@ export default function CookieSettings() {
   };
 
   return (
-    <main className="min-h-screen bg-white pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-28 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-light text-gray-900 mb-4">Cookie-Einstellungen</h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto"></div>
+          <h1 className="text-4xl font-light text-gray-900 mb-4 font-playfair">Cookie-Einstellungen</h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto rounded-full"></div>
         </div>
         
-        <div className="prose prose-lg max-w-none">
-          <div className="bg-pink-50 p-6 rounded-lg mb-12">
-            <h2 className="text-2xl font-medium text-gray-800 mb-4">Diese Website verwendet Cookies</h2>
-            <p className="mb-4">
-              Wir verwenden Cookies, um Inhalte und Funktionen optimal bereitzustellen, die Zugriffe auf unsere Website zu analysieren und unsere Inhalte zu verbessern. 
-              Einige Cookies sind essenziell für den Betrieb der Seite, andere benötigen Ihre ausdrückliche Zustimmung.
-            </p>
-            <p className="mb-6">
-              Sie können Ihre Auswahl jederzeit anpassen oder widerrufen.
-            </p>
+        <div className="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-gray-100">
+          <div className="mb-12">
+            <h2 className="text-2xl font-medium text-gray-800 mb-6 font-playfair">Diese Website verwendet Cookies</h2>
+            <div className="space-y-4 text-gray-700">
+              <p>
+                Wir verwenden Cookies, um Inhalte und Funktionen optimal bereitzustellen, die Zugriffe auf unsere Website zu analysieren und unsere Inhalte zu verbessern. 
+                Einige Cookies sind essenziell für den Betrieb der Seite, andere benötigen Ihre ausdrückliche Zustimmung.
+              </p>
+              <p>
+                Sie können Ihre Auswahl jederzeit anpassen oder widerrufen.
+              </p>
+            </div>
+          </div>
             
-            <div className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* Essential Cookies Card */}
-                <div className={`p-6 rounded-xl border-2 ${
-                  cookies.essential ? 'border-pink-200 bg-pink-50' : 'border-gray-200 bg-white'
-                } transition-all duration-200`}>
-                  <div className="flex justify-between items-start mb-4">
-                    <div className="flex-1">
-                      <div className="flex items-center mb-2">
-                        <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3">
-                          <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                          </svg>
-                        </div>
-                        <h3 className="text-lg font-medium text-gray-900">Essenzielle Cookies</h3>
-                      </div>
-                      <p className="text-sm text-gray-600 mb-4">
-                        Notwendig für die Grundfunktionen der Website (z.B. Navigation, Buchungsfunktion). Diese können nicht deaktiviert werden.
-                      </p>
-                    </div>
-                    <button 
-                      className={`w-7 h-7 rounded border-2 flex items-center justify-center transition-colors duration-200 ${
-                        cookies.essential 
-                          ? 'bg-pink-600 border-pink-600' 
-                          : 'border-gray-300 hover:border-pink-400'
-                      }`}
-                      disabled
-                    >
-                      {cookies.essential && (
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+          <div className="space-y-8">
+            <h3 className="text-xl font-medium text-gray-800 mb-4 font-playfair">Cookie-Einstellungen</h3>
+            <p className="text-gray-700 mb-6">Bitte wählen Sie aus, welche Arten von Cookies Sie zulassen möchten:</p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Essential Cookies Card */}
+              <div className={`p-6 rounded-xl border-2 ${
+                cookies.essential ? 'border-pink-200 bg-pink-50' : 'border-gray-200 bg-white'
+              } transition-all duration-200`}>
+                <div className="flex justify-between items-start">
+                  <div className="flex-1">
+                    <div className="flex items-center mb-3">
+                      <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3 flex-shrink-0">
+                        <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                         </svg>
-                      )}
-                    </button>
+                      </div>
+                      <h4 className="text-lg font-medium text-gray-900">Essenzielle Cookies</h4>
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      Notwendig für die Grundfunktionen der Website (z.B. Navigation, Buchungsfunktion). Diese können nicht deaktiviert werden.
+                    </p>
                   </div>
+                  <button 
+                    className={`w-7 h-7 rounded border-2 flex items-center justify-center transition-colors duration-200 ml-4 flex-shrink-0 ${
+                      cookies.essential 
+                        ? 'bg-pink-600 border-pink-600' 
+                        : 'border-gray-300 hover:border-pink-400'
+                    }`}
+                    disabled
+                  >
+                    {cookies.essential && (
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    )}
+                  </button>
                 </div>
+              </div>
 
                 {/* Analytics Cookies Card */}
                 <div className={`p-6 rounded-xl border-2 ${
                   cookies.analytics ? 'border-pink-200 bg-pink-50' : 'border-gray-200 bg-white'
                 } transition-all duration-200`}>
-                  <div className="flex justify-between items-start mb-4">
+                  <div className="flex justify-between items-start">
                     <div className="flex-1">
-                      <div className="flex items-center mb-2">
+                      <div className="flex items-center mb-3">
                         <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3">
                           <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                           </svg>
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900">Statistik-Cookies</h3>
+                        <h4 className="text-lg font-medium text-gray-900">Statistik-Cookies</h4>
                       </div>
-                      <p className="text-sm text-gray-600 mb-2">
+                      <p className="text-gray-600 text-sm mb-2">
                         Ermöglichen uns zu verstehen, wie Besucher mit der Website interagieren, indem Informationen anonym gesammelt und gemeldet werden.
                       </p>
                       <p className="text-xs text-gray-500">
@@ -160,7 +166,7 @@ export default function CookieSettings() {
                     </div>
                     <button 
                       onClick={() => toggleCookie('analytics')}
-                      className={`w-7 h-7 rounded border-2 flex items-center justify-center transition-colors duration-200 ${
+                      className={`w-7 h-7 rounded border-2 flex items-center justify-center transition-colors duration-200 ml-4 flex-shrink-0 ${
                         cookies.analytics 
                           ? 'bg-pink-600 border-pink-600' 
                           : 'border-gray-300 hover:border-pink-400'
@@ -176,7 +182,7 @@ export default function CookieSettings() {
                 </div>
               </div>
               
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="flex flex-wrap gap-4 pt-6">
                 <button 
                   onClick={handleSave}
                   className="px-6 py-3 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition-colors duration-200 flex items-center"
@@ -200,9 +206,17 @@ export default function CookieSettings() {
                 </button>
               </div>
               
-              <p className="text-sm text-gray-500 mt-4">
-                Du kannst deine Auswahl jederzeit in den <Link href="/cookie-einstellungen" className="text-pink-600 hover:underline">Cookie-Einstellungen</Link> anpassen.
-              </p>
+              <div className="mt-16 pt-8 border-t border-gray-200">
+                <Link 
+                  href="/" 
+                  className="inline-flex items-center text-pink-600 hover:text-pink-800 font-medium transition-colors"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Zurück zur Startseite
+                </Link>
+              </div>
             </div>
           </div>
           

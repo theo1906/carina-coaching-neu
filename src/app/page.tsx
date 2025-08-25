@@ -173,7 +173,7 @@ export default function Home() {
                     />
                     <ExpandableBulletPoint 
                       index={1}
-                      title="Verbundenheit mit deinem Wesen"
+                      title="Verbundenheit mit deiner Essenz"
                       content="Durch achtsames Erforschen und Körperwahrnehmungsübungen, verbindest du dich mit deiner Herzensweisheit. Du spürst, deiner inneren Führung zu vertrauen und Entscheidungen aus Liebe zu dir und deinem Körper zu treffen und mutig deinem Herzensweg zu folgen."
                     />
                     <ExpandableBulletPoint 
@@ -184,7 +184,7 @@ export default function Home() {
                     <ExpandableBulletPoint 
                       index={3}
                       title="Ganzheit"
-                      content="Spirituelles Coaching erforscht alle Dimensionen deines Seins als Frau. Du vertiefst deine Beziehung zu deinem Selbstwert, deinen Emotionen, deinen Grenzen, deinem Körper, deinem Zyklus und vereinst deine Qualitäten von Sanftheit und Stärke."
+                      content="Spirituelles Coaching erforscht alle Dimensionen deines Seins als Frau. Du vertiefst deine Beziehung zu deinem Körper und deinem Zyklus, zu deinen Emotionen, deinen Grenzen und deinem Selbstwert - und vereinst dadurch deine Qualitäten von Sanftheit und Stärke."
                     />
                     <ExpandableBulletPoint 
                       index={4}
@@ -226,7 +226,7 @@ export default function Home() {
                     <ExpandableBulletPoint 
                       index={2}
                       title="Emotionale Freiheit"
-                      content="Durch achtsames Hinfühlen, sanfte Körperarbeit und körperorientierte Meditationen erforschen wir aufgestaute Emotionen und zugrunde liegende Muster und Überzeugungen, um dich und dein System davon zu befreien."
+                      content="Durch achtsames Hinfühlen, sanfte Körperarbeit und körperzentrierte Meditationen erforschen wir aufgestaute Emotionen und zugrunde liegende Muster und Überzeugungen, um dich und dein System davon zu befreien."
                       color="purple"
                     />
                     <ExpandableBulletPoint 
@@ -238,7 +238,7 @@ export default function Home() {
                     <ExpandableBulletPoint 
                       index={4}
                       title="Unterstützung für Betroffene und Angehörige"
-                      content="Mein ED Recovery Coaching unterstützt dich, wenn du von Bulimie, Anorexie, Binge-Eating oder emotionalem Essen betroffen bist. Sowie Familienmitglieder oder Partner/innen, die gerne tiefer gehen, mitfühlen und zugrunde liegende Dynamiken und Auslöser verstehen und transformieren möchten."
+                      content="Mein ED Recovery Coaching unterstützt dich, wenn du von Bulimie, Anorexie (Magersucht), Binge-Eating (Essattacken/ unkontrollierte, übermäßige Essanfälle) oder emotionalem Essen betroffen bist. Sowie Familienmitglieder oder Partner/innen, die gerne tiefer gehen, mitfühlen und zugrunde liegende Dynamiken und Auslöser verstehen und transformieren möchten."
                       color="purple"
                     />
                   </div>

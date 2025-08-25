@@ -107,7 +107,7 @@ export default function Contact() {
           <div className="mt-12 text-center">
             <p className="text-base text-gray-500">
               Du hast noch weitere Fragen?{' '}
-              <a href="mailto:info@carinagoeb.de" className="font-medium text-primary-600 hover:text-primary-500">
+              <a href="mailto:connect@carina-coaching.com?subject=Anfrage%20%C3%BCber%20Carina%20Coaching&body=Sehr%20geehrte%20Frau%20Goeb%2C%0D%0A%0D%0A" className="font-medium text-primary-600 hover:text-primary-500">
                 Nachricht schreiben
               </a>
             </p>

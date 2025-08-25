@@ -22,11 +22,11 @@ export default function CoachingOfferings() {
     {
       icon: <BookOpenIcon className="h-8 w-8 text-rose-600" />,
       title: "Körperzentriertes Coaching",
-      description: "Entwicklung tiefer Präsenz und Verbundenheit mit deinem Körper und deinem authentischen Selbst.",
+      description: "Entwicklung von tiefer Präsenz tiefer Präsenz und Verbundenheit mit deinem Körper und deinem authentischen Selbst.",
       dropdownContent: (
         <div className="space-y-4 text-gray-700">
           <p>
-            Das Herz meiner Arbeit liegt im "Embodiment": Wir entwickeln deine Fähigkeit präsent und verbunden zu sein mit deinem Körper und dadurch mit deinen Gefühlen, deiner Intuition und deinem authentischen Selbst.
+            Das Herz meiner Arbeit liegt im "Embodiment": wir entwickeln deine Fähigkeit präsent und verbunden zu sein mit deinem Körper und dadurch mit deinen Gefühlen, deiner Intuition und deinem authentischen Selbst.
           </p>
           <p>
             Meine Methode kombiniert spirituelle Praktiken mit körperzentriertem Coaching und unterstützt dich bei nachhaltiger Veränderung und persönlichem Wachstum. Wir erforschen tiefer liegende Ursachen deiner Herausforderungen im Leben und nutzen deine Körperwahrnehmungen als Wegweiser, um dich mit deinem inneren Weisen und deiner Heilkraft zu verbinden.
@@ -37,7 +37,7 @@ export default function CoachingOfferings() {
     {
       icon: <SparklesIcon className="h-8 w-8 text-rose-600" />,
       title: "Spirituelle Begleitung",
-      description: "Spirituelles Wachstum und Entwicklung deiner intuitiven Fähigkeiten. Erwecke deine innere Weisheit und lerne, deiner Intuition zu vertrauen.",
+      description: "Persönliches und spirituelles Wachstum und Entwicklung deiner intuitiven Fähigkeiten. Erwecke deine innere Weisheit und lerne, deiner Intuition zu vertrauen.",
       hasDropdown: false
     }
   ];
@@ -165,12 +165,12 @@ export default function CoachingOfferings() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Spiritual Life Coaching */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-            <div className="flex items-center mb-6">
+          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center mb-6 min-h-[4.5rem]">
               <div className="h-12 w-1.5 bg-gradient-to-b from-pink-500 to-purple-500 rounded-full mr-4"></div>
               <h3 className="text-2xl font-medium text-gray-900">Spirituelles Life Coaching</h3>
             </div>
-            <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen bei:</p>
+            <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen dabei:</p>
             <CollapsibleBulletList 
               items={[
                 "Sich selbst besser kennenzulernen und Selbstzweifel zu transformieren",
@@ -188,12 +188,12 @@ export default function CoachingOfferings() {
           </div>
 
           {/* ED Recovery Coaching */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-            <div className="flex items-center mb-6">
-              <div className="h-12 w-1.5 bg-gradient-to-b from-pink-500 to-purple-500 rounded-full mr-4"></div>
+          <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center mb-6 min-h-[4.5rem]">
+              <div className="h-12 w-1.5 bg-gradient-to-b from-pink-500 to-purple-500 rounded-full mr-4 flex-shrink-0"></div>
               <h3 className="text-2xl font-medium text-gray-900">Systemisches Coaching für Essstörungen & ED Recovery</h3>
             </div>
-            <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen mit Essstörungen dabei:</p>
+            <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen mit Essstörungen bei:</p>
             <CollapsibleBulletList 
               items={[
                 "Bulimie, Binge Eating oder Magersucht und dem individuellen Weg in die Heilung und Recovery",

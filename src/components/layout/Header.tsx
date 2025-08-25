@@ -25,7 +25,7 @@ const navigation: NavigationItem[] = [
     className: 'group relative hover:text-pink-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium',
     submenu: [
       { 
-        name: 'Spiritual Life Coaching', 
+        name: 'Spirituelles Life Coaching', 
         href: '/dienstleistungen/spiritual',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },

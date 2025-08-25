@@ -26,7 +26,7 @@ export default function DienstleistungenPage() {
               href="/dienstleistungen/spiritual"
               className="text-lg font-medium text-gray-900 hover:text-pink-600 transition-colors duration-200"
             >
-              Spiritual Life Coaching
+              Spirituelles Life Coaching
             </Link>
           </li>
         </ul>

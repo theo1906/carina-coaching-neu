@@ -9,7 +9,7 @@ import DropdownQuestions from './DropdownQuestions';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden bg-pink-50">
       
       <div className="relative w-full h-screen max-h-[800px]" style={{ marginBottom: '6rem' }}>
         <div className="absolute inset-0 w-full h-full overflow-hidden">
@@ -32,7 +32,7 @@ export default function Hero() {
             <div className="bg-white p-8 rounded-t-2xl rounded-b-2xl shadow-sm text-center relative z-20" style={{ marginBottom: '-6rem' }}>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 leading-tight mx-auto">
                 Hi, ich bin{' '}
-                <span className="font-semibold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="font-semibold text-pink-600">
                   Carina!
                 </span>
               </h2>
