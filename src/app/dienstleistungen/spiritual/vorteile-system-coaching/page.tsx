@@ -21,7 +21,7 @@ export default function VorteileSystemCoachingPage() {
       description: 'Durch spürbare, innere Stabilität und Urvertrauen: Sei in Verbindung mit deinem Urvertrauen, der Sicherheit und Stabilität in dir und gehe mit der entspannten Zuversicht durch dein Leben, dass du alles in dir trägst, was es braucht - bei großen Herausforderungen, aber auch im Alltag und in deinem Job.'
     },
     {
-      title: 'Gesundes Selbstbild & Körperakzeptanz',
+      title: 'Selbstannahme',
       description: 'Entwickle einen stabilen Selbstwert für liebevolle Körperakzeptanz und wahre Verbundenheit in Beziehungen: Erkenne deinen Selbstwert und befreie dich von Schuld- und Schamgefühlen für eine liebevolle und gesunde Beziehung zu dir selbst und deinem Körper, um echte Intimität, Verbindung und Zugehörigkeit auch in der Beziehung mit anderen Menschen zu ermöglichen.'
     },
     {
@@ -33,7 +33,7 @@ export default function VorteileSystemCoachingPage() {
       description: 'Richte deine täglichen Entscheidungen und langfristigen Ziele an deinem inneren Wertekompass aus und erschaffe dir ein Leben voller Integrität, Wirksamkeit und Erfüllung. Verkörpere du selbst die Veränderung, die du dir wünschst und inspiriere andere, das Gleiche zu tun.'
     },
     {
-      title: 'Integration moderner Spiritualität im Business',
+      title: 'Spirit & Business',
       description: 'Entdecke, wie du moderne Spiritualität in deiner Arbeit oder in deinem Unternehmen integrieren kannst, um nachhaltigen Erfolg zu erzielen, der dich tief in dir drin nährt und dir Energie schenkt, anstatt dich zu erschöpfen. Erfolg, der inspiriert und kraftvolle Räume öffnet für weibliche Qualitäten wie in Co-Creation zu sein, mit deinem Team und auch mit anderen Business Partner/-innen.'
     },
     {
@@ -42,7 +42,13 @@ export default function VorteileSystemCoachingPage() {
     },
     {
       title: 'Integrierte Ganzheitlichkeit',
-      description: 'Heile deine Verletzungen und die von dir (unbewusst) getrennten Anteile, um zurückzukehren in deine Essenz und den Flow von: '
+      description: 'Heile deine Verletzungen und die von dir (unbewusst) getrennten Anteile, um zurückzukehren in deine Essenz und den Flow von:',
+      bulletPoints: [
+        'Entspannte Zuversicht und Urvertrauen in dich und das Leben',
+        'Mut, Stärke und Individuation',
+        'Liebevolle Güte, wahres Mitgefühl und Geduld',
+        'Freude, Neugierde und Lebendigkeit'
+      ]
     }
   ];
 
@@ -64,12 +70,18 @@ export default function VorteileSystemCoachingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => {
               const colors = [
+                // Light pink
                 { bg: 'from-pink-50 to-pink-100', border: 'border-pink-200', accent: 'from-pink-400 to-pink-500' },
+                // Light purple
                 { bg: 'from-purple-50 to-purple-100', border: 'border-purple-200', accent: 'from-purple-400 to-purple-500' },
-                { bg: 'from-blue-50 to-blue-100', border: 'border-blue-200', accent: 'from-blue-400 to-blue-500' },
-                { bg: 'from-teal-50 to-teal-100', border: 'border-teal-200', accent: 'from-teal-400 to-teal-500' },
-                { bg: 'from-amber-50 to-amber-100', border: 'border-amber-200', accent: 'from-amber-400 to-amber-500' },
-                { bg: 'from-emerald-50 to-emerald-100', border: 'border-emerald-200', accent: 'from-emerald-400 to-emerald-500' },
+                // Fuchsia (darker pink)
+                { bg: 'from-fuchsia-50 to-fuchsia-100', border: 'border-fuchsia-200', accent: 'from-fuchsia-400 to-fuchsia-500' },
+                // Rose (warmer pink)
+                { bg: 'from-rose-50 to-rose-100', border: 'border-rose-200', accent: 'from-rose-400 to-rose-500' },
+                // Violet (darker purple)
+                { bg: 'from-violet-50 to-violet-100', border: 'border-violet-200', accent: 'from-violet-400 to-violet-500' },
+                // Pink with purple accent
+                { bg: 'from-pink-50 to-purple-50', border: 'border-pink-200', accent: 'from-pink-500 to-purple-500' },
               ][index % 6];
               
               return (
@@ -78,7 +90,18 @@ export default function VorteileSystemCoachingPage() {
                   <div className={`relative h-full bg-white rounded-xl border ${colors.border} p-6 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg`}>
                     <div className={`w-12 h-1 bg-gradient-to-r ${colors.accent} mb-4 rounded-full transform group-hover:scale-110 origin-left transition-transform duration-300`}></div>
                     <h2 className="text-lg font-bold text-gray-900 mb-3 relative z-10">{benefit.title}</h2>
-                    <p className="text-gray-600 text-sm relative z-10 leading-relaxed">{benefit.description}</p>
+                    <p className="text-gray-600 text-sm relative z-10 leading-relaxed">
+                      {benefit.description}
+                      {benefit.bulletPoints && (
+                        <ul className="mt-2 space-y-1 list-disc pl-5">
+                          {benefit.bulletPoints.map((point, i) => (
+                            <li key={i} className="text-gray-600 text-sm leading-relaxed">
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </p>
                     <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-white opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
                   </div>
                 </div>

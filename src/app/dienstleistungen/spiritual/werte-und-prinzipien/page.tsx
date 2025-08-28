@@ -21,8 +21,8 @@ export default function WerteUndPrinzipienPage() {
         </div>
 
         <div className="prose prose-lg max-w-none text-gray-700">
-          <blockquote className="border-l-4 border-pink-400 pl-6 italic text-xl text-gray-700 my-10">
-            <p className="mb-4">„Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an …"</p>
+          <blockquote className="border-l-4 border-pink-400 pl-6 italic text-gray-700 my-10">
+            <p className="mb-4 text-xl">„Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an."</p>
             <footer className="not-italic text-lg text-gray-600">— Carl Rogers</footer>
           </blockquote>
 

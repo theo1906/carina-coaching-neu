@@ -24,8 +24,8 @@ export const testimonials = [
     role: "Online Coaching-Klientin"
   },
   {
-    quote: "Durch die Walk & Talk Session mit Carina habe ich zu mehr innerer Ruhe gefunden und konnte meine Beziehung zu meiner Tochter verbessern.",
-    fullText: "Ich habe einen Vollzeit Bürojob und bin außerhalb der Arbeit gerne in Bewegung und draußen. Ich war daher neugierig auf das Angebot von Carina Coaching eine Walk & Talk Session in der Natur zu machen.",
+    quote: "Durch die Walk Your Talk Session mit Carina habe ich zu mehr innerer Ruhe gefunden und konnte meine Beziehung zu meiner Tochter verbessern.",
+    fullText: "Ich habe einen Vollzeit Bürojob und bin außerhalb der Arbeit gerne in Bewegung und draußen. Ich war daher neugierig auf das Angebot von Carina Coaching eine Walk Your Talk Session in der Natur zu machen.",
     author: "Tine, 61",
     role: "Coaching-Klientin"
   }

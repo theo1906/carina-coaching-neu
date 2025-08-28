@@ -40,8 +40,8 @@ export default function TriggerVerstehenPage() {
             
             <div className="mt-10 pt-6 border-t border-gray-200">
               <Link 
-                href="/dienstleistungen/spiritual" 
-                className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium transition-colors duration-200"
+                href="/dienstleistungen/spiritual#bewusste-veraenderung" 
+                className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium transition-colors duration-200 no-underline"
               >
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>

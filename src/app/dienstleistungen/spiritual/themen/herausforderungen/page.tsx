@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function HerausforderungenPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-pink-700 mb-4">Wie Herausforderungen uns wachsen lassen</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">Wie Herausforderungen uns wachsen lassen</h1>
         <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
       </div>
       
@@ -25,7 +25,7 @@ export default function HerausforderungenPage() {
       
       <div className="mt-12 text-center">
         <Link 
-          href="/dienstleistungen/spiritual" 
+          href="/dienstleistungen/spiritual#was-ist-spiritual-life-coaching" 
           className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-600 hover:bg-pink-700 transition-colors duration-200"
         >
           Zurück zur Übersicht

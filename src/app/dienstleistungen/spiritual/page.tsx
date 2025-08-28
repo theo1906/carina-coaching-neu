@@ -64,11 +64,9 @@ export default function SpiritualPage() {
         </div>
       </section>
 
-      {/* Section 2: Neue Wege der Transformation */}
-      <section className="relative py-16 md:py-20 bg-white">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-purple-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-        </div>
+      {/* Section 2: Ist ein spirituelles Coaching das Richtige für Dich? */}
+      <section id="ist-ein-spirituelles-coaching-das-richtige-fuer-dich" className="relative py-16 md:py-20 bg-white">
+        <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-purple-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
         
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -152,12 +150,12 @@ export default function SpiritualPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="md:order-2">
               <p className="text-gray-700 mb-6">
-                Dein Körper speichert alle Schmerzen und Verletzungen – selbst die unsichtbaren. Diese gespeicherten Erfahrungen sind wertvolle Hinweise auf die Anteile in dir, die Heilung brauchen, um wieder in Verbindung mit dir selbst zu kommen.
+                Dein Körper speichert all deinen Schmerz und deine Verletzungen - selbst die unsichtbaren. Er ist damit ein wertvoller Impulsgeber für die Anteile in dir, die noch heilen dürfen, um wieder in Verbindung mit dir selbst zu sein und im Vertrauen ins Leben.
               </p>
               <p className="text-gray-700 mb-6">
                 Unverheilte Wunden machen sich auf verschiedene Weisen bemerkbar:
               </p>
-              <ul className="space-y-3 pl-5 mb-6">
+              <ul className="space-y-3 pl-5 mb-6 list-disc">
                 <li className="text-gray-700">Durch Muster, Überlebensstrategien, Selbstsabotage und den ständigen Kampf mit dem eigenen Körper</li>
                 <li className="text-gray-700">Durch das Gefühl, nicht wirklich du selbst sein zu können</li>
               </ul>
@@ -224,7 +222,7 @@ export default function SpiritualPage() {
       </section>
 
       {/* Section 4: Was ist Spiritual Life Coaching? */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-b from-white to-pink-50">
+      <section id="was-ist-spiritual-life-coaching" className="relative py-16 md:py-20 bg-gradient-to-b from-white to-pink-50">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
           <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
@@ -237,12 +235,12 @@ export default function SpiritualPage() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
             <p className="text-gray-700 max-w-3xl mx-auto text-lg relative z-10">
-              Eine <span className="font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">transformative Begleitung</span> in dein Herz, deinen Körper und dein Frausein, um dein Leben bewusster zu gestalten und deine Beziehungen erfüllt zu leben – <span className="italic text-pink-700">ganz du selbst</span>.
+              Eine <span className="font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">transformative Begleitung</span> in dein Herz, deinen Körper und dein Frausein, um dein Leben bewusster zu gestalten und deine Beziehungen erfüllt zu leben – <span className="italic text-black">ganz du selbst</span>.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 relative z-10">
-            <div className="group relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-pink-200 p-6 md:p-7 hover:-translate-y-1.5 flex flex-col">
+            <div id="herausforderungen" className="group relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-pink-200 p-6 md:p-7 hover:-translate-y-1.5 flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-50/40 to-purple-50/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
               <div className="relative flex-1 flex flex-col">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50 flex items-center justify-center mb-4 shadow-inner border border-pink-100 group-hover:shadow-pink-100/30 transition-all duration-300">
@@ -266,7 +264,7 @@ export default function SpiritualPage() {
                   <ScaleIcon className="h-7 w-7 text-purple-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Bewusst Veränderungen willkommen heißen</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Veränderung gelingt, wenn wir Herausforderungen mit Bewusstsein und einem offenen Herzen begegnen, anstatt sie zu verdrängen.</p>
+                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Veränderung wird möglich, wenn wir Herausforderungen mit Bewusstsein und einem offenen Herzen begegnen, anstatt sie zu verdrängen.</p>
                 <Link href="/dienstleistungen/spiritual/themen/bewusste-veraenderung" className="mt-auto text-purple-600 hover:text-purple-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -276,15 +274,15 @@ export default function SpiritualPage() {
               </div>
             </div>
 
-            <div className="group relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-amber-200 p-6 md:p-7 hover:-translate-y-1.5 flex flex-col">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-50/40 to-amber-50/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+            <div className="group relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-pink-200 p-6 md:p-7 hover:-translate-y-1.5 flex flex-col">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-50/40 to-purple-50/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
               <div className="relative flex-1 flex flex-col">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center mb-4 shadow-inner border border-amber-100 group-hover:shadow-amber-100/30 transition-all duration-300">
-                  <LightBulbIcon className="h-7 w-7 text-amber-600" />
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-100 to-pink-50 flex items-center justify-center mb-4 shadow-inner border border-pink-100 group-hover:shadow-pink-100/30 transition-all duration-300">
+                  <LightBulbIcon className="h-7 w-7 text-pink-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-amber-700 transition-colors">Verbinde dich mit deiner inneren Weisheit</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Durch verkörperte Präsenz verbindest du dich mit deiner inneren Weisheit und findest Antworten auf deine Lebensfragen. Gemeinsam stärken wir dein Vertrauen in deine innere Führung.</p>
-                <Link href="/dienstleistungen/spiritual/themen/innere-weisheit" className="mt-auto text-amber-600 hover:text-amber-700 text-sm font-medium inline-flex items-center group-hover:underline">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Verbinde dich mit deiner inneren Weisheit</h3>
+                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Durch verkörperte Präsenz verbindest du in dir dich mit deiner inneren Weisheit und findest Antworten auf deine Lebensfragen. Gemeinsam stärken wir dein Vertrauen in deine innere Führung.</p>
+                <Link href="/dienstleistungen/spiritual/themen/innere-weisheit" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -314,7 +312,7 @@ export default function SpiritualPage() {
       </section>
 
       {/* Section 4.5: Mein Ansatz */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-b from-white to-pink-50">
+      <section id="mein-ansatz" className="relative py-16 md:py-20 bg-gradient-to-b from-white to-pink-50">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
           <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
@@ -333,7 +331,7 @@ export default function SpiritualPage() {
             <div className="space-y-6">
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg border border-pink-100 hover:border-pink-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Als Spiritual Life Coach begleite ich dich liebevoll auf deinem Weg zurück zu deiner ureigenen Ganzheit. Ich sehe dich in deiner ursprünglichen Essenz - so, wie du auf diese Welt gekommen bist: vollkommen authentisch, mit einem offenen und vertrauensvollen Herzen, in tiefer Verbindung mit deinem Körper, erfüllt von natürlicher Neugier und Lebensfreude. Gemeinsam arbeiten wir daran, diese ursprüngliche Ganzheit wiederzuentdecken und in deinem Alltag zu verankern, damit du ein Leben in Fülle, Freude und tiefer Erfüllung führen kannst.
+                  Mein ganzheitlicher Beratungsansatz verbindet die Tiefe meiner persönlichen Selbstheiler-Erfahrung mit fundierten Methoden aus dem professionellen Coaching und der transformativen Kraft spiritueller Weisheit. Diese einzigartige Kombination ermöglicht es uns, auf verschiedenen Ebenen zu arbeiten und nachhaltige Veränderungen zu bewirken.
                 </p>
                 <div className="mt-6 pt-4 border-t border-pink-100">
                   <Link 
@@ -412,10 +410,10 @@ export default function SpiritualPage() {
 
           {/* Quote */}
           <div className="mb-12 max-w-3xl mx-auto px-4">
-            <blockquote className="text-xl text-gray-700 italic leading-relaxed text-center">
+            <blockquote className="text-lg text-gray-700 italic leading-relaxed text-center">
               <p className="relative">
                 <span className="absolute -left-4 -top-2 text-4xl text-pink-300">„</span>
-                Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an …
+                Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an
                 <span className="text-4xl text-pink-300">“</span>
               </p>
               <footer className="mt-4 text-gray-500 text-base font-medium">— Carl Rogers</footer>
@@ -461,15 +459,6 @@ export default function SpiritualPage() {
                   Ich betrachte dich als Mensch in deiner Gesamtheit. Körper, Geist, Seele und Emotion bilden eine untrennbare Einheit, die in meiner Arbeit gleichermaßen Berücksichtigung findet.
                 </p>
               </div>
-            </div>
-
-            <div className="mt-12 text-center">
-              <Link href="/contact" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 shadow-md hover:shadow-lg transition-all duration-300">
-                <span>Interesse geweckt?</span>
-                <svg className="w-4 h-4 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
@@ -517,14 +506,14 @@ export default function SpiritualPage() {
 
             {/* Benefit 3 */}
             <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-4">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-12 h-12 bg-pink-50 rounded-lg flex items-center justify-center text-pink-500 mb-4">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Authentizität als Superkraft</h3>
               <p className="text-gray-600">
-                Lerne, deine wahre Natur zu leben und dich von gesellschaftlichen Erwartungen zu befreien. Finde zu deiner inneren Wahrheit und lebe authentisch. 
+                Entdecke, dein wahres Selbst zu leben und dich von gesellschaftlichen Erwartungen zu befreien. Finde zu deiner inneren Wahrheit und lebe authentisch.
               </p>
             </div>
           </div>
@@ -601,7 +590,7 @@ export default function SpiritualPage() {
                 </ul>
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+              <div id="bewusste-veraenderung" className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
                 <h4 className="font-semibold text-lg text-pink-700 mb-3">Bewusste Veränderung</h4>
                 <p className="text-gray-700 mb-4">
                   Im Coaching lernst du, präsent zu bleiben und bewusst zu wählen, wie du aktiv auf Trigger antworten möchtest, anstatt automatisch zu reagieren.
@@ -701,9 +690,9 @@ export default function SpiritualPage() {
             </div>
             
             {/* Step 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-indigo-500">
+            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500">
               <div className="flex items-center mb-4">
-                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 font-bold text-xl mr-4">3</span>
+                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-pink-100 text-pink-700 font-bold text-xl mr-4">3</span>
                 <h3 className="text-2xl font-bold text-gray-900">Den Stresszyklus beenden</h3>
               </div>
               <div className="pl-14">
@@ -711,22 +700,22 @@ export default function SpiritualPage() {
                   Jeder Trigger aktiviert dein sympathisches Nervensystem (fight, flight, freeze Modus), das heißt, dein Körper bereitet sich auf Gefahr vor und das löst daher eine Stressreaktion in deinem Körper aus.
                 </p>
                 
-                <div className="bg-blue-50 p-6 rounded-lg mb-6">
-                  <h4 className="font-semibold text-blue-700 text-lg mb-3">Bewegungstechniken zur Stressregulation</h4>
+                <div className="bg-pink-50 p-6 rounded-lg mb-6 border border-pink-100">
+                  <h4 className="font-semibold text-pink-700 text-lg mb-3">Bewegungstechniken zur Stressregulation</h4>
                   <p className="text-gray-700 mb-4">
                     Ich zeige dir Bewegungs-Techniken, mit denen du die Energie aus deinem aktivierten Nervensystem freisetzen kannst:
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white p-3 rounded-lg text-center shadow-sm">
-                      <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">1</div>
+                      <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">1</div>
                       <span className="text-gray-700">Schütteln</span>
                     </div>
                     <div className="bg-white p-3 rounded-lg text-center shadow-sm">
-                      <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">2</div>
+                      <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">2</div>
                       <span className="text-gray-700">Tanzen</span>
                     </div>
                     <div className="bg-white p-3 rounded-lg text-center shadow-sm">
-                      <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">3</div>
+                      <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">3</div>
                       <span className="text-gray-700">Dynamische Meditationen</span>
                     </div>
                   </div>
@@ -742,7 +731,7 @@ export default function SpiritualPage() {
             <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-8 rounded-2xl text-center text-white">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Dein Weg zur Transformation</h3>
               <p className="text-pink-100 text-lg mb-6 max-w-2xl mx-auto">
-                Spirituelles Life Coaching ermöglicht dir nachhaltige, körperorientierte Transformation von innen heraus. Für mehr bewusstes Sein, hin zu mehr Sanftheit dir selbst gegenüber und in der liebevollen Annahme dessen, was ist.
+                Spirituelles Life Coaching ermöglicht dir nachhaltige, körperzentrierte Transformation von innen heraus. Für mehr bewusstes Sein, hin zu mehr Sanftheit dir selbst gegenüber und in der liebevollen Annahme dessen, was ist.
               </p>
             </div>
           </div>
@@ -789,68 +778,96 @@ export default function SpiritualPage() {
                     <span className="text-gray-700">Online und vor Ort möglich: Praxis, "Walk your Talk" in der Natur, bei dir Zuhause (Stadtgebiet München)</span>
                   </li>
                 </ul>
+                <Link 
+                  href="/services/angebot" 
+                  className="mt-4 inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-all duration-200 shadow-sm"
+                >
+                  Preispakete ansehen
+                  <svg className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </Link>
               </div>
               
               <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Kostenloses Kennenlerngespräch</h3>
                 <p className="text-gray-700">
-                  Lerne mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen. Wir besprechen deine aktuelle Situation, deine Ziele und wie ich dich unterstützen kann.
+                  Lerne mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen. Wir besprechen deine aktuelle Situation, deine Ziele und wie ich dich unterstützen kann. Deine Themen und Anliegen werden absolut vertraulich behandelt.
                 </p>
               </div>
             </div>
             
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-indigo-500">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Mein Versprechen an dich</h3>
-                <p className="text-gray-700 mb-6">
-                  In meinen Coachings schaffe ich einen sicheren Raum, in dem du dich öffnen und ganz du selbst sein kannst. Ich begegne dir mit Wertschätzung, Respekt und bedingungsloser Akzeptanz.
-                </p>
-                <div className="mb-6">
-                  <button className="text-indigo-600 hover:text-indigo-700 text-sm font-medium transition-colors duration-200">
-                    Mehr erfahren
-                    <svg className="w-3.5 h-3.5 ml-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Methoden und Schwerpunkte im Überblick</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                  </button>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
-                      <svg className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Ganzheitlicher Ansatz</h4>
-                      <p className="text-gray-600">Ich arbeite mit dir auf mentaler, emotionaler und körperlicher Ebene für nachhaltige Veränderung.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
-                      <svg className="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Vertraulichkeit</h4>
-                      <p className="text-gray-600">Deine Themen und Anliegen werden absolut vertraulich behandelt.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-                      <svg className="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">Dein Tempo</h4>
-                      <p className="text-gray-600">Wir gehen in deinem Rhythmus vor und achten auf deine Grenzen.</p>
-                    </div>
-                  </div>
-                </div>
+                    <span className="text-gray-700">Traumasensibles, spirituelles Coaching</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Systemisches Coaching für Familienangelegenheiten</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Spirituelles Business Coaching</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Spirituelles Business Mentoring</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Arbeit mit dem Inneren System / Enneagramm</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Beziehung authentisch leben</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Intuitionsentwicklung</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Rebalancing Körperarbeit</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Klärung der Seelenaufgabe</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Energiearbeit</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Anleitung zu spirituellen Praktiken</span>
+                  </li>
+                </ul>
               </div>
               
               <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-8 rounded-2xl text-center">
@@ -865,54 +882,6 @@ export default function SpiritualPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Moved Section: Dein Weg zu mehr Leichtigkeit */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-b from-white to-pink-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
-              Dein Weg zu mehr Leichtigkeit
-            </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
-            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
-              "BEGINNE NOCH HEUTE DEINE REISE ZU MEHR LEBENSFREUDE"
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl mx-auto">
-            <div className="p-8 md:p-10">
-              <div className="md:flex flex-col items-center">
-                <Link 
-                  href="/dienstleistungen/essstorung/persoenliche-einblicke"
-                  className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg mb-8"
-                >
-                  <span>Mehr erfahren</span>
-                  <ArrowRightIcon className="ml-2 -mr-1 h-5 w-5" />
-                </Link>
-                <div className="md:flex-shrink-0 mb-6 md:mb-0 md:mr-8">
-                  <div className="w-24 h-24 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full flex items-center justify-center mx-auto md:mx-0">
-                    <SparklesIcon className="h-12 w-12 text-pink-600" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-pink-900 mb-6">Dein Weg zu mehr Leichtigkeit</h3>
-                  <p className="text-gray-700 mb-6">
-                    In einem kostenlosen, unverbindlichen Erstgespräch können wir uns kennenlernen und gemeinsam herausfinden, ob die Energie zwischen uns passt. Ich beantworte dir alle deine Fragen und wir schauen, wie ich dich am Besten auf deinem Weg unterstützen kann. 
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Link 
-                      href="/ueber-mich/mein-weg" 
-                      className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-full text-gray-700 bg-white hover:bg-gray-50 transition-colors"
-                    >
-                      <span>Mehr erfahren</span>
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>

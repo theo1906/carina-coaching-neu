@@ -22,7 +22,7 @@ export default function CoachingOfferings() {
     {
       icon: <BookOpenIcon className="h-8 w-8 text-rose-600" />,
       title: "Körperzentriertes Coaching",
-      description: "Entwicklung von tiefer Präsenz tiefer Präsenz und Verbundenheit mit deinem Körper und deinem authentischen Selbst.",
+      description: "Entwicklung von tiefer Präsenz und Verbundenheit mit deinem Körper und deinem authentischen Selbst.",
       dropdownContent: (
         <div className="space-y-4 text-gray-700">
           <p>
@@ -175,14 +175,14 @@ export default function CoachingOfferings() {
               items={[
                 "Sich selbst besser kennenzulernen und Selbstzweifel zu transformieren",
                 "Eine eigene spirituelle Praxis und innere Verbindung aufzubauen",
-                "Empowerment, Freude und Leichtigkeit zu spüren durch loslassen von Angst, Scham und Schuldgefühlen",
                 "Sinn und Bestimmung im Leben zu finden",
                 "Beziehungen authentischer zu leben",
                 "Einschneidende Veränderungen im Leben zu meistern",
+                "Empowerment, Freude und Leichtigkeit zu spüren durch loslassen von Angst, Scham und Schuldgefühlen",
                 "Spiritualität im Alltag und im Job zu integrieren",
                 "Eine gesunde Work-Life Balance zu etablieren und einem Burnout vorzubeugen"
               ]}
-              initialVisibleCount={4}
+              initialVisibleCount={3}
               bulletColor="pink-600"
             />
           </div>

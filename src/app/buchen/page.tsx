@@ -1,6 +1,4 @@
-import dynamic from 'next/dynamic';
 import { CalendarIcon, Clock, Check } from 'lucide-react';
-import BookingCalendar from '@/components/BookingCalendar';
 
 export default function BookingPage() {
   return (
@@ -28,13 +26,27 @@ export default function BookingPage() {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mt-16">
-          <BookingCalendar />
-
-          {/* Nachricht schreiben Section */}
-          <div className="mt-12 text-center">
-            <p className="text-lg text-gray-600 mb-4">
-              Kein passender Termin? Dann schreib mir!
-            </p>
+          <div className="text-center py-12">
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Buche dein kostenloses Erstgespräch</h2>
+              <p className="text-xl text-gray-600 mb-8">Wähle einen passenden Termin in meinem Kalender</p>
+              <div className="mt-8">
+                <a 
+                  href="https://calendly.com/carina-goeb/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-full shadow-sm text-white bg-pink-600 hover:bg-pink-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200"
+                >
+                  <CalendarIcon className="h-6 w-6 mr-2" />
+                  Termin vereinbaren
+                </a>
+              </div>
+            </div>
+            
+            <div className="mt-16 pt-8 border-t border-gray-200">
+              <p className="text-lg text-gray-600 mb-4">
+                Oder schreibe mir direkt eine Nachricht
+              </p>
             <a 
               href="mailto:connect@carina-coaching.com?subject=Anfrage%20%C3%BCber%20Carina%20Coaching&body=Sehr%20geehrte%20Frau%20Goeb%2C%0D%0A%0D%0A" 
               className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-full shadow-sm text-gray-700 bg-white hover:bg-gray-50 md:py-3 md:text-lg md:px-10 transition-colors duration-200"
@@ -45,6 +57,7 @@ export default function BookingPage() {
               Nachricht schreiben
             </a>
           </div>
+        </div>
 
           {/* So funktioniert's Section */}
           <section className="mt-16">

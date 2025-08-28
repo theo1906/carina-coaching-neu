@@ -1,26 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
-    require('daisyui')
+    require('daisyui'),
   ],
-  daisyui: {
-    themes: ["light"],
-    darkTheme: "light",
-    base: true,
-    styled: true,
-    utils: true,
-    prefix: "",
-    logs: true,
-  },
   theme: {
     extend: {
+      colors: {
+        primary: "#ec4899",
+        secondary: "#a855f7",
+        accent: "#f43f5e",
+        neutral: "#1f2937",
+      },
       animation: {
         float: 'float 6s ease-in-out infinite',
         'float-delay': 'float 6s ease-in-out 2s infinite',

@@ -38,10 +38,10 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
             <div className="absolute bottom-1/3 -right-8 w-16 h-16 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-medium"></div>
             <div className="absolute top-1/4 right-1/4 w-20 h-20 bg-pink-50 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float-slow"></div>
             
-            <div className="prose prose-lg prose-pink max-w-none relative z-10">
-              <div className="space-y-8 text-gray-700 leading-relaxed">
-                <div className="space-y-8">
-                  <p className="text-gray-700">
+            <div className="max-w-none relative z-10">
+              <div className="space-y-6 text-gray-700 leading-relaxed">
+                <div className="space-y-6">
+                  <p className="text-gray-700 font-normal text-base md:text-lg [&:first-letter]:text-inherit [&:first-letter]:font-normal">
                     Deine spirituelle Coaching Reise ist eine innere Reise. Eine Reise zu dir, in deine Kraft, in deinen Körper, in dein Herz, in die Verbindung mit deiner Seele und mit deinem Frausein.
                   </p>
 
@@ -61,18 +61,18 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
                     Verkörpere das, was du dir wünschst und bring deine Energie in das, was dir wichtig ist. Erkenne, dass du es bist, die immer die Wahl hat und die entscheiden kann, mutig für sich loszugehen und inspiriere andere dasselbe zu tun.
                   </p>
 
+                  <p className="text-gray-700">
+                    Ich teile das hier mit dir aus eigener, erlebter und gefühlter Erfahrung und vollständiger Recovery nach 20 Jahren Krankheit.
+                  </p>
+
                   <div className="relative my-12 p-8 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl border-l-4 border-pink-400 shadow-lg transform hover:scale-[1.01] transition-all duration-300 hover:shadow-xl hover:border-pink-500 group">
                     <div className="absolute -top-4 -left-4 w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center shadow-md group-hover:bg-pink-200 transition-colors duration-300">
                       <SparklesIcon className="h-6 w-6 text-pink-500 group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <p className="text-gray-700 italic text-lg relative z-10 group-hover:text-gray-800 transition-colors duration-300">
-                      Ich teile das hier mit dir aus eigener, erlebter und gefühlter Erfahrung und vollständiger Recovery nach 20 Jahren Krankheit.
+                      "Mein Weg in die spirituelle Heilung und auch der Prozess danach auf der Suche nach meiner eigenen Identität und was mir in meinem Leben wirklich wichtig ist, nachdem ich mich 20 Jahre in meiner Essstörung verloren hatte, ist meine größte Stärke und Super-Power."
                     </p>
                   </div>
-
-                  <p className="text-gray-700">
-                    "Mein Weg in die spirituelle Heilung und auch der Prozess danach auf der Suche nach meiner eigenen Identität und was mir in meinem Leben wirklich wichtig ist, nachdem ich mich 20 Jahre in meiner Essstörung verloren hatte, ist meine größte Stärke und Super-Power. "
-                  </p>
 
                   <p className="text-gray-700">
                     Die gesammelten Erfahrungen sind die Essenz meiner Arbeit und mein Ansatz für ein erfülltes SEIN im eigenen Körper, dem Zuhause deiner Seele und damit für ein erfülltes Leben.
@@ -92,7 +92,7 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
 
                   <div className="mt-16 text-center">
                     <Link 
-                      href="/dienstleistungen/spiritual" 
+                      href="/dienstleistungen/spiritual#ist-ein-spirituelles-coaching-das-richtige-fuer-dich" 
                       className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-full transition-all duration-300 hover:shadow-lg no-underline"
                     >
                       zurück

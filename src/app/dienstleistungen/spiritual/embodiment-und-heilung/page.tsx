@@ -2,7 +2,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Embodiment als Schlüssel auf deiner Heilungsreise | Carina Göb',
+  title: 'YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER | Carina Göb',
   description: 'Entdecke, wie du durch körperzentriertes Coaching wieder in Verbindung mit deinem Körper kommst und dein volles Potenzial entfaltest.',
 };
 
@@ -17,76 +17,28 @@ export default function EmbodimentUndHeilungPage() {
         
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Embodiment als Schlüssel auf deiner Heilungsreise
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+              YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER
             </h1>
             <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-6"></div>
-            <p className="text-xl text-pink-800/90 italic">
-              "OWN IT. FEEL IT. HEAL IT."
+            <p className="text-2xl text-pink-800/90 italic">
+              "Vertraue der Weisheit deines Körpers"
             </p>
           </div>
 
           {/* Main Content */}
           <div className="prose prose-lg text-gray-700 max-w-none">
-            <p className="text-2xl font-light text-gray-800 text-center mb-12">
-              YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER.
-              <br />
-              <span className="text-pink-600">Vertraue der Weisheit deines Körpers.</span>
-            </p>
-
-            <p className="leading-relaxed">
-              Embodiment ist für mich der Schlüssel für Heilung und Transformation, denn dein Körper speichert all deinen Schmerz und deine Verletzungen (auch die, die du nicht sehen kannst) und ist damit ein wertvoller Impulsgeber für die Anteile in dir, die noch heilen dürfen, um wieder in Verbindung mit dir selbst zu sein und im Vertrauen ins Leben.
-            </p>
-
-            <p className="leading-relaxed">
-              Wenn eine Verletzung oder Wunde nicht geheilt ist, dann wird sie dir weiter weh tun und sich immer wieder bemerkbar machen - in den unterschiedlichsten Formen:
-            </p>
-
-            <ul className="space-y-3 pl-5 my-6">
-              <li>Du lebst in Mustern, Überlebens- und Abwehrstrategien, im permanenten Kampf mit deinem Körper, in Unzufriedenheit, in Selbstsabotage-Mechanismen, hinter einer Maske.</li>
-              <li>Du bist blockiert in deiner Freiheit, du selbst zu sein.</li>
-            </ul>
-
-            <p className="leading-relaxed">
-              Oft läuft das unbewusst ab, es ist dein "Normal", aber ganz tief in dir spürst du doch irgendwie: du bist getrennt von dem, wonach du dich wirklich sehnst. Wonach wir Menschen uns alle sehnen - nach tiefer Verbindung. Und die beginnt immer bei dir selbst und in dir.
-            </p>
-
             <div className="my-12 p-8 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border-l-4 border-pink-400">
               <p className="text-gray-700 text-lg leading-relaxed">
-                Der Fokus meiner Arbeit liegt daher auf dem Stärken deiner Körperwahrnehmung und dem aktiven Hinfühlen, um dadurch ein tieferes Verständnis für deine körperlichen und emotionalen Zustände zu entwickeln und dir so zu ermöglichen, bewusstere Entscheidungen für dich und dein Leben zu treffen.
+                Embodiment ist für mich der Schlüssel für Heilung und Transformation. Der Fokus meiner Arbeit liegt daher auf dem Stärken deiner Körperwahrnehmung und dem aktiven Hinfühlen, um dadurch ein tieferes Verständnis für deine körperlichen und emotionalen Zustände zu entwickeln und dir so zu ermöglichen, bewusstere Entscheidungen für dich und dein Leben zu treffen.
               </p>
             </div>
 
-            <h3 className="text-2xl font-semibold text-center my-12">
-              OWN IT. FEEL IT. HEAL IT.
-            </h3>
-
-            <p className="leading-relaxed">
-              Es ist das mutige Zulassen und Spüren von allem, was ist, um das abzulegen, was du nicht bist und dorthin zurückzukehren, was du schon immer warst. In deine Vollständigkeit, in deine Essenz.
-            </p>
-
-            <ul className="space-y-4 pl-5 my-8">
-              <li>• In dem du dir erlaubst, gesehen zu sein, wo du dich am liebsten verkriechen, abschotten und wegducken möchtest, weil du dich schämst oder dich schuldig fühlst.</li>
-              <li>• In dem du dir erlaubst, deiner Unsicherheit, deiner Traurigkeit und deiner Angst nicht genug zu sein, mit offenem Herzen zu begegnen und liebevoll mitfühlend anstatt dich zu perfektionieren.</li>
-              <li>• In dem du dir erlaubst, dich in deiner Verletzlichkeit zu zeigen, weich zu sein und offen zu bleiben, gerade dann, wenn es am schwierigsten ist, anstatt hart zu werden, distanziert oder kalt.</li>
-            </ul>
-
-            <p className="leading-relaxed font-medium text-gray-800">
-              Überall dort ist eine tiefe Heilung möglich und ein nach Hause kommen zurück zu dir und in deine ganze Kraft.
-            </p>
-
-            <p className="leading-relaxed">
-              Gemeinsam schaffen wir einen sicheren Raum, in dem du dich öffnen und zeigen kannst – ganz so, wie du bist. Ohne Maske, ohne Anpassung, ohne dich verstellen zu müssen.
-            </p>
-
-            <p className="leading-relaxed mt-8">
-              <span className="font-semibold">Dein Körper ist dein Zuhause.</span> Wenn du dich darin nicht wohlfühlst, wirst du dich nirgendwo wirklich zu Hause fühlen. Deshalb lade ich dich ein, deinen Körper wieder als Verbündeten zu entdecken – als Ort der Weisheit, Kraft und Heilung.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-6">Dein Weg zur Ganzheit</h2>
-
-            <p className="leading-relaxed">
-              Ich helfe dir, deine Körperwahrnehmung zu stärken und ein tieferes Verständnis für deine körperlichen und emotionalen Zustände zu entwickeln.
+            <p className="leading-relaxed mt-12">
+              Heilung beginnt dort, wo wir uns erlauben, uns selbst in unserer ganzen Tiefe zu
+              begegnen – mit all unseren Verletzungen, Ängsten und Sehnsüchten. Es ist ein Akt
+              des Mutes, sich dem zu stellen, was ist, um zu dem zurückzukehren, was wir
+              wahrhaftig sind.
             </p>
 
             <div className="my-8 space-y-6">

@@ -38,7 +38,7 @@ export default function Impressum() {
                 <h3 className="text-lg font-medium text-gray-800 mb-3">Kontakt:</h3>
                 <div className="space-y-1 text-gray-700">
                   <p>Mobil: +49 (0)157 58244237</p>
-                  <p>E-Mail: <a href="mailto:connect@carina-coaching.de" className="text-pink-600 hover:underline transition-colors">connect@carina-coaching.de</a></p>
+                  <p>E-Mail: <a href="mailto:connect@carina-coaching.com" className="text-pink-600 hover:underline transition-colors">connect@carina-coaching.com</a></p>
                 </div>
               </div>
               
