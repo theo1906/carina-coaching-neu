@@ -10,12 +10,12 @@ export default function EmbodimentUndHeilungPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-white pt-32 md:pt-16">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-white to-pink-50/30"></div>
         </div>
         
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
           <div className="text-center mb-16">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
               YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER
@@ -34,7 +34,13 @@ export default function EmbodimentUndHeilungPage() {
               </p>
             </div>
 
-            <p className="leading-relaxed mt-12">
+            <div className="mt-12 mb-8 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                OWN IT. FEEL IT. HEAL IT.
+              </h2>
+              <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-6"></div>
+            </div>
+            <p className="leading-relaxed">
               Heilung beginnt dort, wo wir uns erlauben, uns selbst in unserer ganzen Tiefe zu
               begegnen – mit all unseren Verletzungen, Ängsten und Sehnsüchten. Es ist ein Akt
               des Mutes, sich dem zu stellen, was ist, um zu dem zurückzukehren, was wir

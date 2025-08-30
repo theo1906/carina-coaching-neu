@@ -13,11 +13,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: "#ec4899",
-        secondary: "#a855f7",
-        accent: "#f43f5e",
-        neutral: "#1f2937",
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],
+        display: ['var(--font-playfair)', 'serif'],
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
@@ -31,7 +29,6 @@ module.exports = {
         },
       },
       colors: {
-        // Modern color palette with deeper, richer tones
         primary: {
           50: '#fef1f7',
           100: '#fee5f0',
@@ -45,7 +42,6 @@ module.exports = {
           900: '#831843',
           950: '#500724',
         },
-        // Secondary with fuchsia tones
         secondary: {
           50: '#fdf4ff',
           100: '#fae8ff',

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export const metadata = {
-  title: 'Ist ein spirituelles Coaching das Richtige für Dich? | Carina Göb',
+  title: 'Ist ein spirituelles Coaching das Richtige für dich? | Carina Göb',
   description: 'Entdecke, ob ein spirituelles Coaching der richtige Weg für dich ist, um deine innere Kraft zu entfalten und dein volles Potenzial zu leben.',
 };
 
@@ -23,7 +23,7 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-48 pb-20 md:pt-56 md:pb-32">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 [text-shadow:0_2px_4px_rgba(0,0,0,0.1)]">
-              Ist ein spirituelles Coaching das Richtige für Dich?
+              Ist ein spirituelles Coaching das Richtige für dich?
             </h1>
           </div>
         </div>

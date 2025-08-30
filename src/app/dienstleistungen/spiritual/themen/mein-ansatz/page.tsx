@@ -3,9 +3,9 @@ import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 
 export default function MeinAnsatzPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">Transform in who you truly are</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">"Transform in who you truly are"</h1>
         <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
       </div>
       
@@ -29,7 +29,7 @@ export default function MeinAnsatzPage() {
           </p>
           
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
             {/* First Box - Pink */}
             <div className="group relative overflow-hidden bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl border-l-4 border-pink-500 h-full transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
               <div className="absolute top-0 right-0 w-16 h-16 -mr-8 -mt-8 bg-pink-200 rounded-full opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
@@ -49,11 +49,7 @@ export default function MeinAnsatzPage() {
                 <div className="w-10 h-1 bg-gradient-to-r from-fuchsia-500 to-fuchsia-300 mb-4 rounded-full"></div>
                 <h3 className="font-bold text-xl text-fuchsia-800 mb-3 font-serif">Your journey of discovery</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Ich begleite dich darin, die Leere zu fühlen, die du nicht fühlen willst. Gemeinsam erforschen wir durch liebevolle "inquiry" die Gründe für diese Leere und nutzen sie dadurch wie eine Art Tür, die dich step by step zurück führt in deine
-                  <br /><br />
-                  Vollständigkeit, Präsenz und damit in deine ganze Kraft, die dich von innen heraus
-                  <br /><br />
-                  führt das zu leben was du fühlst und mutig dafür los zu gehen.
+                  Ich begleite dich darin, die Leere zu fühlen, die du nicht fühlen willst. Gemeinsam erforschen wir durch liebevolle "inquiry" die Gründe für diese Leere und nutzen sie dadurch wie eine Art Tür, die dich step by step zurück führt in deine Vollständigkeit, Präsenz und damit in deine ganze Kraft, die dich von innen heraus führt das zu leben was du fühlst und mutig dafür los zu gehen.
                 </p>
               </div>
             </div>
@@ -74,7 +70,7 @@ export default function MeinAnsatzPage() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <span className="text-gray-700">Entspannte Zuversicht und Urvertrauen in dich und das Leben</span>
+                    <span className="text-gray-700">Entspannter Zuversicht und Urvertrauen in dich und das Leben</span>
                   </li>
                   <li className="flex items-start group-hover:translate-x-1 transition-transform duration-300 delay-75">
                     <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-purple-100 text-purple-500 rounded-full flex-shrink-0">
@@ -90,7 +86,7 @@ export default function MeinAnsatzPage() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <span className="text-gray-700">Liebevolle Güte, wahres Mitgefühl und Geduld</span>
+                    <span className="text-gray-700">Liebevoller Güte, wahrem Mitgefühl und Geduld</span>
                   </li>
                   <li className="flex items-start group-hover:translate-x-1 transition-transform duration-300 delay-150">
                     <span className="inline-flex items-center justify-center w-5 h-5 mr-2 mt-0.5 bg-purple-100 text-purple-500 rounded-full flex-shrink-0">

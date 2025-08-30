@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Fragment } from 'react';
+import React from 'react';
+import Image from 'next/image';
 
 const navigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'Dienstleistungen', href: '/dienstleistungen' },
+    { name: 'Services', href: '/dienstleistungen' },
     { name: 'Über mich', href: '/ueber-mich/mein-weg' },
     { name: 'Kontakt', href: '/kontakt' },
   ],
@@ -60,25 +61,28 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <Fragment>
+    <>
       <footer className="bg-gradient-to-b from-white to-neutral-50 border-t border-neutral-100">
-        <div className="container mx-auto px-6 py-12 md:py-16">
+        <div className="container mx-auto px-8 sm:px-12 py-12 md:py-16">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {/* Brand info */}
             <div className="space-y-6">
-              <div>
+              <div className="space-y-2">
                 <Link href="/" className="inline-block">
-                  <span className="text-2xl font-display font-bold bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">
-                    Carina Coaching
-                  </span>
-                  <span className="block text-sm font-medium text-neutral-500 mt-1">
-                    Embodiment for Women
-                  </span>
+                  <div className="relative w-64 h-24">
+                    <Image
+                      src="/images/logo-other.png"
+                      alt="Carina Coaching Logo"
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
                 </Link>
+                <p className="text-neutral-600 -ml-1">
+                  Begleite mich auf deiner Reise zu wahrer Selbstliebe, innerer Stärke und einem erfüllten Leben.
+                </p>
               </div>
-              <p className="text-neutral-600">
-                Begleite mich auf deiner Reise zu wahrer Selbstliebe, innerer Stärke und einem erfüllten Leben.
-              </p>
             </div>
 
             {/* Navigation */}
@@ -121,6 +125,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </Fragment>
+    </>
   );
 }

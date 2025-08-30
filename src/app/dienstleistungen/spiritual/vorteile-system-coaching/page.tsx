@@ -44,9 +44,9 @@ export default function VorteileSystemCoachingPage() {
       title: 'Integrierte Ganzheitlichkeit',
       description: 'Heile deine Verletzungen und die von dir (unbewusst) getrennten Anteile, um zurückzukehren in deine Essenz und den Flow von:',
       bulletPoints: [
-        'Entspannte Zuversicht und Urvertrauen in dich und das Leben',
+        'Entspannter Zuversicht und Urvertrauen in dich und das Leben',
         'Mut, Stärke und Individuation',
-        'Liebevolle Güte, wahres Mitgefühl und Geduld',
+        'Liebevoller Güte, wahrem Mitgefühl und Geduld',
         'Freude, Neugierde und Lebendigkeit'
       ]
     }
@@ -109,7 +109,17 @@ export default function VorteileSystemCoachingPage() {
             })}
           </div>
         </div>
-        <div className="text-center">
+        <div className="text-center mb-12">
+          <Link 
+            href="/dienstleistungen/spiritual#vorteile" 
+            className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium mb-12 group transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2 transform rotate-180 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+            Zurück zur Übersicht
+          </Link>
+          
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Bereit für deine Reise zu dir selbst?</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Entdecke, wie du mit einem persönlichen Coaching dein volles Potential entfalten und ein erfülltes Leben in Einklang mit deiner wahren Natur führen kannst.

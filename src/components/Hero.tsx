@@ -32,16 +32,17 @@ export default function Hero() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-4">
             <div className="bg-white p-6 md:p-8 rounded-t-2xl rounded-b-2xl shadow-sm text-center relative z-20" style={{ marginBottom: '-6rem' }}>
               <div className="space-y-2 -mt-2">
-                <h2 className="flex items-center justify-center gap-4 text-4xl md:text-5xl lg:text-6xl font-light text-black leading-tight mx-auto">
+                <h2 className="flex items-center justify-center gap-4 text-3xl md:text-4xl lg:text-5xl font-extralight text-black leading-tight mx-auto">
                   <div className="flex items-center gap-4">
                     <span>Hi, ich bin</span>
                     <div className="relative w-24 h-24 md:w-40 md:h-40 ml-4">
                       <Image
-                        src={"/images/carina-portrait.png?updated=" + Date.now()}
+                        src={"/images/carina-portrait.png?v=2"}
                         alt="Carina"
                         fill
                         className="object-contain"
                         sizes="(max-width: 768px) 6rem, 10rem"
+                        priority
                       />
                     </div>
                   </div>

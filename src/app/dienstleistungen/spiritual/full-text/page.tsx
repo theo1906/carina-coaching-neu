@@ -27,7 +27,7 @@ export default function SpiritualFullTextPage() {
           </div>
 
           <div className="prose prose-pink prose-lg max-w-none text-gray-600 space-y-6">
-            <h2 className="text-3xl font-bold text-pink-700">Ist ein spirituelles Coaching das Richtige für Dich?</h2>
+            <h2 className="text-3xl font-bold text-pink-700">Ist ein spirituelles Coaching das Richtige für dich?</h2>
             
             <p>Deine spirituelle Coaching Reise ist eine innere Reise. Eine Reise zu dir, in deine Kraft, in deinen Körper, in dein Herz, in die Verbindung mit deiner Seele und mit deinem Frausein.</p>
             
