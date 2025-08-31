@@ -1,9 +1,20 @@
 'use client';
 
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 
 export default function AufDerSucheNachIdentitaetPage() {
+  const router = useRouter();
+  
+  const handleBackClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    // Store the scroll position in session storage
+    sessionStorage.setItem('shouldScrollToSection', 'warum-ja-sagen-zu-meinem-coaching');
+    // Navigate to the main page
+    router.push('/dienstleistungen/essstorung');
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -19,8 +30,8 @@ export default function AufDerSucheNachIdentitaetPage() {
               Auf der Suche nach Identität
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Persönliche Einblicke in die Zeit nach meiner Essstörung
+            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
+              "Persönliche Einblicke in die Zeit nach meiner Essstörung"
             </p>
           </div>
         </div>
@@ -112,13 +123,14 @@ export default function AufDerSucheNachIdentitaetPage() {
 
         {/* Back Button */}
         <div className="mt-16 text-center">
-          <Link 
-            href="/dienstleistungen/essstorung" 
+          <a 
+            href="/dienstleistungen/essstorung#warum-ja-sagen-zu-meinem-coaching" 
             className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg no-underline"
+            onClick={handleBackClick}
           >
             <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
             Zurück zur Übersicht
-          </Link>
+          </a>
         </div>
       </div>
     </div>

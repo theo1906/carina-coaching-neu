@@ -19,8 +19,10 @@ export default function MeineHeilungsreisePage() {
         
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <Link 
-              href="/dienstleistungen/essstorung" 
+            <Link
+              href="/dienstleistungen/essstorung#embodiment"
+              as="/dienstleistungen/essstorung#embodiment"
+              scroll={false}
               className="inline-flex items-center text-pink-600 hover:text-pink-800 mb-8 transition-colors duration-300 group"
             >
               <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -31,7 +33,7 @@ export default function MeineHeilungsreisePage() {
               Meine Heilungsreise aus 20 Jahren Essstörung
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
               Ein ehrlicher Rückblick auf meinen Weg in die Freiheit
             </p>
           </div>
@@ -42,16 +44,14 @@ export default function MeineHeilungsreisePage() {
       <section className="relative py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none">
-            <p className="text-2xl font-serif italic text-gray-700 mb-12">
-              "Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen."
+            <p className="italic text-gray-700 mb-12">
+              "Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen. Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching für Essstörungen anbiete.
+              <br /><br />
+              Ich weiss, wie wichtig es ist, für sich selbst anzuerkennen, was ist und sich damit zu zeigen."
             </p>
             
             <p>
-              Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching für Essstörungen anbiete. Ich weiss, wie wichtig es ist, für sich selbst anzuerkennen, was ist und sich damit zu zeigen. Angst mit Mut zu begegnen und bedingungslos zu sich selbst zu stehen. Vielleicht kann ich ja dadurch auch dich heute, hier und jetzt in diesem Moment dazu inspirieren, das Gleiche zu tun.
-            </p>
-            
-            <p className="text-xl font-medium text-pink-700 my-8">
-              Das ist bereits der erste große Schritt in die Heilung. Du bist nicht alleine.
+              "Das ist bereits der erste große Schritt in die Heilung. Du bist nicht alleine."
             </p>
             
             <p>
@@ -91,7 +91,15 @@ export default function MeineHeilungsreisePage() {
             </p>
             
             <p>
-              Ein sehr plötzliches Ende der Beziehung nach 5 Jahren hat mein Herz gebrochen. Ich musste ausziehen und zudem kam gleichzeitig die betriebsbedingte Kündigung aus meinem Job. Alles innerhalb von 4 Wochen. Das Leben hat mir einen Weckruf geschickt, der nicht mehr zu ignorieren war. Der Schmerz, meine Verzweiflung und Suizidgedanken haben mich so tief berührt, dass ich nicht mehr anders konnte als für mich in die radikale Selbstverantwortung zu gehen und anzunehmen, was mir passiert ist.
+              Ein sehr plötzliches Ende der Beziehung nach 5 Jahren hat mein Herz gebrochen. Ich musste ausziehen und zudem kam gleichzeitig die betriebsbedingte Kündigung aus meinem Job. Alles innerhalb von 4 Wochen.
+            </p>
+            
+            <p>
+              Das Leben hat mir einen Weckruf geschickt, der nicht mehr zu ignorieren war.
+            </p>
+            
+            <p>
+              Der Schmerz, meine Verzweiflung und Suizidgedanken haben mich so tief berührt, dass ich nicht mehr anders konnte als für mich in die radikale Selbstverantwortung zu gehen und anzunehmen, was mir passiert ist.
             </p>
             
             <p>

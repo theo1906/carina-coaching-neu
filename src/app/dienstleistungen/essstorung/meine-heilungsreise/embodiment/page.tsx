@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import ScrollToSectionLink from '@/components/ScrollToSectionLink';
 
 export default function EmbodimentPage() {
   return (
@@ -22,7 +23,10 @@ export default function EmbodimentPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
               Embodiment & Heilungsreise
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto"></div>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto">
+              Dein Weg in die Heilung
+            </p>
           </div>
         </div>
       </div>
@@ -30,8 +34,13 @@ export default function EmbodimentPage() {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-pink max-w-none text-gray-700">
-          <p className="text-lg">
-            Heilarbeit mit Menschen liegt darin, das Vertrauen in dich selbst, die eigenen Fähigkeiten und das Vertrauen in die natürliche Intelligenz deines Körpers zu stärken bzw. wieder zu entdecken. Das ist meine große Vision. Meine eigene Heilungsreise ist dabei sowohl mein größter Lehrer und Motivator als auch Inspiration in meinem Leben. 
+          <p>
+            Der Fokus in meinem Coaching für Essstörungen mit dir und generell in meiner
+            Heilarbeit mit Menschen liegt darin, das Vertrauen in dich selbst, die eigenen
+            Fähigkeiten und das Vertrauen in die natürliche Intelligenz deines Körpers zu stärken
+            bzw. wieder zu entdecken. Das ist meine große Vision. Meine eigene Heilungsreise
+            ist dabei sowohl mein größter Lehrer und Motivator als auch Inspiration in meinem
+            Leben.
           </p>
           
           <p>
@@ -70,23 +79,23 @@ export default function EmbodimentPage() {
             Das ist ein Schutzmechanismus, dem wir in deinen Sessions neugierig, offen und mit Hingabe begegnen und lernen zu entdecken, mit Hilfe von Embodiment. 
           </p>
           
-          <p className="text-lg font-medium mt-8">
+          <p className="mt-8">
             Ich begleite dich auf deinem Weg in die Klarheit und das Bewusstsein darüber, dass du zu 100% über dein Leben entscheiden kannst und über alles, was darin geschieht. 
           </p>
           
-          <p className="text-lg">
+          <p>
             Das bedeutet auch, dass du es bist, die immer die Wahl hat und jederzeit beschließen kann, etwas zu verändern. Das braucht Mut und den hast du, sonst wärst du nicht hier. 
           </p>
         </div>
         
         <div className="mt-12 text-center">
-          <Link 
-            href="/dienstleistungen/essstorung" 
+          <ScrollToSectionLink 
+            href="/dienstleistungen/essstorung#wahrhaftig"
             className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors group"
           >
             <ArrowLeftIcon className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />
             Zurück zur Übersicht
-          </Link>
+          </ScrollToSectionLink>
         </div>
       </div>
     </div>

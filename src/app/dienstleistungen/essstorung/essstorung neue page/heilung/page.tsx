@@ -23,7 +23,10 @@ export default function HeilungPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
                 Heilung von innen nach außen
               </h1>
-              <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>
+              <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+              <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
+                "Ganzheitliche Heilung durch Körperwahrnehmung und Selbstliebe"
+              </p>
             </div>
             
             <div className="prose prose-lg text-gray-700 space-y-6 text-center mx-auto">

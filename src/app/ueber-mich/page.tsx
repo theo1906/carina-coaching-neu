@@ -131,7 +131,7 @@ export default function About() {
               {
                 icon: <ArrowUpRightIcon className="h-8 w-8" />,
                 title: "Die ersten Schritte danach",
-                text: "Die Heilung war echt, aber ungewohnt. Wer war ich ohne Bulimie? Ich lernte mich neu kennen, begegnete meinem Körper mit Achtsamkeit und in tiefer Verbundenheit. Yoga, Meditation und Stille wurden meine Anker."
+                text: "Die Heilung war echt, aber ungewohnt. Wer bin ich ohne Bulimie? Ich lernte mich neu kennen, begegnete meinem Körper mit Achtsamkeit und in tiefer Verbundenheit. Yoga, Meditation und Stille wurden meine Anker."
               },
               {
                 icon: <GlobeAltIcon className="h-8 w-8" />,

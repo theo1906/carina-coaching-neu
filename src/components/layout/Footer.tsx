@@ -63,24 +63,23 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-gradient-to-b from-white to-neutral-50 border-t border-neutral-100">
-        <div className="container mx-auto px-8 sm:px-12 py-12 md:py-16">
+        <div className="container mx-auto px-0 sm:px-4 py-12 md:py-16">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {/* Brand info */}
             <div className="space-y-6">
               <div className="space-y-2">
                 <Link href="/" className="inline-block">
-                  <div className="relative w-64 h-24">
-                    <Image
-                      src="/images/logo-other.png"
-                      alt="Carina Coaching Logo"
-                      fill
-                      className="object-contain"
-                      priority
-                    />
-                  </div>
+                  <span className="text-2xl font-display font-bold bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent">
+                    Carina Coaching
+                  </span>
+                  <span className="block text-sm font-medium text-neutral-500 mt-1">
+                    Embodiment for Women
+                  </span>
                 </Link>
-                <p className="text-neutral-600 -ml-1">
-                  Begleite mich auf deiner Reise zu wahrer Selbstliebe, innerer Stärke und einem erfüllten Leben.
+                <p className="text-neutral-600 ml-0">
+                  Begleite mich auf deiner Reise zu wahrer<br />
+                  Selbstliebe, innerer Stärke und einem erfüllten<br />
+                  Leben.
                 </p>
               </div>
             </div>

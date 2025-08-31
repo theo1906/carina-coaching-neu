@@ -23,7 +23,7 @@ export default function MeineHeilungsreisePage() {
               Meine Heilungsreise aus 20 Jahren Essstörung
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
               Ein ehrlicher Rückblick auf meinen Weg in die Freiheit
             </p>
           </div>
@@ -34,12 +34,14 @@ export default function MeineHeilungsreisePage() {
       <section className="relative py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none">
-            <blockquote className="text-2xl italic text-gray-700 mb-12 border-l-4 border-pink-400 pl-6">
-              "Angst mit Mut zu begegnen und bedingungslos zu sich selbst zu stehen. Vielleicht kann ich ja dadurch auch dich heute, hier und jetzt in diesem Moment dazu inspirieren, das Gleiche zu tun."
+            <blockquote className="italic text-gray-700 mb-12 border-l-4 border-pink-400 pl-6">
+              "Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen. Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching für Essstörungen anbiete.
+              <br /><br />
+              Ich weiss, wie wichtig es ist, für sich selbst anzuerkennen, was ist und sich damit zu zeigen."
             </blockquote>
             
-            <p className="text-xl font-medium text-gray-800 mb-8">
-              Das ist bereits der erste große Schritt in die Heilung. Du bist nicht alleine.
+            <p>
+              "Das ist bereits der erste große Schritt in die Heilung. Du bist nicht alleine."
             </p>
             
             <p>
@@ -50,8 +52,8 @@ export default function MeineHeilungsreisePage() {
               Für mich gab es damals nur einen Weg: mich verstecken und irgendwie alleine klar kommen. Bloß nicht auffallen, Ärger verursachen, anstrengend sein, um Hilfe bitten oder gar Raum einnehmen für mich und meine Bedürfnisse. Ich bin zu viel. Das war mein stärkster Glaubenssatz seit frühester Kindheit. Auch schon vor der Bulimie. 
             </p>
             
-            <blockquote className="border-l-4 border-pink-400 pl-6 my-8 italic text-gray-700">
-              Heute weiss ich, um Unterstützung zu fragen und Hilfe anzunehmen ist eine Superpower und eine der größten Ressourcen für Heilung.
+            <blockquote className="italic text-gray-700 my-8 border-l-4 border-pink-400 pl-6">
+              "Heute weiss ich, um Unterstützung zu fragen und Hilfe anzunehmen ist eine Superpower und eine der größten Ressourcen für Heilung."
             </blockquote>
             
             <p>
@@ -90,7 +92,7 @@ export default function MeineHeilungsreisePage() {
               Ein sehr plötzliches Ende der Beziehung nach 5 Jahren hat mein Herz gebrochen. Ich musste ausziehen und zudem kam gleichzeitig die betriebsbedingte Kündigung aus meinem Job. Alles innerhalb von 4 Wochen. 
             </p>
             
-            <p className="text-xl font-medium text-gray-800 my-8">
+            <p>
               Das Leben hat mir einen Weckruf geschickt, der nicht mehr zu ignorieren war. 
             </p>
             
@@ -142,9 +144,6 @@ export default function MeineHeilungsreisePage() {
               In meiner Arbeit möchte ich dich bestärken, loszugehen für dich und deine Heilung und dir auch Schritte aufzeigen, wenn es darum geht, dich wieder zu entdecken in einem Leben ohne Essstörung. Das ist ein sehr wichtiger Teil des Prozesses. 
             </p>
             
-            <p className="text-xl font-semibold text-pink-700 mt-16 mb-8">
-              Embodiment als Schlüssel auf deiner Heilungsreise
-            </p>
           </div>
         </div>
       </section>
@@ -152,7 +151,7 @@ export default function MeineHeilungsreisePage() {
       {/* Back Button at Bottom */}
       <div className="py-8 text-center">
         <Link 
-          href="/dienstleistungen/essstorung" 
+          href="/dienstleistungen/essstorung#embodiment" 
           className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg"
         >
           <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />

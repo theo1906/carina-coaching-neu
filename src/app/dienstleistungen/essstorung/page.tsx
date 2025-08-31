@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import {
   ClockIcon,
@@ -66,6 +67,28 @@ function CollapsibleText({ content }: { content: string }) {
 }
 
 export default function EssstorungPage() {
+  const pathname = usePathname();
+  
+  useEffect(() => {
+    // Check if we should scroll to a specific section
+    if (typeof window !== 'undefined') {
+      const shouldScrollToSection = sessionStorage.getItem('shouldScrollToSection');
+      if (shouldScrollToSection) {
+        const element = document.getElementById(shouldScrollToSection);
+        if (element) {
+          // Small delay to ensure the page is fully loaded
+          setTimeout(() => {
+            window.scrollTo({
+              top: element.offsetTop - 100,
+              behavior: 'smooth'
+            });
+          }, 100);
+        }
+        // Clear the flag
+        sessionStorage.removeItem('shouldScrollToSection');
+      }
+    }
+  }, [pathname]);
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -78,19 +101,19 @@ export default function EssstorungPage() {
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-              Was macht ein ED Recovery Coach für Essstörungen?
+          <div id="systemisches-coaching" className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
+              Systemisches Coaching für Essstörungen & ED Recovery
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
-              "HEILUNG DURCH KÖRPERLICHE PRÄSENZ UND INNERE TRANSFORMATION"
+              „HEILUNG DURCH KÖRPERWEISHEIT UND EMOTIONALE BEFREIUNG“
             </p>
           </div>
         </div>
       </section>
 
-      {/* Section: Ist ein Coaching für Essstörungen das Richtige für Dich? */}
+      {/* Section: Ist ein Coaching für Essstörungen das Richtige für dich? */}
       <section className="py-24 bg-gradient-to-br from-white to-pink-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-50 to-transparent opacity-10"></div>
         <div className="absolute -top-24 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -100,7 +123,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
-              Ist ein Coaching für Essstörungen das Richtige für Dich?
+              Ist ein Coaching für Essstörungen das Richtige für dich?
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -127,7 +150,7 @@ export default function EssstorungPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-2">...bereit bist, tiefere Ursachen zu erkunden</h4>
-                    <p className="text-gray-600">Wenn du den Mut hast, die tieferliegenden Ursachen deiner Essstörung zu erkennen und zu heilen.</p>
+                    <p className="text-gray-600">Wenn du den Mut hast, dir selbst gegenüber aufrichtig ehrlich zu sein und tieferliegende Ursachen zu erkennen.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -136,7 +159,7 @@ export default function EssstorungPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-2">...bereit bist, dich selbst zu lieben</h4>
-                    <p className="text-gray-600">Wenn du bereit bist, den Weg zu deiner Selbstakzeptanz und Körperliebe einzuschlagen.</p>
+                    <p className="text-gray-600">Wenn du bereit bist, den Weg zu wahrer Selbstliebe und Körperakzeptanz einzuschlagen</p>
                   </div>
                 </li>
               </ul>
@@ -152,7 +175,7 @@ export default function EssstorungPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-2">...ein Weg zur Heilung</h4>
-                    <p className="text-gray-600">Ich begleite dich auf deinem Weg zur Heilung durch körperliche Präsenz und innere Transformation.</p>
+                    <p className="text-gray-600">Ich begleite dich auf deinem Weg zur Heilung durch Körperweisheit und emotionales Loslassen.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -161,7 +184,7 @@ export default function EssstorungPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-2">...ein Prozess der Selbstentdeckung</h4>
-                    <p className="text-gray-600">Gemeinsam entwickeln wir ein tieferes Körperbewusstsein und schaffen die Grundlage für eine liebevolle Beziehung zu dir selbst.</p>
+                    <p className="text-gray-600">Gemeinsam entwickeln wir ein tieferes KörperbewusstSein und schaffen die Grundlage für eine liebevolle Beziehung zu dir selbst.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -199,7 +222,7 @@ export default function EssstorungPage() {
           <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-50 to-pink-50 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-pulse"></div>
         </div>
         
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div id="heilungsreise" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-4">
               Der Beginn meiner Heilungsreise aus 20 Jahren Essstörung
@@ -246,7 +269,7 @@ export default function EssstorungPage() {
                 },
                 {
                   title: "Die ersten Schritte danach",
-                  content: "Die Heilung war echt, aber ungewohnt. Wer war ich ohne Bulimie? Ich lernte mich neu kennen, begegnete meinem Körper mit Achtsamkeit und in tiefer Verbundenheit. Yoga, Meditation und Stille wurden meine Anker.",
+                  content: "Die Heilung war echt, aber ungewohnt. Wer bin ich ohne Bulimie? Ich lernte mich neu kennen, begegnete meinem Körper mit Achtsamkeit und in tiefer Verbundenheit. Yoga, Meditation und Stille wurden meine Anker.",
                   icon: <ArrowRightIcon className="h-6 w-6 text-pink-500" />
                 },
                 {
@@ -336,7 +359,7 @@ export default function EssstorungPage() {
       </section>
 
       {/* Section 2: Mit wem ich arbeite */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section id="embodiment" className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white to-pink-50 opacity-10"></div>
         <div className="absolute -top-24 -right-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
         <div className="absolute -bottom-24 -left-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -357,43 +380,43 @@ export default function EssstorungPage() {
                 title: '3 Stages von Empowerment',
                 icon: SparklesIcon,
                 content: 'Über den Körper kommen wir mit deinen verborgenen Gefühlen in Kontakt z. B. mit deiner gesunden Wut oder der unterdrückten Traurigkeit und Scham und erforschen deine Bedürfnisse für ein Leben in Selbstverantwortung, Wahrhaftigkeit und Würde. Wir öffnen den Raum für ganzheitliche Heilung.',
-                color: 'text-pink-600'
+                color: 'text-rose-400'
               },
               {
                 title: 'KörperBewusstSein',
                 icon: HeartIcon,
                 content: 'Körperverbindung zurückzugewinnen, um Körperakzeptanz und Vertrauen in deinen Körper zu stärken und sicher und präsent zu sein, in deinem Körper und dadurch auch in deinem Leben.',
-                color: 'text-purple-600'
+                color: 'text-fuchsia-500'
               },
               {
                 title: 'Selbstliebe praktizieren',
                 icon: HandThumbUpIcon,
                 content: 'Selbstliebe zu empfinden und zu praktizieren und dadurch die Transformation weg von Kontrolle und Streben nach Perfektion zu ermöglichen, hin zu wahrem Mitgefühl für dich selbst und in Beziehungen. Ohne retten zu wollen oder in Co-Abhängigkeit zu sein. Dein Körper ist dein Zuhause und wir ent-wickeln eine nährende und stabile Beziehung zu dir selbst.',
-                color: 'text-green-600'
+                color: 'text-pink-600'
               },
               {
                 title: 'Heart-Body-Mind Verbindung',
                 icon: CpuChipIcon,
                 content: 'Die Verbindung von Heart-Body-Mind zu stärken und dadurch zentrierter, aus deiner Mitte heraus deinen Alltag zu leben durch die Anwendung von geführter Meditation und Visualisierungsübungen, bewusster Berührung, Chanting und dem Erforschen von deinen individuellen "healing movements", die speziell dir und deinem Körper gut tun.',
-                color: 'text-blue-600'
+                color: 'text-violet-500'
               },
               {
                 title: 'Emotionale Resilienz',
                 icon: ShieldCheckIcon,
                 content: 'Emotionale Resilienz zu entwickeln: lerne, deine Gefühle bewusst wahrzunehmen, körperlich zu spüren und zuzulassen, anstatt sie wegzudrücken oder auf ungesunde Essverhaltensweisen als Bewältigungsstrategie zurückzugreifen. So wirst du nicht mehr von deinen Emotionen überrannt oder überrascht und reagierst achtsamer und bewusster bei Triggern.',
-                color: 'text-indigo-600'
+                color: 'text-indigo-500'
               },
               {
                 title: 'Leichtigkeit entdecken',
                 icon: LightBulbIcon,
                 content: 'Leichtigkeit und Verspieltheit wieder zu entdecken: wir lösen step by step Blockaden in Form von Fremdenergien in deinem Körper auf und bringen all deine Chakren wieder in Einklang miteinander und dein Prana, deine Lebensenergie zum fließen. Dein Herz darf sich öffnen und du die Freude des gegenwärtigen Moments voll und ganz spüren. Du erfährst, dein Leben wieder aktiv zu gestalten, statt reaktiv zu sein oder gefangen in einem immer wiederkehrenden Programm von Fight, Flight oder Freeze.',
-                color: 'text-yellow-600'
+                color: 'text-purple-400'
               },
               {
                 title: 'Weiblichkeit entdecken',
                 icon: SparklesIcon,
                 content: 'Verbindung mit deiner Weiblichkeit: entdecke neugierig deine Qualitäten als Frau. Lebe in liebevoller Annahme und im Einklang mit deinem monatlichen Zyklus anstatt dich davon abzuschneiden.',
-                color: 'text-rose-600'
+                color: 'text-pink-500'
               }
             ].map((item, index) => (
               <motion.div
@@ -419,7 +442,7 @@ export default function EssstorungPage() {
       </section>
 
       {/* Lebe wahrhaftig Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      <section id="wahrhaftig" className="py-20 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white to-pink-50 opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -512,7 +535,8 @@ export default function EssstorungPage() {
 
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <motion.div 
-            className="text-center mb-16"
+            id="heilung-von-innen-nach-aussen"
+            className="text-center mb-16 pt-24 -mt-12"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -531,7 +555,7 @@ export default function EssstorungPage() {
             {[
               {
                 title: 'Körperliche Präsenz',
-                content: 'Ich lehre dich, deinen Körper zu spüren, zu verstehen und zu lieben. Wir arbeiten mit bewusstseinsbasierten Übungen und Körperarbeit.',
+                content: 'Ich unterstütze dich, deinen Körper zu spüren, zu verstehen und zu lieben. Wir arbeiten mit bewusstseinsbasierten Übungen und Körperarbeit.',
                 color: 'from-pink-600 to-pink-700',
                 icon: <UserIcon className="h-6 w-6 text-white" />,
                 features: ['Körperwahrnehmung', 'Achtsamkeitsübungen', 'Atemtechniken'],
@@ -542,32 +566,32 @@ export default function EssstorungPage() {
               {
                 title: 'Trauma-Bewusstheit',
                 content: 'Wir erkennen und integrieren tiefere Ursachen deiner Essstörung. Ich begleite dich sicher durch den Prozess der Heilung.',
-                color: 'from-purple-600 to-purple-700',
+                color: 'from-pink-600 to-pink-700',
                 icon: <LightBulbIcon className="h-6 w-6 text-white" />,
                 features: ['Sichere Traumaintegration', 'Ressourcenarbeit', 'Stabilisierungstechniken'],
-                buttonGradient: 'from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800',
-                iconBg: 'from-purple-100 to-purple-50',
-                accent: 'from-purple-400 to-purple-300'
+                buttonGradient: 'from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800',
+                iconBg: 'from-pink-100 to-pink-50',
+                accent: 'from-pink-400 to-pink-300'
               },
               {
                 title: 'Emotionale Befreiung',
                 content: 'Du lernst, deine Emotionen zu spüren, zu akzeptieren und zu integrieren. Du erkennst, sie als wichtige Botschaften zu verstehen.',
-                color: 'from-pink-500 to-purple-600',
+                color: 'from-pink-600 to-pink-700',
                 icon: <SparklesIcon className="h-6 w-6 text-white" />,
                 features: ['Gefühlsregulation', 'Körperwissen', 'Selbstmitgefühl'],
-                buttonGradient: 'from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700',
-                iconBg: 'from-pink-50 to-purple-50',
-                accent: 'from-pink-300 to-purple-300'
+                buttonGradient: 'from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800',
+                iconBg: 'from-pink-100 to-pink-50',
+                accent: 'from-pink-400 to-pink-300'
               },
               {
                 title: 'Selbstliebe und Akzeptanz',
                 content: 'Wir arbeiten an der Entwicklung einer liebevollen Beziehung zu dir selbst und deinem Körper. Du erkennst deinen Wert und lernst dich zu schätzen.',
-                color: 'from-purple-500 to-pink-600',
+                color: 'from-pink-600 to-pink-700',
                 icon: <HeartIcon className="h-6 w-6 text-white" />,
                 features: ['Selbstfürsorge', 'Positive Affirmationen', 'Achtsamkeitspraxis'],
-                buttonGradient: 'from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700',
-                iconBg: 'from-purple-50 to-pink-50',
-                accent: 'from-purple-300 to-pink-300'
+                buttonGradient: 'from-pink-600 to-pink-700 hover:from-pink-700 hover:to-pink-800',
+                iconBg: 'from-pink-100 to-pink-50',
+                accent: 'from-pink-400 to-pink-300'
               }
             ].map((item, index) => (
               <motion.div
@@ -653,11 +677,11 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
-              Was macht ein ED Recovery Coach für Essstörungen?
+              Systemisches Coaching für Essstörungen & ED Recovery
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
-            <p className="text-xl text-rose-800/90 italic max-w-2xl mx-auto mb-8">
-              Finde zurück zu dir, zu einem gesunden Verhältnis zu deinem Körper und zu deinen Emotionen. 
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
+            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
+              „Finde zurück zu dir, zu einem gesunden Verhältnis zu deinem Körper und zu deinen Emotionen.“
             </p>
           </div>
 
@@ -667,19 +691,19 @@ export default function EssstorungPage() {
                 title: 'Bewusstseinsbasierte Übungen',
                 icon: UserIcon,
                 content: 'Lerne, deinen Körper zu spüren und zu verstehen. Wir arbeiten mit speziellen Übungen für körperliche Präsenz.',
-                color: 'text-pink-600'
+                color: 'text-pink-500'
               },
               {
                 title: 'Spirituelle Heilung',
                 icon: HeartIcon,
                 content: 'Wir integrieren spirituelle Heilmethoden, die dir helfen, die tiefer liegenden Emotionen deiner Essstörung über den Körper zu befreien.',
-                color: 'text-purple-600'
+                color: 'text-pink-600'
               },
               {
                 title: 'Selbstfürsorge',
                 icon: ShieldCheckIcon,
                 content: 'Du erfährst, deinen Körper zu lieben und zu nähren. Wir entwickeln eine liebevolle Beziehung zu dir selbst und ein positives Selbstbild.',
-                color: 'text-green-600'
+                color: 'text-pink-700'
               }
             ].map((item, index) => (
               <motion.div
@@ -714,7 +738,7 @@ export default function EssstorungPage() {
       </section>
 
       {/* Section 5: Leben nach der Genesung */}
-      <section className="py-24 bg-gradient-to-br from-white to-pink-100 relative overflow-hidden">
+      <section id="auf-der-suche-nach-identitaet" className="py-24 bg-gradient-to-br from-white to-pink-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-transparent opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -733,7 +757,7 @@ export default function EssstorungPage() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <SparklesIcon className="w-5 h-5 text-pink-500" />
-                  <span className="text-gray-700">Ein neues Verhältnis zu Essen und Körper</span>
+                  <span className="text-gray-700">Ein liebevolles Verhältnis zum Körper & Essen als Genuss</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <HeartIcon className="w-5 h-5 text-pink-500" />
@@ -785,8 +809,8 @@ export default function EssstorungPage() {
         </div>
       </section>
 
-      {/* Section 6: Arbeiten Sie mit mir */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      {/* Section 6: Warum JA sagen */}
+      <section id="warum-ja-sagen-zu-meinem-coaching" className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white to-pink-50 opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -805,21 +829,21 @@ export default function EssstorungPage() {
                 title: 'Individuelles Coaching',
                 icon: UserIcon,
                 content: 'In meinem Einzelcoaching begleite ich dich persönlich auf deinem individuellen Heilungsweg. Wir arbeiten intensiv an deinen spezifischen Bedürfnissen und Zielen, um nachhaltige Veränderungen zu bewirken. Gemeinsam erforschen wir deine innere Weisheit, die dich leitet, um ein gesundes Verhältnis zu deinem Körper und deinem Selbstbild aufzubauen.',
-                color: 'text-pink-600',
+                color: 'text-pink-500',
                 features: ['Persönliche Einzelsitzungen', 'Individueller Behandlungsplan', 'Flexible Termingestaltung', 'Diskrete Umgebung']
               },
               {
                 title: 'Körperliche Präsenz Training',
                 icon: UserIcon,
                 content: 'In unseren Sitzungen lernst du, wieder eine liebevolle Verbindung zu deinem Körper aufzubauen. Durch achtsamkeitsbasierte Übungen und Körperarbeit helfe ich dir, Vertrauen in deinen Körper zurückzugewinnen. In exklusiven Online Sessions hast du ebenfalls die Möglichkeit in kleinen Gruppen weitere Embodiment Erfahrungen live zu erleben und dich auszutauschen.',
-                color: 'text-purple-600',
+                color: 'text-pink-600',
                 features: ['Praktische Übungen', 'Sicherer Raum', 'Nachhaltige Methoden', 'Community Exchange']
               },
               {
                 title: 'Trauma-Bewusstheit',
                 icon: ShieldCheckIcon,
                 content: 'Mit meiner eigenen Heilerfahrung und spezialisierten Begleitung im Kontext von Traumatisierungen biete ich dir einen sicheren Rahmen, um belastende Erfahrungen und Emotionen zu verarbeiten. Mein Ansatz ist einfühlsam und respektvoll, immer unter Berücksichtigung deiner individuellen Grenzen und Bedürfnisse.',
-                color: 'text-green-600',
+                color: 'text-pink-700',
                 features: ['Traumasensible Begleitung', 'Sichere Methoden', 'Ressourcenorientiert', 'Individuelles Tempo']
               }
             ].map((item, index) => (
@@ -858,7 +882,7 @@ export default function EssstorungPage() {
             Möchtest du mehr über Coaching für Essstörungen erfahren?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Wenn du mehr über Coaching für Essstörungen erfahren möchtest als Betroffene / Angehörige oder Unterstützung suchst bei deiner Recovery, vereinbare dir jetzt dein 100% kostenloses 30-minütiges Erstgespräch oder schreib mir an:
+            Wenn du mehr über Coaching für Essstörungen erfahren möchtest als Betroffene / Angehörige oder Unterstützung suchst bei deiner Recovery, vereinbare dir jetzt dein 100% kostenloses 30-minütiges Erstgespräch
           </p>
           <Link 
             href="/contact" 

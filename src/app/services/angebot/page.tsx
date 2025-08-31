@@ -47,14 +47,14 @@ const coachingPackages = [
     ],
   },
   {
-    title: 'Healing Home',
+    title: 'Healing@Home',
     description: 'Individuelles Angebot auf Anfrage',
     price: '150€',
     features: [
-      '1 Stunde Coaching',
-      'Rebalancing Bodywork',
-      'Oder Kombination aus beidem',
-      'Stadtgebiet München',
+      'Individuelles Coaching',
+      'Rebalancing Bodywork Massage',
+      'Kombination möglich',
+      'Exklusiv in München',
       'Persönliche Beratung und Betreuung',
       'Flexible Terminvereinbarung',
       'Individuell auf deine Bedürfnisse abgestimmt'
@@ -63,7 +63,7 @@ const coachingPackages = [
 ];
 
 const HealingHomeSection = () => {
-  const healingHomePackage = coachingPackages.find(pkg => pkg.title === 'Healing Home');
+  const healingHomePackage = coachingPackages.find(pkg => pkg.title === 'Healing@Home');
   
   if (!healingHomePackage) return null;
   
@@ -197,10 +197,10 @@ export default function Angebot() {
       <section className="py-4 sm:py-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {coachingPackages.filter(pkg => pkg.title !== 'Healing Home').map((packageItem) => (
+            {coachingPackages.filter(pkg => pkg.title !== 'Healing@Home').map((packageItem) => (
               <div key={packageItem.title} className="p-8 bg-white shadow-2xl rounded-2xl">
-                <h3 className="text-lg font-semibold text-gray-900">{packageItem.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">{packageItem.description}</p>
+                <h3 className="text-xl font-bold text-gray-900">{packageItem.title}</h3>
+                <p className="mt-2 text-base leading-7 text-gray-600">{packageItem.description}</p>
                 <p className="mt-4 text-3xl font-bold text-primary-600">{packageItem.price}</p>
                 <ul role="list" className="mt-6 space-y-4">
                   {packageItem.features.map((feature, index, array) => {
@@ -281,7 +281,7 @@ export default function Angebot() {
                   href="/contact"
                   className="mt-6 block rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                 >
-                  Kostenloses Erstgespräch buchen
+                  Kostenloses Erstgespräch vereinbaren
                 </Link>
               </div>
             ))}
@@ -289,7 +289,7 @@ export default function Angebot() {
         </div>
       </section>
 
-      {/* Healing Home Section - Minimalist */}
+      {/* Healing@Home Section - Minimalist */}
       <section className="relative py-16 overflow-hidden bg-gradient-to-br from-white to-pink-50">
         {/* Subtle background elements */}
         <div className="absolute inset-0">
@@ -300,7 +300,7 @@ export default function Angebot() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-pink-900 mb-4">
-              Healing Home
+              Healing@Home
             </h2>
             <div className="w-24 h-0.5 bg-gradient-to-r from-pink-300 to-pink-400 mx-auto mb-4"></div>
             <p className="text-lg text-pink-700/90 max-w-xl mx-auto">
@@ -319,8 +319,8 @@ export default function Angebot() {
               <h3 className="text-xl font-semibold text-pink-900 mb-4">Was dich erwartet</h3>
               <ul className="space-y-3">
                 {[
-                  '1 Stunde individuelles Coaching',
-                  'Rebalancing Bodywork',
+                  'Individuelles Coaching',
+                  'Rebalancing Bodywork Massage',
                   'Kombination möglich',
                   'Exklusiv in München'
                 ].map((item, index) => (
@@ -342,8 +342,8 @@ export default function Angebot() {
               <h3 className="text-xl font-semibold text-pink-900 mb-4">Dein Nutzen</h3>
               <ul className="space-y-3">
                 {[
-                  'Individuelle Betreuung',
-                  'Persönliche Beratung',
+                  'Vertrautes Heilen in vertrauter Umgebung',
+                  'Komfortabel & stressfrei',
                   'Flexible Termine'
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
@@ -367,10 +367,8 @@ export default function Angebot() {
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
               <p className="text-pink-700/90 text-sm mb-4">Pro Stunde Coaching</p>
-              <div className="text-3xl font-bold text-pink-900 mb-2">150€</div>
-              <p className="text-pink-600/80 text-xs mt-6">
-                Termin vereinbaren
-              </p>
+              <p className="text-pink-700/90 text-sm mb-4">Individuelles Angebot auf Anfrage</p>
+              <p className="text-pink-700/90 text-sm">Massage</p>
             </div>
           </div>
           
@@ -399,7 +397,7 @@ export default function Angebot() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-rose-600 to-fuchsia-600 rounded-lg hover:from-rose-700 hover:to-fuchsia-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              Kostenloses Erstgespräch buchen
+              Kostenloses Erstgespräch vereinbaren
             </Link>
           </div>
         </div>
