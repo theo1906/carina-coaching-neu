@@ -32,6 +32,12 @@ export default function RootLayout({
   return (
     <html lang="de" className="scroll-smooth">
       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo-other.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/logo-other.png" />
+        <meta name="theme-color" content="#ffffff" />
+        
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWHES3E515"></script>
         <script

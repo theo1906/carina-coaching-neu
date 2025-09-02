@@ -33,15 +33,18 @@ export default function MeineHeilungsreisePage() {
       {/* Content Section */}
       <section className="relative py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-pink prose-lg max-w-none">
-            <blockquote className="italic text-gray-700 mb-12 border-l-4 border-pink-400 pl-6">
-              "Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen. Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching für Essstörungen anbiete.
+          <div className="text-gray-700 text-lg leading-relaxed">
+            <p className="mb-6">
+              Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen. Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching für Essstörungen anbiete. 
               <br /><br />
-              Ich weiss, wie wichtig es ist, für sich selbst anzuerkennen, was ist und sich damit zu zeigen."
-            </blockquote>
+              Ich weiss, wie wichtig es ist, für sich selbst anzuerkennen, was ist und sich damit zu zeigen. 
+            </p>
+            <p className="mb-6 pl-6 border-l-4 border-pink-400">
+              "Angst mit Mut zu begegnen und bedingungslos zu sich selbst zu stehen. Vielleicht kann ich ja dadurch auch dich heute, hier und jetzt in diesem Moment dazu inspirieren, das Gleiche zu tun."
+            </p>
             
             <p>
-              "Das ist bereits der erste große Schritt in die Heilung. Du bist nicht alleine."
+              Das ist bereits der erste große Schritt in die Heilung. Du bist nicht alleine.
             </p>
             
             <p>
@@ -52,9 +55,9 @@ export default function MeineHeilungsreisePage() {
               Für mich gab es damals nur einen Weg: mich verstecken und irgendwie alleine klar kommen. Bloß nicht auffallen, Ärger verursachen, anstrengend sein, um Hilfe bitten oder gar Raum einnehmen für mich und meine Bedürfnisse. Ich bin zu viel. Das war mein stärkster Glaubenssatz seit frühester Kindheit. Auch schon vor der Bulimie. 
             </p>
             
-            <blockquote className="italic text-gray-700 my-8 border-l-4 border-pink-400 pl-6">
+            <p className="mb-6 pl-6 border-l-4 border-pink-400">
               "Heute weiss ich, um Unterstützung zu fragen und Hilfe anzunehmen ist eine Superpower und eine der größten Ressourcen für Heilung."
-            </blockquote>
+            </p>
             
             <p>
               Damals war ich da nicht. Der Preis war hoch: ich war über 20 Jahre lang nie ehrlich, mir selbst gegenüber nicht und keinem anderen. 

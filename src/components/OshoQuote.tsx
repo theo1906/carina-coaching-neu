@@ -12,11 +12,11 @@ export default function OshoQuote() {
       
       <div className="relative z-10">
         <blockquote className="text-center">
-          <p className="text-2xl md:text-3xl font-serif italic text-pink-900 leading-relaxed mb-6">
-            "Be realistic plan for a Miracle"
+          <p className="text-2xl md:text-3xl font-serif italic text-pink-900 leading-relaxed mb-6 uppercase">
+            "BE REALISTIC PLAN FOR A MIRACLE"
           </p>
-          <footer className="text-pink-700 font-medium">
-            — Osho
+          <footer className="text-pink-900 font-medium">
+            OSHO
           </footer>
         </blockquote>
       </div>

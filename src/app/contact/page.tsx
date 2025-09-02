@@ -74,19 +74,19 @@ export default function Contact() {
               {[
                 {
                   question: 'Wie läuft ein Coaching ab?',
-                  answer: 'Ein Coaching beginnt mit einem kostenlosen Kennenlerngespräch, in dem wir uns kennenlernen und dein Anliegen besprechen. Danach erstelle ich ein individuelles Konzept für dich. Die Sitzungen finden in der Regel wöchentlich oder alle zwei Wochen statt und dauern 60-90 Minuten.'
+                  answer: 'Ein Coaching beginnt mit einem kostenlosen Erstgespräch auf Zoom, in dem wir uns kennenlernen und dein Anliegen besprechen und was du gerne erreichen möchtest. Danach erstelle ich ein individuelles Konzept für dich. Je nachdem wie intensiv eine Sitzung war, empfehle ich meist einen 2-4 Wochen Turnus zwecks Integration für dein System. Generell entscheidest du selbst wann und wie oft: deine Reise, dein Tempo. Je nach Packet hast du zusätzlich Email Support und wir haben Community Coaching calls in denen du teilnehmen kannst für Austausch & Rückfragen.'
                 },
                 {
                   question: 'Wie lange dauert ein Coaching?',
-                  answer: 'Die Dauer des Coachings hängt von deinem individuellen Anliegen ab. Manche Themen lassen sich in wenigen Sitzungen klären, während andere eine längere Begleitung erfordern. In der Regel umfasst ein Coaching zwischen 5 und 15 Sitzungen.'
+                  answer: 'Meine Zusammenarbeit mit dir beginnt bei einem Minimum von 4 Stunden. Darüberhinaus ist die Dauer des Coachings komplett abhängig von deinem individuellen Anliegen und wie tief du gehen möchtest. Nach Abschluss eines Coaching-Pakets besteht die Möglichkeit, bei Bedarf weitere Einzelsessions (120,00 EUR/Stunde) zu buchen. Wir bleiben hier im direkten Austausch, damit du dich jederzeit gut aufgehoben fühlst.'
                 },
                 {
                   question: 'Kann ich das Coaching auch online machen?',
-                  answer: 'Ja, ich biete alle meine Coachings auch online per Video-Call an. Die Qualität der Beratung ist dabei genauso hoch wie bei einem Präsenztermin.'
+                  answer: 'Ja, ich biete alle meine Coachings auch online per Video-Call an. Die Qualität der Beratung ist dabei genauso hoch wie bei einem Präsenztermin. Der einzige Unterschied ist, dass ich bei Präsenzterminen zusätzlich noch direkte Körperarbeit in Form von Rebalancing Massagen mit anbiete, wenn du das möchtest.'
                 },
                 {
                   question: 'Was kostet ein Coaching?',
-                  answer: 'Die Kosten richten sich nach Art und Umfang des Coachings. Einzelcoaching beginnt bei 120€ pro Stunde. Im Rahmen eines kostenlosen Erstgesprächs können wir deine Bedürfnisse besprechen und dir ein individuelles Angebot unterbreiten.'
+                  answer: 'Ich biete 4\'er, 8\'er und 12\'er Packete an und je nach Größe wird der Preis pro Stunde günstiger für dich. Mein Angebot findest du auf der Webseite. Generell biete ich dir die Möglichkeit nach der ersten abgeschlossenen Session zu entscheiden, ob du mit mir weiter arbeiten möchtest und welches Packet du buchen möchtest. Die Rechnungsstellung erfolgt zeitgleich mit deiner Entscheidung, sodass wir beide Planungssicherheit haben und auch ein gegenseitiges Commitment.'
                 },
               ].map((faq, index) => (
                 <div key={index} className="relative bg-gray-50 p-6 rounded-2xl shadow-sm">

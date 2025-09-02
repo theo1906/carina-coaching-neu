@@ -180,9 +180,14 @@ export default function About() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Mein Ansatz
-            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center text-pink-600 shadow-md">
+                <SparklesIcon className="h-6 w-6" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 ml-4">
+                Mein Ansatz
+              </h2>
+            </div>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Meine Arbeit ist ganzheitlich, systemisch, spirituell und basiert auf meiner eigenen Erfahrung sowie Ausbildungen als System-Coach, Holistic Counselor und Rebalancing Bodyworker. Im Zentrum meiner Arbeit steht Embodiment – das bewusste Spüren, Erforschen und Wiederverbinden mit deinem Körper, deiner Intuition und inneren Wahrheit. Symptome sind für mich Botschaften, keine Gegner. Über Körperbewusstsein, Inquiry (gezielte Selbstreflexion) und emotionale Integration findest du zurück in dein natürliches Sein. Dabei unterstützen dich u.a. Meditation, Visualisierung, Berührung, Chanting und Healing Movements. Ich arbeite mit dir systemisch und spirituell, führe dich durch Inquiry-Fragen zu deiner inneren Wahrheit und helfe dir, Fremdenergien zu lösen. Gemeinsam schaffen wir Raum für Heilung – von innen nach außen. Wir würdigen alle Anteile in dir, lösen Blockaden und fördern dein Selbstvertrauen und deine emotionale Resilienz.

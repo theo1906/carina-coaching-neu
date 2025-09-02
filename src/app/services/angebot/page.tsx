@@ -48,16 +48,13 @@ const coachingPackages = [
   },
   {
     title: 'Healing@Home',
-    description: 'Individuelles Angebot auf Anfrage',
+    description: 'Persönliche 1:1 Betreuung in deinen eigenen vier Wänden',
     price: '150€',
     features: [
       'Individuelles Coaching',
-      'Rebalancing Bodywork Massage',
       'Kombination möglich',
       'Exklusiv in München',
-      'Persönliche Beratung und Betreuung',
-      'Flexible Terminvereinbarung',
-      'Individuell auf deine Bedürfnisse abgestimmt'
+      '150€ pro Stunde'
     ],
   },
 ];
@@ -320,7 +317,7 @@ export default function Angebot() {
               <ul className="space-y-3">
                 {[
                   'Individuelles Coaching',
-                  'Rebalancing Bodywork Massage',
+                  'Oder Rebalancing Bodywork Massage',
                   'Kombination möglich',
                   'Exklusiv in München'
                 ].map((item, index) => (
@@ -342,7 +339,7 @@ export default function Angebot() {
               <h3 className="text-xl font-semibold text-pink-900 mb-4">Dein Nutzen</h3>
               <ul className="space-y-3">
                 {[
-                  'Vertrautes Heilen in vertrauter Umgebung',
+                  'Heilen in vertrauter Umgebung',
                   'Komfortabel & stressfrei',
                   'Flexible Termine'
                 ].map((item, index) => (
@@ -366,9 +363,9 @@ export default function Angebot() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
-              <p className="text-pink-700/90 text-sm mb-4">Pro Stunde Coaching</p>
-              <p className="text-pink-700/90 text-sm mb-4">Individuelles Angebot auf Anfrage</p>
-              <p className="text-pink-700/90 text-sm">Massage</p>
+              <p className="text-pink-700/90 text-sm mb-2">Pro Stunde Coaching</p>
+              <p className="text-3xl font-bold text-pink-700 mb-2">150€</p>
+              <p className="text-pink-700/90 text-sm">Individuelles Angebot auf Anfrage</p>
             </div>
           </div>
           

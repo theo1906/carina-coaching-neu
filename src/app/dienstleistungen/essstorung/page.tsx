@@ -103,7 +103,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div id="systemisches-coaching" className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
-              Systemisches Coaching für Essstörungen & ED Recovery
+              Was macht ein ED Recovery Coach für Essstörungen?
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -184,7 +184,7 @@ export default function EssstorungPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-2">...ein Prozess der Selbstentdeckung</h4>
-                    <p className="text-gray-600">Gemeinsam entwickeln wir ein tieferes KörperbewusstSein und schaffen die Grundlage für eine liebevolle Beziehung zu dir selbst.</p>
+                    <p className="text-gray-600">Gemeinsam entwickeln wir ein tieferes KörperBewusstSein und schaffen die Grundlage für eine liebevolle Beziehung zu dir selbst.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

@@ -16,12 +16,9 @@ export default function EDRecoveryCoachPage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Systemisches Coaching für Essstörungen & ED Recovery
+              Was macht ein ED Recovery Coach für Essstörungen?
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
-            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
-              „Finde zurück zu dir, zu einem gesunden Verhältnis zu deinem Körper und zu deinen Emotionen.“
-            </p>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mt-6"></div>
           </div>
         </div>
       </section>

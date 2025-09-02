@@ -6,17 +6,17 @@ export default function RaumFuerDichSection() {
   const topFeatures = [
     {
       icon: <ShieldCheck className="w-8 h-8 text-white" />,
-      title: 'Vertrauensvoll, einladend und wertfrei',
+      title: 'Vertrauensvoll,<br />einladend und wertfrei',
       description: 'Ein geschützter Raum ohne Bewertung, in dem du ganz du selbst sein kannst.'
     },
     {
       icon: <Heart className="w-8 h-8 text-white" />,
-      title: 'Trauma sensibel und Verantwortungsbewusst',
+      title: 'Traumasensibel und<br />verantwortungsbewusst',
       description: 'Begleitung mit tiefem Verständnis für dein Nervensystem und höchster Professionalität.'
     },
     {
       icon: <Target className="w-8 h-8 text-white" />,
-      title: 'Ressourcenorientiertes Vorgehen',
+      title: 'Ressourcenorientiertes<br />Vorgehen',
       description: 'Wir nutzen deine inneren Stärken als Basis für deine Entwicklung.'
     }
   ];
@@ -24,8 +24,8 @@ export default function RaumFuerDichSection() {
   const bottomFeatures = [
     {
       icon: <Zap className="w-6 h-6 text-rose-500" />,
-      title: 'Flexible Begleitung',
-      description: 'Online, persönlich oder in der Natur - ganz wie es für dich passt.'
+      title: 'Flexible<br />Begleitung',
+      description: 'Online, persönlich oder in der Natur. Du entscheidest.'
     },
     {
       icon: <Clock className="w-6 h-6 text-rose-500" />,
@@ -69,8 +69,8 @@ export default function RaumFuerDichSection() {
               <div className="w-14 h-14 rounded-xl bg-rose-500/10 flex items-center justify-center mb-4 mx-auto">
                 {React.cloneElement(feature.icon, { className: 'w-6 h-6 text-rose-600' })}
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{feature.title}</h3>
-              <p className="text-gray-600 text-sm text-center">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center" dangerouslySetInnerHTML={{ __html: feature.title }} />
+              <p className="text-gray-600 text-sm text-center max-w-[80%] mx-auto block">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -85,7 +85,7 @@ export default function RaumFuerDichSection() {
               <div className="w-12 h-12 rounded-xl bg-rose-50 flex items-center justify-center mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{feature.title}</h3>
+              <h3 className="text-lg font-semibold text-gray-800" dangerouslySetInnerHTML={{ __html: feature.title }} />
               <p className="text-gray-600 text-sm">{feature.description}</p>
             </div>
           ))}
