@@ -34,27 +34,27 @@ export default function SpiritualPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden bg-gradient-to-br from-white to-pink-50">
+      <section className="relative pt-36 pb-24 overflow-hidden bg-gradient-to-br from-white to-pink-50">
         <div className="absolute inset-0">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-          <div className="absolute top-1/3 -right-8 w-24 h-24 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
-          <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
+          <div className="absolute -top-20 -right-20 w-48 h-48 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
+          <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
+          <div className="absolute top-1/3 -right-4 w-16 h-16 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
+          <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
         </div>
         
-        <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12 relative z-10">
-          <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12 relative z-10 h-full flex items-center">
+          <div className="text-center w-full max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-1">
               Spirituelles Life Coaching
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>
-            <p className="text-2xl md:text-3xl text-pink-800/90 italic leading-relaxed mb-8">
+            <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-2"></div>
+            <p className="text-xl md:text-2xl text-pink-800/90 italic leading-relaxed mb-8">
               "INNERE TRANSFORMATION DURCH KÖRPERLICHE PRÄSENZ"
             </p>
-            <div className="mt-10">
+            <div className="mt-16">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-pink-600 rounded-full hover:from-pink-700 hover:to-pink-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-pink-600 rounded-full hover:from-pink-700 hover:to-pink-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <span className="mr-2">Kostenloses Erstgespräch vereinbaren</span>
                 <ArrowRightIcon className="w-5 h-5" />
@@ -387,10 +387,10 @@ export default function SpiritualPage() {
       <section className="relative py-24 overflow-hidden bg-gradient-to-br from-white to-pink-50">
         {/* Decorative background elements */}
         <div className="absolute inset-0">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-          <div className="absolute top-1/3 -right-8 w-24 h-24 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
-          <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
+          <div className="absolute -top-20 -right-20 w-48 h-48 bg-pink-100 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
+          <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-20"></div>
+          <div className="absolute top-1/3 -right-4 w-16 h-16 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
+          <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -789,15 +789,26 @@ export default function SpiritualPage() {
                 </Link>
               </div>
               
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Kostenloses Kennenlerngespräch</h3>
-                <p className="text-gray-700">
-                  Lerne mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen. Wir besprechen deine aktuelle Situation, deine Ziele und wie ich dich unterstützen kann. Deine Themen und Anliegen werden absolut vertraulich behandelt.
-                </p>
+              {/* Mood Online Image */}
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/Mood Online.JPG"
+                  alt="Online Coaching - Persönliche Begleitung von überall aus"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
             
             <div className="space-y-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Kostenloses Kennenlerngespräch</h3>
+                <p className="text-gray-700">
+                  Lerne mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen. Wir besprechen deine aktuelle Situation, deine Ziele und wie ich dich unterstützen kann.
+                </p>
+              </div>
+              
               <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-indigo-500">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Methoden und Schwerpunkte im Überblick</h3>
                 <ul className="space-y-3">

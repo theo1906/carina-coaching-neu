@@ -15,12 +15,12 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { 
-    name: 'Home', 
+    name: 'Carina Coaching', 
     href: '/',
     className: 'hover:text-pink-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium'
   },
   { 
-    name: 'Services', 
+    name: 'Mein Coaching Angebot', 
     href: '/dienstleistungen',
     className: 'group relative hover:text-pink-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium',
     submenu: [
@@ -223,13 +223,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-500 ease-in-out bg-white shadow-sm ${
-        scrolled ? 'py-2' : 'py-4'
-      }`}
-    >
-      <nav className="container mx-auto px-4 sm:px-6" aria-label="Global">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-white/90 backdrop-blur-md'}`}>
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div className="flex w-full items-center justify-between py-3 lg:border-none">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 relative" prefetch={false}>
               <div className="relative h-16 w-64 sm:h-20 sm:w-80">

@@ -16,7 +16,7 @@ export default function CollapsibleSection() {
             Über mich
           </h4>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Hallo, ich bin Carina. Schön, dass du den Weg hierher in mein Online-Zuhause gefunden hast.
+            Hallo, ich bin Carina Göb und Gründerin von „Carina Coaching - Embodiment for women“. Schön, dass du den Weg hierher gefunden hast.
           </p>
         </div>
         <ChevronRightIcon 
@@ -26,9 +26,9 @@ export default function CollapsibleSection() {
       
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <p className="text-gray-700 leading-relaxed">
-          In meiner Arbeit verbinde ich 20 Jahre Bulimie Erfahrung und meine eigene Heilung mit professionellem Coaching. Ich bin hier, um so viele Frauen wie möglich zu unterstützen, ihre eigene Heilkraft zu entfalten und ihr authentisches Selbst zu leben.
+          In meiner Arbeit als spiritueller Life Coach, Rebalancing Bodyworker und systemischer Coach für Essstörungen verbinde ich 20 Jahre Bulimie-Erfahrung und meine eigene Heilung mit professionellem Coaching. Mein Weg in die Heilarbeit mit Menschen begann nicht mit einer Ausbildung, sondern mit einem knallharten Weckruf, der mich gezwungen hat, hinzuspüren.
           <br /><br />
-          Mein Weg ins Coaching und in die Heilarbeit mit Menschen hat nicht mit einer Ausbildung begonnen, sondern mit einem knallharten Weckruf, der mich gezwungen hat, hin zu spüren. Meine eigene Heilungsreise ist daher mein größter Lehrer und Motivator als auch Inspiration in meinem Leben und die Basis meiner Arbeit.
+          Meine eigene Heilungsreise ist daher mein größter Lehrer und die Basis meiner Arbeit. Ich bin hier, um Frauen zu unterstützen, ihre eigene Heilkraft zu entfalten und ihr authentisches Selbst zu leben.
         </p>
       </div>
     </div>

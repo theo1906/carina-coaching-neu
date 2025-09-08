@@ -28,7 +28,9 @@ export default function MeineBerufungSection() {
       
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <p className="text-gray-700 leading-relaxed">
-          Mit kraftvollen Überzeugungen, die mich stärken und von innen heraus leiten, unterstütze ich so viele Frauen wie möglich auf ihrem Weg, ihre eigene Heilkraft und innere Weisheit wiederzuentdecken und zu verkörpern.
+          Ich lebe mit kraftvollen Überzeugungen, die mich stärken und von innen heraus leiten. Die Reise zu meiner eigenen Heilung war ein unglaubliches Wunder, das ich mir selbst erschaffen habe, als ich mich auf die Suche nach mir selbst  gemacht habe. 
+          <br /><br />
+          Heute unterstütze ich Frauen dabei, ihre eigenen Wunder zu kreieren, ihre innere Heilkraft und Weisheit wiederzuentdecken und mutig ihren eigenen Weg zu gehen.
         </p>
       </div>
     </div>

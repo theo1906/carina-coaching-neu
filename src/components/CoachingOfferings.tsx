@@ -306,6 +306,17 @@ export default function CoachingOfferings() {
                 Gemeinsam stimmen wir jede Session auf deine ganz persönlichen Bedürfnisse ab, respektieren dein Tempo und schaffen einen Raum, in dem du dich sicher und gehalten fühlst auf deinem Weg in die Heilung.
               </p>
             </div>
+            
+            {/* Mood Meditation Image */}
+            <div className="mt-12 rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+              <img
+                src="/images/Mood Meditation.JPG"
+                alt="Meditation und Achtsamkeit - Entspannung und innere Ruhe finden"
+                className="w-full h-auto rounded-xl"
+                width={1200}
+                height={800}
+              />
+            </div>
           </div>
         </div>
       </section>

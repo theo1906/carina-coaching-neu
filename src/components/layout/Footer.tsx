@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 const navigation = {
   main: [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/dienstleistungen' },
+    { name: 'Carina Coaching', href: '/' },
+    { name: 'Mein Coaching Angebot', href: '/dienstleistungen' },
     { name: 'Über mich', href: '/ueber-mich/mein-weg' },
     { name: 'Kontakt', href: '/kontakt' },
   ],

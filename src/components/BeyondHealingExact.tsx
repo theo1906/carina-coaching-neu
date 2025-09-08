@@ -75,7 +75,7 @@ export default function BeyondHealingExact() {
                 </svg>
               </span>
 
-              <div>
+              <div className="w-full">
                 <h3 className="text-xl font-semibold text-[#232323]">
                   Meine Reise des Lernens
                 </h3>
@@ -85,24 +85,15 @@ export default function BeyondHealingExact() {
                   war ich fest entschlossen, mich auf meinen Weg des Lernens, Lehrens und 
                   Erforschens zu begeben, über diese Kraft in mir, die jeden Tag stärker wurde 
                   und mich angefangen hat zu leiten.
-                </p>
-              </div>
-            </div>
-
-            {/* New Text */}
-            <div className="mt-4 flex items-start gap-4">
-              <div className="w-10 shrink-0"></div> {/* Empty div for spacing to match icon width */}
-              <div className="w-full">
-                <p className="mt-2 text-[15px] leading-7 text-[#3c3c3c]">
-                  Internationale Erfahrungen u.a. in Australien, Bali, Costa Rica, Griechenland, Indien,
-                  Italien, der Schweiz und auf Sansibar haben meinen Horizont erweitert und meinen
-                  spirituellen Ansatz von trauma-sensiblen, körperorientiertem Coaching geprägt.
                   <br />
-                  Mein kontinuierliches, persönliches und spirituelles Wachstum ist für mich eine
-                  Lebenseinstellung. Ich möchte dich authentisch begleiten und aus eigener, erlebter
-                  Erfahrung unterstützen, nicht nur durch erlerntes Wissen. Mit meiner lebendigen,
-                  leichten Energie und vollen Präsenz öffne ich einen freien, klaren und stärkenden
-                  Raum für deinen Heilungsweg.
+                  Internationale Erfahrungen u.a. in Australien, Bali, Costa Rica, Griechenland, 
+                  Indien, Italien, der Schweiz und auf Sansibar haben meinen Horizont erweitert 
+                  und meinen spirituellen Ansatz von trauma-sensiblen, körperorientiertem 
+                  Coaching geprägt. Mein kontinuierliches, persönliches und spirituelles 
+                  Wachstum ist für mich eine Lebenseinstellung. Ich möchte dich authentisch 
+                  begleiten und aus eigener, erlebter Erfahrung unterstützen, nicht nur durch 
+                  erlerntes Wissen. Mit meiner lebendigen, leichten Energie und vollen Präsenz 
+                  öffne ich einen freien, klaren und stärkenden Raum für deinen Heilungsweg.
                 </p>
               </div>
             </div>
@@ -240,45 +231,8 @@ export default function BeyondHealingExact() {
           </p>
         </div>
 
+        {/* First Row - Two Columns */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Akademische Ausbildung & Corporate Karriere */}
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-rose-100">
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-rose-800 mb-6 flex items-center">
-                <svg className="w-6 h-6 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                </svg>
-                Akademische Ausbildung & Corporate Karriere
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                  <span className="text-gray-700">
-                    <span className="font-semibold">2004-2010:</span> Business Administration and Cultural Studies, Diplom Kulturwirt; Universität Passau & Universitat Pompeo Fabra (zwei Auslandssemester in Barcelona, Spanien)
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                  <span className="text-gray-700">
-                    <span className="font-semibold">Apr-Jun 2010:</span> Masterarbeit: "The Importance of Change Management and Communication in Organizational Change"; Johannesburg, Südafrika
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                  <span className="text-gray-700">
-                    <span className="font-semibold">2011 - 2015:</span> Marketing- und Eventmanagerin in diversen Agenturen
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                  <span className="text-gray-700">
-                    <span className="font-semibold">Jun 2015 - Dez 2020 und Jul 2022-Dez 2024:</span> Marketing & Sales Manager BMW AG
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
           {/* Zertifizierte Ausbildungen */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-rose-100">
             <div className="p-6">
@@ -292,19 +246,25 @@ export default function BeyondHealingExact() {
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Okt 2024 - Heute:</span> Assistenz Ausbildung „Spirituelles System-Coaching“, Dr Klaus Peter Horn Coaching & Training; München, Deutschland
+                    <span className="font-semibold">Okt 2024 - Heute:</span> Assistenz Ausbildung Spirituelles System-Coaching, Dr. Klaus Peter Horn Coaching & Training, München
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Sep 2023 - Juli 2024:</span> Ausbildung „Spirituelles System-Coaching“: zertifizierte Ausbildung nach DCV (Deutscher Coaching Verband e.V.), Dr Klaus Peter Horn Coaching & Training; München, Deutschland
+                    <span className="font-semibold">Sep 2023 - Juli 2024:</span> Ausbildung Spirituelles System-Coaching (zertifiziert nach DCV / 7 Module), Dr. Klaus Peter Horn Coaching & Training, München
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Okt 2021 - Dez 2022:</span> Meditation Teacher Training (190 Stunden), Meditationsschule Karsten Spaderna; Online
+                    <span className="font-semibold">Okt 2021 - Dez 2022:</span> Meditation Teacher Training (190 Stunden), Meditationsschule Karsten Spaderna, Online
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                  <span className="text-gray-700">
+                    <span className="font-semibold">Okt 2020 - Juli 2022:</span> Silence of Touch - Psychosomatic Bodywork & Trauma-Informed Massage Therapy Training (350 Stunden), Academy for Rebalancing Psychosomatic Bodywork; Anu & Gyana Cain, München
                   </span>
                 </li>
                 <details className="group">
@@ -319,37 +279,104 @@ export default function BeyondHealingExact() {
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Okt 2020 - Juli 2022:</span> Silence of Touch - Psychosomatic Bodywork & Trauma-Informed Massage Therapy Training (264 Stunden), Academy for Rebalancing Psychosomatic Bodywork; Anu & Gyana Cain; München, Deutschland
+                        <span className="font-semibold">Jun 2020 - Nov 2021:</span> Ausbildung Working With People Training - Holistic Counselling and Trauma Work (250 Stunden), Turiya Hanover & Rafia Morgan, Mandali Retreat Center, Italien
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Jun 2020 - Nov 2021:</span> Working With People Training - Holistic Counselling and Trauma Work (250 Stunden), Turiya Hanover & Rafia Morgan; Mandali Retreat Center, Italien
+                        <span className="font-semibold">Juli - Aug 2020:</span> Yoga Teacher Training (RYS 200 Stunden), Conscious Yoga Academy, Karpathos, Griechenland
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Mai 2020 - Okt 2020:</span> The UPGRADE: Sequencing (25 Stunden), Eva Klein Yoga; The Studio Academy, München, Deutschland
+                        <span className="font-semibold">April 2018:</span> "Alltagsbegleiter" Zertifikat - Volunteer, DEIN NACHBAR e.V., München
+                      </span>
+                    </div>
+                  </div>
+                </details>
+              </ul>
+            </div>
+          </div>
+
+          {/* Weiterführende Trainings */}
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-rose-100">
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-rose-800 mb-6 flex items-center">
+                <svg className="w-6 h-6 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                </svg>
+                Weiterführende Trainings in Trauma-/ Persönlichkeitsarbeit und "Conscious Relating"
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                  <span className="text-gray-700">
+                    <span className="font-semibold">Juli 2025:</span> From Shame and Guilt to Selflove - Intensive Trauma Workshop (56 Stunden), Amana & Krish Torbe; Italy
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                  <span className="text-gray-700">
+                    <span className="font-semibold">Dez 2024 - Jan 2025:</span> The Learning Love Intensive Workshop - Training for Trauma, Childhood Wounds & Conscious Relating. The somatic approach to healing trauma, and working with issues of shame (96 Stunden), Amana & Krish Torbe; Bali
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                  <span className="text-gray-700">
+                    <span className="font-semibold">Dez 2023:</span> Who Is In Awareness Intensive Retreat & 10-Day Silent Retreat mit Tyohar in PachaMama (100 Stunden); Nosara, Costa Rica
+                  </span>
+                </li>
+                <details className="group">
+                  <summary className="flex items-center cursor-pointer list-none p-2 -mx-2 rounded-lg hover:bg-rose-50 transition-colors">
+                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                    <span className="text-rose-600 font-medium">Weitere Trainings anzeigen</span>
+                    <svg className="w-4 h-4 ml-2 text-rose-400 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="ml-5 mt-2 space-y-4">
+                    <div className="flex items-start">
+                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                      <span className="text-gray-700">
+                        <span className="font-semibold">Dez 2022 - Jan 2023:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe; Bali
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Mai 2019 - Aug 2020:</span> Dimensions of Being - Essence Training and Trauma Work (160 Stunden), Turiya Hanover & Vasumati Hancock; Köln, Deutschland
+                        <span className="font-semibold">Jan - März 2021:</span> Rise Up & Shine University - Innere Kindheilung & Persönlichkeitsentwicklung (60 Stunden), Laura Malina Seiler; Online
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Juli - Aug 2020:</span> Yoga Teacher Training (200 Stunden), Elias Katirtsigiano & Persefoni Aishwarya; Karpathos, Griechenland
+                        <span className="font-semibold">Aug 2019:</span> Healing Shock and Trauma - Intensive Workshop (56 Stunden), Amana & Krish Torbe; Schweiz
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">April 2018:</span> "Alltagsbegleiter" Zertifikat - Volunteer, (40 Stunden), DEIN NACHBAR e.V. Thomas Oeben; Munich, Germany
+                        <span className="font-semibold">Mai 2019 - Juni 2022:</span> private 1:1 Einzelcoaching Sessions mit Gyana Cain, Holistic Counselor
+                      </span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                      <span className="text-gray-700">
+                        <span className="font-semibold">Dez 2018 - Jan 2019:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe, Bali
+                      </span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                      <span className="text-gray-700">
+                        <span className="font-semibold">Seit 2019 -</span> zahlreiche weitere Workshops und Retreats in feminine awakening, a woman's worth, womb healing, Yoga und Persönlichkeitsentwicklung.
+                      </span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                      <span className="text-gray-700">
+                        <span className="font-semibold">März 2017:</span> Yoga-Workshop & Ayurveda-Kur; Somatheeram Ayurvedic Health Resort, Kovalam, Indien
                       </span>
                     </div>
                   </div>
@@ -359,82 +386,20 @@ export default function BeyondHealingExact() {
           </div>
         </div>
 
-        {/* Weiterführende Trainings */}
-        <div className="mt-12 max-w-5xl mx-auto">
+        {/* Second Row - Full Width */}
+        <div className="mt-8 max-w-5xl mx-auto">
+          {/* Corporate Karriere & Qualifikationen */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-rose-100">
             <div className="p-6">
               <h3 className="text-2xl font-bold text-rose-800 mb-6 flex items-center">
                 <svg className="w-6 h-6 mr-2 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                 </svg>
-                Weiterführende Trainings in Trauma-/ Persönlichkeitsarbeit und "Conscious Relating"
+                Corporate Karriere & Qualifikationen
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Juli 2025:</span> From Shame and Guilt to Selflove - Intensive Trauma Workshop (56 Stunden), Amana & Krish Torbe; Italy
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Dez 2024 - Jan 2025:</span> The Learning Love Intensive Workshop - Training for Trauma, Childhood Wounds & Conscious Relating. The somatic approach to healing trauma, and working with issues of shame (96 Stunden), Amana & Krish Torbe; Bali
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Dez 2023:</span> Who Is In Awareness Intensive Retreat & 10-Day Silent Retreat mit Tyohar in PachaMama (100 Stunden); Nosara, Costa Rica
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Dez 2022 - Jan 2023:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe; Bali
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Jan - März 2021:</span> Rise Up & Shine University - Innere Kindheilung & Persönlichkeitsentwicklung (60 Stunden), Laura Malina Seiler; Online
-                    </span>
-                  </li>
-                </ul>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Aug 2019:</span> Healing Shock and Trauma - Intensive Workshop (56 Stunden), Amana & Krish Torbe; Schweiz
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Mai 2019 - Juni 2022:</span> private 1:1 Einzelcoaching Sessions mit Gyana Cain, Holistic Counselor
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Dez 2018 - Jan 2019:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe, Bali
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">Seit 2019 -</span> zahlreiche weitere Workshops und Retreats in feminine awakening, a woman's worth, womb healing, Yoga und Persönlichkeitsentwicklung.
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                    <span className="text-gray-700">
-                      <span className="font-semibold">März 2017:</span> Yoga-Workshop & Ayurveda-Kur; Somatheeram Ayurvedic Health Resort, Kovalam, Indien
-                    </span>
-                  </li>
-                </ul>
-              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Mein Studium der Betriebswirtschaftslehre und Kulturwissenschaften legte den Grundstein für eine 13-jährige Karriere im Marketing und Vertrieb, zuletzt acht Jahre bei der BMW AG. Inspiriert und motiviert von meiner eigenen Heilerfahrung, die mich zu meiner Berufung geführt hat, begann ich 2020 parallel zu meinem Job mit Coaching Ausbildungen und Körperarbeit, um in 2025 den Sprung in die Selbstständigkeit zu wagen und meinen Traum zu leben, Frauen auf ihrem Weg in die Heilung und in ihr ganzes Potenzial zu begleiten.
+              </p>
             </div>
           </div>
         </div>
@@ -447,8 +412,8 @@ export default function BeyondHealingExact() {
             Kostenloses Erstgespräch vereinbaren
           </a>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
     </>
   );
 }

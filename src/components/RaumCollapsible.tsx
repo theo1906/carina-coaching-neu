@@ -24,7 +24,7 @@ export default function RaumCollapsible() {
 
       {isOpen && (
         <div className="mt-6 space-y-6 text-gray-700">
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed text-justify">
             Ich musste selbst fühlen, wie viel Scham und Schuld als auch Isolation mit bspw. einer Essstörung verbunden sind. Seitdem ich meinen Weg des persönlichen Wachstums konsequent gehe, geschehen Wunder in meinem Leben und ich erlaube mir Freiheit, Leichtigkeit und Fülle. Im Außen treffe ich oft noch auf wenig Verständnis für meine Veränderung und mein „Aufbrechen“ aus veralteten Denkweisen und Dynamiken. Umso wichtiger ist es mir, dir genau diesen wertfreien Raum zu schenken, damit auch du all das für dich ermöglichen kannst.
           </p>
         </div>

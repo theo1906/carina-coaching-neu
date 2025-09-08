@@ -32,7 +32,7 @@ export default function MeineWendeSection() {
         
         <div className={`transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 overflow-hidden'}`}>
           <p className="text-gray-700 leading-relaxed">
-            Diese Erfahrung hat mich nicht nur von der Bulimie befreit, sondern hat in mir auch die unglaubliche Kraft erweckt, die wir alle in uns tragen, um uns von innen heraus zu heilen.
+            Diese Erfahrung hat mich nicht nur von der Bulimie befreit, sondern hat in mir auch die unglaubliche Kraft erweckt, die wir alle in uns tragen, um uns von innen heraus zu heilen und wahrhaftig zu leben.
           </p>
         </div>
       </div>

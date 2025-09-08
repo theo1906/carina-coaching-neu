@@ -180,11 +180,11 @@ export default function Angebot() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              Preise
+              Preispakete für mein Coaching Angebot
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
-              Wähle zwischen mehreren kürzeren oder weniger längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich, die Aufteilung entscheidest du selbst.
+              Wähle zwischen mehreren kürzeren oder wenigen längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich. Du entscheidest flexibel, wie du deine Zeit aufteilen möchtest und ob du online oder vor Ort mit mir arbeiten möchtest.
             </p>
           </div>
         </div>

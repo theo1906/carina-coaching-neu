@@ -23,6 +23,7 @@ import {
   HeartIcon as HeartOutlineIcon,
   SparklesIcon as SparklesOutlineIcon
 } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 function CollapsibleText({ content }: { content: string }) {
@@ -70,24 +71,44 @@ export default function EssstorungPage() {
   const pathname = usePathname();
   
   useEffect(() => {
-    // Check if we should scroll to a specific section
-    if (typeof window !== 'undefined') {
+    const handleScroll = () => {
+      // First check for hash in URL
+      if (window.location.hash) {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+      }
+      
+      // Then check sessionStorage
       const shouldScrollToSection = sessionStorage.getItem('shouldScrollToSection');
       if (shouldScrollToSection) {
         const element = document.getElementById(shouldScrollToSection);
         if (element) {
-          // Small delay to ensure the page is fully loaded
-          setTimeout(() => {
+          // Use requestAnimationFrame for better timing
+          requestAnimationFrame(() => {
             window.scrollTo({
-              top: element.offsetTop - 100,
+              top: element.offsetTop - 120, // Increased offset for better visibility
               behavior: 'smooth'
             });
-          }, 100);
+          });
         }
         // Clear the flag
         sessionStorage.removeItem('shouldScrollToSection');
       }
-    }
+    };
+
+    // Add a small delay to ensure everything is loaded
+    const timer = setTimeout(handleScroll, 100);
+    
+    // Also handle popstate for browser back/forward
+    window.addEventListener('popstate', handleScroll);
+    
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('popstate', handleScroll);
+    };
   }, [pathname]);
   return (
     <main className="min-h-screen bg-white">
@@ -103,7 +124,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div id="systemisches-coaching" className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
-              Was macht ein ED Recovery Coach für Essstörungen?
+              Systemisches Coaching für Essstörungen & ED Recovery
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -214,7 +235,7 @@ export default function EssstorungPage() {
       </section>
 
       {/* Section: Meine Geschichte */}
-      <section className="py-16 bg-gradient-to-b from-white to-pink-50 relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-white to-pink-50 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float animation-delay-2000"></div>
@@ -222,8 +243,8 @@ export default function EssstorungPage() {
           <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-50 to-pink-50 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-pulse"></div>
         </div>
         
-        <div id="heilungsreise" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12" id="heilungsreise">
             <h2 className="text-3xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-4">
               Der Beginn meiner Heilungsreise aus 20 Jahren Essstörung
             </h2>
@@ -509,7 +530,20 @@ export default function EssstorungPage() {
               </motion.div>
             </div>
             
-            <div className="text-center mt-4">
+            {/* Image in the section */}
+            <div className="mt-8 rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+              <Image
+                src="/images/essstoerungen-heilkraft-koerper.JPG"
+                alt="Frau, die mit geschlossenen Augen ihre Hände auf ihr Herz legt, um innere Heilung und Verbindung zu symbolisieren"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+            
+            {/* Mehr erfahren Button */}
+            <div className="text-center mt-8">
               <Link 
                 href="/dienstleistungen/essstorung/meine-heilungsreise/embodiment"
                 className="inline-flex items-center px-8 py-3.5 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
@@ -734,6 +768,7 @@ export default function EssstorungPage() {
               </Link>
             </div>
           </div>
+          
         </div>
       </section>
 

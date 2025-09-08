@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from './justified-text.module.css';
 import BeyondHealingExact from '@/components/BeyondHealingExact';
 import { 
   SparklesIcon, 
@@ -189,20 +190,20 @@ export default function MeinWeg() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-32 md:py-40 overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50">
+      <section className="relative pt-24 pb-12 md:pt-28 md:pb-16 overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50">
         <div className="absolute inset-0">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
-          <div className="absolute top-1/3 -right-8 w-24 h-24 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
-          <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
+          <div className="absolute -top-16 -right-16 w-40 h-40 bg-pink-100 rounded-full mix-blend-multiply filter blur-lg opacity-20"></div>
+          <div className="absolute -bottom-16 -left-16 w-40 h-40 bg-purple-100 rounded-full mix-blend-multiply filter blur-lg opacity-20"></div>
+          <div className="absolute top-1/3 -right-4 w-12 h-12 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
+          <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-16">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-4">
+          <div className="text-center mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-2">
               Mein Weg
             </h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+            <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-3"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto">
               "Wie ich gelernt habe, meinem Körper zu vertrauen und meine innere Kraft zu erwecken."
             </p>
@@ -265,8 +266,29 @@ export default function MeinWeg() {
               </div>
               <div className="mt-8 flex justify-center">
                 <Link 
-                  href="/dienstleistungen/essstorung" 
+                  href="/dienstleistungen/essstorung#heilungsreise" 
                   className="group inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                  onClick={(e) => {
+                    // For same-page navigation
+                    if (window.location.pathname === "/dienstleistungen/essstorung") {
+                      e.preventDefault();
+                      const element = document.getElementById('heilungsreise');
+                      if (element) {
+                        const yOffset = -120; // Adjust this value to account for fixed header
+                        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        
+                        window.scrollTo({
+                          top: y,
+                          behavior: 'smooth'
+                        });
+                      }
+                      return;
+                    }
+                    
+                    // For cross-page navigation
+                    sessionStorage.setItem('shouldScrollToSection', 'heilungsreise');
+                    // Let the default link behavior handle the navigation
+                  }}
                 >
                   <span className="mr-2">Mehr zu meiner Geschichte</span>
                   <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -277,7 +299,7 @@ export default function MeinWeg() {
         </div>
       </section>
 
-      {/* Section 2: Mein Ansatz */}
+      {/* Section 2: Mein Coaching Ansatz */}
       <section className="relative py-16 md:py-20 bg-gradient-to-b from-rose-50 to-white">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-100 rounded-full opacity-20"></div>
@@ -286,16 +308,18 @@ export default function MeinWeg() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              Mein Ansatz – Embodiment als Schlüssel zur Transformation
+              Mein Coaching Ansatz – Embodiment als Schlüssel zur Transformation
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-rose-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-2xl mx-auto mb-12">
               "DEIN KÖRPER KENNT DEN WEG"
             </p>
             
-            <p className="text-gray-700 text-lg max-w-3xl mx-auto mb-12 leading-relaxed text-left">
-              Heilung geschieht nicht alleine mit Entschlossen&shy;heit im Kopf – sie geschieht vor allem über den Körper und im Nerven&shy;system. In meinem Coaching arbeiten wir mit Embodi&shy;ment: bewusste Präsenz im Körper, Entwick&shy;lung von Körper&shy;vertrauen und die Öffnung für innere Heilung.
-            </p>
+            <div className="w-full max-w-3xl mx-auto mb-12 px-4">
+              <p className={styles.justifiedText}>
+                Heilung geschieht nicht alleine mit Entschlossen&shy;heit im Kopf – sie geschieht vor allem über den Körper und im Nerven&shy;system. In meinem Coaching arbeiten wir mit Embodi&shy;ment: bewusste Präsenz im Körper, Entwick&shy;lung von Körper&shy;vertrauen und die Öffnung für innere Heilung.
+              </p>
+            </div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -372,291 +396,29 @@ export default function MeinWeg() {
             Jede Reise hat ihren eigenen Rhythmus. Meine führte mich durch viele Höhen und Tiefen, bis ich meinen Weg in die Freiheit und Selbstliebe gefunden habe.
           </p>
           
-          {/* Life Journey Graph */}
-          <div className="relative max-w-6xl mx-auto mb-20 bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">Meine Reise im Überblick</h2>
-            
-            <div className="relative h-[450px] w-full">
-              {/* Y-Axis */}
-              <div className="absolute left-0 top-0 bottom-0 w-10">
-                {/* Top Label - Leichtigkeit */}
-                <div className="absolute left-0 top-0 -ml-4 w-32">
-                  <div className="text-xs font-medium text-gray-600">Leichtigkeit</div>
-                  <div className="text-xs text-gray-600">Liebe</div>
-                  <div className="text-xs text-gray-600">Freude</div>
-                </div>
-                
-                {/* Middle Label - Empty */}
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 w-20">
-                </div>
-                
-                {/* Bottom Label - Angst */}
-                <div className="absolute left-0 bottom-0 -ml-4 w-36">
-                  <div className="text-xs font-medium text-gray-600">Schuld</div>
-                  <div className="text-xs text-gray-600">Angst</div>
-                  <div className="text-xs text-gray-600">Traurigkeit</div>
-                </div>
-              </div>
-
-              {/* X-Axis */}
-              <div className="absolute left-10 right-0 bottom-0 h-px bg-gray-200"></div>
-              
-              {/* X-Axis Labels */}
-              <div className="absolute left-10 right-0 bottom-0 h-8 flex justify-between items-start px-2">
-                {[1990, 2000, 2010, 2020, 2025].map((year, index) => (
-                  <span 
-                    key={year} 
-                    className={`text-xs text-gray-500 ${index === 0 ? 'ml-1' : ''} ${index === 0 ? 'translate-x-0' : '-translate-x-1/2'}`}
-                  >
-                    {year}
-                  </span>
-                ))}
-              </div>
-              <div className="absolute left-1/2 -translate-x-1/2 bottom-0 text-xs text-gray-600 font-medium -mb-6">
-                Zeit
-              </div>
-
-              {/* Graph Area */}
-              <div 
-                className="absolute left-10 right-0 top-0 bottom-8 overflow-visible cursor-default"
-                onClick={handleGraphClick}
-              >
-                {/* Grid Lines with Neutral Line */}
-                <div className="absolute left-0 right-0 h-px bg-gray-200 z-10" style={{ top: '50%' }}></div>
-                <div className="absolute left-0 right-0 h-px bg-gray-50" style={{ top: '12.5%' }}></div>
-                <div className="absolute left-0 right-0 h-px bg-gray-50" style={{ top: '25%' }}></div>
-                <div className="absolute left-0 right-0 h-px bg-gray-50" style={{ top: '37.5%' }}></div>
-                <div className="absolute left-0 right-0 h-px bg-gray-50" style={{ top: '62.5%' }}></div>
-                <div className="absolute left-0 right-0 h-px bg-gray-50" style={{ top: '75%' }}></div>
-                <div className="absolute left-0 right-0 h-px bg-gray-50" style={{ top: '87.5%' }}></div>
-
-                {/* Data Points */}
-                {[
-                  {
-                    year: 1982,
-                    mood: 3,
-                    title: "Geburt",
-                    description: ""
-                  },
-                  {
-                    year: 1984,
-                    mood: 0,
-                    title: "Depression meiner Mutter",
-                    description: "Start Depression meiner Mutter. Mein Gefühl: Ich bin zu viel. Ich unterdrücke meine Wut und Traurigkeit mit Anpassung und Perfektion."
-                  },
-                  {
-                    year: 1989,
-                    mood: 0,
-                    title: "Kindheitstrauma",
-                    description: "Ich laufe um mein Leben nach einer Drohung meines Elternteils. Glaubenssatz: Wenn ich mich zeige, bin ich in Lebensgefahr."
-                  },
-                  {
-                    year: 1996,
-                    mood: 0,
-                    title: "Beginn der Bulimie",
-                    description: "Über Nacht kommt sie und verändert meine Persönlichkeit massiv & rasant (stehlen, lügen, Leistungsabfall). Isolation, Schweigen und Scham werden meine Begleiter. Ich erfahre körperliche Gewalt durch die Familie."
-                  },
-                  {
-                    year: 2000,
-                    mood: 2,
-                    title: "Co-Abhängigkeit in Beziehung",
-                    description: "Beginn einer 9-jährigen on/off Beziehung mit einem 13 Jahre älteren Mann. Ich habe Angst es alleine nicht zu schaffen und gehe dabei oft über meine Grenzen - emotional und körperlich."
-                  },
-                  {
-                    year: 2001,
-                    mood: 2.5,
-                    title: "Kontrollverlust & Trauma",
-                    description: "Autounfälle, Alkohol, Drogen, MPU, Abi-Durchfall. Ich will nur noch weg. 1 Jahr Work&Travel Australien „retten“ mich, die Bulimie begleitet mich. Ein sexueller Übergriff folgt."
-                  },
-                  {
-                    year: 2004,
-                    mood: 4,
-                    title: "Zusage für's Studium",
-                    description: "Ich fühle mich das 1. Mal sicher, angekommen und bin stolz auf mich. Ich habe Freunde gefunden & Zugehörigkeit. Der innerliche Kampf bleibt."
-                  },
-                  {
-                    year: 2009,
-                    mood: 4.5,
-                    title: "Liebe & Verstecken",
-                    description: "Ich verliebe mich in eine Frau & wir erschaffen uns ein Zuhause. Ich liebe & bin geliebt wie nie zuvor, bin fest davon überzeugt: wir werden zusammen alt. Doch aus Angst und Scham, verheimliche ich meine Essstörung."
-                  },
-                  {
-                    year: 2014,
-                    mood: 0,
-                    title: "Zusammenbruch",
-                    description: "Die Beziehung endet plötzlich & unerwartet, ich fühle mich verloren. Ich muss ausziehen in ein 8m2 WG Zimmer. Zeitgleich verliere ich meinen Job. Ich denke ans Aufgeben, aber die Stimme in mir sagt: geh nach Australien."
-                  },
-                  {
-                    year: 2015,
-                    mood: 4.5,
-                    title: "Wendepunkt am Strand",
-                    description: "In Australien manifestiere ich: Ich will gesund sein, unabhängig und Verantwortung für mein Leben übernehmen. Bei Rückkunft: Start im Traumjob. Start neue Beziehung. Viel zu früh, aber ich will nicht alleine sein."
-                  },
-                  {
-                    year: 2016,
-                    mood: 4.7,
-                    title: "Erste eigene Wohnung",
-                    description: "Ich ziehe in meine erste selbst finanzierte Wohnung. Die Verantwortung macht mir zunächst große Angst, aber ich springe & vertraue wieder der Stimme in mir. Ich erschaffe mir meinen sicheren Wohlfühlort."
-                  },
-                  {
-                    year: 2016.67, // August 2016
-                    mood: 5,
-                    title: "Heilung über Nacht",
-                    description: "Meine spirituelle Heilerfahrung kam komplett unerwartet, meine Mama war in der Nacht bei mir. Mein Körper lässt die Wut los. Frieden kehrt ein. Ich spüre tief in mir: ich bin frei - für immer."
-                  },
-                  {
-                    year: 2018,
-                    mood: 5.2,
-                    title: "Weg der Selbstliebe",
-                    description: "Ich verlasse die Beziehung aus Liebe zu mir, das 1. Mal ohne 'Back-Up' und begebe mich auf meinen Weg der Selbstliebe & Selbsterforschung. Meine innere Stimme leitet mich. Kauf meiner Eigentumswohnung."
-                  },
-                  {
-                    year: 2019,
-                    mood: 5.5,
-                    title: "Tiefe Heilung beginnt",
-                    description: "In Bali beginne ich mit Persönlichkeitsarbeit und teile meine Geschichte nach 23 Jahren Schweigen. 6 Monate später konfrontiere ich meine Eltern erstmals mit meiner Angst als Kind & meiner Bulimie-Erfahrung. Ich lasse Schuldgefühle los und hole mir meine Würde zurück."
-                  },
-                  {
-                    year: 2021,
-                    mood: 5.8,
-                    title: "Entscheidung für Berufung",
-                    description: "Ich verlasse die Konzernwelt & widme mich voll meiner inneren Heilung & beruflichen Neuausrichtung. Beginn meiner Ausbildungen im Coaching, in der Trauma- und Körperarbeit und im Yoga."
-                  },
-                  {
-                    year: 2022,
-                    mood: 5.5,
-                    title: "Kontaktabbruch Elternhaus",
-                    description: "Ich entscheide mich, Raum einzunehmen für mich und auf Abstand zu gehen von meinen Eltern und deren Konflikt. Vorläufige Rückkehr ins Corporate: ich suche Sicherheit & Halt nach der 'Trennung' von der Familie."
-                  },
-                  {
-                    year: 2024,
-                    mood: 5.8,
-                    title: "Klarheit & Sichtbarkeit",
-                    description: "Auf einer Reise wird mir klar: ich will sichtbar werden in meiner Heilarbeit mit Menschen und dem Ruf meines Herzens folgen. Ich treffe die Entscheidung die Business-Welt endgültig zu verlassen."
-                  },
-                  {
-                    year: 2025,
-                    mood: 6,
-                    title: "Carina Coaching entsteht",
-                    description: "Ich gründe 'Carina Coaching – Embodiment for Women' – und begleite Frauen mit Tiefe, Herz und Erfahrung auf ihrem Weg in die Heilung und zurück zu sich selbst."
-                  }
-                ].map((point, i) => {
-                  const minYear = 1982;
-                  const maxYear = 2025;
-                  const x = ((point.year - minYear) / (maxYear - minYear)) * 100; // Scale year to 0-100%
-                  const y = (1 - ((point.mood + 1) / 8)) * 100; // Scale mood from -1-7 to 0-100%
-                  const isCurrent = point.year === 2025;
-                  
-                  return (
-                    <div 
-                      key={i}
-                      className="absolute"
-                      style={{
-                        left: `${x}%`,
-                        top: `${y}%`,
-                        transform: 'translate(-50%, -50%)',
-                        zIndex: isCurrent ? 20 : 10,
-                      }}
-                      onClick={(e) => handlePointClick(e, i)}
-                    >
-                      {/* Point */}
-                      <div 
-                        className={`w-4 h-4 rounded-full border-2 border-white shadow-md transition-all duration-200 cursor-pointer ${
-                          isCurrent ? 'bg-pink-500 scale-125' : 'bg-purple-500 hover:scale-125'
-                        }`}
-                      ></div>
-                      
-                      {/* Tooltip */}
-                      <div 
-                        className={`absolute left-1/2 -top-16 w-48 bg-white p-3 rounded-lg shadow-xl border border-gray-200 transition-all duration-200 pointer-events-none text-xs ${
-                          activePoint === i ? 'opacity-100' : 'opacity-0'
-                        }`}
-                        style={{
-                          transform: 'translateX(-50%)',
-                          transformOrigin: 'top center',
-                          transition: 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out',
-                          zIndex: 1000,
-                          boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)'
-                        }}
-                      >
-                        <div className="text-xs font-semibold text-pink-600">
-                          {point.year === 2016.67 ? '2016 Aug' : point.year}
-                        </div>
-                        <div className="text-sm font-medium text-gray-800 mb-1">{point.title}</div>
-                        <div className="text-gray-500 leading-snug">{point.description}</div>
-                      </div>
-                    </div>
-                  );
-                })}
-                
-                {/* Connecting Line */}
-                <svg className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
-                  {[
-                    { year: 1982, mood: 3 },
-                    { year: 1984, mood: 0 },
-                    { year: 1989, mood: 0 },
-                    { year: 1996, mood: 0 },
-                    { year: 2000, mood: 2 },
-                    { year: 2001, mood: 2.5 },
-                    { year: 2004, mood: 4 },
-                    { year: 2009, mood: 4.5 },
-                    { year: 2014, mood: 0 },
-                    { year: 2015, mood: 4.5 },
-                    { year: 2016, mood: 4.7 },
-                    { year: 2016.67, mood: 5 },
-                    { year: 2018, mood: 5.2 },
-                    { year: 2019, mood: 5.5 },
-                    { year: 2021, mood: 5.8 },
-                    { year: 2022, mood: 5.5 },
-                    { year: 2024, mood: 5.8 },
-                    { year: 2025, mood: 6 }
-                  ].map((p, i, arr) => {
-                    if (i === 0) return null; // Skip first point
-                    const prevPoint = arr[i - 1];
-                    const minYear = 1982;
-                    const maxYear = 2025;
-                    
-                    const x1 = ((prevPoint.year - minYear) / (maxYear - minYear)) * 100;
-                    const y1 = (1 - ((prevPoint.mood + 1) / 8)) * 100;
-                    const x2 = ((p.year - minYear) / (maxYear - minYear)) * 100;
-                    const y2 = (1 - ((p.mood + 1) / 8)) * 100;
-                    
-                    return (
-                      <line
-                        key={`line-${i}`}
-                        x1={`${x1}%`}
-                        y1={`${y1}%`}
-                        x2={`${x2}%`}
-                        y2={`${y2}%`}
-                        stroke="#8B5CF6"
-                        strokeWidth="2"
-                        className="opacity-70"
-                      />
-                    );
-                  })}
-                </svg>
-              </div>
+          {/* Journey Image */}
+          <div className="flex flex-col items-center mb-8 px-4">
+            <div className="bg-white rounded-xl p-0 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden mb-8">
+              <Image 
+                src="/images/meine-reise-ueberblick.png" 
+                alt="Meine Reise im Überblick" 
+                width={1000}
+                height={800}
+                className="w-auto h-auto max-w-full max-h-[80vh]"
+                priority
+              />
             </div>
             
-            {/* Legend */}
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-purple-500 mr-2"></div>
-                <span>Lebensereignisse</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-pink-500 mr-2"></div>
-                <span>Aktueller Stand</span>
-              </div>
+            {/* Moved text directly below the image */}
+            <div className="max-w-2xl">
+              <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">
+                Was meine Arbeit besonders macht, ist, dass ich diesen Weg selbst gegangen bin. Ich teile nicht nur Wissen, sondern echte Heilerfahrung. Ich verstehe den Mut, den es braucht, um sich für Hilfe und Unterstützung zu öffnen.
+              </p>
             </div>
           </div>
           
-          <div className="mt-12 text-center">
+          <div className="mt-8 text-center">
             <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-sm">
-              <div className="text-gray-700 text-lg leading-relaxed mb-6 text-left">
-                Was meine Arbeit besonders macht, ist, dass ich diesen Weg selbst gegangen bin. Ich teile nicht nur Wissen, sondern echte Heilerfahrung. Ich verstehe den Mut, den es braucht, um sich für Hilfe und Unterstützung zu öffnen.
-              </div>
-              
               <div className="flex justify-center space-x-1.5 mb-5">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-rose-400"></span>
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-rose-300"></span>
@@ -702,7 +464,7 @@ export default function MeinWeg() {
               <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-100 to-rose-100 flex items-center justify-center mb-4 mx-auto">
                 <LightBulbIcon className="h-6 w-6 text-amber-500" />
               </div>
-              <h3 className="text-lg font-semibold text-rose-900 text-center mb-4">Mein Ansatz</h3>
+              <h3 className="text-lg font-semibold text-rose-900 text-center mb-4">Mein Coaching Ansatz</h3>
               <ul className="space-y-3">
                 {[
                   { text: 'Achtsame Körperwahrnehmung' },
@@ -720,7 +482,7 @@ export default function MeinWeg() {
             
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="h-12 w-12 rounded-full bg-rose-100 flex items-center justify-center mb-4 mx-auto">
-                <LightBulbIcon className="h-6 w-6 text-rose-500" />
+                <SparklesIcon className="h-6 w-6 text-rose-500" />
               </div>
               <h3 className="text-lg font-semibold text-rose-900 text-center mb-3">Ganzheitliche Heilung</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
@@ -807,13 +569,13 @@ export default function MeinWeg() {
                       <p className="text-sm text-gray-600 text-center mb-3">{category.description}</p>
                     )}
                   </div>
-                  <ul className={category.contentClass || ''}>
+                  <ul className={`${category.contentClass || ''} mx-auto`}>
                     {category.items.map((item, i) => (
                       <li 
                         key={i} 
-                        className="flex items-start mb-2 last:mb-0"
+                        className="flex items-center mb-2 last:mb-0 justify-center text-center"
                       >
-                        <CheckIcon className={`h-5 w-5 ${category.textColor} mr-2 flex-shrink-0 mt-0.5`} />
+                        <CheckIcon className={`h-5 w-5 ${category.textColor} mr-2 flex-shrink-0`} />
                         <span className="text-gray-700">{item}</span>
                       </li>
                     ))}
