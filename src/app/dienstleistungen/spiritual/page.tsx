@@ -3,8 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Spirituelles Life Coaching | Carina Göb - System-Coach für Essstörungen',
-  description: 'Tiefgehendes spirituelles Coaching zur persönlichen Entwicklung, energetischer Reinigung und der Entdeckung deiner inneren Weisheit.',
+  title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
+  description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
+  keywords: ['spirituelles coaching', 'weiblichkeit entdecken', 'körperarbeit', 'spirituelle entwicklung', 'heilung', 'transformation'],
 };
 
 const features = [
@@ -460,6 +461,20 @@ export default function SpiritualPage() {
                 </p>
               </div>
             </div>
+            
+            {/* Added Image */}
+            <div className="mt-16 text-center">
+              <div className="inline-block rounded-xl overflow-hidden shadow-xl max-w-3xl">
+                <Image
+                  src="/images/sunnylifemoments-shooting-coaching-carina-münchen-275.jpg"
+                  alt="Carina Göb - Spirituelles Coaching in München"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -538,6 +553,7 @@ export default function SpiritualPage() {
               </Link>
             </div>
           </div>
+          
         </div>
       </section>
 

@@ -310,7 +310,7 @@ export default function CoachingOfferings() {
             {/* Mood Meditation Image */}
             <div className="mt-12 rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
               <img
-                src="/images/Mood Meditation.JPG"
+                src={`/images/Mood Meditation.JPG?t=${new Date().getTime()}`}
                 alt="Meditation und Achtsamkeit - Entspannung und innere Ruhe finden"
                 className="w-full h-auto rounded-xl"
                 width={1200}

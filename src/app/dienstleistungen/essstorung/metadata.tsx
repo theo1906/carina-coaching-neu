@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Essstörung Coaching | Carina Göb - System-Coach für Essstörungen',
-  description: 'Tiefgehendes Coaching zur Überwindung von Essstörungen, Körperakzeptanz und emotionaler Befreiung. Finde deinen Weg zurück zu einem gesunden Verhältnis zu Essen und Körper.',
+  title: 'Systemischer Coach für Essstörungen & ED Recovery bei Bulimie, Binge Eating & Anorexie',
+  description: 'Unterstützung bei Bulimie, Anorexie und Binge Eating von jemandem, der diesen Weg selbst gegangen ist. Carina bietet Begleitung und nachhaltige Heilung.',
+  keywords: ['essstörung coaching', 'bulimie hilfe', 'binge eating therapie', 'anorexie überwinden', 'heilung essstörung', 'essstörung bewältigung'],
 };

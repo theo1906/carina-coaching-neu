@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Carina Göb | Life & Mindset Coaching',
-  description: 'Transform your life with professional coaching from Carina Göb. Specializing in helping women overcome challenges and achieve their full potential.',
-  keywords: ['life coaching', 'mindset coaching', 'personal development', 'women empowerment', 'Carina Göb'],
+  title: 'Spirituelles Life Coaching & Systemischer Coach für Essstörungen – Carina Coaching',
+  description: 'Ich bin spiritueller Life Coach und systemischer Coach für Essstörungen. Ich begleite Frauen auf ihrem Heilungsweg durch einen verkörperungsbasierten Ansatz.',
+  keywords: ['spirituelles coaching', 'essstörungen coaching', 'heilung essstörung', 'frauen coaching', 'spirituelle entwicklung', 'körperarbeit'],
 };

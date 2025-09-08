@@ -25,6 +25,7 @@ import {
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import ImageCarousel from '@/components/ImageCarousel';
 
 function CollapsibleText({ content }: { content: string }) {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -533,7 +534,7 @@ export default function EssstorungPage() {
             {/* Image in the section */}
             <div className="mt-8 rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
               <Image
-                src="/images/essstoerungen-heilkraft-koerper.JPG"
+                src={`/images/essstoerungen-heilkraft-koerper.JPG?t=${new Date().getTime()}`}
                 alt="Frau, die mit geschlossenen Augen ihre Hände auf ihr Herz legt, um innere Heilung und Verbindung zu symbolisieren"
                 width={1200}
                 height={800}
@@ -906,6 +907,11 @@ export default function EssstorungPage() {
                 </div>
               </motion.div>
             ))}
+          </div>
+          
+          {/* Image Carousel */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <ImageCarousel />
           </div>
         </div>
       </section>

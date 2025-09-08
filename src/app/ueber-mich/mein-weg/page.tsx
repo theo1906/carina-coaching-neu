@@ -224,7 +224,7 @@ export default function MeinWeg() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-pink-600 italic max-w-3xl mx-auto mb-8">
-              "WIE ICH DURCH MEINE EIGENE HEILUNG HEUTE ANDERE BEGLEITE"
+              „DURCH MEINE EIGENE HEILUNG BEGLEITE ICH HEUTE ANDERE"
             </p>
           </div>
           
@@ -486,7 +486,7 @@ export default function MeinWeg() {
               </div>
               <h3 className="text-lg font-semibold text-rose-900 text-center mb-3">Ganzheitliche Heilung</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Ein Ansatz, der Körper, Geist und Seele gleichermaßen einbezieht, für tiefgreifende und nachhaltige Veränderung.
+                Ein Ansatz, der Körper, Geist, Seele und Emotionen gleichermaßen einbezieht, für tiefgreifende und nachhaltige Veränderung.
               </p>
             </div>
           </div>
@@ -725,6 +725,15 @@ export default function MeinWeg() {
                 <p className="text-xl font-semibold text-rose-900 text-center italic">
                   Du bist unendlich kraftvoll und schöpferisch.
                 </p>
+                <div className="mt-6 flex justify-center">
+                  <Image 
+                    src="/images/Spagat ohne Pflanze.png" 
+                    alt="Spirituelle Transformation" 
+                    width={400} 
+                    height={300}
+                    className="rounded-lg shadow-md"
+                  />
+                </div>
               </div>
               
               <p className="text-lg font-medium text-rose-900 text-center mb-8">

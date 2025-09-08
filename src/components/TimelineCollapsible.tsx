@@ -33,7 +33,7 @@ export default function TimelineCollapsible() {
             </p>
             
             <p>
-              Die Erfahrung dieser jahrelangen Isolation bestärkt mich umso mehr darin, einen sicheren, wertfreien Raum zu schaffen, in dem du dich als Frau gesehen und verstanden fühlst - mit allem, was da ist und sich zeigen, gehalten und gefühlt werden möchte. In unserer gemeinsamen Arbeit begegne ich dir mit der gelebten Erfahrung, dass Heilung möglich ist in jedem Moment und unsere schmerzvollsten Erlebnisse die größte Stärke und Weisheit in hervorbringen können.
+              Die Erfahrung dieser jahrelangen Isolation bestärkt mich umso mehr darin, einen sicheren, wertfreien Raum zu schaffen, in dem du dich als Frau gesehen und verstanden fühlst - mit allem, was da ist und sich zeigen, gehalten und gefühlt werden möchte. In unserer gemeinsamen Arbeit begegne ich dir mit der gelebten Erfahrung, dass Heilung möglich ist in jedem Moment und unsere schmerzvollsten Erlebnisse die größte Stärke und Weisheit in uns hervorbringen können.
             </p>
             
             <p>

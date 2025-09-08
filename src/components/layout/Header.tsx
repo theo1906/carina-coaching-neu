@@ -283,7 +283,8 @@ const Header = () => {
 
       {/* Mobile menu */}
       <div 
-        className={`fixed inset-0 bg-white/95 backdrop-blur-sm z-50 transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        className={`fixed inset-0 bg-white/95 backdrop-blur-sm z-[9999] transition-all duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+        style={{ display: mobileMenuOpen ? 'block' : 'none' }}
         id="mobile-menu"
         aria-hidden={!mobileMenuOpen}
       >
@@ -317,46 +318,50 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="pt-2 pb-6 px-4 overflow-y-auto h-[calc(100%-4rem)]">
-          <div className="space-y-1 py-2">
+        <div className="pt-2 pb-6 px-4 overflow-y-auto h-[calc(100vh-4rem)]">
+          <div className="space-y-2">
             {navigation.map((item) => (
-              <div key={item.name} className="mobile-menu-item">
+              <div key={item.name} className="mobile-menu-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
                 {item.submenu ? (
                   <>
-                    <button
-                      type="button"
-                      className="w-full flex justify-between items-center rounded-lg px-3 py-3 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600"
-                      onClick={() => toggleMobileSubmenu(item.name)}
-                      aria-expanded={mobileSubmenuOpen === item.name}
-                    >
-                      {item.name}
-                      <ChevronDownIcon 
-                        className={`ml-1 h-4 w-4 transition-transform duration-200 ${mobileSubmenuOpen === item.name ? 'transform rotate-180' : ''}`} 
-                        aria-hidden="true" 
-                      />
-                    </button>
-                    <div 
-                      className={`overflow-hidden transition-all duration-200 ${mobileSubmenuOpen === item.name ? 'max-h-96' : 'max-h-0'}`}
-                    >
-                      <div className="pl-4 py-1 space-y-1">
-                        {item.submenu.map((subItem) => (
-                          <Link
-                            key={subItem.name}
-                            href={subItem.href}
-                            className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
-                            onClick={() => setMobileMenuOpen(false)}
-                            prefetch={false}
-                          >
-                            {subItem.name}
-                          </Link>
-                        ))}
+                    <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden mb-2">
+                      <div className="px-4 py-3 border-b border-gray-100">
+                        <button
+                          type="button"
+                          className="w-full flex justify-between items-center text-base font-medium text-gray-900 hover:text-pink-600"
+                          onClick={() => toggleMobileSubmenu(item.name)}
+                          aria-expanded={mobileSubmenuOpen === item.name}
+                        >
+                          {item.name}
+                          <ChevronDownIcon 
+                            className={`ml-1 h-4 w-4 transition-transform duration-200 ${mobileSubmenuOpen === item.name ? 'transform rotate-180' : ''}`} 
+                            aria-hidden="true" 
+                          />
+                        </button>
+                      </div>
+                      <div 
+                        className={`overflow-hidden transition-all duration-200 ${mobileSubmenuOpen === item.name ? 'max-h-96' : 'max-h-0'}`}
+                      >
+                        <div className="divide-y divide-gray-100">
+                          {item.submenu.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              href={subItem.href}
+                              className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
+                              onClick={() => setMobileMenuOpen(false)}
+                              prefetch={false}
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </>
                 ) : (
                   <Link
                     href={item.href}
-                    className="block rounded-lg px-3 py-3 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600"
+                    className="block px-4 py-3 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600"
                     onClick={() => setMobileMenuOpen(false)}
                     prefetch={false}
                   >
