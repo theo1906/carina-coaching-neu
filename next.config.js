@@ -16,6 +16,27 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
+  // Copy the og directory to the static export
+  async exportPathMap(defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+    if (!dev) {
+      const fs = require('fs');
+      const path = require('path');
+      
+      // Ensure the out directory exists
+      const ogDir = path.join(outDir || 'out', 'og');
+      if (!fs.existsSync(ogDir)) {
+        fs.mkdirSync(ogDir, { recursive: true });
+      }
+      
+      // Copy the og-image.png
+      fs.copyFileSync(
+        path.join(dir, 'public', 'og', 'og-image.png'),
+        path.join(ogDir, 'og-image.png')
+      );
+    }
+    return defaultPathMap;
+  },
+
   async headers() {
     return [
       {

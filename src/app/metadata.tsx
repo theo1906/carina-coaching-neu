@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Carina Coaching',
     images: [
       {
-        url: `${siteUrl}/images/logo-og.png`,
+        url: `${siteUrl}/og/og-image.png`,
         width: 1200,
         height: 630,
         alt: 'Carina Coaching - Spirituelles Life Coaching & Systemischer Coach für Essstörungen',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: title,
     description: description,
-    images: [`${siteUrl}/images/logo-og.png`],
+    images: [`${siteUrl}/og/og-image.png`],
   },
   
   // Additional metadata
