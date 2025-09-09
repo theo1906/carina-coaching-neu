@@ -16,11 +16,20 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // For static exports, we'll use output: 'export' in next.config.js
+  // For static exports
   output: 'export',
   
-  // This will copy the public directory to the output directory
-  // No need for manual file copying with exportPathMap
+  // Disable the file-system routing for these files
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+    return config;
+  },
 
   async headers() {
     return [
