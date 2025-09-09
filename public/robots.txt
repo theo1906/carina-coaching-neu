@@ -5,4 +5,5 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://www.carinacoaching.com/sitemap.xml
+Sitemap: Sitemap: https://carina-coaching.com/sitemap.xml
+
