@@ -316,7 +316,7 @@ export default function MeinWeg() {
             </p>
             
             <div className="w-full max-w-3xl mx-auto mb-12 px-4">
-              <p className={styles.justifiedText}>
+              <p className="text-center text-gray-700 text-lg leading-relaxed">
                 Heilung geschieht nicht alleine mit Entschlossen&shy;heit im Kopf – sie geschieht vor allem über den Körper und im Nerven&shy;system. In meinem Coaching arbeiten wir mit Embodi&shy;ment: bewusste Präsenz im Körper, Entwick&shy;lung von Körper&shy;vertrauen und die Öffnung für innere Heilung.
               </p>
             </div>
@@ -410,8 +410,8 @@ export default function MeinWeg() {
             </div>
             
             {/* Moved text directly below the image */}
-            <div className="max-w-2xl">
-              <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">
+            <div className="w-full max-w-2xl mx-auto text-center">
+              <p className="text-gray-700 text-lg leading-relaxed mb-8">
                 Was meine Arbeit besonders macht, ist, dass ich diesen Weg selbst gegangen bin. Ich teile nicht nur Wissen, sondern echte Heilerfahrung. Ich verstehe den Mut, den es braucht, um sich für Hilfe und Unterstützung zu öffnen.
               </p>
             </div>
@@ -486,7 +486,7 @@ export default function MeinWeg() {
               </div>
               <h3 className="text-lg font-semibold text-rose-900 text-center mb-3">Ganzheitliche Heilung</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Ein Ansatz, der Körper, Geist, Seele und Emotionen gleichermaßen einbezieht, für tiefgreifende und nachhaltige Veränderung.
+                Ein Ansatz, der Körper, Geist, Seele und Emotion gleichermaßen einbezieht, für tiefgreifende und nachhaltige Veränderung.
               </p>
             </div>
           </div>
@@ -513,9 +513,6 @@ export default function MeinWeg() {
               Mein ganzheitlicher Ansatz
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-fuchsia-400 to-rose-400 mx-auto mb-6"></div>
-            <p className="text-xl text-rose-800/90 italic">
-              "KÖRPER, GEIST, HERZ UND EMOTIONEN IM EINKLANG"
-            </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -710,7 +707,7 @@ export default function MeinWeg() {
             </div>
             
             <div className="space-y-6 mb-10">
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-center max-w-2xl mx-auto">
                 Vielleicht stehst du an einem Wendepunkt. Vielleicht spürst du, dass da mehr ist. Vielleicht bist du bereit, dich selbst wahrhaftig zu entdecken.
               </p>
               

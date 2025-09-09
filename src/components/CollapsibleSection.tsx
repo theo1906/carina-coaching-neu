@@ -16,11 +16,11 @@ export default function CollapsibleSection() {
             Über mich
           </h4>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Hallo, ich bin Carina Göb und Gründerin von „Carina Coaching - Embodiment for women“. Schön, dass du den Weg hierher gefunden hast.
+            Hallo, ich bin Carina Göb und Gründerin von „Carina Coaching - Embodiment for Women“. Schön, dass du den Weg hierher gefunden hast.
           </p>
         </div>
         <ChevronRightIcon 
-          className={`h-5 w-5 text-pink-600 transition-transform duration-200 mt-1 ${isOpen ? 'rotate-90' : ''}`} 
+          className={`h-5 w-5 text-pink-600 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''} flex-shrink-0`} 
         />
       </div>
       

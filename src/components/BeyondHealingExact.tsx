@@ -79,22 +79,25 @@ export default function BeyondHealingExact() {
                 <h3 className="text-xl font-semibold text-[#232323]">
                   Meine Reise des Lernens
                 </h3>
-                <p className="mt-2 text-[15px] leading-7 text-[#3c3c3c]">
-                  Meine Reise zurück zu mir hat nicht mit der Heilung meiner Bulimie geendet. 
-                  Sie war der Anfang. Fasziniert von meiner eigenen spirituellen Heilerfahrung 
-                  war ich fest entschlossen, mich auf meinen Weg des Lernens, Lehrens und 
-                  Erforschens zu begeben, über diese Kraft in mir, die jeden Tag stärker wurde 
-                  und mich angefangen hat zu leiten.
-                  <br />
-                  Internationale Erfahrungen u.a. in Australien, Bali, Costa Rica, Griechenland, 
-                  Indien, Italien, der Schweiz und auf Sansibar haben meinen Horizont erweitert 
-                  und meinen spirituellen Ansatz von trauma-sensiblen, körperorientiertem 
-                  Coaching geprägt. Mein kontinuierliches, persönliches und spirituelles 
-                  Wachstum ist für mich eine Lebenseinstellung. Ich möchte dich authentisch 
-                  begleiten und aus eigener, erlebter Erfahrung unterstützen, nicht nur durch 
-                  erlerntes Wissen. Mit meiner lebendigen, leichten Energie und vollen Präsenz 
-                  öffne ich einen freien, klaren und stärkenden Raum für deinen Heilungsweg.
-                </p>
+                <blockquote className="mt-2 text-[15px] leading-7 text-[#3c3c3c] max-w-3xl mx-auto text-justify">
+                  <p className="mb-4">
+                    Meine Reise zurück zu mir hat nicht mit der Heilung meiner Bulimie geendet. 
+                    Sie war der Anfang. Fasziniert von meiner eigenen spirituellen Heilerfahrung 
+                    war ich fest entschlossen, mich auf meinen Weg des Lernens, Lehrens und 
+                    Erforschens zu begeben, über diese Kraft in mir, die jeden Tag stärker wurde 
+                    und mich angefangen hat zu leiten.
+                  </p>
+                  <p>
+                    Internationale Erfahrungen u.a. in Australien, Bali, Costa Rica, Griechenland, 
+                    Indien, Italien, der Schweiz und auf Sansibar haben meinen Horizont erweitert 
+                    und meinen spirituellen Ansatz von trauma-sensiblen, körperorientiertem 
+                    Coaching geprägt. Mein kontinuierliches, persönliches und spirituelles 
+                    Wachstum ist für mich eine Lebenseinstellung. Ich möchte dich authentisch 
+                    begleiten und aus eigener, erlebter Erfahrung unterstützen, nicht nur durch 
+                    erlerntes Wissen. Mit meiner lebendigen, leichten Energie und vollen Präsenz 
+                    öffne ich einen freien, klaren und stärkenden Raum für deinen Heilungsweg.
+                  </p>
+                </blockquote>
               </div>
             </div>
           </article>
@@ -313,19 +316,19 @@ export default function BeyondHealingExact() {
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Juli 2025:</span> From Shame and Guilt to Selflove - Intensive Trauma Workshop (56 Stunden), Amana & Krish Torbe; Italy
+                    <span className="font-semibold">Juli 2025:</span> From Shame and Guilt to Selflove - Intensive Trauma Workshop (56 Stunden), Amana & Krish Torbe, Italy
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Dez 2024 - Jan 2025:</span> The Learning Love Intensive Workshop - Training for Trauma, Childhood Wounds & Conscious Relating. The somatic approach to healing trauma, and working with issues of shame (96 Stunden), Amana & Krish Torbe; Bali
+                    <span className="font-semibold">Dez 2024 - Jan 2025:</span> The Learning Love Intensive Workshop - Training for Trauma, Childhood Wounds & Conscious Relating (96 Stunden), Amana & Krish Torbe, Bali
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Dez 2023:</span> Who Is In Awareness Intensive Retreat & 10-Day Silent Retreat mit Tyohar in PachaMama (100 Stunden); Nosara, Costa Rica
+                    <span className="font-semibold">Dez 2023 - Jan 2024:</span> Who Is In Awareness Intensive Retreat & 10-Day Silent Retreat mit Tyohar in PachaMama (100 Stunden), Nosara, Costa Rica
                   </span>
                 </li>
                 <details className="group">
@@ -340,25 +343,37 @@ export default function BeyondHealingExact() {
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Dez 2022 - Jan 2023:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe; Bali
+                        <span className="font-semibold">Dez 2022 - Jan 2023:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe, Bali
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Jan - März 2021:</span> Rise Up & Shine University - Innere Kindheilung & Persönlichkeitsentwicklung (60 Stunden), Laura Malina Seiler; Online
+                        <span className="font-semibold">Jan - März 2021:</span> Rise Up & Shine University - Innere Kindheilung & Persönlichkeitsentwicklung (60 Stunden); Laura Malina Seiler, Online
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Aug 2019:</span> Healing Shock and Trauma - Intensive Workshop (56 Stunden), Amana & Krish Torbe; Schweiz
+                        <span className="font-semibold">Mai 2019 - Juni 2022:</span> monatl. private 1:1 Einzelcoaching Sessions mit Gyana Cain, Holistic Counselor
                       </span>
                     </div>
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Mai 2019 - Juni 2022:</span> private 1:1 Einzelcoaching Sessions mit Gyana Cain, Holistic Counselor
+                        <span className="font-semibold">Mai 2019 - Aug 2020:</span> Dimensions of Being - Essence Training and Trauma Work (160 Stunden), Turiya Hanover & Vasumati Hancock, UTA Köln, Deutschland
+                      </span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                      <span className="text-gray-700">
+                        <span className="font-semibold">Aug 2019:</span> Healing Shock and Trauma - Intensive Workshop (56 Stunden), Amana & Krish Torbe, Schweiz
+                      </span>
+                    </div>
+                    <div className="flex items-start">
+                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
+                      <span className="text-gray-700">
+                        <span className="font-semibold">Juni - Juli 2019:</span> Seminar Transcendental Meditation (24 Stunden), Dr med. Ulrich Bauhofer, München, Deutschland
                       </span>
                     </div>
                     <div className="flex items-start">
@@ -370,13 +385,7 @@ export default function BeyondHealingExact() {
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Seit 2019 -</span> zahlreiche weitere Workshops und Retreats in feminine awakening, a woman's worth, womb healing, Yoga und Persönlichkeitsentwicklung.
-                      </span>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
-                      <span className="text-gray-700">
-                        <span className="font-semibold">März 2017:</span> Yoga-Workshop & Ayurveda-Kur; Somatheeram Ayurvedic Health Resort, Kovalam, Indien
+                        <span className="font-semibold">Seit Mai 2019:</span> zahlreiche weitere Workshops und Retreats in feminine awakening, a woman's worth, womb healing, Yoga und Persönlichkeitsentwicklung
                       </span>
                     </div>
                   </div>
@@ -397,7 +406,7 @@ export default function BeyondHealingExact() {
                 </svg>
                 Corporate Karriere & Qualifikationen
               </h3>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed perfect-justify">
                 Mein Studium der Betriebswirtschaftslehre und Kulturwissenschaften legte den Grundstein für eine 13-jährige Karriere im Marketing und Vertrieb, zuletzt acht Jahre bei der BMW AG. Inspiriert und motiviert von meiner eigenen Heilerfahrung, die mich zu meiner Berufung geführt hat, begann ich 2020 parallel zu meinem Job mit Coaching Ausbildungen und Körperarbeit, um in 2025 den Sprung in die Selbstständigkeit zu wagen und meinen Traum zu leben, Frauen auf ihrem Weg in die Heilung und in ihr ganzes Potenzial zu begleiten.
               </p>
             </div>

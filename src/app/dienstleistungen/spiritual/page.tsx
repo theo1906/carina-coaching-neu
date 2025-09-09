@@ -1,6 +1,7 @@
 import { ArrowRightIcon, HeartIcon, LightBulbIcon, SparklesIcon, UserIcon, WrenchScrewdriverIcon, ScaleIcon, BoltIcon, ShieldCheckIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import SpiritualCoachingCarousel from '@/components/SpiritualCoachingCarousel';
 
 export const metadata = {
   title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
@@ -619,6 +620,13 @@ export default function SpiritualPage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+        
+        {/* Image Carousel - Moved outside the grid */}
+        <div className="w-full flex justify-center items-center mt-16 mb-16 px-4">
+          <div className="w-full max-w-4xl">
+            <SpiritualCoachingCarousel />
           </div>
         </div>
       </section>

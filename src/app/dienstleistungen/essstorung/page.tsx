@@ -232,6 +232,20 @@ export default function EssstorungPage() {
                 <ArrowRightIcon className="ml-2 w-5 h-5" />
               </Link>
           </div>
+          
+          {/* Image below button */}
+          <div className="mt-8 flex justify-center">
+            <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/weißer Anzug auf Sessel.png"
+                alt="Weißer Anzug auf Sessel - Symbolbild für Coaching und Transformation"
+                width={800}
+                height={533}
+                className="w-full h-auto object-cover"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -529,18 +543,6 @@ export default function EssstorungPage() {
                   und ihr volles Potenzial zu entfalten. Gemeinsam arbeiten wir daran, deine eigene Heilkraft zu entdecken.
                 </p>
               </motion.div>
-            </div>
-            
-            {/* Image in the section */}
-            <div className="mt-8 rounded-xl overflow-hidden shadow-xl max-w-4xl mx-auto">
-              <Image
-                src={`/images/essstoerungen-heilkraft-koerper.JPG?t=${new Date().getTime()}`}
-                alt="Frau, die mit geschlossenen Augen ihre Hände auf ihr Herz legt, um innere Heilung und Verbindung zu symbolisieren"
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-                priority
-              />
             </div>
             
             {/* Mehr erfahren Button */}

@@ -1,7 +1,7 @@
 import { ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+import SpiritualCoachingCarousel from '@/components/SpiritualCoachingCarouselAlt';
 
 export const metadata = {
   title: 'Ist ein spirituelles Coaching das Richtige für dich? | Carina Göb',
@@ -79,37 +79,18 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
                     Die gesammelten Erfahrungen sind die Essenz meiner Arbeit und mein Ansatz für ein erfülltes SEIN im eigenen Körper, dem Zuhause deiner Seele und damit für ein erfülltes Leben.
                   </p>
 
-                  <div className="my-12">
-                    <Image 
-                      src="/images/Mood%20Services_Spiritual%20C.JPG" 
-                      alt="Spirituelles Coaching - Ganzheitliche Heilung"
-                      width={800}
-                      height={533}
-                      className="w-full h-auto rounded-lg shadow-lg"
-                      priority
-                    />
-                  </div>
-
                   <p className="text-gray-700">
                     Ich bin hier, um all das mit dir zu teilen. Du musst diesen Weg nicht alleine gehen. Spirituelles Coaching unterstützt dich dabei, dein Herz zu öffnen und wieder ganz in Verbindung mit dir selbst zu sein - mit deinem Körper und mit deiner weiblichen Kraft.
                   </p>
 
-                  <div className="my-12 flex justify-center">
-                    <div className="w-3/4 md:w-1/2">
-                      <Image 
-                        src="/images/Mood%20Spiritual%20Coaching.JPG" 
-                        alt="Spirituelles Coaching - Persönliche Entwicklung"
-                        width={600}
-                        height={400}
-                        className="w-full h-auto rounded-lg shadow-lg"
-                        priority
-                      />
-                    </div>
-                  </div>
-
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 mb-12">
                     Geh' los für dich und entdecke was möglich ist in einer kostenfreien, unverbindlichen 30-minütigen Kennenlern-Session mit mir.
                   </p>
+
+                  {/* Image Carousel */}
+                  <div className="my-12">
+                    <SpiritualCoachingCarousel />
+                  </div>
 
                   <div className="mt-16 text-center">
                     <Link 

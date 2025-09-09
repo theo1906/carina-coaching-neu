@@ -47,7 +47,7 @@ const navigation: NavigationItem[] = [
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
       { 
-        name: 'Preise', 
+        name: 'Preispakete', 
         href: '/services/angebot',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },

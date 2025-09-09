@@ -27,16 +27,16 @@ export default function TimelineCollapsible() {
         aria-hidden={!isOpen}
       >
         <div className="mt-6">
-          <div className="text-gray-700 max-w-4xl mx-auto text-lg space-y-6 text-left bg-white/50 backdrop-blur-sm p-8 rounded-xl border border-gray-100 shadow-sm">
-            <p>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">
               Ich kenne die Ängste, die Zweifel, aber auch die Hoffnung, die dich hierher geführt hat. Als ich selbst noch am Kämpfen war und in der Essstörung, fühlte ich mich völlig alleine und habe mich aus tiefer Scham und Selbstablehnung niemandem anvertraut - 20 Jahre nicht.
             </p>
             
-            <p>
+            <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">
               Die Erfahrung dieser jahrelangen Isolation bestärkt mich umso mehr darin, einen sicheren, wertfreien Raum zu schaffen, in dem du dich als Frau gesehen und verstanden fühlst - mit allem, was da ist und sich zeigen, gehalten und gefühlt werden möchte. In unserer gemeinsamen Arbeit begegne ich dir mit der gelebten Erfahrung, dass Heilung möglich ist in jedem Moment und unsere schmerzvollsten Erlebnisse die größte Stärke und Weisheit in uns hervorbringen können.
             </p>
             
-            <p>
+            <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">
               Meine Heilung geschah nicht mithilfe traditioneller Therapie oder in speziellen Behandlungszentren: sie hat begonnen, in dem Moment als ich mutig, ehrlich mir selbst gegenüber und in voller Annahme dessen, was ist, für mich losgegangen bin. Durch diese Entschlossenheit bin ich mit der tiefen Weisheit in mir in Verbindung getreten, die mich in meine körpereigene, intuitive Heilkraft geführt hat. Meine Selbstheiler-Erfahrung nährt meine Überzeugung, dass wir alle diese transformierende Kraft in uns haben. Meine Arbeit besteht darin, dich zu unterstützen, den Zugang zu entdecken.
             </p>
           </div>

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/static-files.js",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
@@ -19,6 +20,7 @@
     "clsx": "^2.1.1",
     "daisyui": "^5.0.50",
     "date-fns": "^4.1.0",
+    "express": "^5.1.0",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.516.0",
     "next": "^14.2.30",
