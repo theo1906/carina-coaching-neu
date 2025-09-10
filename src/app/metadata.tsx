@@ -1,13 +1,28 @@
 import type { Metadata } from 'next';
 
 const siteUrl = 'https://carinacoaching.com';
-const title = 'Spirituelles Life Coaching & Systemischer Coach für Essstörungen – Carina Coaching';
-const description = 'Ich bin spiritueller Life Coach und systemischer Coach für Essstörungen. Ich begleite Frauen auf ihrem Heilungsweg durch einen verkörperungsbasierten Ansatz.';
+const title = 'Carina Coaching | Spirituelles Life Coaching & Systemisches Coaching Essstörungen';
+const description = 'Carina - Dein Coach für spirituelles Wachstum & Essstörungsbewältigung. Professionelle Begleitung bei Essstörungen, emotionalem Essen & spiritueller Entwicklung in München & online.';
 
 export const metadata: Metadata = {
   title: title,
   description: description,
-  keywords: ['spirituelles coaching', 'essstörungen coaching', 'heilung essstörung', 'frauen coaching', 'spirituelle entwicklung', 'körperarbeit'],
+  keywords: [
+    'Carina Coaching',
+    'Spirituelles Life Coaching',
+    'Systemisches Coaching Essstörungen',
+    'Essstörung Hilfe München',
+    'Spiritueller Coach München',
+    'Heilung von Essstörungen',
+    'Emotionales Essen überwinden',
+    'Körperwahrnehmung verbessern',
+    'Selbstliebe entwickeln',
+    'Frauencoaching München',
+    'Spirituelle Entwicklung',
+    'ED Recovery Coach',
+    'Heilung Essstörung',
+    'Körperarbeit München'
+  ],
   
   // Open Graph / Facebook
   openGraph: {

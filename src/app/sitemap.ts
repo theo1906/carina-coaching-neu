@@ -1,23 +1,93 @@
 import type { MetadataRoute } from 'next';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://carina-coaching.com';
-  const lastModified = new Date('2025-09-09');
+// Common last modified date - update this when making significant changes
+const lastModified = new Date();
 
+// Base URL - ensure this matches your production URL
+const base = 'https://carinacoaching.com';
+
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: `${base}/`, changeFrequency: 'daily', priority: 1.0, lastModified },
-    { url: `${base}/ueber-mich/mein-weg`, changeFrequency: 'weekly', priority: 0.9, lastModified },
-    { url: `${base}/dienstleistungen`, changeFrequency: 'weekly', priority: 0.9, lastModified },
-    { url: `${base}/buchen`, changeFrequency: 'weekly', priority: 0.9, lastModified },
-    { url: `${base}/kontakt`, changeFrequency: 'monthly', priority: 0.8, lastModified },
-    { url: `${base}/impressum`, changeFrequency: 'yearly', priority: 0.3, lastModified },
-    { url: `${base}/datenschutz`, changeFrequency: 'yearly', priority: 0.3, lastModified },
-    { url: `${base}/cookie-einstellungen`, changeFrequency: 'yearly', priority: 0.1, lastModified },
-    { url: `${base}/dienstleistungen/spiritual`, changeFrequency: 'weekly', priority: 0.9, lastModified },
-    { url: `${base}/dienstleistungen/essstorung`, changeFrequency: 'weekly', priority: 0.9, lastModified },
-    { url: `${base}/dienstleistungen/essstorung/meine-heilungsreise`, changeFrequency: 'monthly', priority: 0.8, lastModified },
-    { url: `${base}/dienstleistungen/essstorung/ist-coaching-das-richtige`, changeFrequency: 'monthly', priority: 0.8, lastModified },
-    { url: `${base}/services/angebot`, changeFrequency: 'weekly', priority: 0.9, lastModified },
-    { url: `${base}/dienstleistungen/spiritual/themen/mein-ansatz`, changeFrequency: 'monthly', priority: 0.8, lastModified },
+    // Main pages - highest priority
+    { 
+      url: `${base}/`, 
+      lastModified,
+      changeFrequency: 'daily' as const, 
+      priority: 1.0 
+    },
+    
+    // Service pages - high priority
+    { 
+      url: `${base}/dienstleistungen/spiritual`, 
+      lastModified,
+      changeFrequency: 'weekly' as const, 
+      priority: 0.9 
+    },
+    { 
+      url: `${base}/dienstleistungen/essstorung`, 
+      lastModified,
+      changeFrequency: 'weekly' as const, 
+      priority: 0.9 
+    },
+    { 
+      url: `${base}/buchen`, 
+      lastModified,
+      changeFrequency: 'weekly' as const, 
+      priority: 0.9 
+    },
+    
+    // About and personal journey
+    { 
+      url: `${base}/ueber-mich/mein-weg`, 
+      lastModified,
+      changeFrequency: 'monthly' as const, 
+      priority: 0.8 
+    },
+    
+    // Sub-pages - medium priority
+    { 
+      url: `${base}/dienstleistungen/spiritual/themen/mein-ansatz`, 
+      lastModified,
+      changeFrequency: 'monthly' as const, 
+      priority: 0.7 
+    },
+    { 
+      url: `${base}/dienstleistungen/essstorung/meine-heilungsreise`, 
+      lastModified,
+      changeFrequency: 'monthly' as const, 
+      priority: 0.7 
+    },
+    { 
+      url: `${base}/dienstleistungen/essstorung/ist-coaching-das-richtige`, 
+      lastModified,
+      changeFrequency: 'monthly' as const, 
+      priority: 0.7 
+    },
+    
+    // Contact and legal pages - lower priority
+    { 
+      url: `${base}/kontakt`, 
+      lastModified,
+      changeFrequency: 'monthly' as const, 
+      priority: 0.5 
+    },
+    { 
+      url: `${base}/impressum`, 
+      lastModified,
+      changeFrequency: 'yearly' as const, 
+      priority: 0.3 
+    },
+    { 
+      url: `${base}/datenschutz`, 
+      lastModified,
+      changeFrequency: 'yearly' as const, 
+      priority: 0.3 
+    },
+    { 
+      url: `${base}/cookie-einstellungen`, 
+      lastModified,
+      changeFrequency: 'yearly' as const, 
+      priority: 0.1 
+    },
   ];
 }
