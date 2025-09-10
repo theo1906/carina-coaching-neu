@@ -6,12 +6,13 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://carinacoaching.com/sitemap.xml`;
+Sitemap: https://carina-coaching.com/sitemap.xml`;
 
   return new Response(robots, {
     status: 200,
     headers: {
       'Content-Type': 'text/plain',
+      'Cache-Control': 'public, max-age=3600',
     },
   });
 }
