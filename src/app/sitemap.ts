@@ -1,10 +1,13 @@
 import type { MetadataRoute } from 'next';
 
 const lastModified = new Date();
+// Force apex domain (no www)
 const base = 'https://carinacoaching.com';
 
+// Ensure no www in any URLs
 function formatUrl(path: string): string {
-  return `${base}${path.startsWith('/') ? '' : '/'}${path}`.replace('www.', '');
+  const cleanPath = path.replace(/^https?:\/\/(www\.)?carinacoaching\.com/, '');
+  return `${base}${cleanPath.startsWith('/') ? '' : '/'}${cleanPath}`;
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -5,11 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/static-files.js",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "sitemap": "node scripts/generate-sitemap.js"
+    "export": "next export"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
