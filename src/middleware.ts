@@ -2,16 +2,21 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 const OLD_TO_NEW_PATHS = {
-  '/dienstleistungen/essstorung': '/dienstleistungen/essstoerungen-coaching',
+  '/dienstleistungen/essstorung': '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
+  '/dienstleistungen/essstoerungen-coaching': '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
   '/dienstleistungen/spiritual': '/dienstleistungen/spirituelles-life-coaching',
 } as const;
+
+const NEW_PATHS = [
+  '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
+  '/dienstleistungen/spirituelles-life-coaching',
+];
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   
   // Skip if this is already a new URL
-  if (pathname.startsWith('/dienstleistungen/essstoerungen-coaching') || 
-      pathname.startsWith('/dienstleistungen/spirituelles-life-coaching')) {
+  if (NEW_PATHS.some(path => pathname.startsWith(path))) {
     return NextResponse.next();
   }
   
@@ -19,20 +24,16 @@ export function middleware(request: NextRequest) {
   for (const [oldPath, newPath] of Object.entries(OLD_TO_NEW_PATHS)) {
     if (pathname.startsWith(oldPath)) {
       const newUrl = new URL(pathname.replace(oldPath, newPath), request.url);
-      return NextResponse.redirect(newUrl);
+      return NextResponse.redirect(newUrl, 308); // 308 is permanent redirect
     }
   }
 
   return NextResponse.next();
 }
 
-// Configure which paths the middleware should run on
+// Match all paths that start with any of these patterns
 export const config = {
   matcher: [
-    '/dienstleistungen/essstorung/:path*',
-    '/dienstleistungen/spiritual/:path*',
-    // Add new paths to handle redirects
-    '/dienstleistungen/essstoerungen-coaching/:path*',
-    '/dienstleistungen/spirituelles-life-coaching/:path*',
+    '/dienstleistungen/:path*',
   ],
 };
