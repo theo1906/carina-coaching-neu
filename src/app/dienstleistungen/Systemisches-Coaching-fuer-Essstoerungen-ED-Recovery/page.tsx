@@ -1,12 +1,22 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function SystemischesCoachingPage() {
-  // Server-side redirect to the original page
-  redirect('/dienstleistungen/essstorung');
+  const router = useRouter();
   
-  // This return is just to satisfy TypeScript, it won't be reached
-  return null;
+  useEffect(() => {
+    // Client-side redirect to the original page
+    router.replace('/dienstleistungen/essstorung');
+  }, [router]);
+  
+  // Show a loading state while redirecting
+  return (
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="text-center">
+        <p className="text-lg text-gray-700">Weiterleitung...</p>
+      </div>
+    </div>
+  );
 }
-
-// This tells Next.js to use client-side navigation for this page
-export const dynamic = 'force-dynamic';

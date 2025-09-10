@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9 
     },
     { 
-      url: `${base}/dienstleistungen/essstoerungen-coaching`, 
+      url: `${base}/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery`, 
       lastModified,
       changeFrequency: 'weekly' as const, 
       priority: 0.9 
