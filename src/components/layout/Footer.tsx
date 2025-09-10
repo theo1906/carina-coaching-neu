@@ -9,7 +9,7 @@ const navigation = {
     { name: 'Carina Coaching', href: '/' },
     { name: 'Mein Coaching Angebot', href: '/dienstleistungen' },
     { name: 'Spirituelles Life Coaching', href: '/dienstleistungen/spirituelles-life-coaching' },
-    { name: 'Coaching für Essstörungen', href: '/dienstleistungen/essstoerungen-coaching' },
+    { name: 'Coaching für Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' },
     { name: 'Über mich', href: '/ueber-mich/mein-weg' },
     { name: 'Kontakt', href: '/kontakt' },
   ],

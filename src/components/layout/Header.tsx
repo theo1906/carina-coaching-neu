@@ -31,7 +31,7 @@ const navigation: NavigationItem[] = [
       },
       { 
         name: 'Coaching für Essstörungen', 
-        href: '/dienstleistungen/essstoerungen-coaching',
+        href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
     ]
