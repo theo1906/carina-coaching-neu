@@ -21,9 +21,9 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-32 bg-gradient-to-t from-pink-50 to-transparent z-10"></div>
         </div>
         
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-48 pb-20 md:pt-56 md:pb-32">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 [text-shadow:0_2px_4px_rgba(0,0,0,0.1)]">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 [text-shadow:0_2px_4px_rgba(0,0,0,0.1)]">
               Ist ein spirituelles Coaching das Richtige für dich?
             </h1>
           </div>
@@ -42,7 +42,7 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
             <div className="max-w-none relative z-10">
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <div className="space-y-6">
-                  <p className="text-gray-700 font-normal text-base md:text-lg [&:first-letter]:text-inherit [&:first-letter]:font-normal">
+                  <p className="text-gray-700">
                     Deine spirituelle Coaching Reise ist eine innere Reise. Eine Reise zu dir, in deine Kraft, in deinen Körper, in dein Herz, in die Verbindung mit deiner Seele und mit deinem Frausein.
                   </p>
 
@@ -86,11 +86,6 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
                   <p className="text-gray-700 mb-12">
                     Geh' los für dich und entdecke was möglich ist in einer kostenfreien, unverbindlichen 30-minütigen Kennenlern-Session mit mir.
                   </p>
-
-                  {/* Image Carousel */}
-                  <div className="my-12">
-                    <SpiritualCoachingCarousel />
-                  </div>
 
                   <div className="mt-16 text-center">
                     <Link 

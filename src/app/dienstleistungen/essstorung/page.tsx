@@ -131,6 +131,17 @@ export default function EssstorungPage() {
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
               „HEILUNG DURCH KÖRPERWEISHEIT UND EMOTIONALE BEFREIUNG“
             </p>
+            <div className="mt-8">
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-pink-600 rounded-full hover:from-pink-700 hover:to-pink-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <span className="mr-2">Kostenloses Erstgespräch vereinbaren</span>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -555,6 +566,17 @@ export default function EssstorungPage() {
                 <ArrowRightIcon className="ml-2 h-4 w-4" />
               </Link>
             </div>
+            
+            {/* Added image at the bottom of the section */}
+            <div className="mt-12 flex justify-center">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src="/images/IMG_5786_SnapseedCopy.png" 
+                  alt="Lebe wahrhaftig und entdecke die Heilkraft deines Körpers"
+                  className="max-w-full h-auto max-h-[70vh] object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -699,10 +721,10 @@ export default function EssstorungPage() {
             </p>
             <Link 
               href="/dienstleistungen/essstorung/heilung-von-innen-nach-aussen" 
-              className="inline-flex items-center px-8 py-3.5 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 transition-colors shadow-md hover:shadow-lg no-underline"
             >
               Mehr erfahren
-              <ArrowRightIcon className="ml-2 h-4 w-4" />
+              <ArrowRightIcon className="ml-2 w-5 h-5" />
             </Link>
           </motion.div>
         </div>
@@ -714,7 +736,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
-              Systemisches Coaching für Essstörungen & ED Recovery
+              Was macht ein ED Recovery Coach für Essstörungen?
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">

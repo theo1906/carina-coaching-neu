@@ -48,7 +48,7 @@ export default function StorySection() {
         
         {/* CTA Button */}
         <Link 
-          href="/meine-heilungsreise-aus-20-jahren-essstoerung" 
+          href="/dienstleistungen/essstorung/meine-heilungsreise" 
           className="group relative inline-flex items-center px-10 py-4 overflow-hidden rounded-full bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
         >
           <span className="relative z-10">Mehr über meine Reise</span>

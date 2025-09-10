@@ -59,7 +59,7 @@ export default function MeinAnsatzPage() {
               <div className="absolute top-0 right-0 w-16 h-16 -mr-8 -mt-8 bg-purple-200 rounded-full opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
               <div className="relative z-10">
                 <div className="w-10 h-1 bg-gradient-to-r from-purple-500 to-purple-300 mb-4 rounded-full"></div>
-                <h3 className="font-bold text-xl text-purple-800 mb-3 font-serif">Integrated Wholeness</h3>
+                <h3 className="font-bold text-xl text-purple-800 mb-3 font-serif">Integrated wholeness</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Heile deine Verletzungen und die von dir (unbewusst) getrennten Anteile, um zurückzukehren in deine Essenz und den Flow von:
                 </p>

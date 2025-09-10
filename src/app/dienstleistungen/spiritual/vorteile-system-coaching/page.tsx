@@ -58,7 +58,7 @@ export default function VorteileSystemCoachingPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="text-center mb-16">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Die Vorteile von körperzentriertem, spirituellem System-Coaching
+            Was sind die wichtigsten Vorteile von körperzentriertem, spirituellem Life Coaching für Frauen?
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">

@@ -299,7 +299,7 @@ export default function SpiritualPage() {
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-100 to-indigo-50 flex items-center justify-center mb-4 shadow-inner border border-indigo-100 group-hover:shadow-indigo-100/30 transition-all duration-300">
                   <ShieldCheckIcon className="h-7 w-7 text-indigo-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-indigo-700 transition-colors">The Power of embodied Change</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-indigo-700 transition-colors">The power of embodied change</h3>
                 <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Wahre Veränderung beginnt im Körper. Durch verkörperte Präsenz stärkst du deine Intuition und verankerst nachhaltige Veränderung in deinem Alltag.</p>
                 <Link href="/dienstleistungen/spiritual/themen/power-embodied-change" className="mt-auto text-indigo-600 hover:text-indigo-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
@@ -415,7 +415,7 @@ export default function SpiritualPage() {
             <blockquote className="text-lg text-gray-700 leading-relaxed text-center font-normal">
               <p className="relative">
                 <span className="absolute -left-4 -top-2 text-4xl text-pink-800/90">„</span>
-                Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an
+                Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an.
                 <span className="absolute -right-4 -top-2 text-4xl text-pink-800/90">„</span>
               </p>
               <footer className="mt-4 text-gray-500 text-base font-medium">— Carl Rogers</footer>
@@ -485,7 +485,7 @@ export default function SpiritualPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Was sind die wichtigsten Vorteile von körperzentriertem, spirituellem System-Coaching für Frauen?
+              Was sind die wichtigsten Vorteile von körperzentriertem, spirituellem Life Coaching für Frauen?
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-lg text-pink-800/90 max-w-3xl mx-auto">
@@ -762,12 +762,12 @@ export default function SpiritualPage() {
         </div>
       </section>
 
-      {/* Mein Spiritual Life Coaching Angebot an dich */}
+      {/* Mein spirituelles Life Coaching Angebot an dich */}
       <section className="relative py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Mein Spiritual Life Coaching Angebot an dich
+              Mein spirituelles Life Coaching Angebot an dich
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -793,7 +793,7 @@ export default function SpiritualPage() {
                     <svg className="h-5 w-5 text-pink-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Packete: 4h, 8h oder 12h Coaching-Kontingent, flexibel einsetzbar oder Einzelstunden buchbar für dein Coaching@Home</span>
+                    <span className="text-gray-700">Pakete: 4h, 8h oder 12h Coaching-Kontingent, flexibel einsetzbar oder Einzelstunden buchbar für dein Coaching@Home</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-5 w-5 text-pink-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">

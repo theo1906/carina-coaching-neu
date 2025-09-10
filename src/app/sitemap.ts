@@ -1,34 +1,23 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://carina-coaching.com';
-  const now = new Date();
-  
-  // List all your routes with their respective priorities and change frequencies
-  const routes = [
-    { path: '', priority: 1.0, changefreq: 'daily' },
-    { path: 'ueber-mich/mein-weg', priority: 0.9, changefreq: 'weekly' },
-    { path: 'dienstleistungen', priority: 0.9, changefreq: 'weekly' },
-    { path: 'buchen', priority: 0.9, changefreq: 'weekly' },
-    { path: 'kontakt', priority: 0.8, changefreq: 'monthly' },
-    { path: 'impressum', priority: 0.3, changefreq: 'yearly' },
-    { path: 'datenschutz', priority: 0.3, changefreq: 'yearly' },
-    { path: 'cookie-einstellungen', priority: 0.1, changefreq: 'yearly' },
-    { path: 'dienstleistungen/spiritual', priority: 0.9, changefreq: 'weekly' },
-    { path: 'dienstleistungen/essstorung', priority: 0.9, changefreq: 'weekly' },
-    { path: 'dienstleistungen/essstorung/meine-heilungsreise', priority: 0.8, changefreq: 'monthly' },
-    { path: 'dienstleistungen/essstorung/ist-coaching-das-richtige', priority: 0.8, changefreq: 'monthly' },
-    { path: 'services/angebot', priority: 0.9, changefreq: 'weekly' },
-    { path: 'dienstleistungen/spiritual/themen/mein-ansatz', priority: 0.8, changefreq: 'monthly' },
+  const base = 'https://carina-coaching.com';
+  const lastModified = new Date('2025-09-09');
+
+  return [
+    { url: `${base}/`, changeFrequency: 'daily', priority: 1.0, lastModified },
+    { url: `${base}/ueber-mich/mein-weg`, changeFrequency: 'weekly', priority: 0.9, lastModified },
+    { url: `${base}/dienstleistungen`, changeFrequency: 'weekly', priority: 0.9, lastModified },
+    { url: `${base}/buchen`, changeFrequency: 'weekly', priority: 0.9, lastModified },
+    { url: `${base}/kontakt`, changeFrequency: 'monthly', priority: 0.8, lastModified },
+    { url: `${base}/impressum`, changeFrequency: 'yearly', priority: 0.3, lastModified },
+    { url: `${base}/datenschutz`, changeFrequency: 'yearly', priority: 0.3, lastModified },
+    { url: `${base}/cookie-einstellungen`, changeFrequency: 'yearly', priority: 0.1, lastModified },
+    { url: `${base}/dienstleistungen/spiritual`, changeFrequency: 'weekly', priority: 0.9, lastModified },
+    { url: `${base}/dienstleistungen/essstorung`, changeFrequency: 'weekly', priority: 0.9, lastModified },
+    { url: `${base}/dienstleistungen/essstorung/meine-heilungsreise`, changeFrequency: 'monthly', priority: 0.8, lastModified },
+    { url: `${base}/dienstleistungen/essstorung/ist-coaching-das-richtige`, changeFrequency: 'monthly', priority: 0.8, lastModified },
+    { url: `${base}/services/angebot`, changeFrequency: 'weekly', priority: 0.9, lastModified },
+    { url: `${base}/dienstleistungen/spiritual/themen/mein-ansatz`, changeFrequency: 'monthly', priority: 0.8, lastModified },
   ];
-
-  // Generate sitemap entries
-  const sitemapEntries: MetadataRoute.Sitemap = routes.map(({ path, priority, changefreq }) => ({
-    url: `${baseUrl}/${path}`,
-    lastModified: now,
-    changeFrequency: changefreq as 'yearly' | 'monthly' | 'weekly' | 'daily' | 'always',
-    priority,
-  }));
-
-  return sitemapEntries;
 }

@@ -38,10 +38,6 @@ export default function BeyondHealingExact() {
               „HEILUNG IST DER ANFANG, NICHT DAS ENDE"
             </p>
           </div>
-
-          <p className="mt-4 text-lg italic text-[#c95373]">
-            "Heilung ist der Anfang, nicht das Ende"
-          </p>
         </div>
 
         {/* Inhalt: zwei Spalten */}
@@ -411,15 +407,6 @@ export default function BeyondHealingExact() {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <a
-            href="/contact#kontakt"
-            className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-pink-600 to-rose-600 px-8 py-3 text-base font-medium text-white shadow-sm hover:from-pink-700 hover:to-rose-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 transition-all duration-200 transform hover:-translate-y-0.5"
-          >
-            Kostenloses Erstgespräch vereinbaren
-          </a>
         </div>
       </div>
     </section>

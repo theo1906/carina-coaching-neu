@@ -2,7 +2,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, CalendarIcon, ArrowRightIcon } fro
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Kontakt & Terminbuchung | Carina Göb - Life & Mindset Coaching',
+  title: 'Kontakt & Terminbuchung | Carina Göb - Life & ED Recovery Coaching',
   description: 'Buche dein kostenloses Kennenlerngespräch oder nimm Kontakt mit mir auf. Ich freue mich, von dir zu hören!',
 };
 
@@ -74,7 +74,7 @@ export default function Contact() {
               {[
                 {
                   question: 'Wie läuft ein Coaching ab?',
-                  answer: 'Ein Coaching beginnt mit einem kostenlosen Erstgespräch auf Zoom, in dem wir uns kennenlernen und dein Anliegen besprechen und was du gerne erreichen möchtest. Danach erstelle ich ein individuelles Konzept für dich. Je nachdem wie intensiv eine Sitzung war, empfehle ich meist einen 2-4 Wochen Turnus zwecks Integration für dein System. Generell entscheidest du selbst wann und wie oft: deine Reise, dein Tempo. Je nach Packet hast du zusätzlich Email Support und wir haben Community Coaching calls in denen du teilnehmen kannst für Austausch & Rückfragen.'
+                  answer: 'Ein Coaching beginnt mit einem kostenlosen Erstgespräch auf Zoom, in dem wir uns kennenlernen und dein Anliegen besprechen und was du gerne erreichen möchtest. Danach erstelle ich ein individuelles Konzept für dich. Je nachdem wie intensiv eine Sitzung war, empfehle ich meist einen 2-4 Wochen Turnus zwecks Integration für dein System. Generell entscheidest du selbst wann und wie oft: deine Reise, dein Tempo. Je nach Paket hast du zusätzlich Email Support und wir haben Community Coaching calls in denen du teilnehmen kannst für Austausch & Rückfragen.'
                 },
                 {
                   question: 'Wie lange dauert ein Coaching?',
@@ -86,7 +86,7 @@ export default function Contact() {
                 },
                 {
                   question: 'Was kostet ein Coaching?',
-                  answer: 'Ich biete 4\'er, 8\'er und 12\'er Packete an und je nach Größe wird der Preis pro Stunde günstiger für dich. Mein Angebot findest du auf der Webseite. Generell biete ich dir die Möglichkeit nach der ersten abgeschlossenen Session zu entscheiden, ob du mit mir weiter arbeiten möchtest und welches Packet du buchen möchtest. Die Rechnungsstellung erfolgt zeitgleich mit deiner Entscheidung, sodass wir beide Planungssicherheit haben und auch ein gegenseitiges Commitment.'
+                  answer: 'Ich biete 4\'er, 8\'er und 12\'er Pakete an und je nach Größe wird der Preis pro Stunde günstiger für dich. Mein Angebot findest du auf der Webseite. Generell biete ich dir die Möglichkeit nach der ersten abgeschlossenen Session zu entscheiden, ob du mit mir weiter arbeiten möchtest und welches Paket du buchen möchtest. Die Rechnungsstellung erfolgt zeitgleich mit deiner Entscheidung, sodass wir beide Planungssicherheit haben und auch ein gegenseitiges Commitment.'
                 },
               ].map((faq, index) => (
                 <div key={index} className="relative bg-gray-50 p-6 rounded-2xl shadow-sm">

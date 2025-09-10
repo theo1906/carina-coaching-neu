@@ -4,7 +4,7 @@ export default function PowerEmbodiedChangePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">The Power of embodied Change</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">The power of embodied change</h1>
         <div className="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div>
       </div>
       
