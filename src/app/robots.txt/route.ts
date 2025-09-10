@@ -6,7 +6,7 @@ Disallow: /admin/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://www.carinacoaching.com/sitemap.xml`;
+Sitemap: https://carinacoaching.com/sitemap.xml`;
 
   return new Response(robots, {
     status: 200,
