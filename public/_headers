@@ -1,4 +1,10 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
 /robots.txt
   Cache-Control: no-cache, must-revalidate
+
 /sitemap.xml
   Cache-Control: no-cache, must-revalidate

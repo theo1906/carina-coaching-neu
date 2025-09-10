@@ -1,14 +1,10 @@
 import type { MetadataRoute } from 'next';
 
-// Common last modified date - update this when making significant changes
 const lastModified = new Date();
-
-// Base URL - using apex domain (no www)
 const base = 'https://carinacoaching.com';
 
-// Ensure all URLs use the apex domain and proper formatting
 function formatUrl(path: string): string {
-  return `${base}${path.startsWith('/') ? '' : '/'}${path}`;
+  return `${base}${path.startsWith('/') ? '' : '/'}${path}`.replace('www.', '');
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
