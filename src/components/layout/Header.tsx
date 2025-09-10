@@ -26,12 +26,12 @@ const navigation: NavigationItem[] = [
     submenu: [
       { 
         name: 'Spirituelles Life Coaching', 
-        href: '/dienstleistungen/spiritual',
+        href: '/dienstleistungen/spirituelles-life-coaching',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
       { 
         name: 'Coaching für Essstörungen', 
-        href: '/dienstleistungen/essstorung',
+        href: '/dienstleistungen/essstoerungen-coaching',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
     ]

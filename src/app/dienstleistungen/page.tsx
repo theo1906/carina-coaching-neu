@@ -15,15 +15,15 @@ export default function DienstleistungenPage() {
         <ul className="flex flex-col gap-4">
           <li>
             <Link 
-              href="/dienstleistungen/essstorung"
+              href="/dienstleistungen/essstoerungen-coaching"
               className="text-lg font-medium text-gray-900 hover:text-pink-600 transition-colors duration-200"
             >
-              Essstörung Coaching
+              Essstörungen Coaching
             </Link>
           </li>
           <li>
             <Link 
-              href="/dienstleistungen/spiritual"
+              href="/dienstleistungen/spirituelles-life-coaching"
               className="text-lg font-medium text-gray-900 hover:text-pink-600 transition-colors duration-200"
             >
               Spirituelles Life Coaching

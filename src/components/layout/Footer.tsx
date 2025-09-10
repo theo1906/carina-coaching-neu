@@ -1,4 +1,4 @@
-'use client';
+whe 'use client';
 
 import Link from 'next/link';
 import React from 'react';
@@ -8,6 +8,8 @@ const navigation = {
   main: [
     { name: 'Carina Coaching', href: '/' },
     { name: 'Mein Coaching Angebot', href: '/dienstleistungen' },
+    { name: 'Spirituelles Life Coaching', href: '/dienstleistungen/spirituelles-life-coaching' },
+    { name: 'Coaching für Essstörungen', href: '/dienstleistungen/essstoerungen-coaching' },
     { name: 'Über mich', href: '/ueber-mich/mein-weg' },
     { name: 'Kontakt', href: '/kontakt' },
   ],
