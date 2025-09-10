@@ -1,4 +1,4 @@
-import { MetadataRoute } from 'next';
+import { NextResponse } from 'next/server';
 
 const lastModified = new Date().toISOString();
 const base = 'https://carina-coaching.com';
@@ -34,11 +34,14 @@ function generateSitemap(): string {
 </urlset>`;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return new Response(generateSitemap(), {
+export async function GET() {
+  const sitemap = generateSitemap();
+  
+  return new NextResponse(sitemap, {
+    status: 200,
     headers: {
       'Content-Type': 'application/xml',
       'Cache-Control': 'public, max-age=86400, s-maxage=86400, stale-while-revalidate',
     },
-  }) as unknown as MetadataRoute.Sitemap;
+  });
 }
