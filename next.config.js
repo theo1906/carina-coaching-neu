@@ -26,6 +26,7 @@ const nextConfig = {
   },
   
   // Add support for static HTML export
+  output: 'export',
   trailingSlash: true,
 };
 
