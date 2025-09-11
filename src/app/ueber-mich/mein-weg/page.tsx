@@ -455,7 +455,7 @@ export default function MeinWeg() {
                 <HeartIcon className="h-6 w-6 text-fuchsia-500" />
               </div>
               <h3 className="text-lg font-semibold text-rose-900 text-center mb-3">Deine innere Weisheit</h3>
-              <p className="text-gray-700 text-sm leading-relaxed text-center">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 Ich helfe dir, deine eigene innere Stimme wiederzuentdecken und ihr zu vertrauen – denn du trägst alle Antworten bereits in dir.
               </p>
             </div>
@@ -465,17 +465,16 @@ export default function MeinWeg() {
                 <LightBulbIcon className="h-6 w-6 text-amber-500" />
               </div>
               <h3 className="text-lg font-semibold text-rose-900 text-center mb-4">Mein Coaching Ansatz</h3>
-              <ul className="pl-6 -ml-2 space-y-3 list-none">
+              <ul className="space-y-3">
                 {[
-                  'Ganzheitlicher Ansatz, der Körper, Geist und Seele verbindet',
-                  'Individuelle Begleitung auf deinem persönlichen Heilungsweg',
-                  'Werkzeuge für mehr Selbstliebe und Akzeptanz',
-                  'Praktische Übungen für den Alltag',
-                  'Sichere und vertrauensvolle Atmosphäre'
+                  { text: 'Achtsame Körperwahrnehmung' },
+                  { text: 'Emotionale Selbstregulation' },
+                  { text: 'Spirituelle Selbsterforschung' },
+                  { text: 'Praktische Werkzeuge' }
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start pl-0 ml-0">
-                    <CheckIcon className="h-5 w-5 text-rose-400 mr-2 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">{item}</span>
+                  <li key={index} className="flex items-start">
+                    <CheckIcon className="h-5 w-5 text-rose-500 flex-shrink-0 mt-0.5" />
+                    <span className="ml-2 text-sm text-gray-700">{item.text}</span>
                   </li>
                 ))}
               </ul>
@@ -486,7 +485,7 @@ export default function MeinWeg() {
                 <SparklesIcon className="h-6 w-6 text-rose-500" />
               </div>
               <h3 className="text-lg font-semibold text-rose-900 text-center mb-3">Ganzheitliche Heilung</h3>
-              <p className="text-gray-700 text-sm leading-relaxed text-center">
+              <p className="text-gray-700 text-sm leading-relaxed">
                 Ein Ansatz, der Körper, Geist, Seele und Emotion gleichermaßen einbezieht, für tiefgreifende und nachhaltige Veränderung.
               </p>
             </div>
@@ -511,7 +510,7 @@ export default function MeinWeg() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              Mein ganzheitlicher Ansatz
+              Mein ganzheitlicher Coaching Ansatz
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-fuchsia-400 to-rose-400 mx-auto mb-6"></div>
           </div>

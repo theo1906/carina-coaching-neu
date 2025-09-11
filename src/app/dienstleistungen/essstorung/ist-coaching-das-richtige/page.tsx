@@ -62,7 +62,7 @@ export default function IstCoachingPage() {
           </p>
 
           <h2 className="text-2xl font-bold text-pink-800 mt-12 mb-6">
-            Warum ich geeignet bin, auch mit Menschen aus deinem Familiensystem zu arbeiten:
+            Warum ich geeignet bin, auch mit Menschen aus deinem Familiensystem zu arbeiten
           </h2>
           
           <p className="text-gray-700 leading-relaxed mb-6">

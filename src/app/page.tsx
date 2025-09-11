@@ -203,7 +203,7 @@ export default function Home() {
                     <SparklesIcon className="h-8 w-8 text-purple-600" />
                   </div>
                   <p className="text-2xl font-bold text-purple-900 mb-4">
-                    Coaching für Essstörungen und ED Recovery - Heilung von Innen heraus
+                    Coaching für Essstörungen und ED Recovery - Heilung von innen heraus
                   </p>
                   <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mb-6"></div>
                   <p className="text-gray-700 mb-10 text-lg">

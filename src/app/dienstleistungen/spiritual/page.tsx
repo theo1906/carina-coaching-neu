@@ -73,7 +73,7 @@ export default function SpiritualPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ist ein spirituelles Coaching das Richtige für dich?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ist ein spirituelles Life Coaching das Richtige für dich?</h2>
               <div className="relative w-full h-[500px] overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative w-full h-full max-w-[550px] rounded-3xl overflow-hidden">
@@ -233,7 +233,7 @@ export default function SpiritualPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-14 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-              Was ist Spirituelles Life Coaching?
+              Was ist spirituelles Life Coaching?
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
             <p className="text-gray-700 max-w-3xl mx-auto text-lg relative z-10">
@@ -323,7 +323,7 @@ export default function SpiritualPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-14 relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-              Mein Ansatz für spirituelles Coaching
+              Mein Ansatz für spirituelles Life Coaching
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
           </div>

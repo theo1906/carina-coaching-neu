@@ -551,7 +551,7 @@ export default function EssstorungPage() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
                   Ich möchte Frauen dabei unterstützen, ihre innere Stimme wiederzufinden, der Weisheit ihres Körpers zu vertrauen 
-                  und ihr volles Potenzial zu entfalten. Gemeinsam arbeiten wir daran, deine eigene Heilkraft zu entdecken.
+                  und ihr volles Potenzial zu entfalten. Gemeinsam arbeiten wir daran, die eigene Heilkraft zu entdecken.
                 </p>
               </motion.div>
             </div>

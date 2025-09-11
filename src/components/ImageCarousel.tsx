@@ -10,7 +10,7 @@ export default function ImageCarousel() {
           <div className="relative w-full">
             <div className="relative w-full rounded-2xl overflow-hidden">
               <Image
-                src="/images/Mood Meditation_2.JPG"
+                src="/images/Mood Meditation_2.JPG..jpeg"
                 alt="Spirituelles Coaching - Meditation und Achtsamkeit"
                 width={800}
                 height={500}
