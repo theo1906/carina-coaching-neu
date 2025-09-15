@@ -24,7 +24,7 @@ const coachingPackages = [
     features: [
       '8 Stunden Coaching',
       'Gelebtes Gleichgewicht durch Integration und Ausgleich Deiner inneren Dynamiken',
-      'Intensives körperorientiertes Begleitprogramm',
+      'Intensives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check-in',
       'Bereit für nachhaltige Transformation auf allen Ebenen?',
@@ -38,7 +38,7 @@ const coachingPackages = [
     features: [
       '12 Stunden Coaching',
       'Körpervertrauen, Herzverbundenheit und achtsame Präsenz, um Dich mutig und in entspannter Zuversicht für neue Wege zu öffnen',
-      'Exklusives körperorientiertes Begleitprogramm',
+      'Exklusives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check In',
       'Exklusive Community Coaching Calls Online',

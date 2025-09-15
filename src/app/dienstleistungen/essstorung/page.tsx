@@ -533,8 +533,8 @@ export default function EssstorungPage() {
                   <span className="absolute bottom-0 left-0 w-full h-2 bg-pink-100 -z-0 opacity-70" style={{ bottom: '2px', height: '8px' }}></span>
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
-                  Ich wünsche mir eine Welt, in der wir Frauen uns selbst lieben und akzeptieren. So wie wir sind. 
-                  Eine Welt, in der wir uns nicht verstecken und in der wir unsere Stärke und Schönheit erkennen und mutig leben.
+                  Ich wünsche mir eine Welt, in der wir Frauen uns selbst lieben und akzeptieren, so wie wir sind. 
+                  Eine Welt, in der wir uns erlauben, Raum einzunehmen, und in der wir unsere Wahrhaftigkeit und Stärke erkennen und mutig leben.
                 </p>
               </motion.div>
               

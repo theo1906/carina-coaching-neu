@@ -30,6 +30,7 @@ import MeineWendeSection from '@/components/MeineWendeSection';
 import MeineBerufungSection from '@/components/MeineBerufungSection';
 import SummaryCollapsible from '@/components/SummaryCollapsible';
 import TimelineCollapsible from '@/components/TimelineCollapsible';
+import CoachingApproachSection from '@/components/CoachingApproachSection';
 
 interface TimelinePoint {
   year: number;
@@ -506,92 +507,7 @@ export default function MeinWeg() {
       <RaumFuerDichSection />
 
       {/* Section 6: Mein Ansatz */}
-      <section className="relative py-20 md:py-28 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              Mein ganzheitlicher Coaching Ansatz
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-fuchsia-400 to-rose-400 mx-auto mb-6"></div>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {[
-              {
-                title: 'Körperarbeit',
-                description: 'zur Nervensystem-Regulation und Auflösung von gespeicherten Emotionen',
-                items: ['Somatische Körperarbeit', 'Rebalancing Massage', 'Atemübungen'],
-                icon: <HeartIcon className="h-8 w-8 text-rose-500" />,
-                bgGradient: 'from-rose-50 to-rose-50',
-                textColor: 'text-rose-500',
-                iconColor: 'text-rose-500',
-                minHeight: 'min-h-[320px]',
-                contentClass: 'flex flex-col'
-              },
-              {
-                title: 'Spiritualität',
-                description: 'Für Verbindung zu dem Raum in dir indem du einfach nur bist',
-                items: [
-                  'Geführte Meditation',
-                  'Bewusste Wahrnehmung',
-                  'Energiearbeit'
-                ],
-                icon: <SparklesIcon className="h-8 w-8 text-purple-500" />,
-                bgGradient: 'from-purple-50 to-purple-50',
-                textColor: 'text-purple-500',
-                iconColor: 'text-purple-500',
-                minHeight: 'min-h-[320px]',
-                contentClass: 'flex flex-col'
-              },
-              {
-                title: 'Geist & Psyche',
-                description: 'Für mentale Klarheit und emotionale Ausgeglichenheit',
-                items: ['Systemisches Coaching', 'Selbstreflektionsprozesse', 'Achtsamkeitspraktiken'],
-                icon: <LightBulbIcon className="h-8 w-8 text-fuchsia-500" />,
-                bgGradient: 'from-rose-50 to-rose-50',
-                textColor: 'text-rose-500',
-                iconColor: 'text-rose-500',
-                minHeight: 'min-h-[320px]',
-                contentClass: 'flex flex-col'
-              }
-            ].map((category, index) => (
-              <div key={index} className={`bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col h-full ${category.minHeight || ''}`}>
-                <div className={`p-6 bg-gradient-to-r ${category.bgGradient} flex-1 flex flex-col`}>
-                  <div className="h-16 w-16 bg-white rounded-full shadow-sm mb-4 mx-auto flex items-center justify-center" style={{ aspectRatio: '1/1' }}>
-                    {category.icon}
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">{category.title}</h3>
-                    {category.description && (
-                      <p className="text-sm text-gray-600 text-center mb-3">{category.description}</p>
-                    )}
-                  </div>
-                  <ul className={`${category.contentClass || ''} w-full`}>
-                    {category.items.map((item, i) => (
-                      <li 
-                        key={i} 
-                        className="flex items-center mb-2 last:mb-0 justify-start text-left"
-                      >
-                        <CheckIcon className={`h-5 w-5 ${category.textColor} mr-2 flex-shrink-0`} />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-            
-            {/* Dropdown Section */}
-            <div className="col-span-3 mt-16">
-              <div className="max-w-3xl mx-auto p-6 bg-white/50 backdrop-blur-sm rounded-xl border border-gray-100 shadow-sm">
-                <p className="text-gray-700 text-lg leading-relaxed text-center">
-                  Dieser umfassende Ansatz geht in die Tiefe und begleitet dich als Frau auf allen Ebenen in die Heilung. Jede Session ist auf deine ganz persönlichen Bedürfnisse abgestimmt, respektiert dein Tempo und schafft einen Raum für natürliche Transformation von innen heraus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CoachingApproachSection />
 
       {/* Section 7: Mein Weg zu dir */}
       <section className="relative py-20 md:py-28 bg-rose-50">

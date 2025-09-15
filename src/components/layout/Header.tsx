@@ -318,14 +318,14 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="pt-2 pb-6 px-4 overflow-y-auto h-[calc(100vh-4rem)]">
-          <div className="space-y-2">
+        <div className="min-h-[calc(100vh-4rem)]">
+          <div className="bg-white overflow-y-auto space-y-0">
             {navigation.map((item) => (
-              <div key={item.name} className="mobile-menu-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+              <div key={item.name} className="w-full bg-white border-b border-gray-100">
                 {item.submenu ? (
                   <>
-                    <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden mb-2">
-                      <div className="px-4 py-3 border-b border-gray-100">
+                    <div className="w-full">
+                      <div className="px-6 py-4">
                         <button
                           type="button"
                           className="w-full flex justify-between items-center text-base font-medium text-gray-900 hover:text-pink-600"
@@ -342,12 +342,12 @@ const Header = () => {
                       <div 
                         className={`overflow-hidden transition-all duration-200 ${mobileSubmenuOpen === item.name ? 'max-h-96' : 'max-h-0'}`}
                       >
-                        <div className="divide-y divide-gray-100">
+                        <div className="space-y-0">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.name}
                               href={subItem.href}
-                              className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
+                              className="block w-full px-6 py-4 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
                               onClick={() => setMobileMenuOpen(false)}
                               prefetch={false}
                             >
@@ -361,7 +361,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block px-4 py-3 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600"
+                    className="block w-full px-6 py-4 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600"
                     onClick={() => setMobileMenuOpen(false)}
                     prefetch={false}
                   >
@@ -371,14 +371,14 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <div className="pt-4">
+          <div className="px-6 py-4 bg-white border-t border-gray-100">
             <Link
               href="/contact"
               className="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-full text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
               onClick={() => setMobileMenuOpen(false)}
               prefetch={false}
             >
-              Kostenloses Gespräch
+              Kontakt
             </Link>
           </div>
         </div>

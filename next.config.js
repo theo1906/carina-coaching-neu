@@ -25,8 +25,8 @@ const nextConfig = {
     return config;
   },
   
-  // Add support for static HTML export
-  output: 'export',
+  // Enable static export only for production builds
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
   trailingSlash: true,
 };
 

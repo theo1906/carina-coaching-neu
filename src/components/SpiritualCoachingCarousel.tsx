@@ -24,15 +24,7 @@ export default function SpiritualCoachingCarousel() {
 
   useEffect(() => {
     setIsMounted(true);
-    
-    // Auto-rotate images every 5 seconds
-    const timer = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    
-    // Clean up the interval on component unmount
-    return () => clearInterval(timer);
-  }, [images.length]);
+  }, []);
 
   const goToImage = (index: number) => {
     setCurrentImageIndex(index);

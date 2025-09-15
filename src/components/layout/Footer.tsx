@@ -1,17 +1,28 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 const navigation = {
   main: [
     { name: 'Carina Coaching', href: '/' },
-    { name: 'Mein Coaching Angebot', href: '/dienstleistungen' },
-    { name: 'Spirituelles Life Coaching', href: '/dienstleistungen/spirituelles-life-coaching' },
-    { name: 'Coaching für Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' },
-    { name: 'Über mich', href: '/ueber-mich/mein-weg' },
-    { name: 'Kontakt', href: '/kontakt' },
+    { 
+      name: 'Mein Coaching Angebot', 
+      href: '/dienstleistungen',
+      subItems: [
+        { name: 'Spirituelles Life Coaching', href: '/dienstleistungen/spirituelles-life-coaching' },
+        { name: 'Coaching für Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' }
+      ]
+    },
+    { 
+      name: 'Über mich', 
+      href: '/ueber-mich',
+      subItems: [
+        { name: 'Mein Weg', href: '/ueber-mich/mein-weg' },
+        { name: 'Preispakete', href: '/services/angebot' }
+      ]
+    }
   ],
   legal: [
     { name: 'Impressum', href: '/impressum' },
@@ -62,10 +73,15 @@ const navigation = {
 };
 
 export default function Footer() {
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
   return (
     <>
-      <footer className="bg-gradient-to-b from-white to-neutral-50 border-t border-neutral-100">
-        <div className="container mx-auto px-0 sm:px-4 py-12 md:py-16">
+      <footer className="bg-gradient-to-b from-white to-neutral-50 border-t border-neutral-100 px-4 sm:px-6">
+        <div className="container mx-auto py-12 md:py-16">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {/* Brand info */}
             <div className="space-y-6">
@@ -87,26 +103,67 @@ export default function Footer() {
             </div>
 
             {/* Navigation */}
-            <div className="space-y-6">
+            <div className="space-y-6 px-2 sm:px-0">
               <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
                 Hauptmenü
               </h3>
               <ul className="space-y-4">
                 {navigation.main.map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-base text-neutral-600 hover:text-primary-600 transition-colors duration-200"
-                    >
-                      {item.name}
-                    </Link>
+                  <li key={item.name} className="relative group">
+                    <div className="flex items-center">
+                      {item.subItems ? (
+                        <button
+                          onClick={() => toggleDropdown(item.name)}
+                          className="text-base text-neutral-600 hover:text-primary-600 transition-colors duration-200 text-left flex items-center"
+                        >
+                          {item.name}
+                        </button>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          className="text-base text-neutral-600 hover:text-primary-600 transition-colors duration-200"
+                        >
+                          {item.name}
+                        </Link>
+                      )}
+                      {item.subItems && (
+                        <svg
+                          className="w-4 h-4 ml-1 text-neutral-500 group-hover:text-primary-600 transition-colors duration-200"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      )}
+                    </div>
+                    {item.subItems && openDropdown === item.name && (
+                      <ul className="pl-4 mt-2 space-y-2">
+                        {item.subItems.map((subItem) => (
+                          <li key={subItem.name}>
+                            <Link
+                              href={subItem.href}
+                              className="text-sm text-neutral-500 hover:text-primary-600 transition-colors duration-200"
+                            >
+                              {subItem.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Legal */}
-            <div className="space-y-6">
+            <div className="space-y-6 px-2 sm:px-0">
               <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
                 Rechtliches
               </h3>
