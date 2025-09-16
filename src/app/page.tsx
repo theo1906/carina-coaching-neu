@@ -70,10 +70,12 @@ export default function Home() {
                         </div>
                         <div className="relative flex-1">
                           <div className="flex items-center h-12">
-                            <p className="text-sm text-gray-600 italic m-0 flex items-start">
-                              <span>"BE REALISTIC: PLAN FOR A MIRACLE"</span>
-                              <span className="text-xs text-gray-500 ml-2 mt-1">Osho</span>
-                            </p>
+                            <div className="flex flex-col w-full">
+                              <p className="text-sm text-gray-600 italic m-0">"BE REALISTIC: PLAN FOR A MIRACLE."</p>
+                              <div className="w-full flex justify-start pl-24">
+                                <p className="text-xs text-gray-500 mt-1">- Osho</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -149,7 +151,7 @@ export default function Home() {
                 </h2>
                 <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
                 <p className="text-2xl text-pink-800/90 italic max-w-3xl mx-auto mb-8">
-                  "Spiritueller Weg und KörperBewusstSEIN"
+                  "Spiritueller Weg und KörperBewusstSein"
                 </p>
               </div>
 

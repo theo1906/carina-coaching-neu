@@ -1,0 +1,502 @@
+import { ArrowRightIcon, HeartIcon, LightBulbIcon, SparklesIcon, UserIcon, UserGroupIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'Spirituelles Life Coaching | Carina Göb - System-Coach für Essstörungen',
+  description: 'Tiefgehendes spirituelles Coaching zur persönlichen Entwicklung, energetischer Reinigung und der Entdeckung deiner inneren Weisheit.',
+};
+
+const features = [
+  {
+    name: 'Individuell',
+    description: 'Maßgeschneiderte Sitzungen, die auf deine persönlichen Bedürfnisse und Ziele zugeschnitten sind.',
+    icon: UserIcon,
+  },
+  {
+    name: 'Ganzheitlich',
+    description: 'Betrachtung von Körper, Geist und Seele für eine umfassende Transformation.',
+    icon: HeartIcon,
+  },
+  {
+    name: 'Praktisch',
+    description: 'Konkrete Werkzeuge und Übungen für den Alltag.',
+    icon: WrenchScrewdriverIcon,
+  },
+  {
+    name: 'Transformativ',
+    description: 'Tiefgreifende Veränderungen auf allen Ebenen deines Seins.',
+    icon: SparklesIcon,
+  },
+];
+
+export default function SpiritualPage() {
+  return (
+    <div className="bg-white">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-24 overflow-hidden bg-gradient-to-br from-white to-pink-50">
+        <div className="absolute inset-0">
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+          <div className="absolute top-1/3 -right-8 w-24 h-24 bg-gradient-to-br from-pink-100 to-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
+          <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
+        </div>
+        
+        <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12 relative z-10">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+              Spirituelles Life Coaching
+            </h1>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
+              "INNERE TRANSFORMATION DURCH KÖRPERLICHE PRÄSENZ"
+            </p>
+            <div className="mt-10">
+              <Link 
+                href="/kontakt" 
+                className="inline-flex items-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-pink-600 rounded-full hover:from-pink-700 hover:to-pink-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <span className="mr-2">Kostenloses Erstgespräch vereinbaren</span>
+                <ArrowRightIcon className="w-5 h-5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Feature Grid */}
+          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 px-4 sm:px-0">
+            {features.map((feature) => (
+              <div key={feature.name} className="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 hover:border-pink-200 p-6 hover:-translate-y-1 h-auto w-full">
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-pink-100 to-pink-50 flex items-center justify-center mb-3">
+                    <feature.icon className="h-6 w-6 text-pink-600" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.name}</h3>
+                  <p className="text-gray-600 text-sm">{feature.description}</p>
+                </div>
+              </div>
+            ))}
+ö          </div>
+        </div>
+      </section>
+
+      {/* Section: Ist ein spirituelles Coaching das Richtige für Dich? */}
+      <section className="relative py-16 md:py-20 bg-white">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-purple-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ist ein spirituelles Coaching das Richtige für Dich?</h2>
+              <p className="text-gray-700 mb-6">
+                Deine spirituelle Coaching Reise ist eine innere Reise. Eine Reise zu dir, in deine Kraft, in deinen Körper, in dein Herz, in die Verbindung mit deiner Seele und mit deinem Frausein.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Entdecke deine Essenz, deinen wahren Wesenskern, und die Qualitäten deiner Weiblichkeit auf ganz natürliche Art und Weise von innen heraus zu entfalten.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Erforsche deine Muster und Strategien, um tiefer in dein Bewusstsein einzutauchen - in den Raum in dir, in dem du genau richtig bist, so wie du bist. Erfahre, wie es sich anfühlt, mehr und mehr in allen Bereichen deines Lebens als auch in deinem Körper in Präsenz und Verbundenheit mit dir zu sein und die Kraft und die Ressourcen deines Frauseins in Balance mit deiner männlichen Energie zu leben.
+              </p>
+              <div className="mt-8">
+                <Link 
+                  href="/dienstleistungen/spiritual/richtig-fuer-mich" 
+                  className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium group"
+                >
+                  <span className="border-b border-transparent group-hover:border-pink-600 transition-colors">Mehr erfahren</span>
+                  <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-gradient-to-br from-pink-50 to-white p-8 rounded-2xl shadow-lg border border-pink-100">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Wann kann ein spirituelles Coaching unterstützen?</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700">Individuelle Begleitung auf deinem spirituellen Weg</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700">Entwicklung von Selbstliebe und Selbstakzeptanz</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700">Lösung von Blockaden und Glaubenssätzen</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700">Stärkung deiner Intuition und inneren Weisheit</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700">Heilung von emotionalen Verletzungen</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700">Entfaltung deines vollen Potenzials</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute -z-10 -inset-2 bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl opacity-50 blur"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Embodiment & Heilung */}
+      <section className="relative py-16 md:py-20 bg-pink-50">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-4">Embodiment & Heilung</h2>
+              <p className="text-gray-700 mb-6">
+                In meiner Arbeit als Coach begleite ich dich dabei, wieder in deine Kraft zu kommen und dein volles Potenzial zu entfalten. Durch eine Kombination aus systemischem Coaching, energetischer Arbeit und Körperwahrnehmung helfe ich dir, Blockaden zu lösen und dich mit deiner inneren Weisheit zu verbinden.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Mein Ansatz ist ganzheitlich und berücksichtigt Körper, Geist und Seele. Ich arbeite mit verschiedenen Methoden, die dir helfen, dich selbst besser zu verstehen und dein Leben bewusster zu gestalten.
+              </p>
+              <div className="mt-8">
+                <Link 
+                  href="/dienstleistungen/spiritual/embodiment-heilung" 
+                  className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium group"
+                >
+                  <span className="border-b border-transparent group-hover:border-pink-600 transition-colors">Mehr erfahren</span>
+                  <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-3">
+                      <HeartIcon className="h-5 w-5 text-pink-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">Mein Ansatz</h3>
+                  </div>
+                  <p className="text-gray-600 mb-6">
+                    Ich arbeite mit einer Kombination aus verschiedenen Methoden, die individuell auf deine Bedürfnisse abgestimmt sind. Dabei lege ich besonderen Wert auf eine wertschätzende und achtsame Haltung dir gegenüber.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                      </div>
+                      <p className="ml-3 text-gray-700">Systemisches Coaching</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                      </div>
+                      <p className="ml-3 text-gray-700">Energetische Arbeit</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                      </div>
+                      <p className="ml-3 text-gray-700">Körperwahrnehmung</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="w-2 h-2 rounded-full bg-pink-500"></div>
+                      </div>
+                      <p className="ml-3 text-gray-700">Achtsamkeitsübungen</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Meine Werte und Prinzipien */}
+      <section className="relative py-16 md:py-20 bg-pink-50">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-pink-700">Meine Werte und Prinzipien</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <LightBulbIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Ganzheitlichkeit</h3>
+              <p className="text-gray-600 text-sm">
+                Ich betrachte den Menschen in seiner Gesamtheit – Körper, Geist und Seele – und unterstütze dich dabei, dein volles Potenzial zu entfalten.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <HeartIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Wertschätzung</h3>
+              <p className="text-gray-600 text-sm">
+                Ich begegne dir mit Respekt, Offenheit und bedingungsloser Wertschätzung – unabhängig von deiner Geschichte oder deinen Herausforderungen.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <SparklesIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Transformation</h3>
+              <p className="text-gray-600 text-sm">
+                Ich glaube an deine Fähigkeit zur positiven Veränderung und begleite dich einfühlsam auf deinem ganz persönlichen Transformationsweg.
+              </p>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link 
+              href="/dienstleistungen/spiritual/werte-und-prinzipien" 
+              className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium group"
+            >
+              <span className="border-b border-transparent group-hover:border-pink-600 transition-colors">Mehr über meine Werte erfahren</span>
+              <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Innere Weisheit & Intuition */}
+      <section className="relative py-16 md:py-20 bg-white">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-pink-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-6">Innere Weisheit & Intuition</h2>
+              <p className="text-gray-700 mb-6">
+                Deine innere Weisheit ist eine kraftvolle Ressource, die dir in jedem Moment zur Verfügung steht. Im spirituellen Coaching unterstütze ich dich dabei, den Zugang zu deiner Intuition zu stärken und ihr mehr Vertrauen zu schenken.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Durch Achtsamkeitsübungen und gezielte Meditationen lernst du, die Stimme deiner Intuition von den Ängsten und Zweifeln deines Verstandes zu unterscheiden. Du entwickelst ein tieferes Verständnis für deine innere Führung und lernst, ihr in deinem Alltag zu folgen.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Die Verbindung zu deiner inneren Weisheit ermöglicht es dir, Entscheidungen aus einem Ort der Klarheit und Selbstsicherheit zu treffen. Du lernst, auf dein Bauchgefühl zu hören und deinem Herzen zu folgen - auf deinem ganz persönlichen Weg der Selbstentfaltung.
+              </p>
+              <div className="mt-8">
+                <Link 
+                  href="/dienstleistungen/spiritual/innere-weisheit" 
+                  className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium group"
+                >
+                  <span className="border-b border-transparent group-hover:border-pink-600 transition-colors">Mehr erfahren</span>
+                  <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6 h-full">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mr-4">
+                    <LightBulbIcon className="h-6 w-6 text-pink-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900">Dein Weg zu mehr innerer Weisheit</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1.5">
+                      <div className="w-2 h-2 rounded-full bg-pink-500 mt-1"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700 text-sm">Stärkung deiner intuitiven Fähigkeiten</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1.5">
+                      <div className="w-2 h-2 rounded-full bg-pink-500 mt-1"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700 text-sm">Entwicklung von Achtsamkeit und Präsenz</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1.5">
+                      <div className="w-2 h-2 rounded-full bg-pink-500 mt-1"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700 text-sm">Vertrauen in deine innere Führung aufbauen</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1.5">
+                      <div className="w-2 h-2 rounded-full bg-pink-500 mt-1"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700 text-sm">Klarheit in Entscheidungssituationen gewinnen</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mt-1.5">
+                      <div className="w-2 h-2 rounded-full bg-pink-500 mt-1"></div>
+                    </div>
+                    <p className="ml-3 text-gray-700 text-sm">Tieferes Verständnis deiner inneren Stimme entwickeln</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Was ist Spiritual Life Coaching? */}
+      <section className="relative py-16 md:py-20 bg-white">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-pink-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-black">Was ist Spiritual Life Coaching?</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <LightBulbIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Bewusste Veränderung</h3>
+              <p className="text-gray-600 text-sm">
+                Erkenne deine Muster und lerne, bewusste Entscheidungen zu treffen, die dich deinen Zielen näher bringen.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <HeartIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Selbstentfaltung</h3>
+              <p className="text-gray-600 text-sm">
+                Entdecke dein volles Potenzial und lerne, deine einzigartigen Stärken und Talente zu leben.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <SparklesIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Innere Balance</h3>
+              <p className="text-gray-600 text-sm">
+                Finde zu deiner Mitte und lerne, deine männliche und weibliche Energie in Einklang zu bringen.
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+              <div className="w-12 h-12 rounded-lg bg-pink-50 flex items-center justify-center mb-4">
+                <UserIcon className="h-6 w-6 text-pink-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Persönliches Wachstum</h3>
+              <p className="text-gray-600 text-sm">
+                Entwickle dich kontinuierlich weiter und gestalte dein Leben nach deinen Vorstellungen und Wünschen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section: Mein Ansatz für spirituelles Coaching */}
+      <section className="relative py-16 md:py-20 bg-pink-50">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-pink-700">Mein Ansatz für spirituelles Coaching</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mt-4"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Ganzheitliche Begleitung</h3>
+              <p className="text-gray-600 mb-6">
+                Mein Ansatz verbindet bewährte Coaching-Methoden mit spiritueller Weisheit. Ich sehe dich in deiner Ganzheit und unterstütze dich dabei, dein volles Potenzial zu entfalten – auf körperlicher, emotionaler, mentaler und spiritueller Ebene.
+              </p>
+              <p className="text-gray-600">
+                In einer sicheren und wertschätzenden Atmosphäre begleite ich dich dabei, deine inneren Ressourcen zu aktivieren und Blockaden zu lösen, die dich davon abhalten, dein authentisches Selbst zu leben.
+              </p>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+                <div className="flex items-start">
+                  <div className="w-10 h-10 rounded-lg bg-pink-50 flex-shrink-0 flex items-center justify-center mr-4">
+                    <UserGroupIcon className="h-5 w-5 text-pink-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-gray-900 mb-1">Individuell</h4>
+                    <p className="text-sm text-gray-600">Maßgeschneiderte Begleitung, die genau auf deine Bedürfnisse und Ziele abgestimmt ist.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+                <div className="flex items-start">
+                  <div className="w-10 h-10 rounded-lg bg-pink-50 flex-shrink-0 flex items-center justify-center mr-4">
+                    <HeartIcon className="h-5 w-5 text-pink-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-gray-900 mb-1">Einfühlsam</h4>
+                    <p className="text-sm text-gray-600">Mit viel Feingefühl und Respekt für deine individuelle Geschichte und dein Tempo.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-100 p-6">
+                <div className="flex items-start">
+                  <div className="w-10 h-10 rounded-lg bg-pink-50 flex-shrink-0 flex items-center justify-center mr-4">
+                    <SparklesIcon className="h-5 w-5 text-pink-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-gray-900 mb-1">Transformativ</h4>
+                    <p className="text-sm text-gray-600">Nachhaltige Veränderungen, die dich in deiner persönlichen Entwicklung voranbringen.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link 
+              href="/dienstleistungen/spiritual/mein-ansatz" 
+              className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium group"
+            >
+              <span className="border-b border-transparent group-hover:border-pink-600 transition-colors">Mehr über meinen Ansatz erfahren</span>
+              <svg className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

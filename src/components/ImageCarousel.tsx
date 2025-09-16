@@ -12,9 +12,9 @@ export default function ImageCarousel() {
               <Image
                 src="/images/Mood Meditation_2.JPG..jpeg"
                 alt="Spirituelles Coaching - Meditation und Achtsamkeit"
-                width={800}
-                height={500}
-                className="w-full h-auto object-cover rounded-2xl"
+                width={650}
+                height={406}
+                className="w-full max-w-lg mx-auto h-auto object-cover rounded-2xl"
                 priority
               />
             </div>
