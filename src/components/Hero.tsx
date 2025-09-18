@@ -18,7 +18,7 @@ export default function Hero() {
             alt="Carina - Life Coach"
             fill
             priority
-            className="object-cover object-center"
+            className="object-cover object-center md:object-left"
             quality={85}
             onError={(e) => {
               console.error('Error loading hero image:', e);
