@@ -11,22 +11,31 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-pink-50 pt-16 md:pt-0">
       
-      <div className="relative w-full h-[50vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <Image
-            src={"/images/home-hero-section.jpg"}
-            alt="Carina - Life Coach"
-            fill
-            priority
-            className="object-cover object-center md:object-left"
-            quality={85}
-            onError={(e) => {
-              console.error('Error loading hero image:', e);
-              // Fallback to a different image if the first one fails
-              const target = e.target as HTMLImageElement;
-              target.src = "/images/hero-new.jpg";
-            }}
-          />
+      <div className="relative w-screen h-[50vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem', marginLeft: 'calc(50% - 50vw)' }}>
+        <div className="absolute inset-0 w-screen h-full overflow-hidden">
+          <div className="w-screen h-full relative">
+            <Image
+              src={"/images/home-hero-section.jpg"}
+              alt="Carina - Life Coach"
+              fill
+              priority
+              className="object-cover object-center md:object-left"
+              sizes="100vw"
+              quality={85}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'center center'
+              }}
+              onError={(e) => {
+                console.error('Error loading hero image:', e);
+                // Fallback to a different image if the first one fails
+                const target = e.target as HTMLImageElement;
+                target.src = "/images/hero-new.jpg";
+              }}
+            />
+          </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-4">
