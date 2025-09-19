@@ -11,9 +11,9 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-pink-50 pt-16 md:pt-0">
       
-      <div className="relative w-screen h-[50vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem', marginLeft: 'calc(50% - 50vw)' }}>
-        <div className="absolute inset-0 w-screen h-full overflow-hidden">
-          <div className="w-screen h-full relative">
+      <div className="relative w-full h-[50vh] md:h-screen max-h-[800px] overflow-hidden" style={{ marginBottom: '16rem' }}>
+        <div className="absolute inset-0 w-screen h-full" style={{ left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
+          <div className="w-full h-full relative">
             <Image
               src={"/images/home-hero-section.jpg"}
               alt="Carina - Life Coach"
@@ -23,10 +23,16 @@ export default function Hero() {
               sizes="100vw"
               quality={85}
               style={{
-                width: '100%',
-                height: '100%',
+                minWidth: '100%',
+                minHeight: '100%',
+                width: 'auto',
+                height: 'auto',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
                 objectFit: 'cover',
-                objectPosition: 'center center'
+                objectPosition: 'center'
               }}
               onError={(e) => {
                 console.error('Error loading hero image:', e);
