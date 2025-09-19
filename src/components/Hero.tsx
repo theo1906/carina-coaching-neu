@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-4">
-            <div className="bg-white px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-5 rounded-t-2xl rounded-b-2xl shadow-sm text-center relative z-20 mb-[-13rem] mt-[14rem] md:mb-[-6rem] md:mt-0">
+            <div className="bg-white px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-5 rounded-t-2xl rounded-b-2xl shadow-sm text-center relative z-20 mb-[-13rem] mt-[22rem] md:mb-[-6rem] md:mt-0">
               <div className="-mt-2">
                 <h2 className="flex items-center justify-center gap-2 text-3xl md:text-4xl lg:text-5xl font-extralight text-black leading-tight mx-auto">
                   <div className="flex items-center gap-2">
