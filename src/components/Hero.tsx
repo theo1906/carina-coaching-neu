@@ -9,8 +9,8 @@ import DropdownQuestions from './DropdownQuestions';
 
 export default function Hero() {
   return (
-    <section className="relative bg-pink-50">
-      <div className="relative w-full h-[50vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
+    <section className="relative bg-pink-50 pt-16 md:pt-0">
+      <div className="relative w-full h-[40vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <div className="relative w-full h-full">
             <div style={{
