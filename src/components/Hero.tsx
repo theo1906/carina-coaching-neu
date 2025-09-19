@@ -9,38 +9,27 @@ import DropdownQuestions from './DropdownQuestions';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-pink-50 pt-16 md:pt-0">
-      
-      <div className="relative w-full h-[50vh] md:h-screen max-h-[800px] overflow-hidden" style={{ marginBottom: '16rem' }}>
-        <div className="absolute inset-0 w-screen h-full" style={{ left: '50%', right: '50%', marginLeft: '-50vw', marginRight: '-50vw' }}>
-          <div className="w-full h-full relative">
-            <Image
-              src={"/images/home-hero-section.jpg"}
-              alt="Carina - Life Coach"
-              fill
-              priority
-              className="object-cover object-center md:object-left"
-              sizes="100vw"
-              quality={85}
-              style={{
-                minWidth: '100%',
-                minHeight: '100%',
-                width: 'auto',
-                height: 'auto',
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                objectFit: 'cover',
-                objectPosition: 'center'
-              }}
-              onError={(e) => {
-                console.error('Error loading hero image:', e);
-                // Fallback to a different image if the first one fails
-                const target = e.target as HTMLImageElement;
-                target.src = "/images/hero-new.jpg";
-              }}
-            />
+    <section className="relative overflow-x-hidden bg-pink-50 pt-16 md:pt-0">
+      <div className="relative w-full h-[50vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
+        <div className="absolute inset-0 w-screen h-full overflow-visible">
+          <div className="w-screen h-full relative">
+            <div className="absolute inset-0 w-screen h-full">
+              <Image
+                src={"/images/home-hero-section.jpg"}
+                alt="Carina - Life Coach"
+                fill
+                priority
+                className="object-cover object-center md:object-left w-full h-full"
+                sizes="100vw"
+                quality={85}
+                onError={(e) => {
+                  console.error('Error loading hero image:', e);
+                  // Fallback to a different image if the first one fails
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/images/hero-new.jpg";
+                }}
+              />
+            </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
