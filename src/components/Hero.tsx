@@ -11,17 +11,16 @@ export default function Hero() {
   return (
     <section className="relative bg-pink-50 pt-16 md:pt-0">
       <div className="relative w-full h-[40vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <div className="relative w-full h-full">
+        <div className="absolute inset-0 w-full h-full overflow-visible">
+          <div className="relative w-full h-full flex justify-center">
             <div style={{
               position: 'absolute',
               top: 0,
               left: '50%',
-              right: 0,
               transform: 'translateX(-50%)',
-              width: '100vw',
+              minWidth: '100vw',
+              width: '100%',
               height: '100%',
-              maxWidth: '100%',
               overflow: 'hidden'
             }}>
               <Image
@@ -29,7 +28,7 @@ export default function Hero() {
                 alt="Carina - Life Coach"
                 fill
                 priority
-                className="object-cover object-center md:object-left"
+                className="object-cover object-center"
                 sizes="100vw"
                 quality={85}
                 style={{
