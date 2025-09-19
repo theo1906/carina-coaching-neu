@@ -11,7 +11,7 @@ import ExpandableBulletPoint from '@/components/ExpandableBulletPoint';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-pink-50">
       <div className="relative z-10 w-full">
         <Hero />
         

@@ -9,22 +9,37 @@ import DropdownQuestions from './DropdownQuestions';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-x-hidden bg-pink-50 pt-16 md:pt-0">
+    <section className="relative bg-pink-50">
       <div className="relative w-full h-[50vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
-        <div className="absolute inset-0 w-screen h-full overflow-visible">
-          <div className="w-screen h-full relative">
-            <div className="absolute inset-0 w-screen h-full">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <div className="relative w-full h-full">
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: '50%',
+              right: 0,
+              transform: 'translateX(-50%)',
+              width: '100vw',
+              height: '100%',
+              maxWidth: '100%',
+              overflow: 'hidden'
+            }}>
               <Image
                 src={"/images/home-hero-section.jpg"}
                 alt="Carina - Life Coach"
                 fill
                 priority
-                className="object-cover object-center md:object-left w-full h-full"
+                className="object-cover object-center md:object-left"
                 sizes="100vw"
                 quality={85}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center center'
+                }}
                 onError={(e) => {
                   console.error('Error loading hero image:', e);
-                  // Fallback to a different image if the first one fails
                   const target = e.target as HTMLImageElement;
                   target.src = "/images/hero-new.jpg";
                 }}
