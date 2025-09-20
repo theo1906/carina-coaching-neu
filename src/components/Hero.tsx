@@ -10,46 +10,53 @@ import DropdownQuestions from './DropdownQuestions';
 export default function Hero() {
   return (
     <section className="relative bg-pink-50 pt-16 md:pt-0">
-      <div className="relative w-full h-[40vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
+      <div className="relative w-full h-[35vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
         <div className="absolute inset-0 w-full h-full overflow-visible">
           <div className="relative w-full h-full">
             <div style={{
-              position: 'absolute',
-              top: 0,
-              left: '50%',
-              right: 'auto',
-              width: '100vw',
+              position: 'relative',
+              width: '100%',
               height: '100%',
-              overflow: 'hidden',
-              transform: 'translateX(-50%)',
-              margin: 0,
-              padding: 0
+              overflow: 'visible',
+              display: 'flex',
+              justifyContent: 'center'
             }}>
-              <Image
-                src={"/images/home-hero-section.jpg"}
-                alt="Carina - Life Coach"
-                fill
-                priority
-                className="object-cover"
-                sizes="100vw"
-                quality={85}
-                style={{
-                  objectFit: 'cover',
-                  objectPosition: 'center center',
-                  width: '100%',
-                  height: '100%',
-                  position: 'absolute',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  minWidth: '100%',
-                  minHeight: '100%'
-                }}
-                onError={(e) => {
-                  console.error('Error loading hero image:', e);
-                  const target = e.target as HTMLImageElement;
-                  target.src = "/images/hero-new.jpg";
-                }}
-              />
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                display: 'flex',
+                justifyContent: 'center',
+                margin: '0 auto',
+                maxWidth: '100%',
+                overflow: 'visible'
+              }}>
+                <Image
+                  src={"/images/home-hero-section.jpg"}
+                  alt="Carina - Life Coach"
+                  fill
+                  priority
+                  className="object-contain md:object-cover"
+                  sizes="100vw"
+                  quality={85}
+                  style={{
+                    objectFit: 'contain',
+                    objectPosition: 'center',
+                    width: '100%',
+                    height: '100%',
+                    maxWidth: 'none',
+                    margin: '0 auto',
+                    position: 'relative'
+                  }}
+                  onError={(e) => {
+                    console.error('Error loading hero image:', e);
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/images/hero-new.jpg";
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
