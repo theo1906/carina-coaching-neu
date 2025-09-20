@@ -24,26 +24,55 @@ export default function Hero() {
               maxWidth: '100%',
               overflow: 'hidden'
             }}>
-              <Image
-                src={"/images/home-hero-section.jpg"}
-                alt="Carina - Life Coach"
-                fill
-                priority
-                className="object-cover object-center md:object-left"
-                sizes="100vw"
-                quality={85}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  objectPosition: 'center center'
-                }}
-                onError={(e) => {
-                  console.error('Error loading hero image:', e);
-                  const target = e.target as HTMLImageElement;
-                  target.src = "/images/hero-new.jpg";
-                }}
-              />
+              <div className="absolute inset-0 w-screen h-full">
+                {/* Mobile Image - Hidden on desktop */}
+                <div className="md:hidden w-full h-full">
+                  <Image
+                    src={"/images/home-hero-section-mobile.png"}
+                    alt="Carina - Life Coach"
+                    fill
+                    priority
+                    className="object-cover object-center"
+                    sizes="100vw"
+                    quality={85}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center center'
+                    }}
+                    onError={(e) => {
+                      console.error('Error loading mobile hero image:', e);
+                      const target = e.target as HTMLImageElement;
+                      target.src = "/images/hero-new.jpg";
+                    }}
+                  />
+                </div>
+                
+                {/* Desktop Image - Hidden on mobile */}
+                <div className="hidden md:block w-full h-full">
+                  <Image
+                    src={"/images/home-hero-section.jpg"}
+                    alt="Carina - Life Coach"
+                    fill
+                    priority
+                    className="object-cover object-left"
+                    sizes="100vw"
+                    quality={85}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center center'
+                    }}
+                    onError={(e) => {
+                      console.error('Error loading hero image:', e);
+                      const target = e.target as HTMLImageElement;
+                      target.src = "/images/hero-new.jpg";
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
