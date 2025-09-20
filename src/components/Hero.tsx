@@ -16,12 +16,14 @@ export default function Hero() {
             <div style={{
               position: 'absolute',
               top: 0,
-              left: 0,
-              right: 0,
-              width: '100%',
+              left: '50%',
+              right: 'auto',
+              width: '100vw',
               height: '100%',
               overflow: 'hidden',
-              margin: '0 auto'
+              transform: 'translateX(-50%)',
+              margin: 0,
+              padding: 0
             }}>
               <Image
                 src={"/images/home-hero-section.jpg"}
@@ -36,11 +38,11 @@ export default function Hero() {
                   objectPosition: 'center center',
                   width: '100%',
                   height: '100%',
-                  maxWidth: 'none',
                   position: 'absolute',
                   left: '50%',
                   transform: 'translateX(-50%)',
-                  minWidth: '100vw'
+                  minWidth: '100%',
+                  minHeight: '100%'
                 }}
                 onError={(e) => {
                   console.error('Error loading hero image:', e);
