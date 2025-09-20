@@ -10,58 +10,46 @@ import DropdownQuestions from './DropdownQuestions';
 export default function Hero() {
   return (
     <section className="relative bg-pink-50 pt-16 md:pt-0">
-      <div className="relative w-full h-[35vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
-        <div className="absolute inset-0 w-full h-full overflow-visible">
+      <div className="relative w-full h-[40vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <div className="relative w-full h-full">
             <div style={{
-              position: 'relative',
-              width: '100%',
+              position: 'absolute',
+              top: 0,
+              left: '50%',
+              right: 0,
+              transform: 'translateX(-50%)',
+              width: '100vw',
               height: '100%',
-              overflow: 'visible',
-              display: 'flex',
-              justifyContent: 'center'
+              maxWidth: '100%',
+              overflow: 'hidden'
             }}>
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                display: 'flex',
-                justifyContent: 'center',
-                margin: '0 auto',
-                maxWidth: '100%',
-                overflow: 'visible'
-              }}>
-                <Image
-                  src={"/images/home-hero-section.jpg"}
-                  alt="Carina - Life Coach"
-                  fill
-                  priority
-                  className="object-contain md:object-cover"
-                  sizes="100vw"
-                  quality={85}
-                  style={{
-                    objectFit: 'contain',
-                    objectPosition: 'center',
-                    width: '100%',
-                    height: '100%',
-                    maxWidth: 'none',
-                    margin: '0 auto'
-                  }}
-                  onError={(e) => {
-                    console.error('Error loading hero image:', e);
-                    const target = e.target as HTMLImageElement;
-                    target.src = "/images/hero-new.jpg";
-                  }}
-                />
-              </div>
+              <Image
+                src={"/images/home-hero-section.jpg"}
+                alt="Carina - Life Coach"
+                fill
+                priority
+                className="object-cover object-center md:object-left"
+                sizes="100vw"
+                quality={85}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center center'
+                }}
+                onError={(e) => {
+                  console.error('Error loading hero image:', e);
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/images/hero-new.jpg";
+                }}
+              />
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-4">
-            <div className="bg-white px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-5 rounded-t-2xl rounded-b-2xl shadow-sm text-center relative z-20 mb-[-13rem] mt-[30rem] md:mb-[-6rem] md:mt-0">
+            <div className="bg-white px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-5 rounded-t-2xl rounded-b-2xl shadow-sm text-center relative z-20 mb-[-13rem] mt-[25rem] md:mb-[-6rem] md:mt-0">
               <div className="-mt-2">
                 <h2 className="flex items-center justify-center gap-2 text-3xl md:text-4xl lg:text-5xl font-extralight text-black leading-tight mx-auto">
                   <div className="flex items-center gap-2">
