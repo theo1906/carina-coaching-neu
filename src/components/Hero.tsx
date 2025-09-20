@@ -47,8 +47,7 @@ export default function Hero() {
                     width: '100%',
                     height: '100%',
                     maxWidth: 'none',
-                    margin: '0 auto',
-                    position: 'relative'
+                    margin: '0 auto'
                   }}
                   onError={(e) => {
                     console.error('Error loading hero image:', e);
