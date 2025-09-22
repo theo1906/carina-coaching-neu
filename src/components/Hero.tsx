@@ -11,70 +11,40 @@ export default function Hero() {
   return (
     <section className="relative bg-pink-50 pt-16 md:pt-0">
       <div className="relative w-full h-[40vh] md:h-screen max-h-[800px]" style={{ marginBottom: '16rem' }}>
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <div className="relative w-full h-full">
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: '50%',
-              right: 0,
-              transform: 'translateX(-50%)',
-              width: '100vw',
-              height: '100%',
-              maxWidth: '100%',
-              overflow: 'hidden'
-            }}>
-              <div className="absolute inset-0 w-screen h-full">
-                {/* Mobile Image - Hidden on desktop */}
-                <div className="md:hidden w-full h-full">
-                  <Image
-                    src={"/images/home-hero-section-mobile.png"}
-                    alt="Carina - Life Coach"
-                    fill
-                    priority
-                    className="object-cover object-center"
-                    sizes="100vw"
-                    quality={85}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center center'
-                    }}
-                    onError={(e) => {
-                      console.error('Error loading mobile hero image:', e);
-                      const target = e.target as HTMLImageElement;
-                      target.src = "/images/hero-new.jpg";
-                    }}
-                  />
-                </div>
-                
-                {/* Desktop Image - Hidden on mobile */}
-                <div className="hidden md:block w-full h-full">
-                  <Image
-                    src={"/images/home-hero-section.jpg"}
-                    alt="Carina - Life Coach"
-                    fill
-                    priority
-                    className="object-cover object-left"
-                    sizes="100vw"
-                    quality={85}
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                      objectPosition: 'center center'
-                    }}
-                    onError={(e) => {
-                      console.error('Error loading hero image:', e);
-                      const target = e.target as HTMLImageElement;
-                      target.src = "/images/hero-new.jpg";
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Mobile Background */}
+        <div className="md:hidden absolute inset-0 w-full h-full">
+          <Image
+            src="/images/home-hero-section-mobile.png"
+            alt="Carina - Life Coach"
+            fill
+            priority
+            className="object-cover object-center"
+            sizes="100vw"
+            quality={85}
+            onError={(e) => {
+              console.error('Error loading mobile hero image:', e);
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/hero-new.jpg";
+            }}
+          />
+        </div>
+        
+        {/* Desktop Background */}
+        <div className="hidden md:block absolute inset-0 w-full h-full">
+          <Image
+            src="/images/home-hero-section.jpg"
+            alt="Carina - Life Coach"
+            fill
+            priority
+            className="object-cover object-left"
+            sizes="100vw"
+            quality={85}
+            onError={(e) => {
+              console.error('Error loading hero image:', e);
+              const target = e.target as HTMLImageElement;
+              target.src = "/images/hero-new.jpg";
+            }}
+          />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">
           <div className="absolute top-[30vh] md:top-auto md:bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-4">
