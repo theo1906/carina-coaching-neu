@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Mobile Background */}
         <div className="md:hidden absolute inset-0 w-full h-full">
           <Image
-            src="/images/home-hero-section-mobile.png"
+            src={`/images/home-hero-section-mobile.png?${new Date().getTime()}`}
             alt="Carina - Life Coach"
             fill
             priority
