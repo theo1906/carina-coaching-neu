@@ -1,0 +1,17 @@
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { defaultLocale } from '../i18n';
+
+export default function RootLayout() {
+  const router = useRouter();
+  
+  useEffect(() => {
+    // Redirect to the default locale when the component mounts
+    router.push(`/${defaultLocale}`);
+  }, [router]);
+  
+  // Return null or a loading state while redirecting
+  return null;
+}

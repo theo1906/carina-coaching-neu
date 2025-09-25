@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef, useCallback, memo } from 'react';
 import { usePathname } from 'next/navigation';
+import LanguageSwitcher from '../LanguageSwitcher';
 import { Bars3Icon, XMarkIcon, CalendarIcon, ChevronDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 interface NavigationItem {
@@ -99,7 +100,7 @@ const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
 
   if (!submenu) {
     return (
-      <li>
+      <li className="list-none">
         <Link
           href={href}
           className="text-gray-900 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
@@ -113,7 +114,7 @@ const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
 
   return (
     <li 
-      className="relative group" 
+      className="relative group list-none" 
       ref={ref}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -253,11 +254,13 @@ const Header = () => {
             </Link>
           </div>
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            <ul className="flex items-center space-x-6">
+            <div className="hidden md:ml-6 md:flex md:items-center md:space-x-1">
               {navigation.map((item) => (
                 <NavItem key={item.name} {...item} />
               ))}
-            </ul>
+              <div className="border-l border-gray-200 h-6 mx-2"></div>
+              <LanguageSwitcher />
+            </div>
             <Link
               href="/buchen"
               className="ml-6 inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 shadow-sm transition-all duration-300 hover:shadow-md"
@@ -320,6 +323,9 @@ const Header = () => {
         </div>
         <div className="min-h-[calc(100vh-4rem)]">
           <div className="bg-white overflow-y-auto space-y-0">
+            <div className="px-6 py-4 border-b border-gray-100">
+              <LanguageSwitcher />
+            </div>
             {navigation.map((item) => (
               <div key={item.name} className="w-full bg-white border-b border-gray-100">
                 {item.submenu ? (

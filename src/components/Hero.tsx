@@ -26,6 +26,7 @@ export default function Hero() {
               const target = e.target as HTMLImageElement;
               target.src = "/images/hero-new.jpg";
             }}
+            unoptimized={true}
           />
         </div>
         
@@ -44,6 +45,7 @@ export default function Hero() {
               const target = e.target as HTMLImageElement;
               target.src = "/images/hero-new.jpg";
             }}
+            unoptimized={true}
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full relative z-10">

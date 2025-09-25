@@ -15,10 +15,10 @@ export default function DienstleistungenPage() {
         <ul className="flex flex-col gap-4">
           <li>
             <Link 
-              href="/dienstleistungen/essstoerungen-coaching"
+              href="/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery"
               className="text-lg font-medium text-gray-900 hover:text-pink-600 transition-colors duration-200"
             >
-              Essstörungen Coaching
+              Systemisches Coaching für Essstörungen & ED Recovery
             </Link>
           </li>
           <li>
@@ -35,7 +35,6 @@ export default function DienstleistungenPage() {
       <p className="text-lg text-gray-700 mb-6">
         Hier finden Sie eine Übersicht unserer Coaching-Dienstleistungen.
       </p>
-      {/* Add your content here */}
     </div>
   );
 }
