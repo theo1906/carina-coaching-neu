@@ -80,8 +80,8 @@ export default function Footer() {
   };
   return (
     <>
-      <footer className="bg-gradient-to-b from-white to-neutral-50 border-t border-neutral-100 px-4 sm:px-6">
-        <div className="container mx-auto py-12 md:py-16">
+      <footer className="bg-white border-t border-gray-200">
+        <div className="max-w-7xl mx-auto py-12 px-6 overflow-hidden sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
             {/* Brand info */}
             <div className="space-y-6">
@@ -96,13 +96,14 @@ export default function Footer() {
                 </Link>
                 <p className="text-neutral-600 ml-0">
                   Ich begleite dich auf deiner Reise zu wahrer<br />
-                  Selbstliebe, innerer Stärke und einem erfüllten Leben.
+                  Selbstliebe, innerer Stärke und einem<br />
+                  erfüllten Leben.
                 </p>
               </div>
             </div>
 
             {/* Navigation */}
-            <div className="space-y-6 px-2 sm:px-0">
+            <div className="space-y-6">
               <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
                 Hauptmenü
               </h3>
@@ -162,7 +163,7 @@ export default function Footer() {
             </div>
 
             {/* Legal */}
-            <div className="space-y-6 px-2 sm:px-0">
+            <div className="space-y-6">
               <h3 className="text-sm font-semibold text-neutral-900 tracking-wider uppercase mb-6">
                 Rechtliches
               </h3>

@@ -1,4 +1,13 @@
+# dependencies
 node_modules/
+
+# Next.js build output
 .next/
 out/
-public/images/home new hero section.png
+
+# macOS
+.DS_Store
+
+# Backups
+*.bak
+*.new

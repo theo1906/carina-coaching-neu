@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect, useRef, useCallback, memo } from 'react';
 import { usePathname } from 'next/navigation';
-import LanguageSwitcher from '../LanguageSwitcher';
 import { Bars3Icon, XMarkIcon, CalendarIcon, ChevronDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 
 interface NavigationItem {
@@ -100,7 +99,7 @@ const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
 
   if (!submenu) {
     return (
-      <li className="list-none">
+      <li>
         <Link
           href={href}
           className="text-gray-900 hover:text-pink-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
@@ -114,7 +113,7 @@ const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
 
   return (
     <li 
-      className="relative group list-none" 
+      className="relative group" 
       ref={ref}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -254,13 +253,11 @@ const Header = () => {
             </Link>
           </div>
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            <div className="hidden md:ml-6 md:flex md:items-center md:space-x-1">
+            <ul className="flex items-center space-x-6">
               {navigation.map((item) => (
                 <NavItem key={item.name} {...item} />
               ))}
-              <div className="border-l border-gray-200 h-6 mx-2"></div>
-              <LanguageSwitcher />
-            </div>
+            </ul>
             <Link
               href="/buchen"
               className="ml-6 inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 shadow-sm transition-all duration-300 hover:shadow-md"
@@ -321,17 +318,14 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="min-h-[calc(100vh-4rem)]">
-          <div className="bg-white overflow-y-auto space-y-0">
-            <div className="px-6 py-4 border-b border-gray-100">
-              <LanguageSwitcher />
-            </div>
+        <div className="pt-2 pb-6 overflow-y-auto h-[calc(100vh-4rem)]">
+          <div className="space-y-2 bg-white">
             {navigation.map((item) => (
-              <div key={item.name} className="w-full bg-white border-b border-gray-100">
+              <div key={item.name} className="mobile-menu-item border-b border-gray-100 last:border-b-0">
                 {item.submenu ? (
                   <>
-                    <div className="w-full">
-                      <div className="px-6 py-4">
+                    <div className="overflow-hidden">
+                      <div className="px-4 py-3">
                         <button
                           type="button"
                           className="w-full flex justify-between items-center text-base font-medium text-gray-900 hover:text-pink-600"
@@ -348,12 +342,12 @@ const Header = () => {
                       <div 
                         className={`overflow-hidden transition-all duration-200 ${mobileSubmenuOpen === item.name ? 'max-h-96' : 'max-h-0'}`}
                       >
-                        <div className="space-y-0">
+                        <div className="divide-y divide-gray-100">
                           {item.submenu.map((subItem) => (
                             <Link
                               key={subItem.name}
                               href={subItem.href}
-                              className="block w-full px-6 py-4 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
+                              className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
                               onClick={() => setMobileMenuOpen(false)}
                               prefetch={false}
                             >
@@ -367,7 +361,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block w-full px-6 py-4 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600"
+                    className="block px-4 py-3 text-base font-medium text-gray-900 hover:bg-pink-50 hover:text-pink-600 border-b border-gray-100"
                     onClick={() => setMobileMenuOpen(false)}
                     prefetch={false}
                   >
@@ -376,16 +370,18 @@ const Header = () => {
                 )}
               </div>
             ))}
-          </div>
-          <div className="px-6 py-4 bg-white border-t border-gray-100">
-            <Link
-              href="/contact"
-              className="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-full text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
-              onClick={() => setMobileMenuOpen(false)}
-              prefetch={false}
-            >
-              Kontakt
-            </Link>
+            <div className="pt-4 px-4 pb-4 bg-white">
+              <div className="bg-white">
+              <Link
+                href="/contact"
+                className="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-full text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+                onClick={() => setMobileMenuOpen(false)}
+                prefetch={false}
+              >
+                Kontakt
+              </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
