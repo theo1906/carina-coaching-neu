@@ -3,12 +3,14 @@ import { Metadata } from 'next';
 
 // Import page components dynamically to improve performance
 const pageComponents = {
-  // Direct page routes
+  // Direct page routes that exist in the project
   'ist-ein-spirituelles-coaching-das-richtige-fuer-dich': () => import('../ist-ein-spirituelles-coaching-das-richtige-fuer-dich/page').then(mod => mod.default),
   'embodiment-und-heilung': () => import('../embodiment-und-heilung/page').then(mod => mod.default),
-  'embodiment-als-schluessel-auf-deiner-heilungsreise': () => import('../embodiment-als-schluessel-auf-deiner-heilungsreise/page').then(mod => mod.default),
   'reise-zurueck-zu-dir': () => import('../reise-zurueck-zu-dir/page').then(mod => mod.default),
-  'mein-ansatz': () => import('../mein-ansatz/page').then(mod => mod.default),
+  'vorteile-system-coaching': () => import('../vorteile-system-coaching/page').then(mod => mod.default),
+  'embodiment': () => import('../embodiment/page').then(mod => mod.default),
+  'full-text': () => import('../full-text/page').then(mod => mod.default),
+  'werte-und-prinzipien': () => import('../werte-und-prinzipien/page').then(mod => mod.default),
   
   // Nested routes under themen/
   'themen/herausforderungen': () => import('../themen/herausforderungen/page').then(mod => mod.default),
@@ -23,7 +25,7 @@ const pageComponents = {
 
 // Define metadata for each route
 const pageMetadata = {
-  // Direct pages
+  // Direct pages that exist in the project
   'ist-ein-spirituelles-coaching-das-richtige-fuer-dich': {
     title: 'Ist ein spirituelles Coaching das Richtige für dich?',
     description: 'Entdecke, ob ein spirituelles Coaching der richtige Weg für dich ist.'
@@ -32,17 +34,25 @@ const pageMetadata = {
     title: 'Embodiment & Heilung - Spirituelles Coaching',
     description: 'Erfahre, wie Embodiment dir bei deiner Heilung helfen kann.'
   },
-  'embodiment-als-schluessel-auf-deiner-heilungsreise': {
-    title: 'Embodiment als Schlüssel auf deiner Heilungsreise',
-    description: 'Entdecke, wie dir Embodiment auf deinem Heilungsweg helfen kann.'
-  },
   'reise-zurueck-zu-dir': {
     title: 'Reise zurück zu dir selbst - Spirituelles Coaching',
     description: 'Beginne deine Reise zurück zu deinem wahren Selbst.'
   },
-  'mein-ansatz': {
-    title: 'Mein Ansatz - Spirituelles Coaching',
-    description: 'Lerne meinen Ansatz für spirituelles Coaching kennen.'
+  'vorteile-system-coaching': {
+    title: 'Vorteile von System-Coaching - Spirituelles Coaching',
+    description: 'Erfahre mehr über die Vorteile von systemischem Coaching.'
+  },
+  'embodiment': {
+    title: 'Embodiment - Spirituelles Coaching',
+    description: 'Lerne die Kraft von Embodiment für deine persönliche Entwicklung kennen.'
+  },
+  'full-text': {
+    title: 'Spirituelles Coaching - Volltext',
+    description: 'Umfassende Informationen zum spirituellen Coaching.'
+  },
+  'werte-und-prinzipien': {
+    title: 'Werte und Prinzipien - Spirituelles Coaching',
+    description: 'Lerne die Werte und Prinzipien meines spirituellen Coachings kennen.'
   },
   
   // Nested unter themen/
