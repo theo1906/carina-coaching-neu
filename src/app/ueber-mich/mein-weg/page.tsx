@@ -266,11 +266,11 @@ export default function MeinWeg() {
               </div>
               <div className="mt-8 flex justify-center">
                 <Link 
-                  href="/dienstleistungen/essstorung#heilungsreise" 
+                  href="/dienstleistungen/essstoerung#heilungsreise" 
                   className="group inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                   onClick={(e) => {
                     // For same-page navigation
-                    if (window.location.pathname === "/dienstleistungen/essstorung") {
+                    if (window.location.pathname === "/dienstleistungen/essstoerung") {
                       e.preventDefault();
                       const element = document.getElementById('heilungsreise');
                       if (element) {

@@ -34,7 +34,7 @@ export default function SummaryCollapsible() {
             </p>
             
             <p>
-              Als <Link href="/dienstleistungen/essstorung" className="text-pink-600 hover:text-pink-700 font-medium">Systemischer Coach für Essstörungen</Link> teile ich meine gelebte Erfahrung und mein Wissen, um dir Hoffnung, Verständnis und konkrete Unterstützung für deinen ganz persönlichen Heilungsweg zu schenken. Ich kenne die Scham, die Isolation und die Entfremdung von sich selbst sehr gut und kann mit dir mitfühlen. Ich kann dir aber auch spiegeln, dass vollkommene Heilung möglich ist. Mein traumasensibler, holistischer Ansatz erkennt an, dass es bei Essstörungen weniger um Essen geht, sondern vielmehr um die Beziehung zu dir selbst, deinem Wert, deinem Körper und vor allem um den Kontakt mit deiner Wut.
+              Als <Link href="/dienstleistungen/essstoerung" className="text-pink-600 hover:text-pink-700 font-medium">Systemischer Coach für Essstörungen</Link> teile ich meine gelebte Erfahrung und mein Wissen, um dir Hoffnung, Verständnis und konkrete Unterstützung für deinen ganz persönlichen Heilungsweg zu schenken. Ich kenne die Scham, die Isolation und die Entfremdung von sich selbst sehr gut und kann mit dir mitfühlen. Ich kann dir aber auch spiegeln, dass vollkommene Heilung möglich ist. Mein traumasensibler, holistischer Ansatz erkennt an, dass es bei Essstörungen weniger um Essen geht, sondern vielmehr um die Beziehung zu dir selbst, deinem Wert, deinem Körper und vor allem um den Kontakt mit deiner Wut.
             </p>
             
             <p>
@@ -50,7 +50,7 @@ export default function SummaryCollapsible() {
               Spirituelles Coaching entdecken
             </Link>
             <Link 
-              href="/dienstleistungen/essstorung" 
+              href="/dienstleistungen/essstoerung" 
               className="px-6 py-3 bg-pink-50 text-pink-700 rounded-full hover:bg-pink-100 transition-colors text-sm font-medium"
             >
               Coaching für Essstörungen

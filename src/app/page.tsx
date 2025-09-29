@@ -242,7 +242,7 @@ export default function Home() {
                       color="purple"
                     />
                   </div>
-                  <Link href="/dienstleistungen/essstorung" className="inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-colors mt-8">
+                  <Link href="/dienstleistungen/essstoerung" className="inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-colors mt-8">
                     <span className="mr-2">Mehr erfahren</span>
                     <ArrowRightIcon className="w-5 h-5" />
                   </Link>

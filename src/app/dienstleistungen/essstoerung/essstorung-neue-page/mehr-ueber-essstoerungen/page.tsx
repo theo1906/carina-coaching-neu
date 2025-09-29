@@ -67,9 +67,8 @@ export default function MehrUeberEssstoerungen() {
                 
                 <div className="mt-12 pt-8 border-t border-gray-200">
                   <Link 
-                    href="/dienstleistungen/essstorung#heilungsreise" 
+                    href="/dienstleistungen/essstoerung" 
                     className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors group text-lg"
-                    scroll={false}
                   >
                     <ArrowLeftIcon className="w-5 h-5 mr-2 transition-transform group-hover:-translate-x-1" />
                     Zurück zur Übersicht

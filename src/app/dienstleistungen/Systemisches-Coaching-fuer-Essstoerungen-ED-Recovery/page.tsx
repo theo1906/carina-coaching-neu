@@ -9,8 +9,8 @@ export default function SystemischesCoachingPage() {
   
   useEffect(() => {
     // Only redirect if not already on the target page
-    if (!pathname.includes('essstorung')) {
-      router.replace('/dienstleistungen/essstorung');
+    if (!pathname.includes('essstoerung')) {
+      router.replace('/dienstleistungen/essstoerung');
     }
   }, [router, pathname]);
   

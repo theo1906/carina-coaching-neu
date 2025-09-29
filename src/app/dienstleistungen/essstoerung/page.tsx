@@ -236,7 +236,7 @@ export default function EssstorungPage() {
           {/* Mehr erfahren Button */}
           <div className="mt-12 text-center">
               <Link 
-                href="/dienstleistungen/essstorung/ist-coaching-das-richtige" 
+                href="/dienstleistungen/essstoerung/ist-coaching-das-richtige" 
                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg"
               >
                 <span>Mehr erfahren</span>
@@ -393,7 +393,7 @@ export default function EssstorungPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Link 
-                  href="/dienstleistungen/essstorung/meine-heilungsreise"
+                  href="/dienstleistungen/essstoerung/meine-heilungsreise"
                   className="px-8 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 group"
                 >
                   <span>Mehr erfahren</span>
@@ -559,7 +559,7 @@ export default function EssstorungPage() {
             {/* Mehr erfahren Button */}
             <div className="text-center mt-8">
               <Link 
-                href="/dienstleistungen/essstorung/meine-heilungsreise/embodiment"
+                href="/dienstleistungen/essstoerung/meine-heilungsreise/embodiment"
                 className="inline-flex items-center px-8 py-3.5 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 <span>Mehr erfahren</span>
@@ -720,7 +720,7 @@ export default function EssstorungPage() {
               Bereit für den ersten Schritt in deine persönliche Transformation?
             </p>
             <Link 
-              href="/dienstleistungen/essstorung/heilung-von-innen-nach-aussen" 
+              href="/dienstleistungen/essstoerung/heilung-von-innen-nach-aussen" 
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 transition-colors shadow-md hover:shadow-lg no-underline"
             >
               Mehr erfahren
@@ -785,7 +785,7 @@ export default function EssstorungPage() {
             {/* Mehr erfahren Button */}
             <div className="col-span-1 md:col-span-3 flex justify-center mt-8">
               <Link 
-                href="/dienstleistungen/essstorung/ed-recovery-coach"
+                href="/dienstleistungen/essstoerung/ed-recovery-coach"
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg no-underline"
               >
                 <span>Mehr erfahren</span>
@@ -859,7 +859,7 @@ export default function EssstorungPage() {
           {/* Mehr erfahren Button */}
           <div className="mt-12 text-center">
             <Link 
-              href="/dienstleistungen/essstorung/auf-der-suche-nach-identitaet"
+              href="/dienstleistungen/essstoerung/auf-der-suche-nach-identitaet"
               className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg no-underline"
             >
               <span>Mehr erfahren</span>

@@ -13,7 +13,7 @@ export default function AufDerSucheNachIdentitaetPage() {
     // Store the scroll position in session storage
     sessionStorage.setItem('shouldScrollToSection', 'warum-ja-sagen-zu-meinem-coaching');
     // Navigate to the main page
-    router.push('/dienstleistungen/essstorung');
+    router.push('/dienstleistungen/essstoerung');
   };
   return (
     <div className="min-h-screen bg-white">
@@ -124,7 +124,7 @@ export default function AufDerSucheNachIdentitaetPage() {
         {/* Back Button */}
         <div className="mt-16 text-center">
           <a 
-            href="/dienstleistungen/essstorung#warum-ja-sagen-zu-meinem-coaching" 
+            href="/dienstleistungen/essstoerung#warum-ja-sagen-zu-meinem-coaching" 
             className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg no-underline"
             onClick={handleBackClick}
           >

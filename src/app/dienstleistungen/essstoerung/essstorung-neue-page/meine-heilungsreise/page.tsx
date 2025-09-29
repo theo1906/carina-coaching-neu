@@ -20,8 +20,8 @@ export default function MeineHeilungsreisePage() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Link
-              href="/dienstleistungen/essstorung#embodiment"
-              as="/dienstleistungen/essstorung#embodiment"
+              href="/dienstleistungen/essstoerung#embodiment"
+              as="/dienstleistungen/essstoerung#embodiment"
               scroll={false}
               className="inline-flex items-center text-pink-600 hover:text-pink-800 mb-8 transition-colors duration-300 group"
             >

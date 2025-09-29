@@ -9,7 +9,7 @@ const OLD_TO_NEW_PATHS = {
 const NEW_PATHS = [
   '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
   '/dienstleistungen/spirituelles-life-coaching',  
-  '/dienstleistungen/essstorung', // Allow direct access to the main Essstörungen page
+  '/dienstleistungen/essstoerung', // Allow direct access to the main Essstörungen page
 ];
 
 export function middleware(request: NextRequest) {

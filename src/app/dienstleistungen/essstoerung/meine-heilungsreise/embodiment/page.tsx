@@ -8,7 +8,7 @@ export default function EmbodimentPage() {
       {/* Navigation */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4">
         <Link 
-          href="/dienstleistungen/essstorung" 
+          href="/dienstleistungen/essstoerung" 
           className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors"
         >
           <ArrowLeftIcon className="w-5 h-5 mr-2" />
@@ -90,7 +90,7 @@ export default function EmbodimentPage() {
         
         <div className="mt-12 text-center">
           <ScrollToSectionLink 
-            href="/dienstleistungen/essstorung#wahrhaftig"
+            href="/dienstleistungen/essstoerung#wahrhaftig"
             className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors group"
           >
             <ArrowLeftIcon className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" />

@@ -95,9 +95,7 @@ export default function Footer() {
                   </span>
                 </Link>
                 <p className="text-neutral-600 ml-0">
-                  Ich begleite dich auf deiner Reise zu wahrer<br />
-                  Selbstliebe, innerer Stärke und einem<br />
-                  erfüllten Leben.
+                  Ich begleite dich auf deiner Reise zu wahrer Selbstliebe, innerer Stärke und einem erfüllten Leben in einem gesunden Körper.
                 </p>
               </div>
             </div>

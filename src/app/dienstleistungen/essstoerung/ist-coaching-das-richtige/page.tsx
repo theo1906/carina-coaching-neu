@@ -95,7 +95,7 @@ export default function IstCoachingPage() {
 
           <div className="mt-16 text-center">
             <Link 
-              href="/dienstleistungen/essstorung#heilungsreise" 
+              href="/dienstleistungen/essstoerung#heilungsreise" 
               className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg no-underline"
               scroll={false}
             >

@@ -61,7 +61,7 @@ export default function HeilungVonInnenNachAussenPage() {
           {/* Back Button */}
           <div className="mt-12 text-center">
             <Link 
-              href="/dienstleistungen/essstorung#heilung-von-innen-nach-aussen" 
+              href="/dienstleistungen/essstoerung#heilung-von-innen-nach-aussen" 
               className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg no-underline"
             >
               <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />

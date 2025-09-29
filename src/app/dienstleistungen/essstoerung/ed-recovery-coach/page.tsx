@@ -56,7 +56,7 @@ export default function EDRecoveryCoachPage() {
         {/* Back Button */}
         <div className="mt-12 text-center">
           <Link 
-            href="/dienstleistungen/essstorung#auf-der-suche-nach-identitaet" 
+            href="/dienstleistungen/essstoerung#auf-der-suche-nach-identitaet" 
             className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg no-underline"
           >
             <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />

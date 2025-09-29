@@ -1,4 +1,4 @@
-import EssstoerungenPage from '../essstorung/page';
+import EssstoerungenPage from '../essstoerung/page';
 
 export default function EssstoerungenCoachingPage() {
   return <EssstoerungenPage />;
