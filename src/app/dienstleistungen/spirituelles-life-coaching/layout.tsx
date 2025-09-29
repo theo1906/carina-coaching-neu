@@ -1,14 +1,10 @@
-'use client';
+import type { Metadata } from 'next';
 
-import { Inter, Playfair_Display } from 'next/font/google';
-import Header from '@/components/layout/Header';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const playfair = Playfair_Display({ 
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-});
+export const metadata: Metadata = {
+  title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
+  description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
+  keywords: ['spirituelles coaching', 'weiblichkeit entdecken', 'körperarbeit', 'spirituelle entwicklung', 'heilung', 'transformation'],
+};
 
 export default function SpiritualLayout({
   children,
@@ -16,13 +12,8 @@ export default function SpiritualLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de" className="scroll-smooth">
-      <body className={`${inter.variable} ${playfair.variable} font-sans min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-      </body>
-    </html>
+    <div className="bg-white text-gray-900">
+      {children}
+    </div>
   );
 }

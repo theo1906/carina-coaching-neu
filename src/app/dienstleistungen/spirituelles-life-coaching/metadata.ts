@@ -1,31 +1,16 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
-  description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
-  keywords: ['spirituelles coaching', 'weiblichkeit entdecken', 'körperarbeit', 'spirituelle entwicklung', 'heilung', 'transformation'],
+  title: 'Spirituelles Life Coaching - Carina Göb',
+  description: 'Entdecke dein volles Potenzial durch spirituelles Life Coaching. Individuelle Begleitung für persönliches Wachstum und Transformation.',
   openGraph: {
-    title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
-    description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
-    url: 'https://www.carinagoeb.com/dienstleistungen/spirituelles-life-coaching',
-    siteName: 'Carina Göb',
-    images: [
-      {
-        url: '/images/og/spirituelles-coaching-og.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: 'de_DE',
+    title: 'Spirituelles Life Coaching - Carina Göb',
+    description: 'Entdecke dein volles Potenzial durch spirituelles Life Coaching. Individuelle Begleitung für persönliches Wachstum und Transformation.',
+    url: 'https://carinacoaching.com/dienstleistungen/spirituelles-life-coaching',
     type: 'website',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
-    description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
-    images: ['/images/og/spirituelles-coaching-og.jpg'],
-  },
   alternates: {
-    canonical: 'https://www.carinagoeb.com/dienstleistungen/spirituelles-life-coaching',
+    canonical: 'https://carinacoaching.com/dienstleistungen/spirituelles-life-coaching',
   },
+  keywords: ['spirituelles coaching', 'life coaching', 'persönliche entwicklung', 'selbsterkenntnis', 'transformation'],
 };

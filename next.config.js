@@ -10,8 +10,9 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // For static exports
-  output: 'export',
+  // For static exports - disabled for now to support dynamic routes
+  // output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  trailingSlash: true,
   
   // Disable the file-system routing for these files
   webpack: (config, { isServer }) => {
@@ -23,11 +24,7 @@ const nextConfig = {
       };
     }
     return config;
-  },
-  
-  // Enable static export only for production builds
-  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
-  trailingSlash: true,
+  }
 };
 
 module.exports = nextConfig;

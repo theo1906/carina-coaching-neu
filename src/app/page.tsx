@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
@@ -105,7 +103,7 @@ export default function Home() {
                           'Geführte Meditation',
                           'Heilung durch Präsenz',
                           'Integration spiritueller Tools'
-                        ].map((point, index) => (
+                        ].map((point: string, index: number) => (
                           <div key={index} className="flex items-center">
                             <div className="flex-shrink-0 h-4 w-4 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 flex items-center justify-center mr-3">
                               <div className="h-1.5 w-1.5 rounded-full bg-pink-600"></div>

@@ -1,0 +1,169 @@
+import { CheckIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'Mein Angebot | Carina Göb - Life & Mindset Coaching',
+  description: 'Entdecke mein umfassendes Angebot an Coaching-Programmen und Workshops für deine persönliche Entwicklung.',
+};
+
+const coachingPackages = [
+  {
+    title: 'Synergie',
+    description: 'Synergie zwischen Körper, Geist und Seele',
+    price: '599€',
+    features: [
+      '4 Stunden Coaching',
+      'Persönlicher Fahrplan',
+      'Individuelle Übungen',
+      'E-Mail-Support',
+      'Zugang zu Ressourcen',
+    ],
+  },
+  {
+    title: 'Infinite Balance',
+    description: 'Balance zwischen Körper, Geist und Seele',
+    price: '999€',
+    features: [
+      '8 Stunden Coaching',
+      'Intensives Begleitprogramm',
+      'Persönliches Arbeitsbuch',
+      'Wöchentlicher Check-in',
+      'Zugang zur Community',
+      'Zusätzliche Ressourcen',
+    ],
+  },
+  {
+    title: 'Vollkommenheit',
+    description: 'Komplette Veränderung und Neuanfang',
+    price: '1.999€',
+    features: [
+      '12 Stunden Coaching',
+      'Exklusives Begleitprogramm',
+      'Persönliches Arbeitsbuch',
+      'Täglicher Check-in',
+      'Exklusive Community',
+      'Zusätzliche Workshops',
+      'Individuelle Ressourcen',
+    ],
+  },
+];
+
+const workshops = [
+  {
+    title: 'Körperbewusstsein Workshop',
+    description: 'Entdecke die Weisheit deines Körpers und lerne, seine Signale zu deuten.',
+    price: '297€',
+  },
+  {
+    title: 'Intuition Workshop',
+    description: 'Entwickle dein intuitives Wissen und lerne, darauf zu vertrauen.',
+    price: '297€',
+  },
+  {
+    title: 'Weibliche Energie Workshop',
+    description: 'Erwecke deine innere Kraft und lebe authentisch.',
+    price: '297€',
+  },
+];
+
+export default function Angebot() {
+  return (
+    <div className="bg-white">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-16 bg-gradient-to-b from-white to-rose-50">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-rose-100 rounded-full opacity-20"></div>
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-fuchsia-100 rounded-full opacity-20"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
+              Preise
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
+            <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
+              Wähle zwischen mehreren kürzeren oder weniger längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich, die Aufteilung entscheidest du selbst.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Coaching Packages */}
+      <section className="py-4 sm:py-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+
+          <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {coachingPackages.map((packageItem) => (
+              <div
+                key={packageItem.title}
+                className="p-8 bg-white shadow-2xl rounded-2xl"
+              >
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {packageItem.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  {packageItem.description}
+                </p>
+                <p className="mt-4 text-3xl font-bold text-primary-600">
+                  {packageItem.price}
+                </p>
+                <ul role="list" className="mt-6 space-y-4">
+                  {packageItem.features.map((feature) => (
+                    <li key={feature} className="flex gap-x-3">
+                      <CheckIcon className="h-6 w-5 flex-none text-primary-600" aria-hidden="true" />
+                      <span className="text-sm leading-6 text-gray-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/contact"
+                  className="mt-6 block rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                >
+                  Jetzt buchen
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Workshops */}
+      <section className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Workshops
+            </h2>
+            <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
+              Wähle zwischen mehreren kürzeren oder weniger längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich, die Aufteilung entscheidest du selbst.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {workshops.map((workshop) => (
+              <div
+                key={workshop.title}
+                className="p-8 bg-white shadow-2xl rounded-2xl"
+              >
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {workshop.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  {workshop.description}
+                </p>
+                <p className="mt-4 text-3xl font-bold text-primary-600">
+                  {workshop.price}
+                </p>
+                <Link
+                  href="/contact"
+                  className="mt-6 block rounded-md bg-primary-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                >
+                  Jetzt anmelden
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
