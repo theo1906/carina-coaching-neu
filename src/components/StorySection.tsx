@@ -30,7 +30,7 @@ export default function StorySection() {
         {/* Quote box */}
         <div className="relative max-w-2xl mx-auto mb-16">
           <div className="relative z-10 px-8 py-10 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-pink-50">
-            <svg className="absolute top-4 left-8 w-8 h-8 text-pink-200" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="absolute top-2 sm:top-4 left-8 w-8 h-8 text-pink-200" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <svg className="absolute bottom-6 right-8 w-8 h-8 text-pink-200 transform rotate-180" fill="currentColor" viewBox="0 0 24 24">
