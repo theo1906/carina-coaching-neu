@@ -176,27 +176,27 @@ export default function Home() {
                   <ExpandableBulletPoint 
                     index={0}
                     title="Tiefe innere Heilung"
-                    content="Mein Ansatz hilft dir, in deinem Körper anzukommen – dem Zuhause deiner Seele. Du bist präsent im gegenwärtigen Moment und triffst Entscheidungen bewusst aus dem Hier und Jetzt anstatt aus alten Verletzungen oder Mustern. So gestaltest du dein Leben und deine Beziehungen voller Sinn, Authentizität und Freude."
+                    content="Mein Ansatz hilft dir, in deinem Körper anzukommen – dem Zuhause deiner Seele. Du lernst, präsent im gegenwärtigen Moment zu sein und Entscheidungen bewusst aus dem Hier und Jetzt zu treffen anstatt aus alten Verletzungen oder Mustern. So gestaltest du dein Leben und deine Beziehungen voller Sinn, Authentizität und Freude."
                   />
                   <ExpandableBulletPoint 
                     index={1}
                     title="Verbundenheit mit deiner Essenz"
-                    content="Durch achtsames Erforschen und Körperwahrnehmungsübungen, verbindest du dich mit deiner Herzensweisheit. Du spürst, deiner inneren Führung zu vertrauen und Entscheidungen aus Liebe zu dir und deinem Körper zu treffen und mutig deinem Herzensweg zu folgen."
+                    content="Durch achtsames Erforschen und Körperwahrnehmungsübungen verbindest du dich mit deiner Herzensweisheit. Du lernst, deiner inneren Führung zu vertrauen und Entscheidungen aus Liebe zu dir und deinem Körper zu treffen. So kannst du mutig deinem Herzensweg folgen."
                   />
                   <ExpandableBulletPoint 
                     index={2}
                     title="Transformation durch Präsenz"
-                    content="Ganz gleich, ob du dich in einem Umbruch befindest, eine Herausforderung meistern darfst, deine Bestimmung suchst oder deine spirituelle Praxis vertiefen möchtest: diese Arbeit hilft dir, alle Anteile in dir für echte und nachhaltige Transformation zu integrieren."
+                    content="Ganz gleich, ob du dich in einem Umbruch befindest, eine Herausforderung meistern möchtest, deine Bestimmung suchst oder deine spirituelle Praxis vertiefen willst – diese Arbeit hilft dir, alle Anteile in dir zu integrieren für eine echte und nachhaltige Transformation."
                   />
                   <ExpandableBulletPoint 
                     index={3}
                     title="Ganzheit"
-                    content="Spirituelles Coaching erforscht alle Dimensionen deines Seins als Frau. Du vertiefst deine Beziehung zu deinem Körper und deinem Zyklus, zu deinen Emotionen, deinen Grenzen und deinem Selbstwert - und vereinst dadurch deine Qualitäten von Sanftheit und Stärke."
+                    content="Spirituelles Coaching erforscht alle Dimensionen deines Seins als Frau. Du vertiefst deine Beziehung zu deinem Körper und deinem Zyklus, zu deinen Emotionen, deinen Grenzen und deinem Selbstwert – und vereinst dadurch deine Qualitäten von Sanftheit und Stärke."
                   />
                   <ExpandableBulletPoint 
                     index={4}
                     title="Integration spiritueller Praktiken"
-                    content="Du entwickelst praktische Tools für Selbstregulation und emotionale Resilienz, die dich in allen Bereichen deines Alltags unterstützen, ein erfülltes und selbstbestimmtes Leben zu führen."
+                    content="Du entwickelst praktische Tools für Selbstregulation und emotionale Resilienz, die dich in allen Bereichen deines Alltags unterstützen, ein erfülltes und selbstbestimmtes Leben zu führen. Dazu gehören Atemübungen, Meditation, Körperwahrnehmung und achtsame Bewegung."
                   />
                 </div>
                 <Link href="/dienstleistungen/spiritual" className="inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg hover:from-pink-700 hover:to-purple-700 transition-colors mt-8">
@@ -221,31 +221,31 @@ export default function Home() {
                   <ExpandableBulletPoint 
                     index={0}
                     title="Begleitung durch gelebte Erfahrung"
-                    content="Nach 20 Jahren eigener Erfahrung mit Bulimie und vollständiger Heilung biete ich dir Verständnis und Unterstützung für deinen persönlichen Heilungsweg. Ich kenne die Herausforderungen, die Scham und die Verzweiflung, aber auch den Weg heraus in ein freies und erfülltes Leben."
+                    content="Nachdem ich selbst 20 Jahre lang in der Bulimie gefangen war und 2016 meine vollständige spirituelle Heilung über Nacht erfahren habe, möchte ich meine Geschichte und mein tiefes Wissen gerne mit dir teilen, um dir Hoffnung, Verständnis und konkrete Unterstützung für deinen ganz persönlichen Heilungsweg zu schenken.\n\nGanz gleich, ob du gerade am Anfang deiner Heilungsreise stehst oder zusätzliche Unterstützung neben einer anderen Therapieform suchst, diese Arbeit bietet dir individuelle Begleitung in deinem eigenen Tempo von jemandem, der diesen Weg selbst gegangen ist."
                     color="purple"
                   />
                   <ExpandableBulletPoint 
                     index={1}
                     title="Von der Entfremdung zur Heilung"
-                    content="Mein traumasensibler Ansatz hilft dir, die zugrunde liegenden Muster deiner Essstörung zu verstehen und zu transformieren. Gemeinsam arbeiten wir daran, dein Selbstwertgefühl zu stärken und eine liebevolle Beziehung zu deinem Körper aufzubauen."
+                    content="Mein traumasensibler und holistischer Ansatz berücksichtigt, dass eine Essstörung im Kern oft ein Schutzmechanismus ist, der das Gefühl von absoluter Leere, Wertlosigkeit und Wut kompensiert, und daher eine Trennung vom Selbst und dem eigenen Körper zur Folge hat. An dieser Stelle beginnt unsere gemeinsame Arbeit."
                     color="purple"
                   />
                   <ExpandableBulletPoint 
                     index={2}
                     title="Emotionale Freiheit"
-                    content="Lerne, deine Gefühle zu verstehen und gesund mit ihnen umzugehen. Wir arbeiten an Strategien, um emotionale Muster zu erkennen und neue, heilsame Wege im Umgang mit schwierigen Emotionen zu finden."
+                    content="Durch achtsames Hinspüren, sanfte Körperarbeit und körperorientierte Meditationen erforschen wir aufgestaute Emotionen und zugrunde liegende Muster und Überzeugungen, um dich und dein System davon zu befreien."
                     color="purple"
                   />
                   <ExpandableBulletPoint 
                     index={3}
-                    title="Körperverbundenheit und Selbstfürsorge"
-                    content="Entdecke eine neue, achtsame Beziehung zu deinem Körper. Durch gezielte Übungen lernst du, die Signale deines Körpers zu verstehen und eine liebevolle Selbstfürsorge in deinen Alltag zu integrieren."
+                    title="Körper-Verbundenheit und Selbstfürsorge"
+                    content="Du lernst, dich mit der Weisheit deines Körpers zu verbinden, gesunde Grenzen zu setzen und die Selbstliebe und\n\n-fürsorge für dich zu empfinden, die nachhaltige Heilung ermöglicht."
                     color="purple"
                   />
                   <ExpandableBulletPoint 
                     index={4}
-                    title="Unterstützung für Betroffene und Angehörige"
-                    content="Nicht nur Betroffene, sondern auch Angehörige finden hier Unterstützung. Gemeinsam erarbeiten wir Strategien für einen liebevollen Umgang mit der Situation und Wege, wie Angehörige hilfreich zur Seite stehen können."
+                    title="Unterstützung für Betroffene und Angehörige"
+                    content="Mein ED Recovery Coaching unterstützt dich, wenn du von Bulimie, Anorexie, Binge-Eating oder emotionalem Essen betroffen bist. Sowie Familienmitglieder oder Partner/innen, die gerne tiefer gehen, mitfühlen und zugrunde liegende Dynamiken und Auslöser verstehen und transformieren möchten."
                     color="purple"
                   />
                 </div>
