@@ -18,7 +18,7 @@ export default function IstCoachingPage() {
           <div className="text-center">
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Ist ein Coaching für Essstörungen das Richtige für dich?
+              Ist ein Coaching bei Essstörungen das Richtige für dich?
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -34,7 +34,7 @@ export default function IstCoachingPage() {
           <p className="text-gray-700 leading-relaxed mb-6">
             Du hast dich bereits auf den Weg gemacht, die Verantwortung für dein Leben zu übernehmen. 
             Das heißt auch, du hast für dich anerkannt, dass du Hilfe brauchst oder zumindest bist du auf dem Weg dahin, 
-            dich für ein Coaching für Essstörungen zu öffnen. Du möchtest dich von deiner Bulimie, Magersucht, 
+            dich für ein Coaching bei Essstörungen zu öffnen. Du möchtest dich von deiner Bulimie, Magersucht, 
             deinen Essattacken oder emotionalem Essen befreien und suchst nach Unterstützung? Dann bist du hier richtig. 
           </p>
           

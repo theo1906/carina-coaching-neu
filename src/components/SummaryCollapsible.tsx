@@ -53,7 +53,7 @@ export default function SummaryCollapsible() {
               href="/dienstleistungen/essstoerung" 
               className="px-6 py-3 bg-pink-50 text-pink-700 rounded-full hover:bg-pink-100 transition-colors text-sm font-medium"
             >
-              Coaching für Essstörungen
+              Coaching bei Essstörungen
             </Link>
             <Link 
               href="/buchen" 

@@ -41,27 +41,34 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
             
             <div className="max-w-none relative z-10">
               <div className="space-y-6 text-gray-700 leading-relaxed">
-                <div className="space-y-6">
+                <div className="space-y-8">
+                  <h2 className="text-2xl font-bold text-gray-800">Deine spirituelle Reise beginnt hier</h2>
+                  
                   <p className="text-gray-700">
                     Deine spirituelle Coaching Reise ist eine innere Reise. Eine Reise zu dir, in deine Kraft, in deinen Körper, in dein Herz, in die Verbindung mit deiner Seele und mit deinem Frausein.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Entdecke dein wahres Selbst</h3>
                   <p className="text-gray-700">
                     Entdecke deine Essenz, deinen wahren Wesenskern, und die Qualitäten deiner Weiblichkeit auf ganz natürliche Art und Weise von innen heraus zu entfalten.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Tauche tiefer ein</h3>
                   <p className="text-gray-700">
                     Erforsche deine Muster und Strategien, um tiefer in dein Bewusstsein einzutauchen - in den Raum in dir, in dem du genau richtig bist, so wie du bist.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Erlebe Verbundenheit</h3>
                   <p className="text-gray-700">
                     Erfahre, wie es sich anfühlt, mehr und mehr in allen Bereichen deines Lebens als auch in deinem Körper in Präsenz und Verbundenheit mit dir zu sein und die Kraft und die Ressourcen deines Frauseins in Balance mit deiner männlichen Energie zu leben.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Werde zur Gestalterin deines Lebens</h3>
                   <p className="text-gray-700">
                     Verkörpere das, was du dir wünschst und bring deine Energie in das, was dir wichtig ist. Erkenne, dass du es bist, die immer die Wahl hat und die entscheiden kann, mutig für sich loszugehen und inspiriere andere dasselbe zu tun.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Aus eigener Erfahrung</h3>
                   <p className="text-gray-700">
                     Ich teile das hier mit dir aus eigener, erlebter und gefühlter Erfahrung und vollständiger Recovery nach 20 Jahren Krankheit.
                   </p>
@@ -75,14 +82,17 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichPage() {
                     </p>
                   </div>
 
+                  <h2 className="text-2xl font-bold text-gray-800 mt-12">Mein Ansatz</h2>
                   <p className="text-gray-700">
                     Die gesammelten Erfahrungen sind die Essenz meiner Arbeit und mein Ansatz für ein erfülltes SEIN im eigenen Körper, dem Zuhause deiner Seele und damit für ein erfülltes Leben.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Gemeinsam den Weg gehen</h3>
                   <p className="text-gray-700">
                     Ich bin hier, um all das mit dir zu teilen. Du musst diesen Weg nicht alleine gehen. Spirituelles Coaching unterstützt dich dabei, dein Herz zu öffnen und wieder ganz in Verbindung mit dir selbst zu sein - mit deinem Körper und mit deiner weiblichen Kraft.
                   </p>
 
+                  <h3 className="text-xl font-semibold text-gray-800 mt-8">Starte noch heute</h3>
                   <p className="text-gray-700 mb-12">
                     Geh' los für dich und entdecke was möglich ist in einer kostenfreien, unverbindlichen 30-minütigen Kennenlern-Session mit mir.
                   </p>

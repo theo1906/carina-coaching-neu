@@ -35,7 +35,7 @@ export default function MeineHeilungsreisePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-gray-700 text-lg leading-relaxed">
             <p className="mb-6">
-              Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen. Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching für Essstörungen anbiete. 
+              Mit dem ehrlichen Eingeständnis mir selbst gegenüber, dass ich krank bin und an Bulimie leide, hat damals 2015 meine eigene Heilungsreise begonnen. Das ist auch der Grund, warum ich hier meine Geschichte teile und Coaching bei Essstörungen anbiete. 
               <br /><br />
               Ich weiss, wie wichtig es ist, für sich selbst anzuerkennen, was ist und sich damit zu zeigen. 
             </p>

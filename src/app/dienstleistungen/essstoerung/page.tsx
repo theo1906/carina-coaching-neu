@@ -125,7 +125,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div id="systemisches-coaching" className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
-              Systemisches Coaching für Essstörungen & ED Recovery
+              Systemisches Coaching bei Essstörungen & ED Recovery
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -146,7 +146,7 @@ export default function EssstorungPage() {
         </div>
       </section>
 
-      {/* Section: Ist ein Coaching für Essstörungen das Richtige für dich? */}
+      {/* Section: Ist ein Coaching bei Essstörungen das Richtige für dich? */}
       <section className="py-24 bg-gradient-to-br from-white to-pink-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-pink-50 to-transparent opacity-10"></div>
         <div className="absolute -top-24 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -156,7 +156,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
-              Ist ein Coaching für Essstörungen das Richtige für dich?
+              Ist ein Coaching bei Essstörungen das Richtige für dich?
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -736,7 +736,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
-              Was macht ein ED Recovery Coach für Essstörungen?
+              Was macht ein ED Recovery Coach bei Essstörungen?
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -875,7 +875,7 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
-              Warum JA sagen zu meinem Coaching für Essstörungen:
+              Warum JA sagen zu meinem Coaching bei Essstörungen:
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
@@ -944,10 +944,10 @@ export default function EssstorungPage() {
       <section className="py-20 bg-gradient-to-r from-primary-50 to-pink-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6">
-            Möchtest du mehr über Coaching für Essstörungen erfahren?
+            Möchtest du mehr über Coaching bei Essstörungen erfahren?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Wenn du mehr über Coaching für Essstörungen erfahren möchtest als Betroffene / Angehörige oder Unterstützung suchst bei deiner Recovery, vereinbare dir jetzt dein 100% kostenloses 30-minütiges Erstgespräch
+            Wenn du mehr über Coaching bei Essstörungen erfahren möchtest als Betroffene / Angehörige oder Unterstützung suchst bei deiner Recovery, vereinbare dir jetzt dein 100% kostenloses 30-minütiges Erstgespräch
           </p>
           <Link 
             href="/contact" 

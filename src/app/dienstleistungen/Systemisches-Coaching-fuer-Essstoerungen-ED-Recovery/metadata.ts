@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Systemisches Coaching für Essstörungen & ED Recovery - Carina Göb',
+  title: 'Systemisches Coaching bei Essstörungen & ED Recovery - Carina Göb',
   description: 'Professionelle Begleitung bei Essstörungen. Individuelles Coaching für nachhaltige Genesung und ein gesundes Selbstbild.',
   openGraph: {
-    title: 'Systemisches Coaching für Essstörungen & ED Recovery - Carina Göb',
+    title: 'Systemisches Coaching bei Essstörungen & ED Recovery - Carina Göb',
     description: 'Professionelle Begleitung bei Essstörungen. Individuelles Coaching für nachhaltige Genesung und ein gesundes Selbstbild.',
     url: 'https://carinacoaching.com/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
     type: 'website',

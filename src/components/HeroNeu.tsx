@@ -34,7 +34,7 @@ export default function Hero() {
                 </span> und <span className="relative inline-block">
                   <span className="relative z-10">Herzensweisheit</span>
                   <span className="absolute bottom-0 left-0 w-full h-3 bg-amber-100/60 -z-0 transform rotate-1"></span>
-                </span> wiederzuentdecken und mutig zu verkörpern – durch <span className="font-medium text-pink-700">spirituelles Coaching</span> und <span className="font-medium text-pink-700">Systemisches-Coaching</span> für Essstörungen und ED Recovery.
+                </span> wiederzuentdecken und mutig zu verkörpern – durch <span className="font-medium text-pink-700">spirituelles Coaching</span> und <span className="font-medium text-pink-700">Systemisches-Coaching</span> bei Essstörungen und ED Recovery.
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-300 mt-6 rounded-full"></div>
             </div>

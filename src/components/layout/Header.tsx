@@ -30,7 +30,7 @@ const navigation: NavigationItem[] = [
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
       { 
-        name: 'Coaching für Essstörungen', 
+        name: 'Coaching bei Essstörungen', 
         href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },

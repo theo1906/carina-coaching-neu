@@ -20,7 +20,7 @@ export default function MehrUeberEssstoerungen() {
         <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 md:pt-40 md:pb-24">
           <div className="w-full flex flex-col items-center justify-center text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 [text-shadow:0_2px_4px_rgba(0,0,0,0.1)]">
-              Was macht ein ED Recovery Coach für Essstörungen?
+              Was macht ein ED Recovery Coach bei Essstörungen?
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-fuchsia-400 mb-8"></div>
           </div>

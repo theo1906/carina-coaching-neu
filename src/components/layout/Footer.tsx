@@ -12,7 +12,7 @@ const navigation = {
       href: '/dienstleistungen',
       subItems: [
         { name: 'Spirituelles Life Coaching', href: '/dienstleistungen/spirituelles-life-coaching' },
-        { name: 'Coaching für Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' }
+        { name: 'Coaching bei Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' }
       ]
     },
     { 

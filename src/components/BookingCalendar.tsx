@@ -295,12 +295,12 @@ export default function BookingCalendar() {
                         <input
                           type="radio"
                           name="coachingInterest"
-                          value="Coaching für Essstörungen"
-                          checked={formData.coachingInterest === 'Coaching für Essstörungen'}
+                          value="Coaching bei Essstörungen"
+                          checked={formData.coachingInterest === 'Coaching bei Essstörungen'}
                           onChange={handleChange}
                           className="h-4 w-4 text-rose-600 focus:ring-rose-500 border-gray-300"
                         />
-                        <span className="ml-2 text-gray-700">Coaching für Essstörungen</span>
+                        <span className="ml-2 text-gray-700">Coaching bei Essstörungen</span>
                       </label>
                       <label className="flex items-center">
                         <input

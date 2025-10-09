@@ -35,7 +35,7 @@ export default function EmbodimentPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-pink max-w-none text-gray-700">
           <p>
-            Der Fokus in meinem Coaching für Essstörungen mit dir und generell in meiner
+            Der Fokus in meinem Coaching bei Essstörungen mit dir und generell in meiner
             Heilarbeit mit Menschen liegt darin, das Vertrauen in dich selbst, die eigenen
             Fähigkeiten und das Vertrauen in die natürliche Intelligenz deines Körpers zu stärken
             bzw. wieder zu entdecken. Das ist meine große Vision. Meine eigene Heilungsreise

@@ -196,7 +196,7 @@ export default function CoachingOfferings() {
               <div className="h-12 w-1.5 bg-gradient-to-b from-pink-500 to-purple-500 rounded-full mr-4 flex-shrink-0"></div>
               <h3 className="text-2xl font-medium text-gray-900">
                 <span className="block">Systemisches</span>
-                <span className="block">Coaching für Essstörungen & ED Recovery</span>
+                <span className="block">Coaching bei Essstörungen & ED Recovery</span>
               </h3>
             </div>
             <p className="text-gray-700 mb-4 text-lg">Unterstützt Frauen mit Essstörungen bei:</p>
