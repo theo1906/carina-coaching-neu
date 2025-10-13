@@ -26,7 +26,7 @@ export default function Datenschutz() {
                   <p>Carina Göb Coaching – Embodiment for Women</p>
                   <p>Jella-Lepman-Str. 17</p>
                   <p>81673 München</p>
-                  <p>E-Mail: <a href="mailto:connect@carina-coaching.de" className="text-pink-600 hover:underline transition-colors">connect@carina-coaching.de</a></p>
+                  <p>E-Mail: <a href="mailto:carina.goeb@googlemail.com" className="text-pink-600 hover:underline transition-colors">carina.goeb@googlemail.com</a></p>
                 </div>
               </div>
             </div>

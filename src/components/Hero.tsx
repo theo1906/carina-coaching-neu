@@ -77,7 +77,7 @@ export default function Hero() {
                   </div>
                 </h2>
                 <p className="text-lg md:text-xl text-black leading-relaxed max-w-3xl mx-auto -mt-4">
-                  Als spiritueller Life Coach und systemischer Coach unterstütze ich Frauen dabei, ihre eigene Heilkraft und Wahrheit wiederzufinden und mutig zu verkörpern.
+                  Als spiritueller Life Coach und systemischer Coach bei Essstörungen unterstütze ich Frauen dabei, ihre eigene Heilkraft und Wahrheit zu erkennen und mutig zu verkörpern.
                 </p>
               </div>
               <div className="mt-8">

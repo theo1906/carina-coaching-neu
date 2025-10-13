@@ -67,14 +67,14 @@ export default function SpiritualPage() {
       </section>
 
       {/* Section 2: Ist ein spirituelles Coaching das Richtige für dich? */}
-      <section id="ist-ein-spirituelles-coaching-das-richtige-fuer-dich" className="relative py-16 md:py-20 bg-white">
+      <section id="ist-ein-spirituelles-coaching-das-richtige-fuer-dich" className="relative py-12 md:py-16 bg-white">
         <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-purple-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
         
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ist ein spirituelles Life Coaching das Richtige für dich?</h2>
-              <div className="relative w-full h-[500px] overflow-hidden">
+              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Ist ein spirituelles Life Coaching das Richtige für dich?</h2>
+              <div className="relative w-full h-[500px] overflow-hidden mt-4">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative w-full h-full max-w-[550px] rounded-3xl overflow-hidden">
                     <div className="relative w-full h-full">

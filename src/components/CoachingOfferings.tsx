@@ -16,7 +16,7 @@ export default function CoachingOfferings() {
     {
       icon: <UserGroupIcon className="h-8 w-8 text-rose-600" />,
       title: "Heilung durch Mut zur Wahrheit",
-      description: "Transformation durch Mut zur radikalen Ehrlichkeit, dir selbst gegenüber und mit innerer Entschlossenheit.",
+      description: "Transformation durch Mut zur radikalen Ehrlichkeit dir selbst gegenüber und mit innerer Entschlossenheit.",
       hasDropdown: false
     },
     {
@@ -179,7 +179,7 @@ export default function CoachingOfferings() {
                 "Sich selbst besser kennenzulernen und Selbstzweifel zu transformieren",
                 "Eine eigene spirituelle Praxis und innere Verbindung aufzubauen",
                 "Sinn und Bestimmung im Leben zu finden",
-                "Beziehungen authentischer zu leben",
+                "Beziehungen authentisch zu leben",
                 "Einschneidende Veränderungen im Leben zu meistern",
                 "Empowerment, Freude und Leichtigkeit zu spüren durch loslassen von Angst, Scham und Schuldgefühlen",
                 "Spiritualität im Alltag und im Job zu integrieren",

@@ -69,19 +69,14 @@ export default function Home() {
                     darüber, wie wir unser Potenzial verwirklichen können. Meine eigene Geschichte und spirituelle Heilungserfahrung aus 20 Jahren Krankheit ist Inspiration und Wegweiser. Und mein größter Motivator für die Begleitung von Frauen in die Verkörperung ihrer Essenz und Wahrhaftigkeit in ihrem Leben.
                   </p>
                   <div className="mt-8 mb-2">
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-center space-x-4">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 p-2 flex items-center justify-center">
                         <HeartIcon className="h-8 w-8 text-pink-600" />
                       </div>
                       <div className="relative flex-1">
-                        <div className="flex flex-col h-12">
-                          <p className="text-sm text-gray-600 italic m-0">
-                            "BE REALISTIC: PLAN FOR A MIRACLE"
-                          </p>
-                          <div className="w-full flex justify-center -ml-4">
-                            <p className="text-xs text-gray-500 mt-1">Osho</p>
-                          </div>
-                        </div>
+                        <p className="text-sm text-gray-600 italic m-0">
+                          "BE REALISTIC: PLAN FOR A MIRACLE." <span className="not-italic text-xs text-gray-500 ml-2">Osho</span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -221,7 +216,7 @@ export default function Home() {
                   <ExpandableBulletPoint 
                     index={0}
                     title="Begleitung durch gelebte Erfahrung"
-                    content="Nachdem ich selbst 20 Jahre lang in der Bulimie gefangen war und 2016 meine vollständige spirituelle Heilung über Nacht erfahren habe, möchte ich meine Geschichte und mein tiefes Wissen gerne mit dir teilen, um dir Hoffnung, Verständnis und konkrete Unterstützung für deinen ganz persönlichen Heilungsweg zu schenken.\n\nGanz gleich, ob du gerade am Anfang deiner Heilungsreise stehst oder zusätzliche Unterstützung neben einer anderen Therapieform suchst, diese Arbeit bietet dir individuelle Begleitung in deinem eigenen Tempo von jemandem, der diesen Weg selbst gegangen ist."
+                    content="Nachdem ich selbst 20 Jahre lang in der Bulimie gefangen war und 2016 meine vollständige spirituelle Heilung über Nacht erfahren habe, möchte ich meine Geschichte und mein tiefes Wissen gerne mit dir teilen, um dir Hoffnung, Verständnis und konkrete Unterstützung für deinen ganz persönlichen Heilungsweg zu schenken. Ganz gleich, ob du gerade am Anfang deiner Heilungsreise stehst oder zusätzliche Unterstützung neben einer anderen Therapieform suchst, diese Arbeit bietet dir individuelle Begleitung in deinem eigenen Tempo von jemandem, der diesen Weg selbst gegangen ist."
                     color="purple"
                   />
                   <ExpandableBulletPoint 
@@ -239,7 +234,7 @@ export default function Home() {
                   <ExpandableBulletPoint 
                     index={3}
                     title="Körper-Verbundenheit und Selbstfürsorge"
-                    content="Du lernst, dich mit der Weisheit deines Körpers zu verbinden, gesunde Grenzen zu setzen und die Selbstliebe und\n\n-fürsorge für dich zu empfinden, die nachhaltige Heilung ermöglicht."
+                    content="Du lernst, dich mit der Weisheit deines Körpers zu verbinden, gesunde Grenzen zu setzen und die Selbstliebe und -fürsorge für dich zu empfinden, die nachhaltige Heilung ermöglicht."
                     color="purple"
                   />
                   <ExpandableBulletPoint 
