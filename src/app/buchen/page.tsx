@@ -48,7 +48,7 @@ export default function BookingPage() {
                 Oder schreibe mir direkt eine Nachricht
               </p>
             <a 
-              href="mailto:connect@carina-coaching.com?subject=Anfrage%20%C3%BCber%20Carina%20Coaching&body=Sehr%20geehrte%20Frau%20Goeb%2C%0D%0A%0D%0A" 
+              href="mailto:carina.goeb@googlemail.com?subject=Anfrage%20%C3%BCber%20Carina%20Coaching&body=Sehr%20geehrte%20Frau%20Goeb%2C%0D%0A%0D%0A" 
               className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-full shadow-sm text-gray-700 bg-white hover:bg-gray-50 md:py-3 md:text-lg md:px-10 transition-colors duration-200"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
