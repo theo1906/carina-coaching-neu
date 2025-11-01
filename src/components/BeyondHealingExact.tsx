@@ -86,7 +86,7 @@ export default function BeyondHealingExact() {
                   <p>
                     Internationale Erfahrungen u.a. in Australien, Bali, Costa Rica, Griechenland, 
                     Indien, Italien, der Schweiz und auf Sansibar haben meinen Horizont erweitert 
-                    und meinen spirituellen Ansatz von trauma-sensiblen, körperzentriertem 
+                    und meinen spirituellen Ansatz von trauma-sensiblem, körperzentriertem 
                     Coaching geprägt. Mein kontinuierliches, persönliches und spirituelles 
                     Wachstum ist für mich eine Lebenseinstellung. Ich möchte dich authentisch 
                     begleiten und aus eigener, erlebter Erfahrung unterstützen, neben meinem erlernten Wissen. 

@@ -13,7 +13,7 @@ export default function OshoQuote() {
       <div className="relative z-10">
         <blockquote className="text-center">
           <p className="text-2xl md:text-3xl font-serif italic text-pink-900 leading-relaxed mb-6 uppercase">
-            "BE REALISTIC PLAN FOR A MIRACLE"
+            „ALLES, WAS DU BRAUCHST, IST BEREITS IN DIR."
           </p>
           <footer className="text-pink-900 font-medium">
             OSHO

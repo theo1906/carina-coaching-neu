@@ -27,9 +27,9 @@ export default function EmbodimentUndHeilungPage() {
           </div>
 
           {/* Main Content */}
-          <div className="prose prose-lg text-gray-700 max-w-none">
+          <div className="text-gray-700 max-w-none">
             <div className="my-12 p-8 bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl border-l-4 border-pink-400">
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg">
                 Embodiment ist für mich der Schlüssel für Heilung und Transformation. Der Fokus meiner Arbeit liegt daher auf dem Stärken deiner Körperwahrnehmung und dem aktiven Hinfühlen, um dadurch ein tieferes Verständnis für deine körperlichen und emotionalen Zustände zu entwickeln und dir so zu ermöglichen, bewusstere Entscheidungen für dich und dein Leben zu treffen.
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function EmbodimentUndHeilungPage() {
               </h2>
               <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-6"></div>
             </div>
-            <p className="leading-relaxed">
+            <p className="text-lg">
               Heilung beginnt dort, wo wir uns erlauben, uns selbst in unserer ganzen Tiefe zu
               begegnen – mit all unseren Verletzungen, Ängsten und Sehnsüchten. Es ist ein Akt
               des Mutes, sich dem zu stellen, was ist, um zu dem zurückzukehren, was wir
@@ -53,8 +53,8 @@ export default function EmbodimentUndHeilungPage() {
                   <span className="text-pink-600 text-sm">1</span>
                 </div>
                 <div>
-                  <h3 className="text-base font-normal text-gray-900 mb-1">OWN IT.</h3>
-                  <p className="text-gray-700">Nimm ehrlich an, was ist – deine Erfahrungen, dein Jetzt, deine Gefühle, deinen Körper.</p>
+                  <h3 className="text-lg font-normal text-gray-900 mb-1">OWN IT.</h3>
+                  <p className="text-gray-700 text-lg">Nimm ehrlich an, was ist – deine Erfahrungen, dein Jetzt, deine Gefühle, deinen Körper.</p>
                 </div>
               </div>
               
@@ -63,8 +63,8 @@ export default function EmbodimentUndHeilungPage() {
                   <span className="text-pink-600 text-sm">2</span>
                 </div>
                 <div>
-                  <h3 className="text-base font-normal text-gray-900 mb-1">FEEL IT.</h3>
-                  <p className="text-gray-700">Spüre in deinen Körper hinein, lass die Gefühle zu, ohne sie zu bewerten.</p>
+                  <h3 className="text-lg font-normal text-gray-900 mb-1">FEEL IT.</h3>
+                  <p className="text-gray-700 text-lg">Spüre in deinen Körper hinein, lass die Gefühle zu, ohne sie zu bewerten.</p>
                 </div>
               </div>
               
@@ -73,21 +73,21 @@ export default function EmbodimentUndHeilungPage() {
                   <span className="text-pink-600 text-sm">3</span>
                 </div>
                 <div>
-                  <h3 className="text-base font-normal text-gray-900 mb-1">HEAL IT.</h3>
-                  <p className="text-gray-700">Erlaube dir, alte Muster loszulassen und neue, heilsame Wege zu gehen.</p>
+                  <h3 className="text-lg font-normal text-gray-900 mb-1">HEAL IT.</h3>
+                  <p className="text-gray-700 text-lg">Erlaube dir, alte Muster loszulassen und neue, heilsame Wege zu gehen.</p>
                 </div>
               </div>
             </div>
 
-            <p className="leading-relaxed">
+            <p className="text-lg">
               In meiner Arbeit verbinden wir körperliche Wahrnehmungsübungen mit Ansätzen aus dem spirituellen System-Coaching, um die Wurzeln deiner Muster zu verstehen und aufzulösen. Du lernst, deinen Körper als Kompass zu nutzen und deine Bedürfnisse klarer zu erkennen.
             </p>
 
-            <p className="leading-relaxed">
+            <p className="text-lg mt-6">
               Gemeinsam schaffen wir einen sicheren Raum, in dem du dich öffnen und zeigen kannst – ganz so, wie du bist. Ohne Maske, ohne Anpassung, ohne dich verstellen zu müssen.
             </p>
 
-            <p className="leading-relaxed mt-8">
+            <p className="text-lg mt-8">
               <span className="font-semibold">Dein Körper ist dein Zuhause.</span> Wenn du dich darin nicht wohlfühlst, wirst du dich nirgendwo wirklich zu Hause fühlen. Deshalb lade ich dich ein, deinen Körper wieder als Verbündeten zu entdecken – als Ort der Weisheit, Kraft und Heilung.
             </p>
 

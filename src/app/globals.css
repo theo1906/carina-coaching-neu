@@ -15,11 +15,15 @@
   -webkit-text-align-last: justify !important;
   -moz-text-align-last: justify !important;
   -ms-text-align-last: justify !important;
-  text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   word-break: break-word !important;
   overflow-wrap: break-word !important;
+}
+
+/* Optimize legibility for all text except first paragraph letter */
+.prose p:not(:first-child) {
+  text-rendering: optimizeLegibility;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');

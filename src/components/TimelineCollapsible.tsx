@@ -29,7 +29,7 @@ export default function TimelineCollapsible() {
         <div className="mt-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">
-              Ich kenne die Ängste, die Zweifel, aber auch die Hoffnung, die dich hierher geführt hat. Als ich selbst noch am Kämpfen war und in der Essstörung, fühlte ich mich völlig alleine und habe mich aus tiefer Scham und Selbstablehnung niemandem anvertraut - 20 Jahre nicht.
+              Ich kenne die Ängste, die Zweifel, aber auch die Hoffnung, die dich hierher geführt hat.
             </p>
             
             <p className="text-gray-700 text-lg leading-relaxed text-justify mb-8">

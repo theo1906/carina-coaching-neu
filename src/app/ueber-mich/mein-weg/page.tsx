@@ -620,9 +620,6 @@ export default function MeinWeg() {
                 <p className="text-gray-700 mb-4">
                   Ich begegne dir mit dem Verständnis und Mitgefühl, das ich mir selbst in meinem Heilungsprozess gewünscht habe. Und mit meiner Liebe zur Wahrheit und für echte, ehrliche Begegnung auf Augenhöhe durch verkörperte Präsenz.
                 </p>
-                <p className="text-gray-700">
-                  Als ich selbst noch am Kämpfen war und in der Essstörung, fühlte ich mich völlig alleine und habe mich aus tiefer Scham und Selbstablehnung niemandem anvertraut - 20 Jahre nicht.
-                </p>
               </div>
               
               <div className="space-y-4">

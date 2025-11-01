@@ -1,13 +1,10 @@
+'use client';
+
+import { useState } from 'react';
 import { ArrowRightIcon, HeartIcon, LightBulbIcon, SparklesIcon, UserIcon, WrenchScrewdriverIcon, ScaleIcon, BoltIcon, ShieldCheckIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import SpiritualCoachingCarousel from '@/components/SpiritualCoachingCarousel';
-
-export const metadata = {
-  title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
-  description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
-  keywords: ['spirituelles coaching', 'weiblichkeit entdecken', 'körperarbeit', 'spirituelle entwicklung', 'heilung', 'transformation'],
-};
 
 const features = [
   {
@@ -33,6 +30,7 @@ const features = [
 ];
 
 export default function SpiritualPage() {
+  
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -92,7 +90,7 @@ export default function SpiritualPage() {
                 </div>
               </div>
             </div>
-            <div className="relative mt-32">
+            <div className="relative mt-12">
               <div className="bg-gradient-to-br from-pink-50 to-white p-8 rounded-2xl shadow-lg border border-pink-100">
                 <h3 className="text-2xl font-bold text-pink-900 mb-6">Dein Weg zu dir selbst</h3>
                 <p className="text-gray-700 mb-6">
@@ -118,15 +116,15 @@ export default function SpiritualPage() {
                     <p className="text-gray-700">Heilung auf körperlicher, emotionaler und spiritueller Ebene</p>
                   </div>
                 </div>
-              </div>
-              <div className="mt-8 text-center">
-                <Link 
-                  href="/dienstleistungen/spiritual/ist-ein-spirituelles-coaching-das-richtige-fuer-dich" 
-                  className="inline-flex items-center px-6 py-3 text-base font-medium text-pink-600 hover:text-pink-700 transition-colors group"
-                >
-                  <span className="mr-2">Mehr erfahren</span>
-                  <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                <div className="mt-6 text-center">
+                  <Link 
+                    href="/dienstleistungen/spirituelles-life-coaching/ist-ein-spirituelles-coaching-das-richtige-fuer-dich"
+                    className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium transition-colors group"
+                  >
+                    <span className="mr-2">Mehr erfahren</span>
+                    <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -840,6 +838,12 @@ export default function SpiritualPage() {
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
+                    <span className="text-gray-700">Arbeit mit dem Inneren System (Antreiber, Perfektionist, Zweifler, etc.)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
                     <span className="text-gray-700">Traumasensibles, spirituelles Coaching</span>
                   </li>
                   <li className="flex items-start">
@@ -858,13 +862,25 @@ export default function SpiritualPage() {
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Spirituelles Business Mentoring</span>
+                    <span className="text-gray-700">Energiearbeit</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Arbeit mit dem Inneren System</span>
+                    <span className="text-gray-700">Rebalancing Körperarbeit und Massagen</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Begleitung von Familienthemen und Konflikten</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Unterstützung bei Trennungen</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -876,31 +892,7 @@ export default function SpiritualPage() {
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Intuitionsentwicklung</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">Rebalancing Körperarbeit</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
                     <span className="text-gray-700">Klärung der Seelenaufgabe</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">Energiearbeit</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">Anleitung zu spirituellen Praktiken</span>
                   </li>
                 </ul>
               </div>

@@ -52,6 +52,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans text-gray-900 antialiased`}>
+
         <ClientProvider>
           <Header />
           <main className="flex-grow">

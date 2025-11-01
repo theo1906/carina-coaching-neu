@@ -23,7 +23,7 @@ const coachingPackages = [
     price: '800€',
     features: [
       '8 Stunden Coaching',
-      'Gelebtes Gleichgewicht durch Integration und Ausgleich Deiner inneren Dynamiken',
+      'Gelebtes Gleichgewicht durch Integration und Ausgleich deiner inneren Dynamiken',
       'Intensives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check-in',
@@ -37,7 +37,7 @@ const coachingPackages = [
     price: '1.122€',
     features: [
       '12 Stunden Coaching',
-      'Körpervertrauen, Herzverbundenheit und achtsame Präsenz, um Dich mutig und in entspannter Zuversicht für neue Wege zu öffnen',
+      'Körpervertrauen, Herzverbundenheit und achtsame Präsenz, um dich mutig und in entspannter Zuversicht für neue Wege zu öffnen',
       'Exklusives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check In',

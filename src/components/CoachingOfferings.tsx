@@ -253,7 +253,7 @@ export default function CoachingOfferings() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Somatische Körperarbeit</h4>
-                    <p className="text-gray-600 text-sm">Rebalancing Bodywork zur Nervensystem-Regulation und Auflösung von gespeicherten Emotionen</p>
+                    <p className="text-gray-600 text-sm">Rebalancing Bodywork zur<br />Nervensystem-Regulation & Emotionsauflösung</p>
                   </div>
                 </div>
 
@@ -285,7 +285,7 @@ export default function CoachingOfferings() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Energiearbeit</h4>
-                    <p className="text-gray-600 text-sm">Entwicklung von Bewusstsein für Energie-Intelligenz und -Zentren im Körper, um Blockaden zu lösen und den Energiefluss zu harmonisieren</p>
+                    <p className="text-gray-600 text-sm">Bewusstsein für Energie-Intelligenz und -Zentren,<br />um Blockaden zu lösen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                   </div>
                 </div>
 

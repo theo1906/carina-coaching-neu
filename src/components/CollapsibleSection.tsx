@@ -26,7 +26,7 @@ export default function CollapsibleSection() {
       
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <p className="text-gray-700 leading-relaxed">
-          In meiner Arbeit als spiritueller Life Coach, Rebalancing Bodyworker und systemischer Coach für Essstörungen verbinde ich 20 Jahre Bulimie-Erfahrung und meine eigene Heilung mit professionellem Coaching. Mein Weg in die Heilarbeit mit Menschen begann nicht mit einer Ausbildung, sondern mit einem knallharten Weckruf, der mich gezwungen hat, hinzuspüren.
+          In meiner Arbeit als spiritueller Life Coach, Rebalancing Bodyworker und systemischer Coach bei Essstörungen verbinde ich 20 Jahre Bulimie-Erfahrung und meine eigene Heilung mit professionellem Coaching. Mein Weg in die Heilarbeit mit Menschen begann nicht mit einer Ausbildung, sondern mit einem knallharten Weckruf, der mich gezwungen hat, hinzuspüren.
           <br /><br />
           Meine eigene Heilungsreise ist daher mein größter Lehrer und die Basis meiner Arbeit. Ich bin hier, um Frauen zu unterstützen, ihre eigene Heilkraft zu entfalten und ihr authentisches Selbst zu leben.
         </p>

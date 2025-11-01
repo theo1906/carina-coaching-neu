@@ -192,7 +192,7 @@ export default function EssstorungPage() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800 mb-2">...bereit bist, dich selbst zu lieben</h4>
-                    <p className="text-gray-600">Wenn du bereit bist, den Weg zu wahrer Selbstliebe und Körperakzeptanz einzuschlagen</p>
+                    <p className="text-gray-600">Wenn du bereit bist, den Weg zu wahrer Selbstliebe und Körperakzeptanz einzuschlagen.</p>
                   </div>
                 </li>
               </ul>
@@ -533,8 +533,8 @@ export default function EssstorungPage() {
                   <span className="absolute bottom-0 left-0 w-full h-2 bg-pink-100 -z-0 opacity-70" style={{ bottom: '2px', height: '8px' }}></span>
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
-                  Ich wünsche mir eine Welt, in der wir Frauen uns selbst lieben und akzeptieren, so wie wir sind. 
-                  Eine Welt, in der wir uns erlauben, Raum einzunehmen, und in der wir unsere Wahrhaftigkeit und Stärke erkennen und mutig leben.
+                  „Ich gehe los für eine Welt, in der wir Frauen unser einzigartiges Selbst annehmen und bedingungslos lieben. 
+                  Eine Welt, in der wir Raum einnehmen, unsere Stimme nutzen und unsere Wahrhaftigkeit und Stärke mutig leben."
                 </p>
               </motion.div>
               
@@ -550,8 +550,8 @@ export default function EssstorungPage() {
                   <span className="absolute bottom-0 left-0 w-full h-2 bg-pink-100 -z-0 opacity-70" style={{ bottom: '2px', height: '8px' }}></span>
                 </h3>
                 <p className="text-gray-700 leading-relaxed flex-grow">
-                  Ich möchte Frauen dabei unterstützen, ihre innere Stimme wiederzufinden, der Weisheit ihres Körpers zu vertrauen 
-                  und ihr volles Potenzial zu entfalten. Gemeinsam arbeiten wir daran, die eigene Heilkraft zu entdecken.
+                  Ich begleite Frauen dabei, mit Mut zur Wahrheit, Selbstannahme und KörperBewusstSein ihre innere Kraft zu erwecken. 
+                  Gemeinsam arbeiten wir daran, die eigene Heilkraft zu entdecken. Für ein Leben in Freiheit und Lebendigkeit.
                 </p>
               </motion.div>
             </div>
