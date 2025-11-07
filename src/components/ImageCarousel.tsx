@@ -2,6 +2,9 @@
 
 import Image from 'next/image';
 
+// Image path
+const meditationImage = "/images/Mood Meditation_2.JPG..jpeg";
+
 export default function ImageCarousel() {
   return (
     <div className="relative w-full max-w-4xl mx-auto">
@@ -10,7 +13,7 @@ export default function ImageCarousel() {
           <div className="relative w-full">
             <div className="relative w-full rounded-2xl overflow-hidden">
               <Image
-                src="/images/Mood Meditation_2.JPG..jpeg"
+                src={meditationImage}
                 alt="Spirituelles Coaching - Meditation und Achtsamkeit"
                 width={650}
                 height={406}

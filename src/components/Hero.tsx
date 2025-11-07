@@ -7,6 +7,11 @@ import { ArrowRightIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
 import { motion, AnimatePresence } from 'framer-motion';
 import DropdownQuestions from './DropdownQuestions';
 
+// Image paths
+const heroMobilePath = "/images/home-hero-section-mobile.png";
+const heroDesktopPath = "/images/home-hero-section.jpg";
+const carinaPortraitPath = "/images/carina-portrait.png?v=3";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-pink-50 pt-16">
@@ -16,7 +21,7 @@ export default function Hero() {
         <div className="md:hidden absolute inset-x-0 top-0 w-full h-full">
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <Image
-              src={"/images/home-hero-section-mobile.png"}
+              src={heroMobilePath}
               alt="Carina - Life Coach"
               fill
               priority
@@ -37,7 +42,7 @@ export default function Hero() {
         <div className="hidden md:block relative w-full -mt-8">
           <div className="relative w-full" style={{ paddingTop: '50%' }}>
             <Image
-              src={"/images/home-hero-section.jpg"}
+              src={heroDesktopPath}
               alt="Carina - Life Coach"
               fill
               priority
@@ -66,7 +71,7 @@ export default function Hero() {
                     <span>Hi, ich bin</span>
                     <div className="relative w-24 h-24 md:w-40 md:h-40 ml-2">
                       <Image
-                        src={"/images/carina-portrait.png?v=3"}
+                        src={carinaPortraitPath}
                         alt="Carina"
                         fill
                         className="object-contain"

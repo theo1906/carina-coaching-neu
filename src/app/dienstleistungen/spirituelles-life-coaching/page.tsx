@@ -3,6 +3,13 @@
 import { useState } from 'react';
 import { ArrowRightIcon, HeartIcon, LightBulbIcon, SparklesIcon, UserIcon, WrenchScrewdriverIcon, ScaleIcon, BoltIcon, ShieldCheckIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+
+// Image paths
+const heroImagePath = "/images/hero-new.jpg";
+const homeHeroMobilePath = "/images/home-hero-section-mobile.png";
+const moodOnlineImagePath = "/images/Mood Online.JPG";
+const spiritualCoachingJourneyPath = "/images/spiritual-coaching-journey.jpg";
+const carinaPortraitPath = "/images/carina-portrait.png";
 import Link from 'next/link';
 import SpiritualCoachingCarousel from '@/components/SpiritualCoachingCarousel';
 
@@ -77,12 +84,10 @@ export default function SpiritualPage() {
                   <div className="relative w-full h-full max-w-[550px] rounded-3xl overflow-hidden">
                     <div className="relative w-full h-full">
                       <Image 
-                        src="/images/spiritual-coaching-journey.jpg" 
+                        src={spiritualCoachingJourneyPath}
                         alt="Spirituelle Reise - Finde deinen inneren Frieden"
                         fill
                         className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        priority
                       />
                       <div className="absolute inset-0 bg-pink-50 mix-blend-multiply opacity-30"></div>
                     </div>
@@ -173,7 +178,7 @@ export default function SpiritualPage() {
               </div>
             </div>
             <div className="md:order-1 group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-pink-400 to-purple-500 rounded-2xl opacity-20 blur-lg group-hover:opacity-30 transition-all duration-300"></div>
+              <div className="absolute -inset-1 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl opacity-20 blur-lg group-hover:opacity-30 transition-all duration-300"></div>
               <div className="relative bg-gradient-to-br from-white to-purple-50 rounded-2xl p-6 shadow-xl border border-purple-100/70 hover:shadow-2xl hover:border-pink-100 transition-all duration-300">
                 <div className="absolute -top-4 -right-4 w-14 h-14 bg-pink-500 rounded-full flex items-center justify-center text-white shadow-lg">
                   <SparklesIcon className="h-6 w-6" />
@@ -247,7 +252,9 @@ export default function SpiritualPage() {
                   <BoltIcon className="h-7 w-7 text-pink-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Wie Herausforderungen uns wachsen lassen</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Herausforderungen wie Schmerz oder wiederkehrende Muster sind kraftvolle Katalysatoren für tiefgreifende Transformation und persönliches Wachstum.</p>
+                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                  Herausforderungen wie Schmerz oder wiederkehrende Muster sind kraftvolle Katalysatoren für tiefgreifende Transformation und persönliches Wachstum.
+                </p>
                 <Link href="/dienstleistungen/spiritual/themen/herausforderungen" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -264,7 +271,9 @@ export default function SpiritualPage() {
                   <ScaleIcon className="h-7 w-7 text-purple-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Bewusst Veränderungen willkommen heißen</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Veränderung wird möglich, wenn wir Herausforderungen mit Bewusstsein und einem offenen Herzen begegnen, anstatt sie zu verdrängen.</p>
+                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                  Veränderung wird möglich, wenn wir Herausforderungen mit Bewusstsein und einem offenen Herzen begegnen, anstatt sie zu verdrängen.
+                </p>
                 <Link href="/dienstleistungen/spiritual/themen/bewusste-veraenderung" className="mt-auto text-purple-600 hover:text-purple-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -281,7 +290,9 @@ export default function SpiritualPage() {
                   <LightBulbIcon className="h-7 w-7 text-pink-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Verbinde dich mit deiner inneren Weisheit</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Durch verkörperte Präsenz verbindest du dich mit deiner inneren Weisheit und findest Antworten in dir auf deine Lebensfragen. Gemeinsam stärken wir dein Vertrauen in deine innere Führung.</p>
+                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                  Durch verkörperte Präsenz verbindest du dich mit deiner inneren Weisheit und findest Antworten in dir auf deine Lebensfragen. Gemeinsam stärken wir dein Vertrauen in deine innere Führung.
+                </p>
                 <Link href="/dienstleistungen/spiritual/themen/innere-weisheit" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -298,7 +309,9 @@ export default function SpiritualPage() {
                   <ShieldCheckIcon className="h-7 w-7 text-indigo-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-indigo-700 transition-colors">The power of embodied change</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">Wahre Veränderung beginnt im Körper. Durch verkörperte Präsenz stärkst du deine Intuition und verankerst nachhaltige Veränderung in deinem Alltag.</p>
+                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                  Wahre Veränderung beginnt im Körper. Durch verkörperte Präsenz stärkst du deine Intuition und verankerst nachhaltige Veränderung in deinem Alltag.
+                </p>
                 <Link href="/dienstleistungen/spiritual/themen/power-embodied-change" className="mt-auto text-indigo-600 hover:text-indigo-700 text-sm font-medium inline-flex items-center group-hover:underline">
                   Mehr erfahren
                   <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -465,12 +478,13 @@ export default function SpiritualPage() {
             <div className="mt-16 text-center">
               <div className="inline-block rounded-xl overflow-hidden shadow-xl max-w-3xl">
                 <Image
-                  src="/images/sunnylifemoments-shooting-coaching-carina-münchen-275.jpg"
-                  alt="Carina Göb - Spirituelles Coaching in München"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto"
+                  src="/images/sunnylifemoments-shooting-coaching-carina-münchen-275.webp"
+                  alt="Carina Göb - Spiritueller Life Coach"
+                  width={800}
+                  height={500}
+                  className="rounded-2xl shadow-xl w-full h-auto"
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -812,13 +826,13 @@ export default function SpiritualPage() {
               </div>
               
               {/* Mood Online Image */}
-              <div className="rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-full h-[500px] overflow-hidden mt-4">
                 <Image
-                  src="/images/Mood Online.JPG"
-                  alt="Online Coaching - Persönliche Begleitung von überall aus"
-                  width={800}
-                  height={600}
-                  className="w-full h-auto"
+                  src={moodOnlineImagePath}
+                  alt="Spirituelles Coaching - Online verfügbar"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
