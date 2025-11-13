@@ -285,7 +285,7 @@ export default function CoachingOfferings() {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Energiearbeit</h4>
-                    <p className="text-gray-600 text-sm">Bewusstsein für Energie-Intelligenz und -Zentren,<br />um Blockaden zu lösen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <p className="text-gray-600 text-sm">Bewusstsein von Energie-Intelligenz<br />und -Zentren im Körper, um Blockaden zu lösen</p>
                   </div>
                 </div>
 

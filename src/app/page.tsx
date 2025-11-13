@@ -47,7 +47,7 @@ export default function Home() {
                   <p className="font-medium text-pink-800 mb-3">Meine spirituelle Reise</p>
                   <div className="space-y-3">
                     {[
-                      'Transformation durch Ehrlichkeit und Selbstannahme',
+                      'Transformation durch Mut zur Wahrheit und Selbstannahme',
                       'Tiefe Verbindung zur Weisheit des Körpers',
                       'Integration spiritueller Praktiken in den Alltag',
                       'Begleitung anderer auf ihrem Weg der Persönlichkeitsentwicklung'

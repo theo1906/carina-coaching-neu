@@ -852,12 +852,6 @@ export default function SpiritualPage() {
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Arbeit mit dem Inneren System (Antreiber, Perfektionist, Zweifler, etc.)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
                     <span className="text-gray-700">Traumasensibles, spirituelles Coaching</span>
                   </li>
                   <li className="flex items-start">
@@ -865,6 +859,12 @@ export default function SpiritualPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700">Systemisches Coaching (Aufstellungen)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Arbeit mit dem Inneren System (Antreiber, Perfektionist, Zweifler, etc.)</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -888,25 +888,31 @@ export default function SpiritualPage() {
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">Begleitung von Familienthemen und Konflikten</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-gray-700">Unterstützung bei Trennungen</span>
-                  </li>
-                  <li className="flex items-start">
-                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
                     <span className="text-gray-700">Beziehung authentisch leben</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
+                    <span className="text-gray-700">Begleitung von Familienthemen und Konflikten</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Intuitionsentwicklung</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
                     <span className="text-gray-700">Klärung der Seelenaufgabe</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="h-5 w-5 text-indigo-500 mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Unterstützung bei Trennungen</span>
                   </li>
                 </ul>
               </div>

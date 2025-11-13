@@ -245,7 +245,7 @@ export default function BeyondHealingExact() {
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Okt 2024 - Heute:</span> Assistenz Ausbildung Spirituelles System-Coaching, Dr. Klaus Peter Horn Coaching & Training, München
+                    <span className="font-semibold">Okt 2025 - Heute:</span> Assistenz Ausbildung Spirituelles System-Coaching, Dr. Klaus Peter Horn Coaching & Training, München
                   </span>
                 </li>
                 <li className="flex items-start">

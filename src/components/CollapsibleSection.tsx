@@ -16,7 +16,7 @@ export default function CollapsibleSection() {
             Über mich
           </h4>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Hallo, ich bin Carina Göb und Gründerin von „Carina Coaching - Embodiment for Women“. Schön, dass du den Weg hierher gefunden hast.
+            Hallo, ich bin Carina Göb und Gründerin von<br />„CARINA COACHING - embodiment for women".<br />Schön, dass du den Weg hierher gefunden hast.
           </p>
         </div>
         <ChevronRightIcon 

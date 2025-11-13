@@ -11,7 +11,7 @@ const coachingPackages = [
     price: '444€',
     features: [
       '4 Stunden Coaching',
-      'Persönlicher Kompass zum Kennenlernen Deiner inneren Landkarte',
+      'Persönlicher Kompass zum Kennenlernen deiner inneren Landkarte',
       'Praktische Übungen zur emotionalen Selbstregulation',
       'Bereit für den ersten Schritt?',
       'Gibt es ein Thema, das dich momentan besonders beschäftigt oder eine Situation, die sich in deinem Leben immer wiederholt und du möchtest gerne den ersten Schritt gehen Richtung Selbsterforschung und „gelöst SEIN“? Einstieg in dein inneres System, erkenne dein Kernmuster und erwecke die Kraft in dir für deinen Weg.'
@@ -23,7 +23,7 @@ const coachingPackages = [
     price: '800€',
     features: [
       '8 Stunden Coaching',
-      'Gelebtes Gleichgewicht durch Integration und Ausgleich Deiner inneren Dynamiken',
+      'Gelebtes Gleichgewicht durch Integration und Ausgleich deiner inneren Dynamiken',
       'Intensives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check-in',
@@ -37,7 +37,7 @@ const coachingPackages = [
     price: '1.122€',
     features: [
       '12 Stunden Coaching',
-      'Körpervertrauen, Herzverbundenheit und achtsame Präsenz, um Dich mutig und in entspannter Zuversicht für neue Wege zu öffnen',
+      'Körpervertrauen, Herzverbundenheit und achtsame Präsenz, um dich mutig und in entspannter Zuversicht für neue Wege zu öffnen',
       'Exklusives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check In',
@@ -184,7 +184,7 @@ export default function Angebot() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
-              Wähle zwischen mehreren kürzeren oder wenigen längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich. Du entscheidest flexibel, wie du deine Zeit aufteilen und ob du online oder vor Ort mit mir arbeiten möchtest.
+              Wähle flexibel zwischen mehreren kürzeren oder wenigen längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich. Nach der ersten Session entscheidest du, ob du weiter mit mir arbeiten möchtest, welches Paket passt, wie du deine Zeit aufteilst und ob wir online oder vor Ort arbeiten.
             </p>
           </div>
         </div>
