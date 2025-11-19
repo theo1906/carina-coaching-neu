@@ -146,6 +146,7 @@ const HealingHomeSection = () => {
             <div className="text-4xl font-bold mb-6">{healingHomePackage.price}
               <span className="text-xl font-normal text-rose-100">/ Stunde</span>
             </div>
+            <p className="text-sm text-rose-100/80 mb-4">zzgl. MwSt</p>
             
             <a
               href="/contact"
@@ -199,6 +200,7 @@ export default function Angebot() {
                 <h3 className="text-xl font-bold text-gray-900">{packageItem.title}</h3>
                 <p className="mt-2 text-base leading-7 text-gray-600">{packageItem.description}</p>
                 <p className="mt-4 text-3xl font-bold text-primary-600">{packageItem.price}</p>
+                <p className="text-sm text-gray-500 mt-1">zzgl. MwSt</p>
                 <ul role="list" className="mt-6 space-y-4">
                   {packageItem.features.map((feature, index, array) => {
                     const isLastItem = index === array.length - 1;

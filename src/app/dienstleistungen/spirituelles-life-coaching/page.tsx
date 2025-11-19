@@ -184,14 +184,14 @@ export default function SpiritualPage() {
                   <SparklesIcon className="h-6 w-6" />
                 </div>
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">Dein Weg zur Ganzheit</h3>
-                <p className="text-gray-700 mb-4 leading-relaxed text-sm">
+                <p className="text-gray-700 mb-4 leading-relaxed">
                   Ich helfe dir, deine Körperwahrnehmung zu stärken und ein tieferes Verständnis für deine körperlichen und emotionalen Zustände zu entwickeln.
                 </p>
                 <div className="relative py-3 mb-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg px-4 -mx-2">
                   <div className="absolute -top-2.5 left-4 bg-pink-500 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full shadow-md">
                     OWN IT. FEEL IT. HEAL IT.
                   </div>
-                  <p className="text-gray-700 italic text-sm pt-2">
+                  <p className="text-gray-700 italic pt-2">
                     Nimm mutig alles an, was ist, um zu deiner wahren Essenz zurückzufinden.
                   </p>
                 </div>
@@ -200,19 +200,19 @@ export default function SpiritualPage() {
                     <div className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center mr-2">
                       <CheckIcon className="h-3 w-3 text-pink-600" />
                     </div>
-                    <span className="text-gray-700 text-sm">Indem du gesehen wirst, wo du dich verstecken willst</span>
+                    <span className="text-gray-700">Indem du gesehen wirst, wo du dich verstecken willst</span>
                   </li>
                   <li className="flex items-start group-hover:translate-x-1 transition-transform duration-200 delay-75">
                     <div className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center mr-2">
                       <CheckIcon className="h-3 w-3 text-pink-600" />
                     </div>
-                    <span className="text-gray-700 text-sm">Indem du deiner Unsicherheit mit Mitgefühl begegnest</span>
+                    <span className="text-gray-700">Indem du deiner Unsicherheit mit Mitgefühl begegnest</span>
                   </li>
                   <li className="flex items-start group-hover:translate-x-1 transition-transform duration-200 delay-100">
                     <div className="flex-shrink-0 mt-0.5 w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center mr-2">
                       <CheckIcon className="h-3 w-3 text-pink-600" />
                     </div>
-                    <span className="text-gray-700 text-sm">Indem du dich in deiner Verletzlichkeit zeigst</span>
+                    <span className="text-gray-700">Indem du dich in deiner Verletzlichkeit zeigst</span>
                   </li>
                 </ul>
                 <div className="text-center mt-2">
@@ -252,7 +252,7 @@ export default function SpiritualPage() {
                   <BoltIcon className="h-7 w-7 text-pink-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Wie Herausforderungen uns wachsen lassen</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                <p className="text-gray-600 leading-[1.6] mb-4">
                   Herausforderungen wie Schmerz oder wiederkehrende Muster sind kraftvolle Katalysatoren für tiefgreifende Transformation und persönliches Wachstum.
                 </p>
                 <Link href="/dienstleistungen/spiritual/themen/herausforderungen" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
@@ -271,7 +271,7 @@ export default function SpiritualPage() {
                   <ScaleIcon className="h-7 w-7 text-purple-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Bewusst Veränderungen willkommen heißen</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                <p className="text-gray-600 leading-[1.6] mb-4">
                   Veränderung wird möglich, wenn wir Herausforderungen mit Bewusstsein und einem offenen Herzen begegnen, anstatt sie zu verdrängen.
                 </p>
                 <Link href="/dienstleistungen/spiritual/themen/bewusste-veraenderung" className="mt-auto text-purple-600 hover:text-purple-700 text-sm font-medium inline-flex items-center group-hover:underline">
@@ -290,7 +290,7 @@ export default function SpiritualPage() {
                   <LightBulbIcon className="h-7 w-7 text-pink-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Verbinde dich mit deiner inneren Weisheit</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
+                <p className="text-gray-600 leading-[1.6] mb-4">
                   Durch verkörperte Präsenz verbindest du dich mit deiner inneren Weisheit und findest Antworten in dir auf deine Lebensfragen. Gemeinsam stärken wir dein Vertrauen in deine innere Führung.
                 </p>
                 <Link href="/dienstleistungen/spiritual/themen/innere-weisheit" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
@@ -364,7 +364,7 @@ export default function SpiritualPage() {
                   <SparklesIcon className="h-6 w-6 text-amber-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-amber-700 transition-colors">Dein authentisches Selbst</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   Es geht nicht darum, dir bestimmte Überzeugungen aufzuzwingen, sondern dich dabei zu unterstützen, dein authentisches Selbst zu entfalten und die Beziehung zu dir selbst und deinem Körper zu stärken.
                 </p>
               </div>
@@ -377,7 +377,7 @@ export default function SpiritualPage() {
                   <HeartIcon className="h-6 w-6 text-pink-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-pink-700 transition-colors">Ganzheitliche Transformation</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   Durch meinen Ansatz von Holistic Counselling arbeiten wir gemeinsam daran, Gefühle von Sicherheit, Selbstvertrauen und Stabilität in dir von innen heraus wiederzuentdecken und in deinem Alltag zu verkörpern.
                 </p>
               </div>
@@ -387,7 +387,7 @@ export default function SpiritualPage() {
                   <WrenchScrewdriverIcon className="h-6 w-6 text-purple-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Praktische Werkzeuge</h3>
-                <p className="text-gray-600 text-[0.95rem] leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   In den Sitzungen zeige ich dir praktische Tools zur Selbstregulierung. Wir entwickeln Routinen, die dich stärken und kultivieren die Ressourcen von Geduld und Mitgefühl in dir für deinen Heilungsprozess.
                 </p>
               </div>
@@ -423,7 +423,7 @@ export default function SpiritualPage() {
 
           {/* Quote */}
           <div className="mb-12 max-w-3xl mx-auto px-4">
-            <blockquote className="text-lg text-gray-700 leading-relaxed text-center font-normal">
+            <blockquote className="text-gray-700 leading-relaxed text-center font-normal">
               <p className="relative">
                 <span className="absolute -left-4 -top-2 text-4xl text-pink-800/90">„</span>
                 Wenn dir jemand wirklich zuhört, ohne über dich zu urteilen, ohne zu versuchen, Verantwortung für dich zu übernehmen, ohne zu versuchen, dich zu formen, fühlt sich das verdammt gut an.
@@ -442,7 +442,7 @@ export default function SpiritualPage() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Authentizität</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   Ich stehe für ehrliche und transparente Kommunikation. In meiner Arbeit lege ich Wert auf Echtheit und Klarheit, damit du dich sicher und verstanden fühlst.
                 </p>
               </div>
@@ -455,7 +455,7 @@ export default function SpiritualPage() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Menschlichkeit</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   Jeder Mensch ist einzigartig. Ich begegne dir mit Respekt, Wertschätzung und der Überzeugung, dass in jedem von uns ungeahnte Potenziale schlummern.
                 </p>
               </div>
@@ -468,7 +468,7 @@ export default function SpiritualPage() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Ganzheitlichkeit</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   Ich betrachte dich als Mensch in deiner Gesamtheit. Körper, Geist, Seele und Emotion bilden eine untrennbare Einheit, die in meiner Arbeit gleichermaßen Berücksichtigung findet.
                 </p>
               </div>
