@@ -402,7 +402,7 @@ export default function MeinWeg() {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Link 
-                  href="/dienstleistungen/mein-weg/meine-heilungsreise"
+                  href="/mein-weg/meine-heilungsreise"
                   className="px-8 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 group"
                 >
                   <span>Mehr zu meiner Geschichte</span>
