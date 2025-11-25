@@ -185,7 +185,7 @@ export default function Angebot() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
-              Wähle flexibel zwischen mehreren kürzeren oder wenigen längeren Sitzungen. Die Gesamtstundenanzahl bleibt gleich. Nach der ersten Session entscheidest du, ob du weiter mit mir arbeiten möchtest, welches Paket passt, wie du deine Zeit aufteilst und ob wir online oder vor Ort arbeiten.
+              Die Sitzungsdauer variiert flexibel je nach Thema und individuellem Bedarf - die Gesamtstundenanzahl bleibt dabei gleich. Die Sessions finden online oder vor Ort statt. Die Paketwahl und die Entscheidung zur Weiterarbeit erfolgen erst nach der ersten Session.
             </p>
           </div>
         </div>

@@ -41,12 +41,10 @@ export default function Impressum() {
               </div>
               
               <div className="border-b border-gray-100 pb-6">
-                <p className="text-gray-700">Steuernummer: 147/143/71526</p>
-              </div>
-              
-              <div>
-                <h3 className="text-lg font-medium text-gray-800 mb-3">Kleinunternehmerregelung:</h3>
-                <p className="text-gray-700">Gemäß § 19 UStG wird keine Umsatzsteuer erhoben und ausgewiesen.</p>
+                <h3 className="text-lg font-medium text-gray-800 mb-3">Angaben zum Unternehmen</h3>
+                <p className="text-gray-700">Umsatzsteuer-ID:</p>
+                <p className="text-gray-700">Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</p>
+                <p className="text-gray-700 font-medium">DE 427546710</p>
               </div>
             </div>
           </section>

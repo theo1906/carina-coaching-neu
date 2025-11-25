@@ -260,151 +260,6 @@ export default function EssstorungPage() {
         </div>
       </section>
 
-      {/* Section: Meine Geschichte */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-white to-pink-50 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float animation-delay-2000"></div>
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-pink-50 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float animation-delay-4000"></div>
-          <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-purple-50 to-pink-50 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-pulse"></div>
-        </div>
-        
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-12" id="heilungsreise">
-            <h2 className="text-3xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-4">
-              Der Beginn meiner Heilungsreise aus 20 Jahren Essstörung
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-4"></div>
-            <p className="text-xl text-pink-800/90 italic max-w-2xl mx-auto">
-              "Meine persönliche Heilungsreise von der Essstörung zur Berufung"
-            </p>
-          </div>
-
-          <div className="relative">
-            {/* Animated vertical line */}
-            <motion.div 
-              className="absolute left-1/2 w-0.5 h-full bg-gradient-to-b from-pink-300 via-purple-300 to-pink-300 transform -translate-x-1/2"
-              initial={{ scaleY: 0 }}
-              animate={{ scaleY: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-transparent h-20"></div>
-            </motion.div>
-            
-            {/* Timeline items */}
-            <div className="space-y-10">
-              {[
-                {
-                  title: "Mit 14 – Der Beginn",
-                  content: "Ich war 14, als die Bulimie in mein Leben trat. Scham, Rückzug, Isolation – die Essstörung wurde zu meinem Geheimnis, meiner Strategie, um zu überleben. Ich eskalierte und funktionierte, aber innerlich war ich verloren.",
-                  icon: <ClockIcon className="h-6 w-6 text-pink-500" />
-                },
-                {
-                  title: "Die Jahre des Versteckens",
-                  content: "Über 20 Jahre lang bestimmte die Bulimie mein Denken, Fühlen und Handeln. Ich lebte im ständigen Kampf mit mir selbst, sehnte mich nach Liebe, Sicherheit und Zugehörigkeit – fand sie aber nur in der Kontrolle durch die Krankheit.",
-                  icon: <FireIcon className="h-6 w-6 text-pink-500" />
-                },
-                {
-                  title: "Der Tiefpunkt",
-                  content: "Trennung, Jobverlust, völliger emotionaler Zusammenbruch – in nur vier Wochen fiel alles auseinander. Das Leben schickte mir einen Weckruf. Zum ersten Mal sagte ich mir: Ich will leben. Anders. Wahrhaftig.",
-                  icon: <HeartIcon className="h-6 w-6 text-pink-500" />
-                },
-                {
-                  title: "Die Nacht der Heilung",
-                  content: "Unerwartet kam sie – über Nacht. Ein inneres energetisches 'Cleansing', das alles veränderte. Der Zwang war weg. Ich wusste intuitiv: es ist vorbei. Für immer. Zum ersten Mal spürte ich Frieden in mir.",
-                  icon: <SparklesIcon className="h-6 w-6 text-pink-500" />
-                },
-                {
-                  title: "Die ersten Schritte danach",
-                  content: "Die Heilung war echt, aber ungewohnt. Wer bin ich ohne Bulimie? Ich lernte mich neu kennen, begegnete meinem Körper mit Achtsamkeit und in tiefer Verbundenheit. Yoga, Meditation und Stille wurden meine Anker.",
-                  icon: <ArrowRightIcon className="h-6 w-6 text-pink-500" />
-                },
-                {
-                  title: "Reisen & Rückverbindung",
-                  content: "In Indien begegnete ich dem Yoga. In Bali brach ich mein Schweigen – zum ersten Mal teilte ich meine Geschichte. Mein Körper wurde mein Lehrer. Ich fand Kraft im Frausein, Vertrauen ins Leben.",
-                  icon: <GlobeAltIcon className="h-6 w-6 text-pink-500" />
-                },
-                {
-                  title: "Heute – Meine Berufung leben",
-                  content: "Seit 2016 bin ich vollständig frei von der Bulimie. Ich lebe verbunden, klar, selbstbestimmt. Mein Weg wurde zu meiner Aufgabe: heute begleite ich Frauen auf ihrer Reise – mit Mitgefühl, Tiefe und echter Erfahrung.",
-                  icon: <UserIcon className="h-6 w-6 text-pink-500" />
-                }
-              ].map((item, index) => (
-                <motion.div 
-                  key={index} 
-                  className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  style={{ minHeight: '120px' }} // Ensures consistent height for centering
-                >
-                  {/* Animated timeline dot - positioned absolutely within the flex container */}
-                  <motion.div 
-                    className="absolute left-1/2 -translate-x-1/2 h-6 w-6 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 border-4 border-white shadow-lg z-10 flex items-center justify-center"
-                    whileHover={{ scale: 1.2, rotate: 15 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                    style={{ top: '50%', transform: 'translate(-50%, -50%)' }}
-                  >
-                    <div className="h-2 w-2 rounded-full bg-white/80"></div>
-                  </motion.div>
-                  
-                  {/* Content card with subtle hover effect */}
-                  <motion.div 
-                    className={`w-full md:w-[44%] p-5 bg-white/95 backdrop-blur-sm rounded-xl shadow-sm border border-pink-100/50 relative overflow-hidden group ${index % 2 === 0 ? 'mr-auto md:mr-0 md:pr-3' : 'ml-auto md:ml-0 md:pl-3'}`}
-                    whileHover={{ 
-                      y: -5,
-                      boxShadow: '0 10px 25px -5px rgba(236, 72, 153, 0.1), 0 10px 10px -5px rgba(236, 72, 153, 0.04)'
-                    }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  >
-                    {/* Decorative corner accent */}
-                    <div className={`absolute ${index % 2 === 0 ? 'top-0 right-0' : 'top-0 left-0'} w-16 h-16 -m-4 bg-pink-100/30 rounded-full filter blur-xl`}></div>
-                    
-                    <div className="relative z-10">
-                      <div className="flex items-center gap-3 mb-3">
-                        <motion.div 
-                          className="flex-shrink-0 h-9 w-9 rounded-full bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center shadow-inner border border-pink-100"
-                          whileHover={{ rotate: 10, scale: 1.1 }}
-                        >
-                          {React.cloneElement(item.icon, { className: 'h-4 w-4 text-pink-600' })}
-                        </motion.div>
-                        <h3 className="text-lg font-semibold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                          {item.title}
-                        </h3>
-                      </div>
-                      <p className="text-gray-700 text-sm leading-relaxed relative pl-1 border-l-2 border-pink-100">
-                        {item.content}
-                      </p>
-                    </div>
-                    
-                    {/* Subtle hover effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-pink-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-                  </motion.div>
-                </motion.div>
-              ))}
-              
-              {/* Mehr erfahren Button */}
-              <motion.div 
-                className="flex justify-center mt-12"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <Link 
-                  href="/dienstleistungen/essstoerung/meine-heilungsreise"
-                  className="px-8 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 group"
-                >
-                  <span>Mehr erfahren</span>
-                  <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Link>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Section 2: Mit wem ich arbeite */}
       <section id="embodiment" className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white to-pink-50 opacity-10"></div>
@@ -803,12 +658,9 @@ export default function EssstorungPage() {
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
-              Auf der Suche nach Identität - persönliche Einblicke in die Zeit nach meiner Essstörung
+              Ein Leben in Freiheit und Verbundenheit
             </h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
-            <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
-              "Ein Leben in Freiheit und Verbundenheit"
-            </p>
+            <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

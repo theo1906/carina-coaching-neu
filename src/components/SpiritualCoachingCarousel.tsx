@@ -16,6 +16,10 @@ const images = [
     src: '/images/Mood Körperarbeit_2.JPG',
     alt: 'Spirituelles Coaching - Körperarbeit und Heilung',
   },
+  {
+    src: '/images/Spirituelles Körpertraining.jpeg',
+    alt: 'Spirituelles Coaching - Körpertraining und Bewegung',
+  },
 ];
 
 export default function SpiritualCoachingCarousel() {
