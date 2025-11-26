@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './justified-text.module.css';
-import BeyondHealingExact from '@/components/BeyondHealingExact';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { 
   SparklesIcon, 
@@ -25,14 +25,20 @@ import {
   ChevronUpIcon,
   UserIcon
 } from '@heroicons/react/24/outline';
-import RaumFuerDichSection from '@/components/RaumFuerDichSection';
-import VisionCollapsible from '@/components/VisionCollapsible';
 import CollapsibleSection from '@/components/CollapsibleSection';
+import IdentityCollapsible from '@/components/IdentityCollapsible';
+import TimelineCollapsible from '@/components/TimelineCollapsible';
+import SummaryCollapsible from '../../../components/SummaryCollapsible';
+import VisionCollapsible from '@/components/VisionCollapsible';
+import RaumFuerDichSection from '@/components/RaumFuerDichSection';
 import MeineWendeSection from '@/components/MeineWendeSection';
 import MeineBerufungSection from '@/components/MeineBerufungSection';
-import SummaryCollapsible from '../../../components/SummaryCollapsible';
-import TimelineCollapsible from '../../../components/TimelineCollapsible';
-import IdentityCollapsible from '../../../components/IdentityCollapsible';
+
+// Dynamic import for heavy component
+const BeyondHealingExact = dynamic(() => import('@/components/BeyondHealingExact'), {
+  loading: () => <div className="animate-pulse bg-gray-200 h-64 rounded-lg"></div>,
+  ssr: false
+});
 
 interface TimelinePoint {
   year: number;

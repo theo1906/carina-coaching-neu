@@ -6,6 +6,7 @@ import { metadata } from './metadata';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieConsentBanner from '@/components/CookieConsentBanner';
+import PerformanceMonitor from '@/components/PerformanceMonitor';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ 
@@ -17,6 +18,7 @@ const playfair = Playfair_Display({
 const ClientProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
+      {process.env.NODE_ENV === 'development' && <PerformanceMonitor />}
       {children}
     </>
   );
