@@ -16,15 +16,13 @@ export default function CollapsibleSection() {
             Über mich
           </h4>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Hallo, ich bin Carina Göb und Gründerin von<br className="sm:hidden" />
+            Hallo, ich bin Carina Göb und<br className="sm:hidden" />
             <span className="hidden sm:inline"> </span>
-            „CARINA COACHING - embodiment<br className="sm:hidden" />
+            Gründerin von "CARINA COACHING -<br className="sm:hidden" />
             <span className="hidden sm:inline"> </span>
-            for women".<br className="sm:hidden" />
+            embodiment for women". Schön,<br className="sm:hidden" />
             <span className="hidden sm:inline"> </span>
-            Schön, dass du<br className="sm:hidden" />
-            <span className="hidden sm:inline"> </span>
-            den Weg hierher gefunden hast.
+            dass du den Weg hierher gefunden hast.
           </p>
         </div>
         <ChevronRightIcon 
