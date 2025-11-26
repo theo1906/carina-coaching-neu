@@ -73,7 +73,7 @@
   font-weight: normal;
   margin: 0;
   color: inherit; /* Match parent text color */
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: inherit; /* Use same font as parent text */
 }
 
 @layer base {

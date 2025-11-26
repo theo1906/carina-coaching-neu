@@ -30,8 +30,9 @@ import VisionCollapsible from '@/components/VisionCollapsible';
 import CollapsibleSection from '@/components/CollapsibleSection';
 import MeineWendeSection from '@/components/MeineWendeSection';
 import MeineBerufungSection from '@/components/MeineBerufungSection';
-import SummaryCollapsible from '@/components/SummaryCollapsible';
-import TimelineCollapsible from '@/components/TimelineCollapsible';
+import SummaryCollapsible from '../../../components/SummaryCollapsible';
+import TimelineCollapsible from '../../../components/TimelineCollapsible';
+import IdentityCollapsible from '../../../components/IdentityCollapsible';
 
 interface TimelinePoint {
   year: number;
@@ -192,7 +193,7 @@ export default function MeinWeg() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 md:pt-28 md:pb-16 overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50">
+      <section className="relative min-h-[45vh] md:min-h-[40vh] overflow-hidden bg-gradient-to-br from-pink-50 to-purple-50 flex items-center pt-28">
         <div className="absolute inset-0">
           <div className="absolute -top-16 -right-16 w-40 h-40 bg-pink-100 rounded-full mix-blend-multiply filter blur-lg opacity-20"></div>
           <div className="absolute -bottom-16 -left-16 w-40 h-40 bg-purple-100 rounded-full mix-blend-multiply filter blur-lg opacity-20"></div>
@@ -200,8 +201,8 @@ export default function MeinWeg() {
           <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mix-blend-multiply filter blur opacity-20"></div>
         </div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-4">
-          <div className="text-center mb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-black mb-2">
               Mein Weg
             </h1>
@@ -216,7 +217,6 @@ export default function MeinWeg() {
       {/* Section 2: Meine Geschichte */}
       <section className="relative py-16 md:py-20 bg-gradient-to-b from-white to-rose-50">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-rose-100 rounded-full opacity-20"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-fuchsia-100 rounded-full opacity-20"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -412,10 +412,40 @@ export default function MeinWeg() {
             </div>
           </div>
         </div>
+        
+        {/* Auf der Suche nach Identität Section - continues timeline background */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 mt-16">
+            <h2 className="text-3xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-4">
+              Auf der Suche nach Identität
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+            <p className="text-xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
+              "Persönliche Einblicke in die Zeit nach meiner Essstörung"
+            </p>
+          </div>
+          
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-pink-100/50 p-8 md:p-12 mb-16">
+            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+              <p className="text-lg">
+                Gerne möchte ich dir an dieser Stelle auch persönliche Einblicke geben, wie es für mich war, plötzlich ohne Krankheit zu sein. Vor allem nachdem ich meine Queen (so nenne ich meine Bulimie heute als meine größte Lehrerin) Tag für Tag begleitet hat. Essen-Streifzüge, Essattacken, Erbrechen … bis zur kompletten Erschöpfung. Und dann das Ganze wieder von vorne. Die Bulimie wurde zu meiner Identität, dem Mittelpunkt meines Lebens, seit meinem 14. Lebensjahr, bis ich 34 Jahre alt war.
+              </p>
+              
+              <p className="text-lg">
+                Um ehrlich zu sein, hat mich damals der Moment der plötzlichen Heilung und sofortigen Symptomfreiheit ganz schön überfordert. Auch wenn ich es mir gewünscht habe. Aber als die Heilung dann da war, war es erst einmal ungewohnt. Und ja, auch befremdlich, so viel Freiheit zu haben und vor allem so viel Zeit nach 20 Jahren, in denen ich komplett fremdgesteuert und kontrolliert war. Beeindruckend war für mich und ist es bis heute, dass ich sofort wusste und vor allem gespürt habe von ganz tief drinnen in mir: meine Bulimie ist vorbei - für immer.
+              </p>
+            </div>
+            
+            {/* Mehr erfahren Dropdown */}
+            <div className="mt-8">
+              <IdentityCollapsible />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Section 2: Mein Coaching Ansatz */}
-      <section className="relative py-16 md:py-20 bg-gradient-to-b from-rose-50 to-white">
+      <section id="coaching-ansatz" className="relative py-16 md:py-20 bg-gradient-to-b from-rose-50 to-white">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-100 rounded-full opacity-20"></div>
           <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-rose-100 rounded-full opacity-20"></div>

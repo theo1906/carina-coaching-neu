@@ -366,7 +366,8 @@ export default function Angebot() {
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
               <p className="text-pink-700/90 text-sm mb-2">Pro Stunde Coaching</p>
-              <p className="text-3xl font-bold text-pink-700 mb-2">150€</p>
+              <p className="text-3xl font-bold text-pink-700 mb-1">150€</p>
+              <p className="text-pink-700/90 text-sm mb-1">zzgl. MwSt</p>
               <p className="text-pink-700/90 text-sm">Individuelles Angebot auf Anfrage</p>
             </div>
           </div>

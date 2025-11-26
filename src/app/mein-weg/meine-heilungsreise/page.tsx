@@ -144,7 +144,7 @@ export default function MeineHeilungsreisePage() {
             </p>
             
             <p>
-              In meiner Arbeit möchte ich dich bestärken, loszugehen für dich und deine Heilung und dir auch Schritte aufzeigen, wenn es darum geht, dich wieder zu entdecken in einem Leben ohne Essstörung. Das ist ein sehr wichtiger Teil des Prozesses. 
+              In meiner Arbeit möchte ich dich bestärken, loszugehen für dich und deine Heilung und dir auch Schritte aufzeigen, wenn es darum geht, dich wieder zu entdecken in einem Leben ohne Krankheit. Das ist ein sehr wichtiger Teil des Prozesses. 
             </p>
             
           </div>
@@ -154,7 +154,7 @@ export default function MeineHeilungsreisePage() {
       {/* Back Button at Bottom */}
       <div className="py-8 text-center">
         <Link 
-          href="/dienstleistungen/essstoerung#embodiment" 
+          href="/ueber-mich/mein-weg#coaching-ansatz" 
           className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg"
         >
           <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />

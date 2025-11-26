@@ -9,18 +9,21 @@ export default function CollapsibleSection() {
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 group cursor-pointer transition-all duration-200 hover:shadow-md"
       onClick={() => setIsOpen(!isOpen)}>
-      <div className="flex justify-between items-start">
-        <div>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+        <div className="flex-1">
           <h4 className="font-medium text-lg text-pink-600 flex items-center mb-3">
             <UserCircleIcon className="h-5 w-5 mr-2" />
             Über mich
           </h4>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Hallo, ich bin Carina Göb und Gründerin von<br />„CARINA COACHING - embodiment for women".<br />Schön, dass du den Weg hierher gefunden hast.
+            Hallo, ich bin Carina Göb und Gründerin von<br className="sm:hidden" />
+            <span className="hidden sm:inline"> </span>
+            „CARINA COACHING - embodiment for women".<br className="sm:hidden" />
+            Schön, dass du den Weg hierher gefunden hast.
           </p>
         </div>
         <ChevronRightIcon 
-          className={`h-5 w-5 text-pink-600 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''} flex-shrink-0`} 
+          className={`h-5 w-5 text-pink-600 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''} flex-shrink-0 mt-8 sm:mt-0`} 
         />
       </div>
       

@@ -114,7 +114,7 @@ export default function EssstorungPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-gradient-to-b from-white to-rose-50">
+      <section className="relative pt-20 pb-10 bg-gradient-to-b from-white to-rose-50">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-rose-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-fuchsia-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
@@ -123,7 +123,7 @@ export default function EssstorungPage() {
         </div>
         
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-          <div id="systemisches-coaching" className="text-center mb-16">
+          <div id="systemisches-coaching" className="text-center mb-16 pt-28">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
               Systemisches Coaching bei Essstörungen & ED Recovery
             </h2>
@@ -706,17 +706,6 @@ export default function EssstorungPage() {
                 </li>
               </ul>
             </div>
-          </div>
-          
-          {/* Mehr erfahren Button */}
-          <div className="mt-12 text-center">
-            <Link 
-              href="/dienstleistungen/essstoerung/auf-der-suche-nach-identitaet"
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg no-underline"
-            >
-              <span>Mehr erfahren</span>
-              <ArrowRightIcon className="ml-2 w-5 h-5" />
-            </Link>
           </div>
         </div>
       </section>

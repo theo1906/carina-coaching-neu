@@ -312,13 +312,13 @@ export default function BeyondHealingExact() {
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Juli 2025:</span> From Shame and Guilt to Selflove - Intensive Trauma Workshop (56 Stunden), Amana & Krish Torbe, Italy
+                    <span className="font-semibold">Juli 2025:</span> From Shame and Guilt to Selflove - Intensive Trauma Workshop (56 Stunden), Amana & Krish Trobe, Italy
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                   <span className="text-gray-700">
-                    <span className="font-semibold">Dez 2024 - Jan 2025:</span> The Learning Love Intensive Workshop - Training for Trauma, Childhood Wounds & Conscious Relating (96 Stunden), Amana & Krish Torbe, Bali
+                    <span className="font-semibold">Dez 2024 - Jan 2025:</span> The Learning Love Intensive Workshop - Training for Trauma, Childhood Wounds & Conscious Relating (96 Stunden), Amana & Krish Trobe, Bali
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -339,7 +339,7 @@ export default function BeyondHealingExact() {
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Dez 2022 - Jan 2023:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe, Bali
+                        <span className="font-semibold">Dez 2022 - Jan 2023:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Trobe, Bali
                       </span>
                     </div>
                     <div className="flex items-start">
@@ -363,7 +363,7 @@ export default function BeyondHealingExact() {
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Aug 2019:</span> Healing Shock and Trauma - Intensive Workshop (56 Stunden), Amana & Krish Torbe, Schweiz
+                        <span className="font-semibold">Aug 2019:</span> Healing Shock and Trauma - Intensive Workshop (56 Stunden), Amana & Krish Trobe, Schweiz
                       </span>
                     </div>
                     <div className="flex items-start">
@@ -375,7 +375,7 @@ export default function BeyondHealingExact() {
                     <div className="flex items-start">
                       <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-rose-400 mr-3"></span>
                       <span className="text-gray-700">
-                        <span className="font-semibold">Dez 2018 - Jan 2019:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Torbe, Bali
+                        <span className="font-semibold">Dez 2018 - Jan 2019:</span> The Learning Love Intensive Workshop (96 Stunden), Amana & Krish Trobe, Bali
                       </span>
                     </div>
                     <div className="flex items-start">
