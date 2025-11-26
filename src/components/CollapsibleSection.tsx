@@ -18,13 +18,20 @@ export default function CollapsibleSection() {
           <p className="text-gray-700 leading-relaxed mb-4">
             Hallo, ich bin Carina Göb und Gründerin von<br className="sm:hidden" />
             <span className="hidden sm:inline"> </span>
-            „CARINA COACHING - embodiment for women".<br className="sm:hidden" />
-            Schön, dass du den Weg hierher gefunden hast.
+            „CARINA COACHING - embodiment<br className="sm:hidden" />
+            <span className="hidden sm:inline"> </span>
+            for women".<br className="sm:hidden" />
+            <span className="hidden sm:inline"> </span>
+            Schön, dass du<br className="sm:hidden" />
+            <span className="hidden sm:inline"> </span>
+            den Weg hierher gefunden hast.
           </p>
         </div>
-        <ChevronRightIcon 
-          className={`h-5 w-5 text-pink-600 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''} flex-shrink-0 mt-8 sm:mt-0`} 
-        />
+        <div className="flex justify-end sm:justify-start">
+          <ChevronRightIcon 
+            className={`h-5 w-5 text-pink-600 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''} flex-shrink-0 mt-0 sm:mt-0`} 
+          />
+        </div>
       </div>
       
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 overflow-hidden'}`}>
