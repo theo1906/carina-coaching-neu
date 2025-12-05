@@ -154,7 +154,7 @@ export default function MeineHeilungsreisePage() {
       {/* Back Button at Bottom */}
       <div className="py-8 text-center">
         <Link 
-          href="/ueber-mich/mein-weg#coaching-ansatz" 
+          href="/ueber-mich/mein-weg#auf-der-suche-nach-identitaet" 
           className="inline-flex items-center text-pink-600 hover:text-pink-800 transition-colors duration-300 group text-lg"
         >
           <ArrowLeftIcon className="h-5 w-5 mr-2 group-hover:-translate-x-1 transition-transform" />

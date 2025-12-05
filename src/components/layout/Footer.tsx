@@ -100,7 +100,7 @@ export default function Footer() {
                       }}
                     />
                   </div>
-                  <span className="block text-sm font-medium text-neutral-500 mt-1">
+                  <span className="block text-sm font-medium text-pink-600 mt-1">
                     embodiment for women
                   </span>
                 </Link>

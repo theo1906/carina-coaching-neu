@@ -420,7 +420,7 @@ export default function MeinWeg() {
         </div>
         
         {/* Auf der Suche nach Identität Section - continues timeline background */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div id="auf-der-suche-nach-identitaet" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12 mt-16">
             <h2 className="text-3xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-4">
               Auf der Suche nach Identität

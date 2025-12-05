@@ -669,7 +669,7 @@ export default function EssstorungPage() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <SparklesIcon className="w-5 h-5 text-pink-500" />
-                  <span className="text-gray-700">Ein liebevolles Verhältnis zum Körper & Essen als Genuss</span>
+                  <span className="text-gray-700">Ein liebevolles Verhältnis zu deinem Körper & Essen als Genuss</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <HeartIcon className="w-5 h-5 text-pink-500" />
