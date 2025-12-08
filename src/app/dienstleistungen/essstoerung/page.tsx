@@ -129,7 +129,7 @@ export default function EssstorungPage() {
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
-              „HEILUNG DURCH KÖRPERWEISHEIT UND EMOTIONALE BEFREIUNG“
+              „EILUNG DURCH KÖRPERWEISHEIT UND EMOTIONALE BEFREIUNG“
             </p>
             <div className="mt-8">
               <Link 
