@@ -129,7 +129,7 @@ export default function EssstorungPage() {
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
-              „EILUNG DURCH KÖRPERWEISHEIT UND EMOTIONALE BEFREIUNG“
+              „HEILUNG DURCH KÖRPERWEISHEIT UND EMOTIONALE BEFREIUNG“
             </p>
             <div className="mt-8">
               <Link 
@@ -667,8 +667,8 @@ export default function EssstorungPage() {
             <div className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100">
               <h3 className="text-xl font-medium text-pink-600 mb-4">Was du erwarten kannst:</h3>
               <ul className="space-y-3">
-                <li className="flex items-center gap-3">
-                  <SparklesIcon className="w-5 h-5 text-pink-500" />
+                <li className="flex items-start gap-3">
+                  <SparklesIcon className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700">Ein liebevolles Verhältnis zu deinem Körper & Essen als Genuss</span>
                 </li>
                 <li className="flex items-center gap-3">
