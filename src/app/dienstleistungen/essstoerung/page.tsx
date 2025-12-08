@@ -668,7 +668,7 @@ export default function EssstorungPage() {
               <h3 className="text-xl font-medium text-pink-600 mb-4">Was du erwarten kannst:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <SparklesIcon className="w-5 h-5 text-pink-500 mt-0.5 flex-shrink-0" />
+                  <SparklesIcon className="w-5 h-5 text-pink-500 flex-shrink-0" />
                   <span className="text-gray-700">Ein liebevolles Verhältnis zu deinem Körper & Essen als Genuss</span>
                 </li>
                 <li className="flex items-center gap-3">
