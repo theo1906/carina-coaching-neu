@@ -12,7 +12,7 @@ export default function OshoQuote() {
       
       <div className="relative z-10 flex items-center justify-center px-4 mt-2 md:mt-0">
         <blockquote className="text-center w-full">
-          <p className="text-2xl md:text-3xl font-serif italic text-pink-900 leading-relaxed uppercase">
+          <p className="text-2xl md:text-3xl font-serif font-bold italic text-pink-900 leading-relaxed uppercase">
             „ALLES,<br className="md:hidden" />
             WAS DU BRAUCHST,<br className="md:hidden" />
             IST BEREITS IN DIR."
