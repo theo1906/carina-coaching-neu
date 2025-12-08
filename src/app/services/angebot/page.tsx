@@ -143,10 +143,10 @@ const HealingHomeSection = () => {
             <h3 className="text-xl font-bold mb-2">Jetzt starten</h3>
             <p className="text-rose-100 mb-6">Buche dein persönliches Kennenlerngespräch</p>
             
-            <div className="text-4xl font-bold mb-6">{healingHomePackage.price}
-              <span className="text-xl font-normal text-rose-100">/ Stunde</span>
+            <div className="text-4xl font-bold mb-6">
+              <span>{healingHomePackage.price}</span>
+              <span className="text-xl font-normal text-rose-100 ml-2">/ Stunde</span>
             </div>
-            <p className="text-sm text-rose-100/80 mb-4">zzgl. MwSt</p>
             
             <a
               href="/contact"
@@ -366,8 +366,7 @@ export default function Angebot() {
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
               <p className="text-pink-700/90 text-sm mb-2">Pro Stunde Coaching</p>
-              <p className="text-3xl font-bold text-pink-700 mb-1">150€</p>
-              <p className="text-pink-700/90 text-sm mb-1">zzgl. MwSt</p>
+              <p className="text-3xl font-bold text-pink-700 mb-1">150€ <span className="text-sm font-normal text-pink-700/80">zzgl. MwSt</span></p>
               <p className="text-pink-700/90 text-sm">Individuelles Angebot auf Anfrage</p>
             </div>
           </div>

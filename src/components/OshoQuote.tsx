@@ -10,10 +10,12 @@ export default function OshoQuote() {
         <SparklesIcon className="h-12 w-12 opacity-30" />
       </div>
       
-      <div className="relative z-10">
-        <blockquote className="text-center">
+      <div className="relative z-10 flex items-center justify-center px-4">
+        <blockquote className="text-center w-full">
           <p className="text-2xl md:text-3xl font-serif italic text-pink-900 leading-relaxed uppercase">
-            „ALLES, WAS DU BRAUCHST, IST BEREITS IN DIR."
+            „ALLES,<br className="md:hidden" />
+            WAS DU BRAUCHST,<br className="md:hidden" />
+            IST BEREITS IN DIR."
           </p>
         </blockquote>
       </div>
