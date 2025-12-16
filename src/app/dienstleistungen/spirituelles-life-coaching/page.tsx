@@ -12,6 +12,14 @@ const spiritualCoachingJourneyPath = "/images/spiritual-coaching-journey.jpg";
 const carinaPortraitPath = "/images/carina-portrait.png";
 import Link from 'next/link';
 import SpiritualCoachingCarousel from '@/components/SpiritualCoachingCarousel';
+import IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown from '@/components/spirituelles-life-coaching/IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown';
+import EmbodimentUndHeilungDropdown from '@/components/spirituelles-life-coaching/EmbodimentUndHeilungDropdown';
+import BewussteVeraenderungDropdown from '@/components/spirituelles-life-coaching/BewussteVeraenderungDropdown';
+import InnereWeisheitDropdown from '@/components/spirituelles-life-coaching/InnereWeisheitDropdown';
+import MeinAnsatzDropdown from '@/components/spirituelles-life-coaching/MeinAnsatzDropdown';
+import VorteileSystemCoachingDropdown from '@/components/spirituelles-life-coaching/VorteileSystemCoachingDropdown';
+import TriggerVerstehenDropdown from '@/components/spirituelles-life-coaching/TriggerVerstehenDropdown';
+import WasIstSpirituellesLifeCoachingDropdown from '@/components/spirituelles-life-coaching/WasIstSpirituellesLifeCoachingDropdown';
 
 const features = [
   {
@@ -121,18 +129,12 @@ export default function SpiritualPage() {
                     <p className="text-gray-700">Heilung auf körperlicher, emotionaler und spiritueller Ebene</p>
                   </div>
                 </div>
-                <div className="mt-6 text-center">
-                  <Link 
-                    href="/dienstleistungen/spirituelles-life-coaching/ist-ein-spirituelles-coaching-das-richtige-fuer-dich"
-                    className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium transition-colors group"
-                  >
-                    <span className="mr-2">Mehr erfahren</span>
-                    <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
+          
+          {/* IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown */}
+          <IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown />
         </div>
       </section>
 
@@ -167,15 +169,6 @@ export default function SpiritualPage() {
               <p className="text-gray-700 mb-8">
                 Oft läuft das unbewusst ab, es ist dein "Normal". Aber tief in dir spürst du diese Trennung von dem, wonach du dich sehnst: echte Verbindung. Und diese beginnt immer bei dir selbst und in dir.
               </p>
-              <div className="mt-6">
-                <Link 
-                  href="/dienstleistungen/spiritual/embodiment-und-heilung" 
-                  className="inline-flex items-center px-6 py-3 text-base font-medium text-pink-600 hover:text-pink-700 transition-colors group"
-                >
-                  <span className="mr-2">Mehr erfahren</span>
-                  <ArrowRightIcon className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
             </div>
             <div className="md:order-1 group relative">
               <div className="absolute -inset-1 bg-gradient-to-br from-pink-400 to-purple-500 rounded-2xl opacity-20 blur-lg group-hover:opacity-30 transition-all duration-300"></div>
@@ -223,6 +216,9 @@ export default function SpiritualPage() {
               </div>
             </div>
           </div>
+          
+          {/* EmbodimentUndHeilungDropdown */}
+          <EmbodimentUndHeilungDropdown />
         </div>
       </section>
 
@@ -255,12 +251,6 @@ export default function SpiritualPage() {
                 <p className="text-gray-600 leading-[1.6] mb-4">
                   Herausforderungen wie Schmerz oder wiederkehrende Muster sind kraftvolle Katalysatoren für tiefgreifende Transformation und persönliches Wachstum.
                 </p>
-                <Link href="/dienstleistungen/spiritual/themen/herausforderungen" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
-                  Mehr erfahren
-                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
 
@@ -274,12 +264,6 @@ export default function SpiritualPage() {
                 <p className="text-gray-600 leading-[1.6] mb-4">
                   Veränderung wird möglich, wenn wir Herausforderungen mit Bewusstsein und einem offenen Herzen begegnen, anstatt sie zu verdrängen.
                 </p>
-                <Link href="/dienstleistungen/spiritual/themen/bewusste-veraenderung" className="mt-auto text-purple-600 hover:text-purple-700 text-sm font-medium inline-flex items-center group-hover:underline">
-                  Mehr erfahren
-                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
 
@@ -293,12 +277,6 @@ export default function SpiritualPage() {
                 <p className="text-gray-600 leading-[1.6] mb-4">
                   Durch verkörperte Präsenz verbindest du dich mit deiner inneren Weisheit und findest Antworten in dir auf deine Lebensfragen. Gemeinsam stärken wir dein Vertrauen in deine innere Führung.
                 </p>
-                <Link href="/dienstleistungen/spiritual/themen/innere-weisheit" className="mt-auto text-pink-600 hover:text-pink-700 text-sm font-medium inline-flex items-center group-hover:underline">
-                  Mehr erfahren
-                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
 
@@ -312,15 +290,12 @@ export default function SpiritualPage() {
                 <p className="text-gray-600 text-[0.95rem] leading-[1.6] mb-4">
                   Wahre Veränderung beginnt im Körper. Durch verkörperte Präsenz stärkst du deine Intuition und verankerst nachhaltige Veränderung in deinem Alltag.
                 </p>
-                <Link href="/dienstleistungen/spiritual/themen/power-embodied-change" className="mt-auto text-indigo-600 hover:text-indigo-700 text-sm font-medium inline-flex items-center group-hover:underline">
-                  Mehr erfahren
-                  <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
           </div>
+          
+          {/* WasIstSpirituellesLifeCoachingDropdown */}
+          <WasIstSpirituellesLifeCoachingDropdown />
         </div>
       </section>
 
@@ -346,19 +321,7 @@ export default function SpiritualPage() {
                 <p className="text-gray-700 mb-6 leading-relaxed">
                   Mein ganzheitlicher Beratungsansatz verbindet die Tiefe meiner persönlichen Selbstheiler-Erfahrung mit fundierten Methoden aus dem professionellen Coaching und der transformativen Kraft spiritueller Weisheit. Diese einzigartige Kombination ermöglicht es uns, auf verschiedenen Ebenen zu arbeiten und nachhaltige Veränderungen zu bewirken.
                 </p>
-                <div className="mt-6 pt-4 border-t border-pink-100">
-                  <Link 
-                    href="/dienstleistungen/spiritual/themen/mein-ansatz" 
-                    className="inline-flex items-center text-pink-600 hover:text-pink-700 font-medium group"
-                  >
-                    <span className="mr-2">Mehr erfahren</span>
-                    <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
               </div>
-              
               <div className="group relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-100 hover:border-amber-200 p-6 pl-24">
                 <div className="absolute top-6 left-6 w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center shadow-inner border border-amber-100">
                   <SparklesIcon className="h-6 w-6 text-amber-600" />
@@ -393,6 +356,9 @@ export default function SpiritualPage() {
               </div>
             </div>
           </div>
+          
+          {/* MeinAnsatzDropdown */}
+          <MeinAnsatzDropdown />
         </div>
       </section>
 
@@ -558,15 +524,11 @@ export default function SpiritualPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </Link>
-              <Link href="/dienstleistungen/spiritual/vorteile-system-coaching" className="inline-flex items-center justify-center px-6 py-3 border border-white/30 text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors">
-                <span>Mehr erfahren</span>
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
             </div>
           </div>
           
+          {/* VorteileSystemCoachingDropdown */}
+          <VorteileSystemCoachingDropdown />
         </div>
       </section>
 
@@ -624,12 +586,6 @@ export default function SpiritualPage() {
                 <p className="text-gray-700 mb-4">
                   Im Coaching lernst du, präsent zu bleiben und bewusst zu wählen, wie du aktiv auf Trigger antworten möchtest, anstatt automatisch zu reagieren.
                 </p>
-                <Link href="/dienstleistungen/spiritual/mehr-erfahren/trigger-verstehen" className="inline-flex items-center text-pink-600 hover:text-pink-700 text-sm font-medium transition-colors duration-200">
-                  Mehr erfahren
-                  <svg className="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </Link>
               </div>
             </div>
           </div>
@@ -641,6 +597,9 @@ export default function SpiritualPage() {
             <SpiritualCoachingCarousel />
           </div>
         </div>
+        
+        {/* TriggerVerstehenDropdown */}
+        <TriggerVerstehenDropdown />
       </section>
 
       {/* Dein Weg in die emotionale Freiheit und Selbst-Gelassenheit */}

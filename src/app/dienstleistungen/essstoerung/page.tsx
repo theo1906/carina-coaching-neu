@@ -26,6 +26,10 @@ import {
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import ImageCarousel from '@/components/ImageCarousel';
+import IstCoachingDasRichtigeDropdown from '@/components/dienstleistungen/IstCoachingDasRichtigeDropdown';
+import EmbodimentDropdown from '@/components/dienstleistungen/EmbodimentDropdown';
+import HeilungVonInnenNachAussenDropdown from '@/components/dienstleistungen/HeilungVonInnenNachAussenDropdown';
+import EDRecoveryCoachDropdown from '@/components/dienstleistungen/EDRecoveryCoachDropdown';
 
 function CollapsibleText({ content }: { content: string }) {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -233,18 +237,7 @@ export default function EssstorungPage() {
             </div>
           </div>
           
-          {/* Mehr erfahren Button */}
-          <div className="mt-12 text-center">
-              <Link 
-                href="/dienstleistungen/essstoerung/ist-coaching-das-richtige" 
-                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg"
-              >
-                <span>Mehr erfahren</span>
-                <ArrowRightIcon className="ml-2 w-5 h-5" />
-              </Link>
-          </div>
-          
-          {/* Image below button */}
+          {/* Image below section */}
           <div className="mt-8 flex justify-center">
             <div className="relative w-full max-w-2xl rounded-2xl overflow-hidden shadow-lg">
               <Image
@@ -257,6 +250,9 @@ export default function EssstorungPage() {
               />
             </div>
           </div>
+          
+          {/* Ist Coaching das Richtige Dropdown */}
+          <IstCoachingDasRichtigeDropdown />
         </div>
       </section>
 
@@ -411,17 +407,6 @@ export default function EssstorungPage() {
               </motion.div>
             </div>
             
-            {/* Mehr erfahren Button */}
-            <div className="text-center mt-8">
-              <Link 
-                href="/dienstleistungen/essstoerung/meine-heilungsreise/embodiment"
-                className="inline-flex items-center px-8 py-3.5 text-base font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-full hover:from-pink-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-              >
-                <span>Mehr erfahren</span>
-                <ArrowRightIcon className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-            
             {/* Added image at the bottom of the section */}
             <div className="mt-12 flex justify-center">
               <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -432,6 +417,9 @@ export default function EssstorungPage() {
                 />
               </div>
             </div>
+            
+            {/* Embodiment Dropdown */}
+            <EmbodimentDropdown />
           </div>
         </div>
       </section>
@@ -574,14 +562,10 @@ export default function EssstorungPage() {
             <p className="text-lg text-pink-800/90 mb-6">
               Bereit für den ersten Schritt in deine persönliche Transformation?
             </p>
-            <Link 
-              href="/dienstleistungen/essstoerung/heilung-von-innen-nach-aussen" 
-              className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 transition-colors shadow-md hover:shadow-lg no-underline"
-            >
-              Mehr erfahren
-              <ArrowRightIcon className="ml-2 w-5 h-5" />
-            </Link>
           </motion.div>
+          
+          {/* HeilungVonInnenNachAussenDropdown */}
+          <HeilungVonInnenNachAussenDropdown />
         </div>
       </section>
 
@@ -636,19 +620,10 @@ export default function EssstorungPage() {
                 <p className="text-gray-700">{item.content}</p>
               </motion.div>
             ))}
-            
-            {/* Mehr erfahren Button */}
-            <div className="col-span-1 md:col-span-3 flex justify-center mt-8">
-              <Link 
-                href="/dienstleistungen/essstoerung/ed-recovery-coach"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-colors shadow-md hover:shadow-lg no-underline"
-              >
-                <span>Mehr erfahren</span>
-                <ArrowRightIcon className="ml-2 -mr-1 h-5 w-5" />
-              </Link>
-            </div>
           </div>
           
+          {/* ED Recovery Coach Dropdown */}
+          <EDRecoveryCoachDropdown />
         </div>
       </section>
 
