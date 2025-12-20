@@ -20,6 +20,7 @@ import {
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import ImageCarousel from '@/components/ImageCarousel';
+import ErrorBoundary from '@/components/ErrorBoundary';
 
 // Lazy load dropdown components
 const IstCoachingDasRichtigeDropdown = lazy(() => import('@/components/dienstleistungen/IstCoachingDasRichtigeDropdown'));
@@ -33,10 +34,15 @@ function CollapsibleText({ content }: { content: string }) {
   const [needsCollapse, setNeedsCollapse] = React.useState(false);
 
   React.useEffect(() => {
-    if (contentRef.current) {
-      const lineHeight = parseInt(getComputedStyle(contentRef.current).lineHeight);
-      const maxHeight = lineHeight * 5; // Show ~4 lines of text
-      setNeedsCollapse(contentRef.current.scrollHeight > maxHeight);
+    if (contentRef.current && typeof window !== 'undefined') {
+      try {
+        const lineHeight = parseInt(getComputedStyle(contentRef.current).lineHeight);
+        const maxHeight = lineHeight * 5; // Show ~4 lines of text
+        setNeedsCollapse(contentRef.current.scrollHeight > maxHeight);
+      } catch (error) {
+        // Fallback if getComputedStyle fails
+        setNeedsCollapse(false);
+      }
     }
   }, [content]);
 
@@ -72,44 +78,49 @@ export default function EssstorungPage() {
   const pathname = usePathname();
   
   useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
     // Debounced scroll handler to prevent performance issues
     let timeoutId: NodeJS.Timeout;
     
     const handleScroll = () => {
-      // Clear previous timeout
-      if (timeoutId) clearTimeout(timeoutId);
-      
-      // Debounce scroll handling
-      timeoutId = setTimeout(() => {
-        // First check for hash in URL
-        if (typeof window !== 'undefined' && window.location.hash) {
-          const element = document.querySelector(window.location.hash);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            return;
-          }
-        }
+      try {
+        // Clear previous timeout
+        if (timeoutId) clearTimeout(timeoutId);
         
-        // Then check sessionStorage (only if needed)
-        if (typeof sessionStorage !== 'undefined') {
-          const shouldScrollToSection = sessionStorage.getItem('shouldScrollToSection');
-          if (shouldScrollToSection) {
-            const element = document.getElementById(shouldScrollToSection);
+        // Debounce scroll handling
+        timeoutId = setTimeout(() => {
+          // First check for hash in URL
+          if (window.location.hash) {
+            const element = document.querySelector(window.location.hash);
             if (element) {
-              // Use requestAnimationFrame for better timing
-              requestAnimationFrame(() => {
-                if (typeof window !== 'undefined') {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              return;
+            }
+          }
+          
+          // Then check sessionStorage (only if needed)
+          if (typeof sessionStorage !== 'undefined') {
+            const shouldScrollToSection = sessionStorage.getItem('shouldScrollToSection');
+            if (shouldScrollToSection) {
+              const element = document.getElementById(shouldScrollToSection);
+              if (element) {
+                // Use requestAnimationFrame for better timing
+                requestAnimationFrame(() => {
                   window.scrollTo({
                     top: element.offsetTop - 120,
                     behavior: 'smooth'
                   });
-                }
-              });
+                });
+              }
+              sessionStorage.removeItem('shouldScrollToSection');
             }
-            sessionStorage.removeItem('shouldScrollToSection');
           }
-        }
-      }, 100); // Debounce delay
+        }, 100); // Debounce delay
+      } catch (error) {
+        console.error('Scroll handling error:', error);
+      }
     };
 
     // Add a small delay to ensure everything is loaded
@@ -129,7 +140,8 @@ export default function EssstorungPage() {
     };
   }, [pathname]);
   return (
-    <main className="min-h-screen bg-white">
+    <ErrorBoundary>
+      <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative pt-20 pb-10 bg-gradient-to-b from-white to-rose-50">
         <div className="absolute inset-0 overflow-hidden">
@@ -334,8 +346,7 @@ export default function EssstorungPage() {
             ].map((item, index) => (
               <div
                 key={index}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100 flex flex-col h-full"
+                className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 border border-pink-100"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className={`w-12 h-12 rounded-full flex items-center justify-center ${item.color.replace('text', 'bg')} bg-opacity-10`}>
@@ -506,14 +517,6 @@ export default function EssstorungPage() {
             ].map((item, index) => (
               <div
                 key={index}
-                whileHover={{ y: -5 }}
-                transition={{ 
-                  duration: 0.5, 
-                  delay: index * 0.1,
-                  type: 'spring',
-                  stiffness: 300
-                }}
-                viewport={{ once: true, margin: "-50px" }}
                 className="group relative overflow-hidden bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg border border-pink-100/50 hover:shadow-xl transition-all duration-300"
               >
                 
@@ -539,7 +542,7 @@ export default function EssstorungPage() {
                       <span className="mr-2">Schwerpunkte:</span>
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {item.features.map((feature, i) => (
+                      {item.features.map((feature: string, i: number) => (
                         <span 
                           key={i}
                           className={`inline-flex items-center text-xs font-medium px-3 py-1.5 rounded-full bg-white/90 text-pink-700 border border-pink-100 shadow-sm hover:bg-white transition-colors ${index % 2 === 0 ? 'hover:shadow-md' : 'hover:shadow'}`}
@@ -560,7 +563,6 @@ export default function EssstorungPage() {
           {/* Call to action */}
           <div 
             className="mt-16 text-center"
-            transition={{ delay: 0.3 }}
           >
             <p className="text-lg text-pink-800/90 mb-6">
               Bereit für den ersten Schritt in deine persönliche Transformation?
@@ -729,7 +731,6 @@ export default function EssstorungPage() {
             ].map((item, index) => (
               <div
                 key={index}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -777,5 +778,6 @@ export default function EssstorungPage() {
         </div>
       </section>
     </main>
+    </ErrorBoundary>
   );
 }
