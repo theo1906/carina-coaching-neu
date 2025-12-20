@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import { ArrowRightIcon, HeartIcon, LightBulbIcon, SparklesIcon, UserIcon, WrenchScrewdriverIcon, ScaleIcon, BoltIcon, ShieldCheckIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -12,14 +12,16 @@ const spiritualCoachingJourneyPath = "/images/spiritual-coaching-journey.jpg";
 const carinaPortraitPath = "/images/carina-portrait.png";
 import Link from 'next/link';
 import SpiritualCoachingCarousel from '@/components/SpiritualCoachingCarousel';
-import IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown from '@/components/spirituelles-life-coaching/IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown';
-import EmbodimentUndHeilungDropdown from '@/components/spirituelles-life-coaching/EmbodimentUndHeilungDropdown';
-import BewussteVeraenderungDropdown from '@/components/spirituelles-life-coaching/BewussteVeraenderungDropdown';
-import InnereWeisheitDropdown from '@/components/spirituelles-life-coaching/InnereWeisheitDropdown';
-import MeinAnsatzDropdown from '@/components/spirituelles-life-coaching/MeinAnsatzDropdown';
-import VorteileSystemCoachingDropdown from '@/components/spirituelles-life-coaching/VorteileSystemCoachingDropdown';
-import TriggerVerstehenDropdown from '@/components/spirituelles-life-coaching/TriggerVerstehenDropdown';
-import WasIstSpirituellesLifeCoachingDropdown from '@/components/spirituelles-life-coaching/WasIstSpirituellesLifeCoachingDropdown';
+
+// Lazy load dropdown components
+const IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown = lazy(() => import('@/components/spirituelles-life-coaching/IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown'));
+const EmbodimentUndHeilungDropdown = lazy(() => import('@/components/spirituelles-life-coaching/EmbodimentUndHeilungDropdown'));
+const BewussteVeraenderungDropdown = lazy(() => import('@/components/spirituelles-life-coaching/BewussteVeraenderungDropdown'));
+const InnereWeisheitDropdown = lazy(() => import('@/components/spirituelles-life-coaching/InnereWeisheitDropdown'));
+const MeinAnsatzDropdown = lazy(() => import('@/components/spirituelles-life-coaching/MeinAnsatzDropdown'));
+const VorteileSystemCoachingDropdown = lazy(() => import('@/components/spirituelles-life-coaching/VorteileSystemCoachingDropdown'));
+const TriggerVerstehenDropdown = lazy(() => import('@/components/spirituelles-life-coaching/TriggerVerstehenDropdown'));
+const WasIstSpirituellesLifeCoachingDropdown = lazy(() => import('@/components/spirituelles-life-coaching/WasIstSpirituellesLifeCoachingDropdown'));
 
 const features = [
   {
@@ -134,7 +136,9 @@ export default function SpiritualPage() {
           </div>
           
           {/* IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown */}
-          <IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -218,7 +222,9 @@ export default function SpiritualPage() {
           </div>
           
           {/* EmbodimentUndHeilungDropdown */}
-          <EmbodimentUndHeilungDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <EmbodimentUndHeilungDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -295,7 +301,9 @@ export default function SpiritualPage() {
           </div>
           
           {/* WasIstSpirituellesLifeCoachingDropdown */}
-          <WasIstSpirituellesLifeCoachingDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <WasIstSpirituellesLifeCoachingDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -358,7 +366,9 @@ export default function SpiritualPage() {
           </div>
           
           {/* MeinAnsatzDropdown */}
-          <MeinAnsatzDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <MeinAnsatzDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -528,7 +538,9 @@ export default function SpiritualPage() {
           </div>
           
           {/* VorteileSystemCoachingDropdown */}
-          <VorteileSystemCoachingDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <VorteileSystemCoachingDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -599,7 +611,9 @@ export default function SpiritualPage() {
         </div>
         
         {/* TriggerVerstehenDropdown */}
-        <TriggerVerstehenDropdown />
+        <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+          <TriggerVerstehenDropdown />
+        </Suspense>
       </section>
 
       {/* Dein Weg in die emotionale Freiheit und Selbst-Gelassenheit */}

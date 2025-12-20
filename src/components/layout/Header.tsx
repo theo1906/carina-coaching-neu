@@ -54,6 +54,24 @@ const navigation: NavigationItem[] = [
     ]
   },
 
+  { 
+    name: 'Podcast', 
+    href: '#',
+    className: 'group relative hover:text-pink-600 transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium',
+    submenu: [
+      { 
+        name: 'YouTube', 
+        href: 'https://youtube.com/@carinacoaching?si=_IQW7siQ4lDE5kag',
+        className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
+      },
+      { 
+        name: 'Spotify', 
+        href: 'https://open.spotify.com/show/1d0c0FfOIupxdRhactBGze?si=PlOTX_FbSkiB36e7fm4ABw',
+        className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
+      },
+    ]
+  },
+
 ];
 
 const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
@@ -149,17 +167,40 @@ const NavItem = memo(({ name, href, submenu, className }: NavigationItem) => {
           onMouseLeave={handleMouseLeave}
         >
           <div className="py-1">
-            {submenu.map((subItem) => (
-              <Link
-                key={subItem.name}
-                href={subItem.href}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors duration-150"
-                onClick={handleLinkClick}
-                prefetch={false}
-              >
-                {subItem.name}
-              </Link>
-            ))}
+            {submenu.map((subItem) => {
+              const isExternal = subItem.href.startsWith('http');
+              const getIcon = (name: string) => {
+                if (name === 'YouTube') {
+                  return (
+                    <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                  );
+                } else if (name === 'Spotify') {
+                  return (
+                    <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.349c-.26.371-.713.465-1.084.205-2.98-1.822-6.732-2.233-11.156-1.224-.416.094-.832-.166-.926-.582-.094-.416.166-.832.582-.926 4.896-1.099 9.06-.642 12.438 1.417.371.23.466.713.146 1.11zm1.445-3.203c-.324.467-.972.607-1.438.283-3.416-2.103-8.614-2.712-12.637-1.484-.536.147-1.084-.14-1.231-.677-.147-.536.14-1.084.677-1.231 4.517-1.364 10.199-.696 14.096 1.721.466.324.607.972.283 1.438zm.124-3.348c-4.092-2.431-10.828-2.656-14.727-1.468-.642.187-1.314-.187-1.501-.782-.187-.642.187-1.314.782-1.501 4.379-1.278 11.66-1.006 16.254 1.721.563.324.749 1.053.425 1.616-.28.516-1.009.749-1.616.425z"/>
+                    </svg>
+                  );
+                }
+                return null;
+              };
+              
+              return (
+                <Link
+                  key={subItem.name}
+                  href={subItem.href}
+                  className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors duration-150"
+                  onClick={handleLinkClick}
+                  prefetch={false}
+                  target={isExternal ? '_blank' : '_self'}
+                  rel={isExternal ? 'noopener noreferrer' : ''}
+                >
+                  {getIcon(subItem.name)}
+                  {subItem.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
@@ -343,17 +384,40 @@ const Header = () => {
                         className={`overflow-hidden transition-all duration-200 ${mobileSubmenuOpen === item.name ? 'max-h-96' : 'max-h-0'}`}
                       >
                         <div className="divide-y divide-gray-100">
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.name}
-                              href={subItem.href}
-                              className="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
-                              onClick={() => setMobileMenuOpen(false)}
-                              prefetch={false}
-                            >
-                              {subItem.name}
-                            </Link>
-                          ))}
+                          {item.submenu.map((subItem) => {
+                            const isExternal = subItem.href.startsWith('http');
+                            const getIcon = (name: string) => {
+                              if (name === 'YouTube') {
+                                return (
+                                  <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                  </svg>
+                                );
+                              } else if (name === 'Spotify') {
+                                return (
+                                  <svg className="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.349c-.26.371-.713.465-1.084.205-2.98-1.822-6.732-2.233-11.156-1.224-.416.094-.832-.166-.926-.582-.094-.416.166-.832.582-.926 4.896-1.099 9.06-.642 12.438 1.417.371.23.466.713.146 1.11zm1.445-3.203c-.324.467-.972.607-1.438.283-3.416-2.103-8.614-2.712-12.637-1.484-.536.147-1.084-.14-1.231-.677-.147-.536.14-1.084.677-1.231 4.517-1.364 10.199-.696 14.096 1.721.466.324.607.972.283 1.438zm.124-3.348c-4.092-2.431-10.828-2.656-14.727-1.468-.642.187-1.314-.187-1.501-.782-.187-.642.187-1.314.782-1.501 4.379-1.278 11.66-1.006 16.254 1.721.563.324.749 1.053.425 1.616-.28.516-1.009.749-1.616.425z"/>
+                                  </svg>
+                                );
+                              }
+                              return null;
+                            };
+                            
+                            return (
+                              <Link
+                                key={subItem.name}
+                                href={subItem.href}
+                                className="flex items-center px-4 py-3 text-base font-medium text-gray-700 hover:bg-pink-50 hover:text-pink-600"
+                                onClick={() => setMobileMenuOpen(false)}
+                                prefetch={false}
+                                target={isExternal ? '_blank' : '_self'}
+                                rel={isExternal ? 'noopener noreferrer' : ''}
+                              >
+                                {getIcon(subItem.name)}
+                                {subItem.name}
+                              </Link>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>

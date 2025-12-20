@@ -1,35 +1,31 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import {
-  ClockIcon,
-  FireIcon,
-  HandThumbUpIcon,
-  HeartIcon,
-  LightBulbIcon,
-  SparklesIcon,
-  ArrowRightIcon,
-  GlobeAltIcon,
-  UserIcon,
   ShieldCheckIcon,
   UserGroupIcon,
+  HeartIcon,
+  SparklesIcon,
+  LightBulbIcon,
+  UserIcon,
+  HandThumbUpIcon,
   CpuChipIcon,
-  CheckIcon,
   ArrowPathIcon, 
-  CheckCircleIcon,
-  ArrowPathIcon as ArrowPathOutlineIcon,
-  HeartIcon as HeartOutlineIcon,
-  SparklesIcon as SparklesOutlineIcon
+  CheckIcon,
+  ArrowRightIcon,
+  FireIcon,
+  ClockIcon
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import ImageCarousel from '@/components/ImageCarousel';
-import IstCoachingDasRichtigeDropdown from '@/components/dienstleistungen/IstCoachingDasRichtigeDropdown';
-import EmbodimentDropdown from '@/components/dienstleistungen/EmbodimentDropdown';
-import HeilungVonInnenNachAussenDropdown from '@/components/dienstleistungen/HeilungVonInnenNachAussenDropdown';
-import EDRecoveryCoachDropdown from '@/components/dienstleistungen/EDRecoveryCoachDropdown';
+
+// Lazy load dropdown components
+const IstCoachingDasRichtigeDropdown = lazy(() => import('@/components/dienstleistungen/IstCoachingDasRichtigeDropdown'));
+const EmbodimentDropdown = lazy(() => import('@/components/dienstleistungen/EmbodimentDropdown'));
+const HeilungVonInnenNachAussenDropdown = lazy(() => import('@/components/dienstleistungen/HeilungVonInnenNachAussenDropdown'));
+const EDRecoveryCoachDropdown = lazy(() => import('@/components/dienstleistungen/EDRecoveryCoachDropdown'));
 
 function CollapsibleText({ content }: { content: string }) {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -76,43 +72,60 @@ export default function EssstorungPage() {
   const pathname = usePathname();
   
   useEffect(() => {
+    // Debounced scroll handler to prevent performance issues
+    let timeoutId: NodeJS.Timeout;
+    
     const handleScroll = () => {
-      // First check for hash in URL
-      if (window.location.hash) {
-        const element = document.querySelector(window.location.hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          return;
-        }
-      }
+      // Clear previous timeout
+      if (timeoutId) clearTimeout(timeoutId);
       
-      // Then check sessionStorage
-      const shouldScrollToSection = sessionStorage.getItem('shouldScrollToSection');
-      if (shouldScrollToSection) {
-        const element = document.getElementById(shouldScrollToSection);
-        if (element) {
-          // Use requestAnimationFrame for better timing
-          requestAnimationFrame(() => {
-            window.scrollTo({
-              top: element.offsetTop - 120, // Increased offset for better visibility
-              behavior: 'smooth'
-            });
-          });
+      // Debounce scroll handling
+      timeoutId = setTimeout(() => {
+        // First check for hash in URL
+        if (typeof window !== 'undefined' && window.location.hash) {
+          const element = document.querySelector(window.location.hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
         }
-        // Clear the flag
-        sessionStorage.removeItem('shouldScrollToSection');
-      }
+        
+        // Then check sessionStorage (only if needed)
+        if (typeof sessionStorage !== 'undefined') {
+          const shouldScrollToSection = sessionStorage.getItem('shouldScrollToSection');
+          if (shouldScrollToSection) {
+            const element = document.getElementById(shouldScrollToSection);
+            if (element) {
+              // Use requestAnimationFrame for better timing
+              requestAnimationFrame(() => {
+                if (typeof window !== 'undefined') {
+                  window.scrollTo({
+                    top: element.offsetTop - 120,
+                    behavior: 'smooth'
+                  });
+                }
+              });
+            }
+            sessionStorage.removeItem('shouldScrollToSection');
+          }
+        }
+      }, 100); // Debounce delay
     };
 
     // Add a small delay to ensure everything is loaded
     const timer = setTimeout(handleScroll, 100);
     
     // Also handle popstate for browser back/forward
-    window.addEventListener('popstate', handleScroll);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('popstate', handleScroll);
+    }
     
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('popstate', handleScroll);
+      if (timeoutId) clearTimeout(timeoutId);
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('popstate', handleScroll);
+      }
     };
   }, [pathname]);
   return (
@@ -252,7 +265,9 @@ export default function EssstorungPage() {
           </div>
           
           {/* Ist Coaching das Richtige Dropdown */}
-          <IstCoachingDasRichtigeDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <IstCoachingDasRichtigeDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -317,10 +332,8 @@ export default function EssstorungPage() {
                 color: 'text-pink-500'
               }
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100 flex flex-col h-full"
               >
@@ -333,7 +346,7 @@ export default function EssstorungPage() {
                 <div className="flex-grow">
                   <CollapsibleText content={item.content} />
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -355,12 +368,11 @@ export default function EssstorungPage() {
 
           <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <motion.div 
+              <div 
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-50 hover:border-pink-100 h-full flex flex-col"
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mb-4 border border-pink-100">
-                  <ArrowPathOutlineIcon className="w-6 h-6 text-pink-600" />
+                  <ArrowPathIcon className="w-6 h-6 text-pink-600" />
                 </div>
                 <h3 className="text-2xl font-semibold text-pink-700 mb-4 relative inline-block">
                   <span className="relative z-10">Mein Weg</span>
@@ -370,14 +382,13 @@ export default function EssstorungPage() {
                   Ich bin Carina, 43 Jahre alt und selbst ehemalige Betroffene. Meine eigene spirituelle Heilerfahrung hat mich zu meiner Berufung geführt: 
                   Frauen auf ihrem eigenen Weg in die Heilung zu begleiten und zu unterstützen.
                 </p>
-              </motion.div>
+              </div>
               
-              <motion.div 
+              <div 
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-50 hover:border-pink-100 h-full flex flex-col"
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mb-4 border border-pink-100">
-                  <SparklesOutlineIcon className="w-6 h-6 text-pink-600" />
+                  <SparklesIcon className="w-6 h-6 text-pink-600" />
                 </div>
                 <h3 className="text-2xl font-semibold text-pink-700 mb-4 relative inline-block">
                   <span className="relative z-10">Meine Vision</span>
@@ -387,14 +398,13 @@ export default function EssstorungPage() {
                   „Ich gehe los für eine Welt, in der wir Frauen unser einzigartiges Selbst annehmen und bedingungslos lieben. 
                   Eine Welt, in der wir Raum einnehmen, unsere Stimme nutzen und unsere Wahrhaftigkeit und Stärke mutig leben."
                 </p>
-              </motion.div>
+              </div>
               
-              <motion.div 
+              <div 
                 className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-pink-50 hover:border-pink-100 h-full flex flex-col"
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
               >
                 <div className="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center mb-4 border border-pink-100">
-                  <HeartOutlineIcon className="w-6 h-6 text-pink-600" />
+                  <HeartIcon className="w-6 h-6 text-pink-600" />
                 </div>
                 <h3 className="text-2xl font-semibold text-pink-700 mb-4 relative inline-block">
                   <span className="relative z-10">Meine Mission</span>
@@ -404,7 +414,7 @@ export default function EssstorungPage() {
                   Ich begleite Frauen dabei, mit Mut zur Wahrheit, Selbstannahme und KörperBewusstSein ihre innere Kraft zu erwecken. 
                   Gemeinsam arbeiten wir daran, die eigene Heilkraft zu entdecken. Für ein Leben in Freiheit und Lebendigkeit.
                 </p>
-              </motion.div>
+              </div>
             </div>
             
             {/* Added image at the bottom of the section */}
@@ -419,7 +429,9 @@ export default function EssstorungPage() {
             </div>
             
             {/* Embodiment Dropdown */}
-            <EmbodimentDropdown />
+            <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+              <EmbodimentDropdown />
+            </Suspense>
           </div>
         </div>
       </section>
@@ -436,13 +448,9 @@ export default function EssstorungPage() {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <div 
             id="heilung-von-innen-nach-aussen"
             className="text-center mb-16 pt-24 -mt-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
               Heilung von innen nach außen..
@@ -451,7 +459,7 @@ export default function EssstorungPage() {
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto mb-8">
               "Die Kraft der Heilung liegt in uns selbst."
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {[
@@ -496,10 +504,8 @@ export default function EssstorungPage() {
                 accent: 'from-pink-400 to-pink-300'
               }
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ y: -5 }}
                 transition={{ 
                   duration: 0.5, 
@@ -547,25 +553,24 @@ export default function EssstorungPage() {
                 
                 {/* Hover effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-pink-50/30 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none group-hover:scale-[1.02]"></div>
-              </motion.div>
+              </div>
             ))}
           </div>
           
           {/* Call to action */}
-          <motion.div 
+          <div 
             className="mt-16 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            viewport={{ once: true }}
           >
             <p className="text-lg text-pink-800/90 mb-6">
               Bereit für den ersten Schritt in deine persönliche Transformation?
             </p>
-          </motion.div>
+          </div>
           
           {/* HeilungVonInnenNachAussenDropdown */}
-          <HeilungVonInnenNachAussenDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <HeilungVonInnenNachAussenDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -604,11 +609,8 @@ export default function EssstorungPage() {
                 color: 'text-pink-700'
               }
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100"
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -618,12 +620,14 @@ export default function EssstorungPage() {
                   <h3 className={`text-xl font-medium ${item.color}`}>{item.title}</h3>
                 </div>
                 <p className="text-gray-700">{item.content}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
           
           {/* ED Recovery Coach Dropdown */}
-          <EDRecoveryCoachDropdown />
+          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
+            <EDRecoveryCoachDropdown />
+          </Suspense>
         </div>
       </section>
 
@@ -723,10 +727,8 @@ export default function EssstorungPage() {
                 features: ['Traumasensible Begleitung', 'Sichere Methoden', 'Ressourcenorientiert', 'Individuelles Tempo']
               }
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100 hover:shadow-lg transition-shadow duration-300"
               >
@@ -745,7 +747,7 @@ export default function EssstorungPage() {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
           
