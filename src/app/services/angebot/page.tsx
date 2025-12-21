@@ -185,7 +185,7 @@ export default function Angebot() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
-              Die Sitzungsdauer variiert flexibel je nach Thema und individuellem Bedarf - die Gesamtstundenanzahl bleibt dabei gleich. Die Sessions finden online oder vor Ort statt. Die Paketwahl und die Entscheidung zur Weiterarbeit erfolgen erst nach der ersten Session.
+              Die Sitzungsdauer variiert flexibel je nach Thema und individuellem Bedarf - die Gesamtstundenanzahl bleibt dabei gleich. Die Sessions finden online oder vor Ort statt. Die Paketwahl und die Entscheidung zur Weiterarbeit erfolgen erst nach deiner ersten Session.
             </p>
           </div>
         </div>
@@ -303,7 +303,7 @@ export default function Angebot() {
             </h2>
             <div className="w-24 h-0.5 bg-gradient-to-r from-pink-300 to-pink-400 mx-auto mb-4"></div>
             <p className="text-lg text-pink-700/90 max-w-xl mx-auto">
-              Persönliche 1:1 Betreuung in vertrauensvoller Atmosphäre
+              Persönliche 1:1 Begleitung in vertrauensvoller Atmosphäre
             </p>
           </div>
           
@@ -341,7 +341,7 @@ export default function Angebot() {
               <h3 className="text-xl font-semibold text-pink-900 mb-4">Dein Nutzen</h3>
               <ul className="space-y-3">
                 {[
-                  'Heilen in vertrauter Umgebung',
+                  'Potenzialentfaltung in vertrauter Umgebung',
                   'Komfortabel & stressfrei',
                   'Flexible Termine'
                 ].map((item, index) => (

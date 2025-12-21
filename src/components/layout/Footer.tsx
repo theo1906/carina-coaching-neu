@@ -87,20 +87,10 @@ export default function Footer() {
             <div className="space-y-6">
               <div className="space-y-2">
                 <Link href="/" className="inline-block">
-                  <div className="relative inline-block">
-                    <img
-                      src="/images/Footer Schriftzug.jpeg"
-                      alt="CARINA COACHING"
-                      className="object-contain block"
-                      style={{ 
-                        height: '21px !important', 
-                        width: 'auto !important', 
-                        maxWidth: '100% !important',
-                        minHeight: '21px !important'
-                      }}
-                    />
-                  </div>
-                  <span className="block text-sm font-medium text-pink-600 mt-1">
+                  <h3 className="text-xl font-bold text-black">
+                    CARINA COACHING
+                  </h3>
+                  <span className="block text-sm font-medium text-black mt-1">
                     embodiment for women
                   </span>
                 </Link>
