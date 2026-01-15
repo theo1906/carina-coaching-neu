@@ -100,8 +100,8 @@ export default function VorteileSystemCoachingDropdown() {
                       <div className={`relative h-full bg-white rounded-xl border ${colors.border} p-6 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg`}>
                         <div className={`w-12 h-1 bg-gradient-to-r ${colors.accent} mb-4 rounded-full transform group-hover:scale-110 origin-left transition-transform duration-300`}></div>
                         <h2 className="text-lg font-bold text-gray-900 mb-3 relative z-10">{benefit.title}</h2>
-                        <p className="text-gray-600 text-sm relative z-10 leading-relaxed">
-                          {benefit.description}
+                        <div className="text-gray-600 text-sm relative z-10 leading-relaxed">
+                          <p>{benefit.description}</p>
                           {benefit.bulletPoints && (
                             <ul className="mt-2 space-y-1 list-disc pl-5">
                               {benefit.bulletPoints.map((point, i) => (
@@ -111,7 +111,7 @@ export default function VorteileSystemCoachingDropdown() {
                               ))}
                             </ul>
                           )}
-                        </p>
+                        </div>
                         <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full bg-white opacity-10 group-hover:opacity-20 transition-opacity duration-300"></div>
                       </div>
                     </div>

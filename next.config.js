@@ -18,6 +18,47 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   
+  async redirects() {
+    return [
+      {
+        source:
+          '/dienstleistungen/essstoerung/meine-heilungsreise/embodiment/:path*',
+        destination: '/dienstleistungen/essstoerung',
+        permanent: true,
+      },
+      {
+        source:
+          '/dienstleistungen/spirituelles-life-coaching/embodiment-und-heilung/:path*',
+        destination: '/dienstleistungen/spirituelles-life-coaching',
+        permanent: true,
+      },
+      {
+        source:
+          '/dienstleistungen/spirituelles-life-coaching/ist-ein-spirituelles-coaching-das-richtige-fuer-dich/:path*',
+        destination: '/dienstleistungen/spirituelles-life-coaching',
+        permanent: true,
+      },
+      {
+        source:
+          '/dienstleistungen/spirituelles-life-coaching/mehr-erfahren/:path*',
+        destination: '/dienstleistungen/spirituelles-life-coaching',
+        permanent: true,
+      },
+      {
+        source:
+          '/dienstleistungen/spirituelles-life-coaching/themen/:path*',
+        destination: '/dienstleistungen/spirituelles-life-coaching',
+        permanent: true,
+      },
+      {
+        source:
+          '/dienstleistungen/spirituelles-life-coaching/vorteile-system-coaching/:path*',
+        destination: '/dienstleistungen/spirituelles-life-coaching',
+        permanent: true,
+      },
+    ];
+  },
+  
   // Disable the file-system routing for these files
   webpack: (config, { isServer }) => {
     if (!isServer) {
