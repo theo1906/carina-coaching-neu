@@ -240,7 +240,7 @@ export default function MeinWeg() {
             <div className="space-y-8 max-w-2xl mx-auto md:mx-0 md:pr-8">
               <div className="space-y-6">
                 <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
-                  Von 20 Jahren Kampf zur Heilung über Nacht
+                  Von 20 Jahren Kampf zur spirituellen Heilung
                 </h3>
                 
                 <div className="space-y-6 text-gray-700">

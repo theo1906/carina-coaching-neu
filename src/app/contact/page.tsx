@@ -78,7 +78,7 @@ export default function Contact() {
                 },
                 {
                   question: 'Wie lange dauert ein Coaching?',
-                  answer: 'Meine Zusammenarbeit mit dir beginnt bei einem Minimum von 4 Stunden. Darüberhinaus ist die Dauer des Coachings komplett abhängig von deinem individuellen Anliegen und wie tief du gehen möchtest. Nach Abschluss eines Coaching-Pakets besteht die Möglichkeit, bei Bedarf weitere Einzelsessions (120,00 EUR/Stunde) zu buchen. Wir bleiben hier im direkten Austausch, damit du dich jederzeit gut aufgehoben fühlst.'
+                  answer: 'Meine Zusammenarbeit mit dir beginnt bei einem Minimum von 4 Stunden. Darüberhinaus ist die Dauer des Coachings komplett abhängig von deinem individuellen Anliegen und wie tief du gehen möchtest. Nach Abschluss eines Coaching-Pakets besteht die Möglichkeit, bei Bedarf weitere Einzelsessions (145 EUR inkl. MwSt/ Stunde) zu buchen. Wir bleiben hier im direkten Austausch, damit du dich jederzeit gut aufgehoben fühlst.'
                 },
                 {
                   question: 'Kann ich das Coaching auch online machen?',
@@ -86,7 +86,7 @@ export default function Contact() {
                 },
                 {
                   question: 'Was kostet ein Coaching?',
-                  answer: 'Ich biete 4\'er, 8\'er und 12\'er Pakete an und je nach Größe wird der Preis pro Stunde günstiger für dich. Mein Angebot findest du auf der Webseite. Generell biete ich dir die Möglichkeit nach der ersten abgeschlossenen Session zu entscheiden, ob du mit mir weiter arbeiten möchtest und welches Paket du buchen möchtest. Die Rechnungsstellung erfolgt zeitgleich mit deiner Entscheidung, sodass wir beide Planungssicherheit haben und auch ein gegenseitiges Commitment.'
+                  answer: 'Ich biete 4\'er, 8\'er und 12\'er Pakete an und je nach Größe wird der Preis pro Stunde günstiger für dich. Mein Angebot findest du auf der Webseite. Generell biete ich dir die Möglichkeit nach der ersten abgeschlossenen Session zu entscheiden, ob du mit mir weiter arbeiten möchtest und welches Paket du buchen möchtest. Die erste Session kostet pauschal egal welches Paket du wählst: 145 EUR inkl. MwSt. Die Rechnungsstellung erfolgt zeitgleich mit deiner Entscheidung, sodass wir beide Planungssicherheit haben und auch ein gegenseitiges Commitment.'
                 },
               ].map((faq, index) => (
                 <div key={index} className="relative bg-gray-50 p-6 rounded-2xl shadow-sm">

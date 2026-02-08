@@ -51,7 +51,7 @@ export default function StorySection() {
           href="/ueber-mich/mein-weg#heilungsreise" 
           className="group relative inline-flex items-center px-10 py-4 overflow-hidden rounded-full bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
         >
-          <span className="relative z-10">mehr zu meiner Geschichte</span>
+          <span className="relative z-10">Mehr zu meiner Geschichte</span>
           <ArrowRightIcon className="ml-3 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
         </Link>

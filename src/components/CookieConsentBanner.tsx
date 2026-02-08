@@ -41,6 +41,7 @@ export default function CookieConsentBanner() {
     
     // Here you would typically initialize/remove analytics based on preferences
     console.log('Cookie preferences saved:', cookies);
+    window.dispatchEvent(new Event('cookie-preferences-changed'));
   };
 
   const acceptAll = () => {
@@ -55,6 +56,7 @@ export default function CookieConsentBanner() {
     
     // Here you would typically initialize analytics
     console.log('All cookies accepted');
+    window.dispatchEvent(new Event('cookie-preferences-changed'));
   };
 
   const acceptEssential = () => {
@@ -69,6 +71,7 @@ export default function CookieConsentBanner() {
     
     // Here you would typically remove analytics if they were previously accepted
     console.log('Only essential cookies accepted');
+    window.dispatchEvent(new Event('cookie-preferences-changed'));
   };
 
   if (!showBanner) return null;

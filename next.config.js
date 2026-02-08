@@ -56,6 +56,53 @@ const nextConfig = {
         destination: '/dienstleistungen/spirituelles-life-coaching',
         permanent: true,
       },
+      {
+        source: '/ueber-mich',
+        destination: '/mein-weg',
+        permanent: true,
+      },
+      {
+        source: '/ueber-mich/',
+        destination: '/mein-weg',
+        permanent: true,
+      },
+      {
+        source: '/ueber-mich/mein-weg',
+        destination: '/mein-weg',
+        permanent: true,
+      },
+      {
+        source: '/ueber-mich/mein-weg/',
+        destination: '/mein-weg',
+        permanent: true,
+      },
+      // Redirect only the /services root to home (do not affect /services/angebot)
+      {
+        source: '/services',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/services/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/vlog/:path*',
+        destination: '/',
+        permanent: true,
+      },
+      // Legacy Essstörung articles -> Mein Weg
+      {
+        source: '/dienstleistungen/essstoerung/auf-der-suche-nach-identitaet/:path*',
+        destination: '/mein-weg',
+        permanent: true,
+      },
+      {
+        source: '/dienstleistungen/essstoerung/meine-heilungsreise/:path*',
+        destination: '/mein-weg',
+        permanent: true,
+      },
     ];
   },
   

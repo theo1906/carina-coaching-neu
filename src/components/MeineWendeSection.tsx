@@ -20,7 +20,8 @@ export default function MeineWendeSection() {
               Meine Wende
             </h4>
             <p className="text-gray-700 leading-relaxed mb-4">
-              2016 erlebte ich meine spontane, vollständige Heilung nach 20 Jahren Krankheit – ein Wendepunkt, der mich gelehrt hat, wie tiefgreifend echte Transformation sein kann.
+              2016 erlebte ich meine spontane spirituelle Heilung nach 20 Jahren Krankheit. Ein Wendepunkt, der mich gelehrt hat, wie tiefgreifend 
+              echte Transformation sein kann.
             </p>
           </div>
           <div className="flex items-center h-5 mt-1 ml-4">

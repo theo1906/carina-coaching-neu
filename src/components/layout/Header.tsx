@@ -34,6 +34,11 @@ const navigation: NavigationItem[] = [
         href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
+      { 
+        name: 'Preispakete', 
+        href: '/services/angebot',
+        className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
+      },
     ]
   },
   { 
@@ -44,11 +49,6 @@ const navigation: NavigationItem[] = [
       { 
         name: 'Mein Weg', 
         href: '/ueber-mich/mein-weg',
-        className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
-      },
-      { 
-        name: 'Preispakete', 
-        href: '/services/angebot',
         className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-600 rounded-md transition-colors duration-150'
       },
     ]

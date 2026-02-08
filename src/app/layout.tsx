@@ -7,6 +7,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieConsentBanner from '@/components/CookieConsentBanner';
 import PerformanceMonitor from '@/components/PerformanceMonitor';
+import AnalyticsConsentGate from '@/components/AnalyticsConsentGate';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const playfair = Playfair_Display({ 
@@ -39,19 +40,6 @@ export default function RootLayout({
         <link rel="icon" href="/logo-other.png" type="image/png" sizes="512x512" />
         <link rel="apple-touch-icon" href="/logo-other.png" />
         <meta name="theme-color" content="#ffffff" />
-        
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWHES3E515"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-HWHES3E515');
-            `,
-          }}
-        />
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans text-gray-900 antialiased`}>
 
@@ -62,6 +50,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <CookieConsentBanner />
+          <AnalyticsConsentGate />
         </ClientProvider>
       </body>
     </html>

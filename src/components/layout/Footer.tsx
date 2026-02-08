@@ -12,15 +12,23 @@ const navigation = {
       href: '/dienstleistungen',
       subItems: [
         { name: 'Spirituelles Life Coaching', href: '/dienstleistungen/spirituelles-life-coaching' },
-        { name: 'Coaching bei Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' }
+        { name: 'Coaching bei Essstörungen', href: '/dienstleistungen/Systemisches-Coaching-fuer-Essstoerungen-ED-Recovery' },
+        { name: 'Preispakete', href: '/services/angebot' }
       ]
     },
     { 
       name: 'Über mich', 
       href: '/ueber-mich',
       subItems: [
-        { name: 'Mein Weg', href: '/ueber-mich/mein-weg' },
-        { name: 'Preispakete', href: '/services/angebot' }
+        { name: 'Mein Weg', href: '/ueber-mich/mein-weg' }
+      ]
+    },
+    {
+      name: 'Podcast',
+      href: '#',
+      subItems: [
+        { name: 'YouTube', href: 'https://youtube.com/@carinacoaching?si=_IQW7siQ4lDE5kag' },
+        { name: 'Spotify', href: 'https://open.spotify.com/show/1d0c0FfOIupxdRhactBGze?si=PlOTX_FbSkiB36e7fm4ABw' }
       ]
     }
   ],
@@ -32,7 +40,7 @@ const navigation = {
   social: [
     {
       name: 'Instagram',
-      href: 'https://instagram.com',
+      href: 'https://www.instagram.com/carinacoaching_/',
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -97,6 +105,17 @@ export default function Footer() {
                 <p className="text-neutral-600 ml-0">
                   Ich begleite dich auf deiner Reise zu wahrer Selbstliebe, innerer Stärke und einem erfüllten Leben in einem gesunden Körper.
                 </p>
+                <div className="pt-2">
+                  <a
+                    href={navigation.social[0].href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-neutral-200 text-neutral-600 hover:text-primary-600 hover:border-primary-200 transition-colors"
+                  >
+                    {navigation.social[0].icon({ className: 'h-5 w-5' })}
+                  </a>
+                </div>
               </div>
             </div>
 

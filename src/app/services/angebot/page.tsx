@@ -8,7 +8,7 @@ const coachingPackages = [
   {
     title: 'Synergy',
     description: '„Ich vertraue meiner Kraft“',
-    price: '444€',
+    price: '670€',
     features: [
       '4 Stunden Coaching',
       'Persönlicher Kompass zum Kennenlernen deiner inneren Landkarte',
@@ -20,11 +20,10 @@ const coachingPackages = [
   {
     title: 'Infinite Balance',
     description: '„Ich ruhe in meiner Mitte“',
-    price: '800€',
+    price: '1.250€',
     features: [
       '8 Stunden Coaching',
       'Gelebtes Gleichgewicht durch Integration und Ausgleich deiner inneren Dynamiken',
-      'Intensives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check-in',
       'Bereit für nachhaltige Transformation auf allen Ebenen?',
@@ -34,11 +33,10 @@ const coachingPackages = [
   {
     title: 'Wholeness',
     description: '„Ich bin erfüllt“',
-    price: '1.122€',
+    price: '1.740€',
     features: [
       '12 Stunden Coaching',
       'Körpervertrauen, Herzverbundenheit und achtsame Präsenz, um dich mutig und in entspannter Zuversicht für neue Wege zu öffnen',
-      'Exklusives körperzentriertes Begleitprogramm',
       'Ressourcen orientierte geführte Meditationen inkl. Recording',
       'Wöchentlicher Check In',
       'Exklusive Community Coaching Calls Online',
@@ -49,12 +47,12 @@ const coachingPackages = [
   {
     title: 'Healing@Home',
     description: 'Persönliche 1:1 Betreuung in deinen eigenen vier Wänden',
-    price: '150€',
+    price: '190€',
     features: [
       'Individuelles Coaching',
       'Kombination möglich',
       'Exklusiv in München',
-      '150€ pro Stunde'
+      '190€ pro Stunde'
     ],
   },
 ];
@@ -200,7 +198,7 @@ export default function Angebot() {
                 <h3 className="text-xl font-bold text-gray-900">{packageItem.title}</h3>
                 <p className="mt-2 text-base leading-7 text-gray-600">{packageItem.description}</p>
                 <p className="mt-4 text-3xl font-bold text-primary-600">{packageItem.price}</p>
-                <p className="text-sm text-gray-500 mt-1">zzgl. MwSt</p>
+                <p className="text-sm text-gray-500 mt-1">inkl. MwSt</p>
                 <ul role="list" className="mt-6 space-y-4">
                   {packageItem.features.map((feature, index, array) => {
                     const isLastItem = index === array.length - 1;
@@ -285,6 +283,20 @@ export default function Angebot() {
               </div>
             ))}
           </div>
+
+          {/* Hinweis zu Ermäßigungen */}
+          <div className="mt-8 sm:mt-10 flex justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full bg-rose-50/60 border border-rose-100 px-4 py-2 shadow-sm">
+              <svg className="h-4 w-4 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 8h.01" />
+                <path d="M11 12h1v4h1" />
+              </svg>
+              <span className="text-sm md:text-base text-rose-800/90">
+                Ermäßigungen für Schüler/-innen, Studierende und bei finanziellen Engpässen auf Anfrage
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -341,7 +353,7 @@ export default function Angebot() {
               <h3 className="text-xl font-semibold text-pink-900 mb-4">Dein Nutzen</h3>
               <ul className="space-y-3">
                 {[
-                  'Potenzialentfaltung in vertrauter Umgebung',
+                  'Coaching in vertrauter Umgebung',
                   'Komfortabel & stressfrei',
                   'Flexible Termine'
                 ].map((item, index) => (
@@ -366,7 +378,7 @@ export default function Angebot() {
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
               <p className="text-pink-700/90 text-sm mb-2">Pro Stunde Coaching</p>
-              <p className="text-3xl font-bold text-pink-700 mb-1">150€ <span className="text-sm font-normal text-pink-700/80">zzgl. MwSt</span></p>
+              <p className="text-3xl font-bold text-pink-700 mb-1">150€ <span className="text-sm font-normal text-pink-700/80">inkl. MwSt</span></p>
               <p className="text-pink-700/90 text-sm">Individuelles Angebot auf Anfrage</p>
             </div>
           </div>

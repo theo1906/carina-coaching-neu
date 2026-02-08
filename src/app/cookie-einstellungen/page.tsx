@@ -43,6 +43,8 @@ export default function CookieSettings() {
       message.style.transition = 'opacity 0.5s';
       setTimeout(() => message.remove(), 500);
     }, 3000);
+    // Notify listeners that preferences changed
+    window.dispatchEvent(new Event('cookie-preferences-changed'));
   };
 
   const acceptAll = () => {
@@ -53,6 +55,7 @@ export default function CookieSettings() {
     setCookies(allAccepted);
     localStorage.setItem('cookiePreferences', JSON.stringify(allAccepted));
     handleSave();
+    window.dispatchEvent(new Event('cookie-preferences-changed'));
   };
 
   const acceptEssential = () => {
@@ -63,6 +66,7 @@ export default function CookieSettings() {
     setCookies(essentialOnly);
     localStorage.setItem('cookiePreferences', JSON.stringify(essentialOnly));
     handleSave();
+    window.dispatchEvent(new Event('cookie-preferences-changed'));
   };
 
   return (
