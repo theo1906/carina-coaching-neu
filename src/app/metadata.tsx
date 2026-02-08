@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const siteUrl = 'https://carinacoaching.com';
+const siteUrl = 'https://carina-coaching.com';
 const title = 'Carina Coaching | Spirituelles Life Coaching & Systemisches Coaching Essstörungen';
 const description = 'Carina - Dein Coach für spirituelles Wachstum & Essstörungsbewältigung. Professionelle Begleitung bei Essstörungen, emotionalem Essen & spiritueller Entwicklung in München & online.';
 

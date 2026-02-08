@@ -1,4 +1,26 @@
 import { CalendarIcon, Clock, Check } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Kostenloses Erstgespräch buchen | Carina Coaching',
+  description:
+    'Kostenloses Erstgespräch für spirituelles Life Coaching & Coaching bei Essstörungen. Erfahre, wie ich dich auf deinem Weg begleiten und unterstützen kann.',
+  alternates: {
+    canonical: 'https://carina-coaching.com/buchen/',
+  },
+  openGraph: {
+    title: 'Kostenloses Erstgespräch buchen | Carina Coaching',
+    description:
+      'Kostenloses Erstgespräch für spirituelles Life Coaching & Coaching bei Essstörungen. Erfahre, wie ich dich auf deinem Weg begleiten und unterstützen kann.',
+    url: 'https://carina-coaching.com/buchen/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kostenloses Erstgespräch buchen | Carina Coaching',
+    description:
+      'Kostenloses Erstgespräch für spirituelles Life Coaching & Coaching bei Essstörungen. Erfahre, wie ich dich auf deinem Weg begleiten und unterstützen kann.',
+  },
+};
 
 export default function BookingPage() {
   return (

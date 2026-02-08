@@ -1,4 +1,3 @@
-'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -10,6 +9,28 @@ import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
 import { HeartIcon, SparklesIcon, ArrowRightIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import ExpandableBulletPoint from '@/components/ExpandableBulletPoint';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Spiritueller Life Coach & Coaching bei Essstörungen | Carina Coaching',
+  description:
+    'Spirituelles Life Coaching & Coaching bei Essstörungen für Frauen. Ganzheitliche Heilung aus eigener Kraft – kostenloses Erstgespräch vereinbaren.',
+  alternates: {
+    canonical: 'https://carina-coaching.com/',
+  },
+  openGraph: {
+    title: 'Spiritueller Life Coach & Coaching bei Essstörungen | Carina Coaching',
+    description:
+      'Spirituelles Life Coaching & Coaching bei Essstörungen für Frauen. Ganzheitliche Heilung aus eigener Kraft – kostenloses Erstgespräch vereinbaren.',
+    url: 'https://carina-coaching.com/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Spiritueller Life Coach & Coaching bei Essstörungen | Carina Coaching',
+    description:
+      'Spirituelles Life Coaching & Coaching bei Essstörungen für Frauen. Ganzheitliche Heilung aus eigener Kraft – kostenloses Erstgespräch vereinbaren.',
+  },
+};
 
 export default function Home() {
   return (

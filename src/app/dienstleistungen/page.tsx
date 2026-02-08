@@ -3,8 +3,24 @@ import Link from 'next/link';
 import { HeartIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
 export const metadata: Metadata = {
-  title: 'Dienstleistungen | Carina Göb',
-  description: 'Unsere Dienstleistungen für Life & Mindset Coaching',
+  title: 'Ganzheitliches Coaching-Angebot für Frauen | Carina Coaching',
+  description:
+    'Entdecke mein Coaching-Angebot: systemisches Coaching bei Essstörungen & spirituelles Life Coaching für Frauen – finde den Weg, der zu dir passt.',
+  alternates: {
+    canonical: 'https://carina-coaching.com/dienstleistungen/',
+  },
+  openGraph: {
+    title: 'Ganzheitliches Coaching-Angebot für Frauen | Carina Coaching',
+    description:
+      'Entdecke mein Coaching-Angebot: systemisches Coaching bei Essstörungen & spirituelles Life Coaching für Frauen – finde den Weg, der zu dir passt.',
+    url: 'https://carina-coaching.com/dienstleistungen/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ganzheitliches Coaching-Angebot für Frauen | Carina Coaching',
+    description:
+      'Entdecke mein Coaching-Angebot: systemisches Coaching bei Essstörungen & spirituelles Life Coaching für Frauen – finde den Weg, der zu dir passt.',
+  },
 };
 
 const services = [

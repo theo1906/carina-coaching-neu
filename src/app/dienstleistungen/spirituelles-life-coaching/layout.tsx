@@ -1,9 +1,24 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Spirituelles Life Coaching & Embodiment für Frauen – Carina Göb',
-  description: 'Spirituelles Life Coaching mit Carina bietet eine transformative Reise in dein Herz, deinen Körper und deine Weiblichkeit.',
-  keywords: ['spirituelles coaching', 'weiblichkeit entdecken', 'körperarbeit', 'spirituelle entwicklung', 'heilung', 'transformation'],
+  title: 'Spirituelles Life Coaching für Frauen | Carina Coaching',
+  description:
+    'Ganzheitliches spirituelles Life Coaching für Frauen. Finde zurück in die Verbindung mit deinem Körper, deiner Intuition und inneren Weisheit.',
+  alternates: {
+    canonical: 'https://carina-coaching.com/dienstleistungen/spirituelles-life-coaching/',
+  },
+  openGraph: {
+    title: 'Spirituelles Life Coaching für Frauen | Carina Coaching',
+    description:
+      'Ganzheitliches spirituelles Life Coaching für Frauen. Finde zurück in die Verbindung mit deinem Körper, deiner Intuition und inneren Weisheit.',
+    url: 'https://carina-coaching.com/dienstleistungen/spirituelles-life-coaching/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Spirituelles Life Coaching für Frauen | Carina Coaching',
+    description:
+      'Ganzheitliches spirituelles Life Coaching für Frauen. Finde zurück in die Verbindung mit deinem Körper, deiner Intuition und inneren Weisheit.',
+  },
 };
 
 export default function SpiritualLayout({

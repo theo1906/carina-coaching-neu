@@ -2,8 +2,24 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon, CalendarIcon, ArrowRightIcon } fro
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Kontakt & Terminbuchung | Carina Göb - Life & ED Recovery Coaching',
-  description: 'Buche dein kostenloses Kennenlerngespräch oder nimm Kontakt mit mir auf. Ich freue mich, von dir zu hören!',
+  title: 'Häufige Fragen & Terminvereibarung | Carina Coaching',
+  description:
+    'Antworten auf häufige Fragen zu meinem spirituellen Life Coaching & Coaching bei Essstörungen – Ablauf, Kosten und Terminbuchung.',
+  alternates: {
+    canonical: 'https://carina-coaching.com/contact/',
+  },
+  openGraph: {
+    title: 'Häufige Fragen & Terminvereibarung | Carina Coaching',
+    description:
+      'Antworten auf häufige Fragen zu meinem spirituellen Life Coaching & Coaching bei Essstörungen – Ablauf, Kosten und Terminbuchung.',
+    url: 'https://carina-coaching.com/contact/',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Häufige Fragen & Terminvereibarung | Carina Coaching',
+    description:
+      'Antworten auf häufige Fragen zu meinem spirituellen Life Coaching & Coaching bei Essstörungen – Ablauf, Kosten und Terminbuchung.',
+  },
 };
 
 const contactMethods = [
