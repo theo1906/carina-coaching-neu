@@ -182,11 +182,11 @@ export default function Angebot() {
               Preispakete für mein Coaching Angebot
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
-            <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
+            <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4 text-justify">
               Die Sitzungsdauer variiert flexibel je nach Thema und individuellem Bedarf - die Gesamtstundenanzahl bleibt dabei gleich. Die Sessions finden online oder vor Ort statt. Die Paketwahl und die Entscheidung zur Weiterarbeit erfolgen erst nach deiner ersten Session.
             </p>
-            <div className="max-w-3xl mx-auto mt-2">
-              <p className="text-xl text-rose-800/90 italic">
+            <div className="max-w-3xl mx-auto mt-10">
+              <p className="text-xl text-rose-800/90 italic text-center">
                 Schnupper-Session (60 Min): 167,50€ inkl. MwSt.<br />
                 Bei anschließender Paketbuchung wird dieser Betrag voll angerechnet.
               </p>
@@ -299,7 +299,7 @@ export default function Angebot() {
                 <path d="M11 12h1v4h1" />
               </svg>
               <span className="text-sm md:text-base text-rose-800/90">
-                Ermäßigungen für Schüler/-innen, Studierende und bei finanziellen Engpässen auf Anfrage
+                Ermäßigungen für Schülerinnen, Studierende und bei finanziellen Engpässen auf Anfrage
               </span>
             </div>
           </div>
