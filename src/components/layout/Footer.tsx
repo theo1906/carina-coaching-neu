@@ -52,21 +52,8 @@ const navigation = {
       ),
     },
     {
-      name: 'Facebook',
-      href: 'https://facebook.com',
-      icon: (props: any) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
-    {
       name: 'YouTube',
-      href: 'https://youtube.com',
+      href: 'https://youtube.com/@carinacoaching?si=_IQW7siQ4lDE5kag',
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -74,6 +61,15 @@ const navigation = {
             d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
             clipRule="evenodd"
           />
+        </svg>
+      ),
+    },
+    {
+      name: 'Spotify',
+      href: 'https://open.spotify.com/show/1d0c0FfOIupxdRhactBGze?si=PlOTX_FbSkiB36e7fm4ABw',
+      icon: (props: any) => (
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.349c-.26.371-.713.465-1.084.205-2.98-1.822-6.732-2.233-11.156-1.224-.416.094-.832-.166-.926-.582-.094-.416.166-.832.582-.926 4.896-1.099 9.06-.642 12.438 1.417.371.23.466.713.146 1.11zm1.445-3.203c-.324.467-.972.607-1.438.283-3.416-2.103-8.614-2.712-12.637-1.484-.536.147-1.084-.14-1.231-.677-.147-.536.14-1.084.677-1.231 4.517-1.364 10.199-.696 14.096 1.721.466.324.607.972.283 1.438zm.124-3.348c-4.092-2.431-10.828-2.656-14.727-1.468-.642.187-1.314-.187-1.501-.782-.187-.642.187-1.314.782-1.501 4.379-1.278 11.66-1.006 16.254 1.721.563.324.749 1.053.425 1.616-.28.516-1.009.749-1.616.425z"/>
         </svg>
       ),
     },
@@ -98,7 +94,7 @@ export default function Footer() {
                   <h3 className="text-xl font-bold text-black">
                     CARINA COACHING
                   </h3>
-                  <span className="block text-sm font-medium text-black mt-1">
+                  <span className="block text-sm font-medium text-pink-600 mt-1">
                     embodiment for women
                   </span>
                 </Link>
@@ -106,15 +102,20 @@ export default function Footer() {
                   Ich begleite dich auf deiner Reise zu wahrer Selbstliebe, innerer Stärke und einem erfüllten Leben in einem gesunden Körper.
                 </p>
                 <div className="pt-2">
-                  <a
-                    href={navigation.social[0].href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-neutral-200 text-neutral-600 hover:text-primary-600 hover:border-primary-200 transition-colors"
-                  >
-                    {navigation.social[0].icon({ className: 'h-5 w-5' })}
-                  </a>
+                  <div className="inline-flex items-center gap-2">
+                    {navigation.social.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={item.name}
+                        className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-neutral-200 text-neutral-600 hover:text-primary-600 hover:border-primary-200 transition-colors"
+                      >
+                        {item.icon({ className: 'h-5 w-5' })}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

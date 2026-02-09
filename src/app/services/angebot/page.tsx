@@ -185,6 +185,12 @@ export default function Angebot() {
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4">
               Die Sitzungsdauer variiert flexibel je nach Thema und individuellem Bedarf - die Gesamtstundenanzahl bleibt dabei gleich. Die Sessions finden online oder vor Ort statt. Die Paketwahl und die Entscheidung zur Weiterarbeit erfolgen erst nach deiner ersten Session.
             </p>
+            <div className="max-w-3xl mx-auto mt-2">
+              <p className="text-xl text-rose-800/90 italic">
+                Schnupper-Session (60 Min): 167,50€ inkl. MwSt.<br />
+                Bei anschließender Paketbuchung wird dieser Betrag voll angerechnet.
+              </p>
+            </div>
           </div>
         </div>
       </section>
