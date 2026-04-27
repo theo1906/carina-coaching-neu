@@ -187,7 +187,8 @@ export default function Angebot() {
             </p>
             <div className="max-w-3xl mx-auto mt-10">
               <p className="text-xl text-rose-800/90 italic text-center">
-                <span className="whitespace-nowrap">Schnupper-Session (60 Min): 130,00€ zzgl. MwSt.</span><br />
+                <span className="block sm:inline">Schnupper-Session (60 Min):</span>{' '}
+                <span className="block sm:inline whitespace-nowrap">130,00€ zzgl. MwSt.</span><br />
                 Bei anschließender Paketbuchung wird dieser Betrag voll angerechnet.
               </p>
             </div>
