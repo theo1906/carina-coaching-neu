@@ -179,7 +179,7 @@ export default function Angebot() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              Preispakete für mein Coaching Angebot
+              Mein Coaching Angebot
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-fuchsia-400 mx-auto mb-6"></div>
             <p className="text-xl text-rose-800/90 italic max-w-3xl mx-auto mb-4 text-justify">
@@ -187,7 +187,7 @@ export default function Angebot() {
             </p>
             <div className="max-w-3xl mx-auto mt-10">
               <p className="text-xl text-rose-800/90 italic text-center">
-                Schnupper-Session (60 Min): 167,50€ inkl. MwSt.<br />
+                <span className="whitespace-nowrap">Schnupper-Session (60 Min): 130,00€ zzgl. MwSt.</span><br />
                 Bei anschließender Paketbuchung wird dieser Betrag voll angerechnet.
               </p>
             </div>
@@ -203,8 +203,7 @@ export default function Angebot() {
               <div key={packageItem.title} className="p-8 bg-white shadow-2xl rounded-2xl">
                 <h3 className="text-xl font-bold text-gray-900">{packageItem.title}</h3>
                 <p className="mt-2 text-base leading-7 text-gray-600">{packageItem.description}</p>
-                <p className="mt-4 text-3xl font-bold text-primary-600">{packageItem.price}</p>
-                <p className="text-sm text-gray-500 mt-1">inkl. MwSt</p>
+                {/* Price removed per request */}
                 <ul role="list" className="mt-6 space-y-4">
                   {packageItem.features.map((feature, index, array) => {
                     const isLastItem = index === array.length - 1;
@@ -383,9 +382,10 @@ export default function Angebot() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
+              {/* Price still hidden per request */}
               <p className="text-pink-700/90 text-sm mb-2">Pro Stunde Coaching</p>
-              <p className="text-3xl font-bold text-pink-700 mb-1">190€ <span className="text-sm font-normal text-pink-700/80">inkl. MwSt</span></p>
-              <p className="text-pink-700/90 text-sm">Individuelles Angebot auf Anfrage</p>
+              <p className="text-pink-700/90 text-lg font-semibold leading-snug">Individuelles Angebot auf Anfrage</p>
+              
             </div>
           </div>
           
