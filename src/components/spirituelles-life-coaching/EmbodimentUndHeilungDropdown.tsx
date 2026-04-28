@@ -23,7 +23,8 @@ export default function EmbodimentUndHeilungDropdown() {
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none text-gray-700">
-            <h1 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center">
+            <h2 className="sr-only">YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER</h2>
+            <h1 aria-hidden="true" className="text-3xl md:text-4xl font-bold text-black mb-6 text-center">
               YOUR BODY IS YOUR BEST GUIDE AND A POWERFUL TEACHER
             </h1>
             <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-6"></div>
@@ -38,7 +39,8 @@ export default function EmbodimentUndHeilungDropdown() {
             </div>
 
             <div className="mt-12 mb-8 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              <h3 className="sr-only">OWN IT. FEEL IT. HEAL IT.</h3>
+              <h2 aria-hidden="true" className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 OWN IT. FEEL IT. HEAL IT.
               </h2>
               <div className="w-24 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 mx-auto mb-6"></div>
@@ -50,37 +52,37 @@ export default function EmbodimentUndHeilungDropdown() {
               wahrhaftig sind.
             </p>
 
-            <div className="my-8 space-y-6">
-              <div className="flex items-start">
+            <ol className="my-8 space-y-6 list-none m-0 p-0">
+              <li className="flex items-start">
                 <div className="flex-shrink-0 mt-1 w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mr-4">
                   <span className="text-pink-600 text-sm">1</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-normal text-gray-900 mb-1">OWN IT.</h3>
+                  <h4 className="text-lg font-normal text-gray-900 mb-1">OWN IT.</h4>
                   <p className="text-gray-700 text-lg">Nimm ehrlich an, was ist – deine Erfahrungen, dein Jetzt, deine Gefühle, deinen Körper.</p>
                 </div>
-              </div>
+              </li>
               
-              <div className="flex items-start">
+              <li className="flex items-start">
                 <div className="flex-shrink-0 mt-1 w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mr-4">
                   <span className="text-pink-600 text-sm">2</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-normal text-gray-900 mb-1">FEEL IT.</h3>
+                  <h4 className="text-lg font-normal text-gray-900 mb-1">FEEL IT.</h4>
                   <p className="text-gray-700 text-lg">Spüre in deinen Körper hinein, lass die Gefühle zu, ohne sie zu bewerten.</p>
                 </div>
-              </div>
+              </li>
               
-              <div className="flex items-start">
+              <li className="flex items-start">
                 <div className="flex-shrink-0 mt-1 w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mr-4">
                   <span className="text-pink-600 text-sm">3</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-normal text-gray-900 mb-1">HEAL IT.</h3>
+                  <h4 className="text-lg font-normal text-gray-900 mb-1">HEAL IT.</h4>
                   <p className="text-gray-700 text-lg">Erlaube dir, alte Muster loszulassen und neue, heilsame Wege zu gehen.</p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
 
             <p className="text-lg">
               In meiner Arbeit verbinden wir körperliche Wahrnehmungsübungen mit Ansätzen aus dem spirituellen System-Coaching, um die Wurzeln deiner Muster zu verstehen und aufzulösen. Du lernst, deinen Körper als Kompass zu nutzen und deine Bedürfnisse klarer zu erkennen.

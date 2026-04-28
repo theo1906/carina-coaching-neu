@@ -50,9 +50,12 @@ export default function Contact() {
       <section className="bg-gradient-to-b from-primary-50 to-white">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-light tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-            <span className="block">Kontakt & Terminbuchung</span>
-            <span className="block text-primary-600 mt-4">Ich freue mich auf dich!</span>
+            Kontakt & Terminbuchung
           </h1>
+          <p className="sr-only">Ich freue mich auf dich!</p>
+          <h2 className="text-primary-600 mt-4 text-4xl font-light tracking-tight sm:text-5xl md:text-6xl">
+            Ich freue mich auf dich!
+          </h2>
           <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-600">
             Buche dein kostenloses Kennenlerngespräch oder nimm direkt Kontakt mit mir auf.
           </p>
@@ -86,7 +89,7 @@ export default function Contact() {
           </div>
 
           <div className="mt-12">
-            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
+            <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
               {[
                 {
                   question: 'Wie läuft ein Coaching ab?',
@@ -106,23 +109,27 @@ export default function Contact() {
                 },
               ].map((faq, index) => (
                 <div key={index} className="relative bg-gray-50 p-6 rounded-2xl shadow-sm">
-                  <dt className="text-lg font-medium text-gray-900">
-                    <p className="flex items-center gap-2">
-                      <span className="text-primary-600">{index + 1}.</span>
-                      {faq.question}
-                    </p>
-                  </dt>
-                  <dd className="mt-3 text-base text-gray-600">
+                  <h3 className="sr-only">{index + 1}. {faq.question}</h3>
+                  <p className="text-lg font-medium text-gray-900 flex items-center gap-2">
+                    <span className="text-primary-600">{index + 1}.</span>
+                    {faq.question}
+                  </p>
+                  <p className="mt-3 text-base text-gray-600">
                     {faq.answer}
-                  </dd>
+                  </p>
                 </div>
               ))}
-            </dl>
+            </div>
           </div>
           
           <div className="mt-12 text-center">
+            <h2 className="sr-only">
+              Du hast noch weitere Fragen?
+            </h2>
+            <p className="text-base text-gray-500 font-normal">
+              Du hast noch weitere Fragen?
+            </p>
             <p className="text-base text-gray-500">
-              Du hast noch weitere Fragen?{' '}
               <a href="mailto:carina.goeb@googlemail.com?subject=Anfrage%20%C3%BCber%20Carina%20Coaching&body=Hallo%20Carina%2C%0D%0A%0D%0A" className="font-medium text-primary-600 hover:text-primary-500">
                 Nachricht schreiben
               </a>

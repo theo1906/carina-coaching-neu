@@ -50,6 +50,7 @@ export default function RaumFuerDichSection() {
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
+          <h3 className="sr-only">Mein Raum für dich</h3>
           <h2 className="text-3xl md:text-4xl font-bold text-rose-900 mb-3">
             Mein Raum für dich
           </h2>
@@ -69,6 +70,7 @@ export default function RaumFuerDichSection() {
               <div className="w-14 h-14 rounded-xl bg-rose-500/10 flex items-center justify-center mb-4 mx-auto">
                 {React.cloneElement(feature.icon, { className: 'w-6 h-6 text-rose-600' })}
               </div>
+              <h4 className="sr-only">{feature.title.replace(/<br \/>/g, ' ').replace(/<br>/g, ' ')}</h4>
               <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center" dangerouslySetInnerHTML={{ __html: feature.title }} />
               <p className="text-gray-600 text-sm text-center max-w-[80%] mx-auto block">{feature.description}</p>
             </div>
@@ -85,6 +87,7 @@ export default function RaumFuerDichSection() {
               <div className="w-12 h-12 rounded-xl bg-rose-50 flex items-center justify-center mb-4 mx-auto">
                 {feature.icon}
               </div>
+              <h4 className="sr-only">{feature.title.replace(/<br \/>/g, ' ').replace(/<br>/g, ' ')}</h4>
               <h3 className="text-lg font-semibold text-gray-800 text-center" dangerouslySetInnerHTML={{ __html: feature.title }} />
               <p className="text-gray-600 text-sm text-center">{feature.description}</p>
             </div>

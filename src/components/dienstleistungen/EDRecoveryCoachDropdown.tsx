@@ -23,7 +23,8 @@ export default function EDRecoveryCoachDropdown() {
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none text-gray-700">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="sr-only">Was macht ein ED Recovery Coach bei Essstörungen?</h2>
+            <h1 aria-hidden="true" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
               Was macht ein ED Recovery Coach bei Essstörungen?
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mt-6"></div>

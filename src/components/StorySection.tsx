@@ -14,6 +14,7 @@ export default function StorySection() {
         {/* Section label */}
         <div className="relative inline-flex items-center justify-center mb-8 group">
           <span className="absolute inset-0 w-full h-full rounded-full bg-pink-100 transform scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+          <h2 className="sr-only">Meine Geschichte</h2>
           <span className="relative z-10 px-6 py-2 text-base font-medium text-pink-700">
             Meine Geschichte
           </span>

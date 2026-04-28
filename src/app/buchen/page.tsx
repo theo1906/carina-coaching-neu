@@ -94,15 +94,16 @@ export default function BookingPage() {
             </div>
 
             <div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-24">
+              <ol className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-24">
                 {[1, 2, 3].map((step) => (
-                  <div key={step} className="bg-white p-4 rounded-2xl shadow-xl">
+                  <li key={step} className="bg-white p-4 rounded-2xl shadow-xl list-none">
                     {step === 1 && (
                       <div>
                         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 mb-2">
                           <CalendarIcon className="h-5 w-5 text-primary-600" />
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900 mb-1">Datum wählen</h3>
+                        <h3 className="sr-only">1. Datum wählen</h3>
+                        <p className="text-lg font-medium text-gray-900 mb-1">Datum wählen</p>
                         <p className="text-gray-600 mt-1">Wähle ein verfügbares Datum aus dem Kalender aus</p>
                       </div>
                     )}
@@ -111,7 +112,8 @@ export default function BookingPage() {
                         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 mb-2">
                           <Clock className="h-5 w-5 text-primary-600" />
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900 mb-1">Uhrzeit auswählen</h3>
+                        <h3 className="sr-only">2. Uhrzeit auswählen</h3>
+                        <p className="text-lg font-medium text-gray-900 mb-1">Uhrzeit auswählen</p>
                         <p className="text-gray-600 mt-1">Wähle eine verfügbare Uhrzeit für dein gewähltes Datum</p>
                       </div>
                     )}
@@ -120,13 +122,14 @@ export default function BookingPage() {
                         <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gray-100 mb-2">
                           <Check className="h-5 w-5 text-primary-600" />
                         </div>
-                        <h3 className="text-lg font-medium text-gray-900 mb-1">Termin bestätigen</h3>
+                        <h3 className="sr-only">3. Termin bestätigen</h3>
+                        <p className="text-lg font-medium text-gray-900 mb-1">Termin bestätigen</p>
                         <p className="text-gray-600 mt-1">Bestätige deinen Termin und du erhältst eine E-Mail inkl Zoom Link für dein Erstgespräch</p>
                       </div>
                     )}
-                  </div>
+                  </li>
                 ))}
-              </div>
+              </ol>
             </div>
           </section>
         </div>

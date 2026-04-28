@@ -25,7 +25,6 @@ import ErrorBoundary from '@/components/ErrorBoundary';
 // Lazy load dropdown components
 const IstCoachingDasRichtigeDropdown = lazy(() => import('@/components/dienstleistungen/IstCoachingDasRichtigeDropdown'));
 const EmbodimentDropdown = lazy(() => import('@/components/dienstleistungen/EmbodimentDropdown'));
-const HeilungVonInnenNachAussenDropdown = lazy(() => import('@/components/dienstleistungen/HeilungVonInnenNachAussenDropdown'));
 const EDRecoveryCoachDropdown = lazy(() => import('@/components/dienstleistungen/EDRecoveryCoachDropdown'));
 
 function CollapsibleText({ content }: { content: string }) {
@@ -153,6 +152,7 @@ export default function EssstorungPage() {
         
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div id="systemisches-coaching" className="text-center mb-16 pt-28">
+            <h1 className="sr-only">Systemisches Coaching bei Essstörungen & ED Recovery</h1>
             <h2 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-purple-600 bg-clip-text bg-gradient-to-r mb-6">
               Systemisches Coaching bei Essstörungen & ED Recovery
             </h2>
@@ -368,6 +368,8 @@ export default function EssstorungPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-white to-pink-50 opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <p className="sr-only">Lebe wahrhaftig und entdecke die Heilkraft deines Körpers</p>
+            <h2 className="sr-only">Mein Weg, meine Vision und meine Mission</h2>
             <h2 className="text-4xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
               Lebe wahrhaftig und entdecke die Heilkraft deines Körpers
             </h2>
@@ -568,11 +570,6 @@ export default function EssstorungPage() {
               Bereit für den ersten Schritt in deine persönliche Transformation?
             </p>
           </div>
-          
-          {/* HeilungVonInnenNachAussenDropdown */}
-          <Suspense fallback={<div className="animate-pulse bg-gray-200 h-20 rounded-lg"></div>}>
-            <HeilungVonInnenNachAussenDropdown />
-          </Suspense>
         </div>
       </section>
 
@@ -581,7 +578,8 @@ export default function EssstorungPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-white to-pink-50 opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
+            <h2 className="sr-only">Was macht ein ED Recovery Coach?</h2>
+            <h1 aria-hidden="true" className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">
               Was macht ein ED Recovery Coach bei Essstörungen?
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
@@ -638,6 +636,7 @@ export default function EssstorungPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-transparent opacity-10"></div>
         <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <h3 className="sr-only">Ein Leben in Freiheit und Verbundenheit</h3>
             <h2 className="text-4xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6">
               Ein Leben in Freiheit und Verbundenheit
             </h2>
@@ -646,6 +645,7 @@ export default function EssstorungPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100">
+              <h4 className="sr-only">Was du erwarten kannst</h4>
               <h3 className="text-xl font-medium text-pink-600 mb-4">Was du erwarten kannst:</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -667,6 +667,7 @@ export default function EssstorungPage() {
               </ul>
             </div>
             <div className="bg-white/90 p-6 rounded-xl shadow-sm border border-pink-100">
+              <h4 className="sr-only">Dein neues Leben</h4>
               <h3 className="text-xl font-medium text-pink-600 mb-4">Dein neues Leben:</h3>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">

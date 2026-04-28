@@ -82,13 +82,14 @@ export default function DienstleistungenPage() {
                   href={service.href}
                   className="group block"
                 >
-                  <div className={`${service.bgColor} p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-white/50`}>
+                  <article className={`${service.bgColor} p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-white/50`}>
                     {/* Icon */}
                     <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     
                     {/* Content */}
+                    <h2 className="sr-only">{service.title}</h2>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all duration-300">
                       {service.title}
                     </h3>
@@ -103,7 +104,7 @@ export default function DienstleistungenPage() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </div>
-                  </div>
+                  </article>
                 </Link>
               );
             })}

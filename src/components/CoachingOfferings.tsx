@@ -236,69 +236,87 @@ export default function CoachingOfferings() {
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start p-4 rounded-lg bg-pink-50">
+              <ul className="space-y-4">
+                <li className="list-none">
+                  <div className="flex items-start p-4 rounded-lg bg-pink-50">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4 mt-0.5">
                     <span className="text-pink-600">•</span>
                   </div>
                   <div>
+                    <h3 className="sr-only">Systemisches Coaching</h3>
                     <h4 className="font-medium text-gray-900">Systemisches Coaching</h4>
                     <p className="text-gray-600 text-sm">Aufstellungsarbeit innere Anteile und innere Kindheilung</p>
                   </div>
-                </div>
+                  </div>
+                </li>
 
-                <div className="flex items-start p-4 rounded-lg bg-pink-50">
+                <li className="list-none">
+                  <div className="flex items-start p-4 rounded-lg bg-pink-50">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4 mt-0.5">
                     <span className="text-pink-600">•</span>
                   </div>
                   <div>
+                    <h3 className="sr-only">Somatische Körperarbeit</h3>
                     <h4 className="font-medium text-gray-900">Somatische Körperarbeit</h4>
                     <p className="text-gray-600 text-sm">Rebalancing Bodywork zur<br />Nervensystem-Regulation & Emotionsauflösung</p>
                   </div>
-                </div>
+                  </div>
+                </li>
 
-                <div className="flex items-start p-4 rounded-lg bg-pink-50">
+                <li className="list-none">
+                  <div className="flex items-start p-4 rounded-lg bg-pink-50">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4 mt-0.5">
                     <span className="text-pink-600">•</span>
                   </div>
                   <div>
+                    <h3 className="sr-only">„Inquiry"-Methode</h3>
                     <h4 className="font-medium text-gray-900">„Inquiry"-Methode</h4>
                     <p className="text-gray-600 text-sm">Für tiefe, nachhaltige Prozesse der Selbstreflexion</p>
                   </div>
-                </div>
-              </div>
+                  </div>
+                </li>
+              </ul>
 
-              <div className="space-y-4">
-                <div className="flex items-start p-4 rounded-lg bg-pink-50">
+              <ul className="space-y-4">
+                <li className="list-none">
+                  <div className="flex items-start p-4 rounded-lg bg-pink-50">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4 mt-0.5">
                     <span className="text-pink-600">•</span>
                   </div>
                   <div>
+                    <h3 className="sr-only">Embodiment</h3>
                     <h4 className="font-medium text-gray-900">Embodiment</h4>
                     <p className="text-gray-600 text-sm">Für Körperpräsenz und Verbindung zum authentischen Selbst</p>
                   </div>
-                </div>
+                  </div>
+                </li>
 
-                <div className="flex items-start p-4 rounded-lg bg-pink-50">
+                <li className="list-none">
+                  <div className="flex items-start p-4 rounded-lg bg-pink-50">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4 mt-0.5">
                     <span className="text-pink-600">•</span>
                   </div>
                   <div>
+                    <h3 className="sr-only">Energiearbeit</h3>
                     <h4 className="font-medium text-gray-900">Energiearbeit</h4>
                     <p className="text-gray-600 text-sm">Bewusstsein von Energie-Intelligenz<br />und -Zentren im Körper, um Blockaden zu lösen</p>
                   </div>
-                </div>
+                  </div>
+                </li>
 
-                <div className="flex items-start p-4 rounded-lg bg-pink-50">
+                <li className="list-none">
+                  <div className="flex items-start p-4 rounded-lg bg-pink-50">
                   <div className="flex-shrink-0 h-10 w-10 rounded-full bg-pink-100 flex items-center justify-center mr-4 mt-0.5">
                     <span className="text-pink-600">•</span>
                   </div>
                   <div>
+                    <h3 className="sr-only">Meditation & Achtsamkeit</h3>
                     <h4 className="font-medium text-gray-900">Meditation & Achtsamkeit</h4>
                     <p className="text-gray-600 text-sm">Praktiken zur Steigerung des Wohlbefindens und der Lebensqualität</p>
                   </div>
-                </div>
-              </div>
+                  </div>
+                </li>
+              </ul>
             </div>
 
             <div className="mt-12 text-center max-w-3xl mx-auto">

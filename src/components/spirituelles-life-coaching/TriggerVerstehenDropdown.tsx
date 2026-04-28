@@ -23,7 +23,8 @@ export default function TriggerVerstehenDropdown() {
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none text-gray-700">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Trigger verstehen und bewusst damit umgehen</h1>
+            <h2 className="sr-only">Trigger verstehen und bewusst damit umgehen</h2>
+            <h1 aria-hidden="true" className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Trigger verstehen und bewusst damit umgehen</h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mb-8 mx-auto"></div>
             
             <div className="space-y-6 text-gray-700">
@@ -40,6 +41,7 @@ export default function TriggerVerstehenDropdown() {
               </p>
               
               <div className="bg-pink-50 p-6 rounded-xl border-l-4 border-pink-500 my-8">
+                <h3 className="sr-only">Mein Ansatz</h3>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Mein Ansatz</h3>
                 <p>
                   Durch körperorientierte Tools und Techniken aus dem Holistic Counselling und dem spirituellen System-Coaching helfe ich dir den Gap zwischen dem Moment wo du getriggert wirst und deiner Reaktion, bewusster wahrzunehmen und dich so zu verlangsamen. Bestenfalls und mit etwas Übung so, dass du dadurch bewusster und aus deiner Klarheit und Wahrhaftigkeit heraus entscheiden kannst, wie du reagieren möchtest.

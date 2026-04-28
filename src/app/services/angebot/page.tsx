@@ -178,6 +178,7 @@ export default function Angebot() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
+            <h1 className="sr-only">Preispakete für mein Coaching Angebot</h1>
             <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
               Mein Coaching Angebot
             </h2>
@@ -186,6 +187,7 @@ export default function Angebot() {
               Die Sitzungsdauer variiert flexibel je nach Thema und individuellem Bedarf - die Gesamtstundenanzahl bleibt dabei gleich. Die Sessions finden online oder vor Ort statt. Die Paketwahl und die Entscheidung zur Weiterarbeit erfolgen erst nach deiner ersten Session.
             </p>
             <div className="max-w-3xl mx-auto mt-10">
+              <h2 className="sr-only">Schnupper-Session (60 Min): 130,00€ zzgl. MwSt.</h2>
               <p className="text-xl text-rose-800/90 italic text-center">
                 <span className="block sm:inline">Schnupper-Session (60 Min):</span>{' '}
                 <span className="block sm:inline whitespace-nowrap">130,00€ zzgl. MwSt.</span><br />
@@ -201,7 +203,7 @@ export default function Angebot() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {coachingPackages.filter(pkg => pkg.title !== 'Healing@Home').map((packageItem) => (
-              <div key={packageItem.title} className="p-8 bg-white shadow-2xl rounded-2xl">
+              <article key={packageItem.title} className="p-8 bg-white shadow-2xl rounded-2xl">
                 <h3 className="text-xl font-bold text-gray-900">{packageItem.title}</h3>
                 <p className="mt-2 text-base leading-7 text-gray-600">{packageItem.description}</p>
                 {/* Price removed per request */}
@@ -286,7 +288,7 @@ export default function Angebot() {
                 >
                   Kostenloses Erstgespräch vereinbaren
                 </Link>
-              </div>
+              </article>
             ))}
           </div>
 
@@ -357,7 +359,7 @@ export default function Angebot() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-pink-900 mb-4">Dein Nutzen</h3>
-              <ul className="space-y-3">
+              <ol className="space-y-3 list-none m-0 p-0">
                 {[
                   'Coaching in vertrauter Umgebung',
                   'Komfortabel & stressfrei',
@@ -372,7 +374,7 @@ export default function Angebot() {
                     <span className="text-pink-700/90 text-sm">{item}</span>
                   </li>
                 ))}
-              </ul>
+              </ol>
             </div>
             
             {/* Price */}
@@ -382,6 +384,7 @@ export default function Angebot() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
+              <h3 className="sr-only">Preis & Buchung</h3>
               <h3 className="text-xl font-semibold text-pink-900 mb-2">Preis</h3>
               {/* Price still hidden per request */}
               <p className="text-pink-700/90 text-sm mb-2">Pro Stunde Coaching</p>

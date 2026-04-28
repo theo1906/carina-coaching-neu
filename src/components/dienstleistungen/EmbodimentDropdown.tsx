@@ -23,10 +23,12 @@ export default function EmbodimentDropdown() {
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink max-w-none text-gray-700">
-            <h1 className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6 text-center">
+            <h2 className="sr-only">Embodiment & Heilungsreise</h2>
+            <h1 aria-hidden="true" className="text-4xl md:text-5xl font-bold text-gradient from-pink-600 to-pink-600 bg-clip-text bg-gradient-to-r mb-6 text-center">
               Embodiment & Heilungsreise
             </h1>
             <div className="w-32 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-6"></div>
+            <h3 className="sr-only">Dein Weg in die Heilung</h3>
             <p className="text-2xl text-pink-800/90 italic max-w-2xl mx-auto text-center">
               Dein Weg in die Heilung
             </p>
@@ -44,7 +46,8 @@ export default function EmbodimentDropdown() {
               Dein Körper ist für mich Botschafter und spricht mit der Stimme deines Herzens, dem Ort deiner Seele. Symptome sind daher für mich Nachrichten von hoher Bedeutung, denen es gilt, mit Neugierde und Offenheit zu begegnen, anstatt sie zu ignorieren, zu betäuben oder zu bekämpfen. Embodiment und Selbsterkenntnis durch Inquiry sind hierbei für mich der Schlüssel zur nachhaltigen Transformation. 
             </p>
             
-            <h2 className="text-2xl font-semibold text-pink-700 mt-8 mb-4">Was ist Embodiment?</h2>
+            <h3 className="sr-only">Was ist Embodiment?</h3>
+            <h2 aria-hidden="true" className="text-2xl font-semibold text-pink-700 mt-8 mb-4">Was ist Embodiment?</h2>
             
             <p className="leading-relaxed mb-6">
               Embodiment bedeutet, die Verbindung zu deinem eigenen Körper zu stärken, um deine weibliche Intuition und innere Kraft zu entfalten. Embodiment beschreibt auch die Fähigkeit, präsent, sicher und geerdet in deinem Körper zu sein sowie deine Bereitschaft, Entscheidungen für dein Leben im Einklang mit den Bedürfnissen und der Weisheit deines Körpers zu treffen, dem Zuhause deiner Seele. 
@@ -62,7 +65,8 @@ export default function EmbodimentDropdown() {
               Zudem halte ich für dich einen Raum, der es dir ermöglicht, dich mit der Heilungskraft deines Körpers zu verbinden und mit deinem Frausein, deiner Weiblichkeit. Beides sind wertvolle Ressourcen, die du bereits in dir trägst und die wir gemeinsam freilegen, indem wir deine Essstörung (wie Bulimie, Magersucht oder emotionale Essattacken) mit einbeziehen anstatt sie weg haben zu wollen über liebevolle Inquiry (eine Methode im Coaching, die nachhaltige Selbstreflektions-Prozesse anstösst und Zugang ermöglicht zu tiefliegenden Verletzungen).
             </p>
             
-            <h2 className="text-2xl font-semibold text-pink-700 mt-8 mb-4">Meine Erfahrung</h2>
+            <h3 className="sr-only">Meine Erfahrung</h3>
+            <h2 aria-hidden="true" className="text-2xl font-semibold text-pink-700 mt-8 mb-4">Meine Erfahrung</h2>
             
             <p className="leading-relaxed mb-6">
               Basierend auf meiner eigenen Erfahrung kann ich sagen, dass eine Essstörung zur Entfremdung und Abkopplung vom eigenen Körper führt. Körperliche Empfindungen, Emotionen und Körpersignale werden dadurch nicht mehr oder wenn überhaupt nur distanziert wahrgenommen wie hinter einer Mauer. Es entsteht ein verzerrtes Selbstbild. 

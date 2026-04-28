@@ -65,22 +65,23 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
                 <div className="bg-white/80 p-6 rounded-xl shadow-sm border border-pink-100">
+                  <h2 className="sr-only">Meine spirituelle Reise</h2>
                   <p className="font-medium text-pink-800 mb-3">Meine spirituelle Reise</p>
-                  <div className="space-y-3">
+                  <ol className="space-y-3 list-none p-0 m-0">
                     {[
                       'Transformation durch Mut zur Wahrheit und Selbstannahme',
                       'Tiefe Verbindung zur Weisheit des Körpers',
                       'Integration spiritueller Praktiken in den Alltag',
                       'Begleitung anderer auf ihrem Weg der Persönlichkeitsentwicklung'
                     ].map((item, index) => (
-                      <div key={index} className="flex items-center">
+                      <li key={index} className="flex items-center">
                         <div className="flex-shrink-0 h-4 w-4 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 flex items-center justify-center mr-3">
                           <div className="h-1.5 w-1.5 rounded-full bg-pink-600"></div>
                         </div>
                         <span className="text-gray-700">{item}</span>
-                      </div>
+                      </li>
                     ))}
-                  </div>
+                  </ol>
                 </div>
 
                 <div className="bg-white/90 p-8 rounded-2xl shadow-lg border border-pink-100">
@@ -107,9 +108,9 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="bg-gradient-to-r from-white/90 to-white/70 p-8 rounded-3xl shadow-xl border border-pink-100">
                   <div className="flex items-center justify-between mb-8">
-                    <h3 className="text-2xl font-bold text-pink-900">
+                    <h2 className="text-2xl font-bold text-pink-900">
                       Meine Methode
-                    </h3>
+                    </h2>
                     <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 flex items-center justify-center">
                       <SparklesIcon className="h-8 w-8 text-pink-600" />
                     </div>
@@ -120,21 +121,21 @@ export default function Home() {
                       Meine Methode kombiniert spirituelle Praktiken mit körperzentriertem Coaching, um dir zu helfen, tiefe Verbindung zu deiner inneren Weisheit zu finden und zu verkörpern. Diese ganzheitliche Herangehensweise ermöglicht dir, deinen wahren Weg mutig zu gehen und dein volles Potenzial als Frau zu entfalten.
                     </p>
                     
-                    <div className="grid grid-cols-2 gap-4">
+                    <ul className="grid grid-cols-2 gap-4">
                       {[
                         'Intuitive Praktiken',
                         'Geführte Meditation',
                         'Heilung durch Präsenz',
                         'Integration spiritueller Tools'
                       ].map((point, index) => (
-                        <div key={index} className="flex items-center">
+                        <li key={index} className="flex items-center">
                           <div className="flex-shrink-0 h-4 w-4 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 flex items-center justify-center mr-3">
                             <div className="h-1.5 w-1.5 rounded-full bg-pink-600"></div>
                           </div>
                           <span className="text-gray-700">{point}</span>
-                        </div>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
 
                     <div className="mt-6">
                       <p className="text-gray-600 text-sm">
@@ -181,6 +182,9 @@ export default function Home() {
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-pink-100 to-pink-50 p-2 mb-8">
                   <HeartIcon className="h-8 w-8 text-pink-600" />
                 </div>
+                <h3 className="sr-only">
+                  Spirituelles Life Coaching - Erwecke und vertraue deiner inneren Weisheit
+                </h3>
                 <p className="text-2xl font-bold text-pink-900 mb-4">
                   Spirituelles Life Coaching - Erwecke und vertraue deiner inneren Weisheit
                 </p>
@@ -188,7 +192,7 @@ export default function Home() {
                 <p className="text-gray-700 mb-10 text-lg">
                   Verbinde dich mit deiner weiblichen Essenz, entdecke deine Spiritualität und lebe dein wahres Potential – durch körperzentriertes, spirituelles Coaching.
                 </p>
-                <div className="space-y-5 mt-6">
+                <ul className="space-y-5 mt-6">
                   <ExpandableBulletPoint 
                     index={0}
                     title="Tiefe innere Heilung"
@@ -214,7 +218,7 @@ export default function Home() {
                     title="Integration spiritueller Praktiken"
                     content="Du entwickelst praktische Tools für Selbstregulation und emotionale Resilienz, die dich in allen Bereichen deines Alltags unterstützen, ein erfülltes und selbstbestimmtes Leben zu führen. Dazu gehören Atemübungen, Meditation, Körperwahrnehmung und achtsame Bewegung."
                   />
-                </div>
+                </ul>
                 <Link href="/dienstleistungen/spiritual" className="inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg hover:from-pink-700 hover:to-purple-700 transition-colors mt-8">
                   <span className="mr-2">Mehr erfahren</span>
                   <ArrowRightIcon className="w-5 h-5" />
@@ -225,6 +229,9 @@ export default function Home() {
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple-100 to-purple-50 p-2 mb-8">
                   <SparklesIcon className="h-8 w-8 text-purple-600" />
                 </div>
+                <h3 className="sr-only">
+                  Coaching bei Essstörungen und ED Recovery - Heilung von Innen heraus
+                </h3>
                 <p className="text-2xl font-bold text-purple-900 mb-4">
                   Coaching bei Essstörungen und ED Recovery - Heilung von Innen heraus
                 </p>
@@ -233,7 +240,7 @@ export default function Home() {
                   Holistische Unterstützung bei Essstörungen durch Körperbewusstsein<br/>
                   und spirituelle Heilung.
                 </p>
-                <div className="space-y-5 mt-6">
+                <ul className="space-y-5 mt-6">
                   <ExpandableBulletPoint 
                     index={0}
                     title="Begleitung durch gelebte Erfahrung"
@@ -264,7 +271,7 @@ export default function Home() {
                     content="Mein ED Recovery Coaching unterstützt dich, wenn du von Bulimie, Anorexie, Binge-Eating oder emotionalem Essen betroffen bist. Sowie Familienmitglieder oder Partner/innen, die gerne tiefer gehen, mitfühlen und zugrunde liegende Dynamiken und Auslöser verstehen und transformieren möchten."
                     color="purple"
                   />
-                </div>
+                </ul>
                 <Link href="/dienstleistungen/essstoerung" className="inline-flex items-center px-8 py-4 text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-colors mt-8">
                   <span className="mr-2">Mehr erfahren</span>
                   <ArrowRightIcon className="w-5 h-5" />

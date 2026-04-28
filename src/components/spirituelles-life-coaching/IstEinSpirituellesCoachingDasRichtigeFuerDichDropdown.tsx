@@ -23,10 +23,6 @@ export default function IstEinSpirituellesCoachingDasRichtigeFuerDichDropdown() 
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none text-gray-700">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6 text-center [text-shadow:0_2px_4px_rgba(0,0,0,0.1)]">
-              Ist ein spirituelles Coaching das Richtige für dich?
-            </h1>
-            
             <div className="space-y-4">
               <div>
                 <h3 className="text-xl font-semibold text-gray-800">Deine spirituelle Reise beginnt hier</h3>

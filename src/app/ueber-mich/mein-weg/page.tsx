@@ -307,7 +307,7 @@ export default function MeinWeg() {
             </motion.div>
             
             {/* Timeline items */}
-            <div className="space-y-10">
+            <ol className="space-y-10 list-none p-0 m-0">
               {[
                 {
                   title: "Mit 14 – Der Beginn",
@@ -345,77 +345,79 @@ export default function MeinWeg() {
                   icon: <UserIcon className="h-6 w-6 text-pink-500" />
                 }
               ].map((item, index) => (
-                <motion.div 
-                  key={index} 
-                  className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  style={{ minHeight: '120px' }}
-                >
-                  {/* Animated timeline dot */}
+                <li key={index} className="list-none">
                   <motion.div 
-                    className="absolute left-1/2 -translate-x-1/2 h-6 w-6 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 border-4 border-white shadow-lg z-10 flex items-center justify-center"
-                    whileHover={{ scale: 1.2, rotate: 15 }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                    style={{ top: '50%', transform: 'translate(-50%, -50%)' }}
+                    className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    style={{ minHeight: '120px' }}
                   >
-                    <div className="h-2 w-2 rounded-full bg-white/80"></div>
-                  </motion.div>
-                  
-                  {/* Content card */}
-                  <motion.div 
-                    className={`w-full md:w-[44%] p-5 bg-white/95 backdrop-blur-sm rounded-xl shadow-sm border border-pink-100/50 relative overflow-hidden group ${index % 2 === 0 ? 'mr-auto md:mr-0 md:pr-3' : 'ml-auto md:ml-0 md:pl-3'}`}
-                    whileHover={{ 
-                      y: -5,
-                      boxShadow: '0 10px 25px -5px rgba(236, 72, 153, 0.1), 0 10px 10px -5px rgba(236, 72, 153, 0.04)'
-                    }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                  >
-                    {/* Decorative corner accent */}
-                    <div className={`absolute ${index % 2 === 0 ? 'top-0 right-0' : 'top-0 left-0'} w-16 h-16 -m-4 bg-pink-100/30 rounded-full filter blur-xl`}></div>
+                    {/* Animated timeline dot */}
+                    <motion.div 
+                      className="absolute left-1/2 -translate-x-1/2 h-6 w-6 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 border-4 border-white shadow-lg z-10 flex items-center justify-center"
+                      whileHover={{ scale: 1.2, rotate: 15 }}
+                      transition={{ type: 'spring', stiffness: 300 }}
+                      style={{ top: '50%', transform: 'translate(-50%, -50%)' }}
+                    >
+                      <div className="h-2 w-2 rounded-full bg-white/80"></div>
+                    </motion.div>
                     
-                    <div className="relative z-10">
-                      <div className="flex items-center gap-3 mb-3">
-                        <motion.div 
-                          className="flex-shrink-0 h-9 w-9 rounded-full bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center shadow-inner border border-pink-100"
-                          whileHover={{ rotate: 10, scale: 1.1 }}
-                        >
-                          {React.cloneElement(item.icon, { className: 'h-4 w-4 text-pink-600' })}
-                        </motion.div>
-                        <h3 className="text-lg font-semibold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                          {item.title}
-                        </h3>
+                    {/* Content card */}
+                    <motion.div 
+                      className={`w-full md:w-[44%] p-5 bg-white/95 backdrop-blur-sm rounded-xl shadow-sm border border-pink-100/50 relative overflow-hidden group ${index % 2 === 0 ? 'mr-auto md:mr-0 md:pr-3' : 'ml-auto md:ml-0 md:pl-3'}`}
+                      whileHover={{ 
+                        y: -5,
+                        boxShadow: '0 10px 25px -5px rgba(236, 72, 153, 0.1), 0 10px 10px -5px rgba(236, 72, 153, 0.04)'
+                      }}
+                      transition={{ type: 'spring', stiffness: 300 }}
+                    >
+                      {/* Decorative corner accent */}
+                      <div className={`absolute ${index % 2 === 0 ? 'top-0 right-0' : 'top-0 left-0'} w-16 h-16 -m-4 bg-pink-100/30 rounded-full filter blur-xl`}></div>
+                      
+                      <div className="relative z-10">
+                        <div className="flex items-center gap-3 mb-3">
+                          <motion.div 
+                            className="flex-shrink-0 h-9 w-9 rounded-full bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center shadow-inner border border-pink-100"
+                            whileHover={{ rotate: 10, scale: 1.1 }}
+                          >
+                            {React.cloneElement(item.icon, { className: 'h-4 w-4 text-pink-600' })}
+                          </motion.div>
+                          <h3 className="text-lg font-semibold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                            {item.title}
+                          </h3>
+                        </div>
+                        <p className="text-gray-700 text-sm leading-relaxed relative pl-1 border-l-2 border-pink-100">
+                          {item.content}
+                        </p>
                       </div>
-                      <p className="text-gray-700 text-sm leading-relaxed relative pl-1 border-l-2 border-pink-100">
-                        {item.content}
-                      </p>
-                    </div>
-                    
-                    {/* Subtle hover effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-pink-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                      
+                      {/* Subtle hover effect */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-pink-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                    </motion.div>
                   </motion.div>
-                </motion.div>
+                </li>
               ))}
               
-              {/* Mehr erfahren Button */}
-              <motion.div 
-                className="flex justify-center mt-12"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+            </ol>
+
+            {/* Mehr erfahren Button */}
+            <motion.div 
+              className="flex justify-center mt-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Link 
+                href="/mein-weg/meine-heilungsreise"
+                className="px-8 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 group"
               >
-                <Link 
-                  href="/mein-weg/meine-heilungsreise"
-                  className="px-8 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 group"
-                >
-                  <span>Mehr zu meiner Geschichte</span>
-                  <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Link>
-              </motion.div>
-            </div>
+                <span>Mehr zu meiner Geschichte</span>
+                <ArrowRightIcon className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
+            </motion.div>
           </div>
         </div>
         

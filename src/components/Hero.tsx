@@ -66,6 +66,7 @@ export default function Hero() {
           <div className="relative -mt-16 md:-mt-48">
             <div className="bg-white px-6 pt-6 pb-4 md:px-8 md:pt-8 md:pb-5 rounded-t-2xl rounded-b-2xl shadow-sm text-center">
               <div className="-mt-2">
+                <h1 className="sr-only">Hi, ich bin Carina</h1>
                 <h2 className="flex items-center justify-center gap-2 text-3xl md:text-4xl lg:text-5xl font-extralight text-black leading-tight mx-auto">
                   <div className="flex items-center gap-2">
                     <span>Hi, ich bin</span>

@@ -111,26 +111,26 @@ export default function SpiritualPage() {
                 <p className="text-gray-700 mb-6">
                   In meinen Coachings begleite ich dich sanft und einfühlsam auf deiner Reise zurück zu dir selbst. Gemeinsam entdecken wir deine innere Weisheit und stärken deine Verbindung zu deinem natürlichen SEINszustand.
                 </p>
-                <div className="space-y-4">
-                  <div className="flex items-baseline">
+                <ul className="space-y-4 list-none m-0 p-0">
+                  <li className="flex items-baseline">
                     <div className="flex-shrink-0 mr-3 pt-1.5">
                       <div className="w-2 h-2 rounded-full bg-pink-500"></div>
                     </div>
                     <p className="text-gray-700">Individuelle Begleitung auf deinem spirituellen Weg</p>
-                  </div>
-                  <div className="flex items-baseline">
+                  </li>
+                  <li className="flex items-baseline">
                     <div className="flex-shrink-0 mr-3 pt-1.5">
                       <div className="w-2 h-2 rounded-full bg-pink-500"></div>
                     </div>
                     <p className="text-gray-700">Tiefe Selbsterkenntnis und Bewusstseinserweiterung</p>
-                  </div>
-                  <div className="flex items-baseline">
+                  </li>
+                  <li className="flex items-baseline">
                     <div className="flex-shrink-0 mr-3 pt-1.5">
                       <div className="w-2 h-2 rounded-full bg-pink-500"></div>
                     </div>
                     <p className="text-gray-700">Heilung auf körperlicher, emotionaler und spiritueller Ebene</p>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -163,6 +163,7 @@ export default function SpiritualPage() {
               <p className="text-gray-700 mb-6">
                 Dein Körper speichert all deinen Schmerz und deine Verletzungen - selbst die unsichtbaren. Er ist damit ein wertvoller Impulsgeber für die Anteile in dir, die noch heilen dürfen, um wieder in Verbindung mit dir selbst zu sein und im Vertrauen ins Leben.
               </p>
+              <h4 className="sr-only">Unverheilte Wunden machen sich auf verschiedene Weisen bemerkbar:</h4>
               <p className="text-gray-700 mb-6">
                 Unverheilte Wunden machen sich auf verschiedene Weisen bemerkbar:
               </p>
@@ -572,6 +573,7 @@ export default function SpiritualPage() {
             
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                <h3 className="sr-only">Automatische Reaktionsmuster</h3>
                 <h4 className="font-semibold text-lg text-pink-700 mb-3">Automatische Reaktionsmuster</h4>
                 <ul className="space-y-3">
                   <li className="flex items-start">
@@ -594,6 +596,7 @@ export default function SpiritualPage() {
               </div>
               
               <div id="bewusste-veraenderung" className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                <h3 className="sr-only">Bewusste Veränderung</h3>
                 <h4 className="font-semibold text-lg text-pink-700 mb-3">Bewusste Veränderung</h4>
                 <p className="text-gray-700 mb-4">
                   Im Coaching lernst du, präsent zu bleiben und bewusst zu wählen, wie du aktiv auf Trigger antworten möchtest, anstatt automatisch zu reagieren.
@@ -629,9 +632,9 @@ export default function SpiritualPage() {
             </p>
           </div>
           
-          <div className="space-y-8">
+          <ol className="space-y-8 list-none m-0 p-0">
             {/* Step 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500">
+            <li className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500">
               <div className="flex items-center mb-4">
                 <span className="flex items-center justify-center w-10 h-10 rounded-full bg-pink-100 text-pink-700 font-bold text-xl mr-4">1</span>
                 <h3 className="text-2xl font-bold text-gray-900">Selbstbeobachtung üben</h3>
@@ -641,10 +644,10 @@ export default function SpiritualPage() {
                   Lerne dich selbst zu beobachten, ohne zu bewerten. Nimm deine Gefühle, deine Gedanken, deine Körperempfindungen und deine Reaktionen einfach nur wahr in der Haltung von mitfühlender Achtsamkeit für dich selbst. Stell dir vor, du bist dein bester Freund. Und aus diesem Mindset heraus trete dir selbst gegenüber und gehe in einen liebevollen Dialog mit dir, tief verbunden mit der Weisheit deines Körpers. Das ist dein erster Schritt.
                 </p>
               </div>
-            </div>
+            </li>
             
             {/* Step 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500">
+            <li className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500">
               <div className="flex items-center mb-4">
                 <span className="flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 text-purple-700 font-bold text-xl mr-4">2</span>
                 <h3 className="text-2xl font-bold text-gray-900">Gewohnheitsreaktionen durchbrechen</h3>
@@ -696,10 +699,10 @@ export default function SpiritualPage() {
                   Mit etwas Übung schaffst du Raum zwischen Reiz und Reaktion, wählst Stille und nimmst Abstand von der Situation, anstatt zu überreagieren.
                 </p>
               </div>
-            </div>
+            </li>
             
             {/* Step 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500">
+            <li className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-pink-500">
               <div className="flex items-center mb-4">
                 <span className="flex items-center justify-center w-10 h-10 rounded-full bg-pink-100 text-pink-700 font-bold text-xl mr-4">3</span>
                 <h3 className="text-2xl font-bold text-gray-900">Den Stresszyklus beenden</h3>
@@ -714,35 +717,36 @@ export default function SpiritualPage() {
                   <p className="text-gray-700 mb-4">
                     Ich zeige dir Bewegungs-Techniken, mit denen du die Energie aus deinem aktivierten Nervensystem freisetzen kannst:
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-white p-3 rounded-lg text-center shadow-sm">
+                  <ol className="grid grid-cols-1 md:grid-cols-3 gap-4 list-none m-0 p-0">
+                    <li className="bg-white p-3 rounded-lg text-center shadow-sm">
                       <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">1</div>
                       <span className="text-gray-700">Schütteln</span>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg text-center shadow-sm">
+                    </li>
+                    <li className="bg-white p-3 rounded-lg text-center shadow-sm">
                       <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">2</div>
                       <span className="text-gray-700">Tanzen</span>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg text-center shadow-sm">
+                    </li>
+                    <li className="bg-white p-3 rounded-lg text-center shadow-sm">
                       <div className="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-2">3</div>
                       <span className="text-gray-700">Dynamische Meditationen</span>
-                    </div>
-                  </div>
+                    </li>
+                  </ol>
                 </div>
                 
                 <p className="text-gray-700">
                   Diese Techniken helfen deinem Körper, in den Zustand der Ruhe und Klarheit zurückzukehren. Auch bei einer Überaktivierung des Nervensystems, die über einen längeren Zeitraum anhält und zu chronischem Stress, einem gestörten Essverhalten, Angstzuständen, Schlafstörungen etc. führt, unterstützen dich diese Übungen auf deinem Weg in die innere Heilung.
                 </p>
               </div>
-            </div>
-            
-            {/* CTA Box */}
-            <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-8 rounded-2xl text-center text-white">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Dein Weg zur Transformation</h3>
-              <p className="text-pink-100 text-lg mb-6 max-w-2xl mx-auto">
-                Spirituelles Life Coaching ermöglicht dir nachhaltige, körperzentrierte Transformation von innen heraus. Für mehr bewusstes Sein, hin zu mehr Sanftheit dir selbst gegenüber und in der liebevollen Annahme dessen, was ist.
-              </p>
-            </div>
+            </li>
+          </ol>
+
+          {/* CTA Box */}
+          <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-8 rounded-2xl text-center text-white mt-8">
+            <h2 className="sr-only">Dein Weg zur Transformation</h2>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Dein Weg zur Transformation</h3>
+            <p className="text-pink-100 text-lg mb-6 max-w-2xl mx-auto">
+              Spirituelles Life Coaching ermöglicht dir nachhaltige, körperzentrierte Transformation von innen heraus. Für mehr bewusstes Sein, hin zu mehr Sanftheit dir selbst gegenüber und in der liebevollen Annahme dessen, was ist.
+            </p>
           </div>
         </div>
       </section>
@@ -891,6 +895,7 @@ export default function SpiritualPage() {
               </div>
               
               <div className="bg-gradient-to-r from-pink-500 to-purple-600 p-8 rounded-2xl text-center">
+                <h2 className="sr-only">Dein Weg zu mehr Leichtigkeit</h2>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Dein Weg zu mehr Leichtigkeit</h3>
                 <p className="text-pink-100 text-lg mb-6 max-w-2xl mx-auto">
                   Beginne noch heute deine Reise zu mehr Lebensfreude und innerer Freiheit.

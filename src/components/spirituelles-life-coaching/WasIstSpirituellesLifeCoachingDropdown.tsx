@@ -26,6 +26,7 @@ export default function WasIstSpirituellesLifeCoachingDropdown() {
             <div className="space-y-12">
               {/* Section 1: Wie Herausforderungen uns wachsen lassen */}
               <div className="bg-white rounded-xl shadow-lg p-8 border border-pink-100">
+                <h3 className="sr-only">Wie Herausforderungen uns wachsen lassen</h3>
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">Wie Herausforderungen uns wachsen lassen</h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
                 
@@ -47,6 +48,7 @@ export default function WasIstSpirituellesLifeCoachingDropdown() {
 
               {/* Section 2: Bewusst Veränderungen willkommen heißen */}
               <div className="bg-white rounded-xl shadow-lg p-8 border border-purple-100">
+                <h3 className="sr-only">Bewusst Veränderungen willkommen heißen</h3>
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">Bewusst Veränderungen willkommen heißen</h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto mb-8"></div>
                 
@@ -65,6 +67,7 @@ export default function WasIstSpirituellesLifeCoachingDropdown() {
 
               {/* Section 3: Verbinde dich mit deiner inneren Weisheit */}
               <div className="bg-white rounded-xl shadow-lg p-8 border border-pink-100">
+                <h3 className="sr-only">Verbinde dich mit deiner inneren Weisheit</h3>
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">Verbinde dich mit deiner inneren Weisheit</h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto mb-8"></div>
                 
@@ -84,6 +87,7 @@ export default function WasIstSpirituellesLifeCoachingDropdown() {
 
               {/* Section 4: The power of embodied change */}
               <div className="bg-white rounded-xl shadow-lg p-8 border border-indigo-100">
+                <h3 className="sr-only">The power of embodied change</h3>
                 <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 text-center">The power of embodied change</h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto mb-8"></div>
                 

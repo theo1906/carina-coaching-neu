@@ -23,7 +23,8 @@ export default function IstCoachingDasRichtigeDropdown() {
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none text-gray-700">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="sr-only">Ist ein Coaching bei Essstörungen das Richtige für dich?</h2>
+            <h1 aria-hidden="true" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center">
               Ist ein Coaching bei Essstörungen das Richtige für dich?
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-500 mx-auto mb-8"></div>

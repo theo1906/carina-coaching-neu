@@ -68,7 +68,8 @@ export default function VorteileSystemCoachingDropdown() {
       <div className={`transition-all duration-300 ${isOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <div className="max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
           <div className="prose prose-pink prose-lg max-w-none text-gray-700">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+            <h2 className="sr-only">Was sind die wichtigsten Vorteile von körperzentriertem, spirituellem Life Coaching für Frauen?</h2>
+            <h1 aria-hidden="true" className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
               Was sind die wichtigsten Vorteile von körperzentriertem, spirituellem Life Coaching für Frauen?
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-8"></div>
@@ -99,7 +100,7 @@ export default function VorteileSystemCoachingDropdown() {
                       <div className={`absolute inset-0 bg-gradient-to-br ${colors.bg} rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                       <div className={`relative h-full bg-white rounded-xl border ${colors.border} p-6 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg`}>
                         <div className={`w-12 h-1 bg-gradient-to-r ${colors.accent} mb-4 rounded-full transform group-hover:scale-110 origin-left transition-transform duration-300`}></div>
-                        <h2 className="text-lg font-bold text-gray-900 mb-3 relative z-10">{benefit.title}</h2>
+                        <h3 className="text-lg font-bold text-gray-900 mb-3 relative z-10">{benefit.title}</h3>
                         <div className="text-gray-600 text-sm relative z-10 leading-relaxed">
                           <p>{benefit.description}</p>
                           {benefit.bulletPoints && (
@@ -121,7 +122,8 @@ export default function VorteileSystemCoachingDropdown() {
             </div>
             
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Bereit für deine Reise zu dir selbst?</h2>
+              <h2 className="sr-only">Bereit für deine Reise zu dir selbst?</h2>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Bereit für deine Reise zu dir selbst?</h3>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
                 Entdecke, wie du mit einem persönlichen Coaching dein volles Potential entfalten und ein erfülltes Leben in Einklang mit deiner wahren Natur führen kannst.
               </p>
